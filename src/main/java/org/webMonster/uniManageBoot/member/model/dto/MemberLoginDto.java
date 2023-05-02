@@ -6,8 +6,9 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Setter
+@Getter
 public class MemberLoginDto {
-    private String member_id;
-    private String name;
+    private int member_id;
     private String member_pwd;
 }
