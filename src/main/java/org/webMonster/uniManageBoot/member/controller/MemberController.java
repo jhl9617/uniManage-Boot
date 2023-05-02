@@ -6,7 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import javax.servlet.http.HttpSession;
 
 @Slf4j
@@ -26,8 +25,6 @@ public class MemberController {
         MemberEntity loggedInMember = memberService.login(memberEntity);
         session.setAttribute("loginMember", loggedInMember);
 
-
-        //
         String path = null;
         if (loggedInMember.getAuth() == 3 || loggedInMember.getAuth() == 4 || loggedInMember.getAuth() == 5) {   //학생
             path = "/student";
@@ -36,7 +33,6 @@ public class MemberController {
         } else if (loggedInMember.getAuth() == 2) {                 //교직원
             path = "/admin";
         }
-
         return ResponseEntity.ok(path);
     }
 

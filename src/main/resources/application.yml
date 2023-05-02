@@ -2,6 +2,8 @@ server:
   port: 9090
   servlet:
     context-path: /
+    session:
+      timeout: 60s
 spring:
   jackson:
     property-naming-strategy: SNAKE_CASE
