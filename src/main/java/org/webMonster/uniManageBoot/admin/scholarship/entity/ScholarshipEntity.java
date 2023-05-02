@@ -18,12 +18,14 @@ public class ScholarshipEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "SCHO_ID")
-    private int scho_id;
-    @Column(name = "SCHO_YEAR")
-    private int scho_year;
+    private long scho_id;   //장학금 번호
+    @Column(name = "SCHO_TERM")
+    private int scho_term;   //장학금 학기
     @Column(name = "SCHO_NAME")
-    private String scho_name;
-    @Column(name = "SCHO_AMOUNT")
-    private int scho_amount;
+    private String scho_name;   //장학금명
+    @Column(name = "AMOUNT")
+    private int amount;   //장학금액
+    @Column(name = "MEMBER_ID")
+    private long member_id;   //멤버 아이디
 
 }
