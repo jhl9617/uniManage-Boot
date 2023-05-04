@@ -27,5 +27,4 @@ public class ScholarshipEntity {
     private int amount;   //장학금액
     @Column(name = "MEMBER_ID")
     private long member_id;   //멤버 아이디
-
 }

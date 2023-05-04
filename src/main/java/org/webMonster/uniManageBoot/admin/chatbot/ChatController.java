@@ -3,6 +3,7 @@ import org.apache.tomcat.util.codec.binary.Base64;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
@@ -21,13 +22,12 @@ import java.util.Date;
 @Controller
 public class ChatController {
 
-    private static String secretKey = [시크릿키];
-    private static String apiUrl = [apiUrl키];
+    private static String secretKey = "ZFhtUmpocFFrZUNlSWlDTUdvbkF2S1l6TU9PTGdoRGI=";
+    private static String apiUrl = "https://v8n1xpgd82.apigw.ntruss.com/custom/v1/10199/ff4ef665f0e94fb3220480f783f9fc6090ecf46d68e3127663a0122a2f3f6e1e";
 
     @MessageMapping("/sendMessage")
     @SendTo("/topic/public")
-    public String sendMessage(@Payload String chatMessage) throws IOException
-    {
+    public String sendMessage(@Payload String chatMessage) throws IOException, ParseException {
 
         URL url = new URL(apiUrl);
 
