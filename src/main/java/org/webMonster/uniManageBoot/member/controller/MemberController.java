@@ -41,16 +41,26 @@ public class MemberController {
         return ResponseEntity.ok(path);
     }*/
     @PostMapping("/onLogin")
-    public ResponseEntity<MemberEntity> login(@RequestBody MemberLoginDto memberLoginDto, HttpSession session) {
-        log.info(memberLoginDto.toString() + "asdasdasd");
+    public ResponseEntity<String> login(@RequestBody MemberLoginDto memberLoginDto, HttpSession session) {
+        log.info(memberLoginDto.toString());
         MemberEntity member = memberService.login(memberLoginDto);
+        session.setAttribute("loginMember", member);
+        String path = null;
+        if (member.getAuth() == 3 || member.getAuth() == 4 || member.getAuth() == 5) {   //학생
+            path = "/student";
+        } else if (member.getAuth() == 1) {                 //교수
+            path = "/prof/main";
+        } else if (member.getAuth() == 2) {                 //교직원
+            path = "/admin";
+        }
+        return ResponseEntity.ok(path);
 
-        if (member != null) {
+        /*if (member != null) {
             session.setAttribute("loginMember", member);
             return new ResponseEntity<>(member, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
-        }
+        }*/
     }
 
 
