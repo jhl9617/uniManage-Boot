@@ -16,6 +16,8 @@ import javax.persistence.*;
 public class LectureRoomTimetableEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "LECTURE_ROOM_TIMETABLE_IDX")
+    private long lecture_room_timetable_idx;   //강의실시간표 번호
     @Column(name = "TIMECODE")
     private String timecode;   //시간코드
     @Column(name = "LECTURE_ROOM_CODE")
