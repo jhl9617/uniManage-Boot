@@ -12,7 +12,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "STATUS")  //Board 테이블 자동 생성시키는 어노테이션임
+@Table(name = "STATUS")  //테이블 자동 생성시키는 어노테이션임
 @Entity
 public class StatusEntity {
     @Id

@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "FREEBOARD")  //Board 테이블 자동 생성시키는 어노테이션임
+@Table(name = "FREEBOARD")  //테이블 자동 생성시키는 어노테이션임
 @Entity
 public class FreeBoardEntity {
     @Id
