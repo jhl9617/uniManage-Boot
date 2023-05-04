@@ -10,6 +10,6 @@ import lombok.*;
 @Setter
 @ToString
 public class MemberLoginDto {
-    private String member_id;
+    private long member_id;
     private String member_pwd;
 }

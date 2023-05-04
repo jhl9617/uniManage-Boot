@@ -1,7 +1,6 @@
 package org.webMonster.uniManageBoot.member.model.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +23,7 @@ public class MemberService {
         memberEntity.setEmail("abc@d.com");
         memberEntity.setAuth(3);    //3은 재학생, 필요시 변경  //권한구분:교수 1, 교직원 2,재학생 3, 졸업생 4, 휴학생 5
         return memberEntity;*/
-        String memberId = memberLoginDto.getMember_id();
+        long memberId = memberLoginDto.getMember_id();
         String memberPwd = memberLoginDto.getMember_pwd();
 
         MemberEntity member = memberRepository.findByMemberIdAndMemberPwd(memberId, memberPwd);

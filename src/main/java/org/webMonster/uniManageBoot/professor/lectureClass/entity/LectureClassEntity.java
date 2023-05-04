@@ -16,6 +16,8 @@ import javax.persistence.*;
 public class LectureClassEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "LECTURE_CLASS_IDX")
+    private long lecture_class_idx;   //강의실 번호
     @Column(name = "LECTURE_ROOM_CODE")
     private String lecture_room_code;   //강의실 코드
     @Column(name = "BUILDING_CODE")

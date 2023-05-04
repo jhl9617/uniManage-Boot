@@ -16,6 +16,8 @@ import javax.persistence.*;
 public class LectureClassTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "LECTURE_CLASS_TIME_IDX")
+    private long lecture_class_time_idx;   //강의실시간표 번호
     @Column(name = "TIMECODE")
     private String timecode;   //시간코드
     @Column(name = "START_TIME")

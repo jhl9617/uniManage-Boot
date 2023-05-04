@@ -1,6 +1,7 @@
 package org.webMonster.uniManageBoot.member.controller;
 
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
+import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
 import org.webMonster.uniManageBoot.member.model.service.MemberService;
 import lombok.extern.slf4j.Slf4j;
@@ -43,6 +44,7 @@ public class MemberController {
     @PostMapping("/onLogin")
     public ResponseEntity<String> login(@RequestBody MemberLoginDto memberLoginDto, HttpSession session) {
         log.info(memberLoginDto.toString());
+        System.out.println( memberLoginDto.toString());
         MemberEntity member = memberService.login(memberLoginDto);
         session.setAttribute("loginMember", member);
         String path = null;
