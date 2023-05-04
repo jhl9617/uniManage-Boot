@@ -11,7 +11,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "SCORE")  //Board 테이블 자동 생성시키는 어노테이션임
+@Table(name = "SCORE")  //테이블 자동 생성시키는 어노테이션임
 @Entity
 public class ScoreEntity {
     @Id

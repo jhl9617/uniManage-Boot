@@ -11,7 +11,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "COURSE_REGI")  //Board 테이블 자동 생성시키는 어노테이션임
+@Table(name = "COURSE_REGI")  //테이블 자동 생성시키는 어노테이션임
 @Entity
 public class CourseRegiEntity {
     @Id
@@ -23,6 +23,6 @@ public class CourseRegiEntity {
     @Column(name = "LECTURE_ID")
     private long lecture_id;   //강의 아이디
     @Column(name = "COURSE_REGI_TERM")
-    private int course_regi_term;   //신청학기
+    private long course_regi_term;   //신청학기
 }
 

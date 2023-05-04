@@ -20,7 +20,7 @@ public class ScholarshipEntity {
     @Column(name = "SCHO_ID")
     private long scho_id;   //장학금 번호
     @Column(name = "SCHO_TERM")
-    private int scho_term;   //장학금 학기
+    private long scho_term;   //장학금 학기
     @Column(name = "SCHO_NAME")
     private String scho_name;   //장학금명
     @Column(name = "AMOUNT")
