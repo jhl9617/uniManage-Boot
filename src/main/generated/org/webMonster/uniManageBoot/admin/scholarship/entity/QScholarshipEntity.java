@@ -19,13 +19,15 @@ public class QScholarshipEntity extends EntityPathBase<ScholarshipEntity> {
 
     public static final QScholarshipEntity scholarshipEntity = new QScholarshipEntity("scholarshipEntity");
 
-    public final NumberPath<Integer> scho_amount = createNumber("scho_amount", Integer.class);
+    public final NumberPath<Integer> amount = createNumber("amount", Integer.class);
 
-    public final NumberPath<Integer> scho_id = createNumber("scho_id", Integer.class);
+    public final NumberPath<Long> member_id = createNumber("member_id", Long.class);
+
+    public final NumberPath<Long> scho_id = createNumber("scho_id", Long.class);
 
     public final StringPath scho_name = createString("scho_name");
 
-    public final NumberPath<Integer> scho_year = createNumber("scho_year", Integer.class);
+    public final NumberPath<Integer> scho_term = createNumber("scho_term", Integer.class);
 
     public QScholarshipEntity(String variable) {
         super(ScholarshipEntity.class, forVariable(variable));

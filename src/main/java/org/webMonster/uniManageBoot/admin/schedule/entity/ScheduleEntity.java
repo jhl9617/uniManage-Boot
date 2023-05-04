@@ -1,4 +1,4 @@
-package org.webMonster.uniManageBoot.admin.schedule;
+package org.webMonster.uniManageBoot.admin.schedule.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

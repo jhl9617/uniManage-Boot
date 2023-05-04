@@ -25,15 +25,17 @@ public class QMemberEntity extends EntityPathBase<MemberEntity> {
 
     public final NumberPath<Integer> auth = createNumber("auth", Integer.class);
 
-    public final DatePath<java.sql.Date> birthday = createDate("birthday", java.sql.Date.class);
+    public final StringPath birthday = createString("birthday");
 
-    public final StringPath department = createString("department");
+    public final NumberPath<Integer> department_id = createNumber("department_id", Integer.class);
 
     public final StringPath email = createString("email");
 
     public final NumberPath<Integer> grade = createNumber("grade", Integer.class);
 
-    public final NumberPath<Integer> member_id = createNumber("member_id", Integer.class);
+    public final StringPath member_id = createString("member_id");
+
+    public final NumberPath<Integer> member_idx = createNumber("member_idx", Integer.class);
 
     public final StringPath member_pwd = createString("member_pwd");
 
