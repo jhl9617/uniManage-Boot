@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.sql.Date;
+
 
 @Data
 @AllArgsConstructor
@@ -18,18 +18,20 @@ import java.sql.Date;
 public class MemberEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "MEMBER_IDX")
+    private int member_idx;             //시퀀스
     @Column(name = "MEMBER_ID")
-    private int member_id;  //아이디
+    private String member_id;  //아이디
     @Column(name = "MEMBER_PWD")
     private String member_pwd;  //비밀번호
     @Column(name = "NAME")
     private String name;        //이름
-    @Column(name = "DEPARTMENT")
-    private String department;  //학과
+    @Column(name = "DEPARTMENT_ID")
+    private int department_id;  //학과
     @Column(name = "GRADE")
     private int grade;        //학년
     @Column(name = "BIRTHDAY")
-    private Date birthday;      //생년월일
+    private String birthday;      //생년월일
     @Column(name = "PHONE")
     private String phone;       //전화번호
     @Column(name = "EMAIL")
