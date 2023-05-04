@@ -6,9 +6,10 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Setter
 @Getter
+@Setter
+@ToString
 public class MemberLoginDto {
-    private int member_id;
+    private String member_id;
     private String member_pwd;
 }

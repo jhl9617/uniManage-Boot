@@ -50,5 +50,4 @@ public class LectureEntity {
     private String syllabus_rename;   //강의계획서_리네임
     @Column(name = "LECTURE_APPLY_STATUS")
     private char lecture_apply_status;   //강의 승인여부
-
 }
