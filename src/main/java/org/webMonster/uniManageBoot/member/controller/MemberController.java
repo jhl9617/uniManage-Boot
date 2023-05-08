@@ -28,7 +28,6 @@ public class MemberController {
         MemberEntity loggedInMember = memberService.login(memberEntity);
         session.setAttribute("loginMember", loggedInMember);
 
-
         //
         String path = null;
         if (loggedInMember.getAuth() == 3 || loggedInMember.getAuth() == 4 || loggedInMember.getAuth() == 5) {   //학생
@@ -64,8 +63,6 @@ public class MemberController {
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         }*/
     }
-
-
 
     //세션에 있는지 확인
     @GetMapping("/sessionCheck")
