@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.member.entity.MemberRepository;
+import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
 
 @Slf4j
@@ -16,7 +17,7 @@ public class MemberService {
 
     @Autowired
     private MemberRepository memberRepository;
-    public MemberEntity login(MemberLoginDto memberLoginDto) {
+    public MemberDto login(MemberLoginDto memberLoginDto) {
         /*memberEntity.setMember_id(161350);
         memberEntity.setMember_pwd("1234");
         memberEntity.setName("홍길동");
@@ -26,16 +27,15 @@ public class MemberService {
         long memberId = memberLoginDto.getMember_id();
         String memberPwd = memberLoginDto.getMember_pwd();
 
-        MemberEntity member = memberRepository.findByMemberIdAndMemberPwd(memberId, memberPwd);
+        MemberEntity memberEntity = memberRepository.findByMemberIdAndMemberPwd(memberId, memberPwd);
+        // Convert MemberEntity to MemberDto
 
-        if (member == null) {
-            // Handle the case when the member is not found, e.g., log a warning, return a default value, etc.
-            System.out.println("No member found with the given member_id and member_pwd.");
-            log.info("널이야");
-            return null;
-        }
-        
-        return member;
+        MemberDto memberDto = MemberDto.fromEntity(memberEntity);
+        // Set other properties as needed
+
+
+
+        return memberDto;
     }
 
 

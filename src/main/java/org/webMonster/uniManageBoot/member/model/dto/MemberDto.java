@@ -1,6 +1,9 @@
 package org.webMonster.uniManageBoot.member.model.dto;
 
 import lombok.*;
+import org.webMonster.uniManageBoot.member.entity.MemberEntity;
+
+import java.sql.Date;
 
 @Data
 @AllArgsConstructor
@@ -17,11 +20,48 @@ public class MemberDto {
     private String name;        //이름
     private int department_id;  //학과
     private int grade;        //학년
-    private String birthday;      //생년월일
+    private Date birthday;      //생년월일
     private String phone;       //전화번호
     private String email;       //이메일
     private int postcode;       //우편번호
     private String address1;   //주소1
     private String address2;    //주소2
     private int auth;           //권한구분:교수 1, 교직원 2,재학생 3, 졸업생 4, 휴학생 5
+
+    public static MemberDto fromEntity(MemberEntity memberEntity) {
+        MemberDto memberDto = new MemberDto();
+        memberDto.setMember_idx(memberEntity.getMember_idx());
+        memberDto.setMember_id(memberEntity.getMember_id());
+        memberDto.setMember_pwd(memberEntity.getMember_pwd());
+        memberDto.setName(memberEntity.getName());
+        memberDto.setDepartment_id(memberEntity.getDepartment_id());
+        memberDto.setGrade(memberEntity.getGrade());
+        memberDto.setBirthday(memberEntity.getBirthday());
+        memberDto.setPhone(memberEntity.getPhone());
+        memberDto.setEmail(memberEntity.getEmail());
+        memberDto.setPostcode(memberEntity.getPostcode());
+        memberDto.setAddress1(memberEntity.getAddress1());
+        memberDto.setAddress2(memberEntity.getAddress2());
+        memberDto.setAuth(memberEntity.getAuth());
+        return memberDto;
+    }
+
+    public MemberEntity toEntity() {
+        MemberEntity memberEntity = new MemberEntity();
+        memberEntity.setMember_idx(this.getMember_idx());
+        memberEntity.setMember_id(this.getMember_id());
+        memberEntity.setMember_pwd(this.getMember_pwd());
+        memberEntity.setName(this.getName());
+        memberEntity.setDepartment_id(this.getDepartment_id());
+        memberEntity.setGrade(this.getGrade());
+        memberEntity.setBirthday(this.getBirthday());
+        memberEntity.setPhone(this.getPhone());
+        memberEntity.setEmail(this.getEmail());
+        memberEntity.setPostcode(this.getPostcode());
+        memberEntity.setAddress1(this.getAddress1());
+        memberEntity.setAddress2(this.getAddress2());
+        memberEntity.setAuth(this.getAuth());
+        return memberEntity;
+    }
+
 }
