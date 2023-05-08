@@ -1,7 +1,7 @@
 package org.webMonster.uniManageBoot.member.controller;
 
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
-import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
+
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
 import org.webMonster.uniManageBoot.member.model.service.MemberService;
 import lombok.extern.slf4j.Slf4j;
@@ -28,7 +28,6 @@ public class MemberController {
         MemberEntity loggedInMember = memberService.login(memberEntity);
         session.setAttribute("loginMember", loggedInMember);
 
-
         //
         String path = null;
         if (loggedInMember.getAuth() == 3 || loggedInMember.getAuth() == 4 || loggedInMember.getAuth() == 5) {   //학생
@@ -43,8 +42,6 @@ public class MemberController {
     }*/
     @PostMapping("/onLogin")
     public ResponseEntity<String> login(@RequestBody MemberLoginDto memberLoginDto, HttpSession session) {
-        log.info(memberLoginDto.toString());
-        System.out.println( memberLoginDto.toString());
         MemberEntity member = memberService.login(memberLoginDto);
         session.setAttribute("loginMember", member);
         String path = null;
@@ -64,8 +61,6 @@ public class MemberController {
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         }*/
     }
-
-
 
     //세션에 있는지 확인
     @GetMapping("/sessionCheck")
