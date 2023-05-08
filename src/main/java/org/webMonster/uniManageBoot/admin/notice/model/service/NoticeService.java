@@ -12,6 +12,7 @@ import org.webMonster.uniManageBoot.admin.notice.model.dto.NoticeDto;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
 import org.webMonster.uniManageBoot.common.SearchCondition;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ public class NoticeService {
     public Header<List<NoticeDto>> getNoticeList(Pageable pageable, SearchCondition searchCondition) {
         List<NoticeDto> dtos = new ArrayList<>();
 
-        Page<NoticeEntity> noticeEntities = NoticeRepositoryCustom.findAllBySearchCondition(pageable, searchCondition);
+        Page<NoticeEntity> noticeEntities = noticeRepositoryCustom.findAllBySearchCondition(pageable, searchCondition);
         for (NoticeEntity entity : noticeEntities) {
             NoticeDto dto = NoticeDto.builder()
                     .notice_id(entity.getNotice_id())

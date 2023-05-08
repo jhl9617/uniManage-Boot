@@ -13,6 +13,9 @@ import org.springframework.util.StringUtils;
 
 import java.util.List;
 
+
+import static org.webMonster.uniManageBoot.board.entity.QBoardEntity.boardEntity;
+
 @RequiredArgsConstructor
 @Repository
 public class BoardRepositoryCustom {

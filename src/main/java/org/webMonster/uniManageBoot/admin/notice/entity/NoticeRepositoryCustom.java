@@ -12,6 +12,8 @@ import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import java.util.List;
 
+import static org.webMonster.uniManageBoot.admin.notice.entity.QNoticeEntity.noticeEntity;
+
 @RequiredArgsConstructor
 @Repository
 public class NoticeRepositoryCustom {
@@ -27,24 +29,29 @@ public class NoticeRepositoryCustom {
                 .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
                 .offset(pageable.getOffset())
                 .limit(pageable.getPageSize())
-                .orderBy(noticeEntity.idx.desc())
+                .orderBy(noticeEntity.notice_id.desc())
                 .fetch();
 
         return new PageImpl<>(results, pageable, total);
     }
 
     private BooleanExpression searchKeywords(String sk, String sv) {
-        if("author".equals(sk)) {
+        if("member_id".equals(sk)) {
             if(StringUtils.hasLength(sv)) {
-                return noticeEntity.author.contains(sv);
+                long memberId;
+                try {
+                    memberId = Long.parseLong(sv);
+                } catch (NumberFormatException e) {
+                    return null; // Invalid input, skip filtering
+                }
             }
-        } else if ("title".equals(sk)) {
+        } else if ("notice_title".equals(sk)) {
             if(StringUtils.hasLength(sv)) {
-                return noticeEntity.title.contains(sv);
+                return noticeEntity.notice_title.contains(sv);
             }
-        } else if ("contents".equals(sk)) {
+        } else if ("notice_content".equals(sk)) {
             if(StringUtils.hasLength(sv)) {
-                return noticeEntity.contents.contains(sv);
+                return noticeEntity.notice_content.contains(sv);
             }
         }
 

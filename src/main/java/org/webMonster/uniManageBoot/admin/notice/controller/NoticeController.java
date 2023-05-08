@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
+import org.webMonster.uniManageBoot.admin.notice.entity.NoticeEntity;
 import org.webMonster.uniManageBoot.admin.notice.model.dto.NoticeDto;
 import org.webMonster.uniManageBoot.admin.notice.model.service.NoticeService;
 import org.webMonster.uniManageBoot.common.Header;
