@@ -29,7 +29,7 @@ public class NoticeRepositoryCustom {
                 .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
                 .offset(pageable.getOffset())
                 .limit(pageable.getPageSize())
-                .orderBy(noticeEntity.notice_id.desc())
+                .orderBy(noticeEntity.noticeId.desc())
                 .fetch();
 
         return new PageImpl<>(results, pageable, total);
@@ -47,11 +47,11 @@ public class NoticeRepositoryCustom {
             }
         } else if ("notice_title".equals(sk)) {
             if(StringUtils.hasLength(sv)) {
-                return noticeEntity.notice_title.contains(sv);
+                return noticeEntity.noticeTitle.contains(sv);
             }
         } else if ("notice_content".equals(sk)) {
             if(StringUtils.hasLength(sv)) {
-                return noticeEntity.notice_content.contains(sv);
+                return noticeEntity.noticeContent.contains(sv);
             }
         }
 

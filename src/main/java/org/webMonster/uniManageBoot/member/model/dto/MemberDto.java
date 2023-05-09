@@ -30,11 +30,11 @@ public class MemberDto {
 
     public static MemberDto fromEntity(MemberEntity memberEntity) {
         MemberDto memberDto = new MemberDto();
-        memberDto.setMember_idx(memberEntity.getMember_idx());
-        memberDto.setMember_id(memberEntity.getMember_id());
-        memberDto.setMember_pwd(memberEntity.getMember_pwd());
+        memberDto.setMemberIdx(memberEntity.getMemberIdx());
+        memberDto.setMemberId(memberEntity.getMemberId());
+        memberDto.setMemberPwd(memberEntity.getMemberPwd());
         memberDto.setName(memberEntity.getName());
-        memberDto.setDepartment_id(memberEntity.getDepartment_id());
+        memberDto.setDepartmentId(memberEntity.getDepartmentId());
         memberDto.setGrade(memberEntity.getGrade());
         memberDto.setBirthday(memberEntity.getBirthday());
         memberDto.setPhone(memberEntity.getPhone());
@@ -48,11 +48,11 @@ public class MemberDto {
 
     public MemberEntity toEntity() {
         MemberEntity memberEntity = new MemberEntity();
-        memberEntity.setMember_idx(this.getMember_idx());
-        memberEntity.setMember_id(this.getMember_id());
-        memberEntity.setMember_pwd(this.getMember_pwd());
+        memberEntity.setMemberIdx(this.getMemberIdx());
+        memberEntity.setMemberId(this.getMemberId());
+        memberEntity.setMemberPwd(this.getMemberPwd());
         memberEntity.setName(this.getName());
-        memberEntity.setDepartment_id(this.getDepartment_id());
+        memberEntity.setDepartmentId(this.getDepartmentId());
         memberEntity.setGrade(this.getGrade());
         memberEntity.setBirthday(this.getBirthday());
         memberEntity.setPhone(this.getPhone());
