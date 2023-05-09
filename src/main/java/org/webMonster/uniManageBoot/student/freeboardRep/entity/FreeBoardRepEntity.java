@@ -18,14 +18,14 @@ public class FreeBoardRepEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "FREE_REP_ID")
-    private long free_rep_id;   //자유게시판 댓글 번호
+    private long freeRepId;   //자유게시판 댓글 번호
     @Column(name = "FREE_ID")
-    private long free_id;   //자유게시판 번호
+    private long freeId;   //자유게시판 번호
     @Column(name = "FREE_REP_CONTENT")
-    private String free_rep_content;   //댓글 내용
+    private String freeRepContent;   //댓글 내용
     @Column(name = "CREATED_DATE")
-    private LocalDateTime created_date;   //댓글 작성일
+    private LocalDateTime createdDate;   //댓글 작성일
     @Column(name = "MEMBER_ID")
-    private long member_id;   //댓글 작성자
+    private long memberId;   //댓글 작성자
 
 }

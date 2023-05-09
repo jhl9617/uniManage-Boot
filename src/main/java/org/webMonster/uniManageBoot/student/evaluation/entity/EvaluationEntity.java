@@ -17,11 +17,11 @@ public class EvaluationEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "EVALUATION_ID")
-    private long evaluation_id;   //강의평가 번호
+    private long evaluationId;   //강의평가 번호
     @Column(name = "MEMBER_ID")
-    private long member_id;   //회원 아이디
+    private long memberId;   //회원 아이디
     @Column(name = "LECTURE_ID")
-    private long lecture_id;   //강의 아이디
+    private long lectureId;   //강의 아이디
     @Column(name = "SCORE1")
     private int score1;   //1번 문항 점수
     @Column(name = "SCORE2")

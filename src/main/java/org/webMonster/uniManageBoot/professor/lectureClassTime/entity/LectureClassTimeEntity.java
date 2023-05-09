@@ -17,11 +17,11 @@ public class LectureClassTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "LECTURE_CLASS_TIME_IDX")
-    private long lecture_class_time_idx;   //강의실시간표 번호
+    private long lectureClassTimeIdx;   //강의실시간표 번호
     @Column(name = "TIMECODE")
     private String timecode;   //시간코드
     @Column(name = "START_TIME")
-    private String start_time;   //시작시간
+    private String startTime;   //시작시간
     @Column(name = "DAY_TIME")
-    private String day_time;   //요일
+    private String dayTime;   //요일
 }

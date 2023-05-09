@@ -9,13 +9,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Builder
 @Setter
 @Getter
+@ToString
 public class NoticeDto {
 
-    private long notice_id;
-    private String notice_title;
-    private String notice_content;
-    private long member_id;
-    private String created_date;
+    private long noticeId;
+    private String noticeTitle;
+    private String noticeContent;
+    private long memberId;
+    private String createdDate;
     private int readcount;
 
 }

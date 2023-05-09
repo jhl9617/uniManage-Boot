@@ -18,15 +18,15 @@ public class ScheduleEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "SCHE_ID")
-    private long sche_id;   //공지사항 번호
+    private long scheId;   //공지사항 번호
     @Column(name = "SCHE_TITLE")
-    private String sche_title;   //공지사항 제목
+    private String scheTitle;   //공지사항 제목
     @Column(name = "SCHE_CONTENT")
-    private String sche_content;   //공지사항 내용
+    private String scheContent;   //공지사항 내용
     @Column(name = "START_DATE")
-    private Date start_date;   //작성자
+    private Date startDate;   //작성자
     @Column(name = "END_DATE")
-    private Date end_date;   //등록일
+    private Date endDate;   //등록일
     @Column(name = "READCOUNT")
     private int readcount;   //조회수
 }

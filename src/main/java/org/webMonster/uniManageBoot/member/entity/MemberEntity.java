@@ -20,15 +20,15 @@ public class MemberEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "MEMBER_IDX")
-    private long member_idx;             //시퀀스
+    private long memberIdx;             //시퀀스
     @Column(name = "MEMBER_ID")
-    private long member_id;  //아이디
+    private long memberId;  //아이디
     @Column(name = "MEMBER_PWD")
-    private String member_pwd;  //비밀번호
+    private String memberPwd;  //비밀번호
     @Column(name = "NAME")
     private String name;        //이름
     @Column(name = "DEPARTMENT_ID")
-    private int department_id;  //학과 번호
+    private int departmentId;  //학과 번호
     @Column(name = "GRADE")
     private int grade;        //학년
     @Column(name = "BIRTHDAY")

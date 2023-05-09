@@ -23,8 +23,8 @@ public class MemberService {
         memberEntity.setEmail("abc@d.com");
         memberEntity.setAuth(3);    //3은 재학생, 필요시 변경  //권한구분:교수 1, 교직원 2,재학생 3, 졸업생 4, 휴학생 5
         return memberEntity;*/
-        long memberId = memberLoginDto.getMember_id();
-        String memberPwd = memberLoginDto.getMember_pwd();
+        long memberId = memberLoginDto.getMemberId();
+        String memberPwd = memberLoginDto.getMemberPwd();
 
         MemberEntity member = memberRepository.findByMemberIdAndMemberPwd(memberId, memberPwd);
 

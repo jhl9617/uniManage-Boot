@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 public interface NoticeRepository extends JpaRepository<NoticeEntity, Long> {
-    @Query("SELECT n FROM NoticeEntity n ORDER BY n.notice_id DESC")
+    @Query("SELECT n FROM NoticeEntity n ORDER BY n.noticeId DESC")
     Page<NoticeEntity>findAllByOrderByNotice_idDesc(Pageable pageable);
 }
