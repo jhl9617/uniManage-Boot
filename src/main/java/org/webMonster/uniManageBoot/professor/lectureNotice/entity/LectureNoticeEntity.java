@@ -18,15 +18,15 @@ public class LectureNoticeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "LECTURE_NOTICE_ID")
-    private long lecture_notice_id;   //강의공지 글번호
+    private long lectureNoticeId;   //강의공지 글번호
     @Column(name = "LECTURE_ID")
-    private long lecture_id;   //강의번호
+    private long lectureId;   //강의번호
     @Column(name = "LECTURE_NOTICE_TITLE")
-    private String lecture_notice_title;   //강의공지 제목
+    private String lectureNoticeTitle;   //강의공지 제목
     @Column(name = "LECTURE_NOTICE_CONTENT")
-    private String lecture_notice_content;   //강의공지 내용
+    private String lectureNoticeContent;   //강의공지 내용
     @Column(name = "CREATED_DATE")
-    private LocalDateTime created_date;   //강의공지 작성일
+    private LocalDateTime createdDate;   //강의공지 작성일
     @Column(name = "READCOUNT")
     private int readcount;   //조회수
 

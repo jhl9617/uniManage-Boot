@@ -17,9 +17,9 @@ public class DepartmentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "DEPARTMENT_ID")
-    private long department_id;   //학과 번호(시퀀스)
+    private long departmentId;   //학과 번호(시퀀스)
     @Column(name = "DEPARTMENT_NAME")
-    private String department_name;   //학과명
+    private String departmentName;   //학과명
     @Column(name = "CATEGORY")
     private String category;   //계열명
 }

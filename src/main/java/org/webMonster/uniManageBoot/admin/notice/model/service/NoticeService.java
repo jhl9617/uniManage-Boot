@@ -31,11 +31,11 @@ public class NoticeService {
         Page<NoticeEntity> noticeEntities = noticeRepositoryCustom.findAllBySearchCondition(pageable, searchCondition);
         for (NoticeEntity entity : noticeEntities) {
             NoticeDto dto = NoticeDto.builder()
-                    .notice_id(entity.getNotice_id())
-                    .notice_title(entity.getNotice_title())
-                    .notice_content(entity.getNotice_content())
-                    .member_id(entity.getMember_id())
-                    .created_date(entity.getCreated_date().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .noticeId(entity.getNoticeId())
+                    .noticeTitle(entity.getNoticeTitle())
+                    .noticeContent(entity.getNoticeContent())
+                    .memberId(entity.getMemberId())
+                    .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
                     .build();
             dtos.add(dto);
         }
@@ -55,11 +55,11 @@ public class NoticeService {
     public NoticeDto getNotice(Long id) {
         NoticeEntity entity = noticeRepository.findById(id).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
         return NoticeDto.builder()
-                .notice_id(entity.getNotice_id())
-                .notice_title(entity.getNotice_title())
-                .notice_content(entity.getNotice_content())
-                .member_id(entity.getMember_id())
-                .created_date(entity.getCreated_date().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                .noticeId(entity.getNoticeId())
+                .noticeTitle(entity.getNoticeTitle())
+                .noticeContent(entity.getNoticeContent())
+                .memberId(entity.getMemberId())
+                .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
                 .build();
     }
     /**
@@ -67,10 +67,10 @@ public class NoticeService {
      */
     public NoticeEntity create(NoticeDto noticeDto) {
         NoticeEntity entity = NoticeEntity.builder()
-                .notice_title(noticeDto.getNotice_title())
-                .notice_content(noticeDto.getNotice_content())
-                .member_id(noticeDto.getMember_id())
-                .created_date(LocalDateTime.now())
+                .noticeTitle(noticeDto.getNoticeTitle())
+                .noticeContent(noticeDto.getNoticeContent())
+                .memberId(noticeDto.getMemberId())
+                .createdDate(LocalDateTime.now())
                 .build();
         return noticeRepository.save(entity);
     }
@@ -78,9 +78,9 @@ public class NoticeService {
      * 게시글 수정
      */
     public NoticeEntity update(NoticeDto noticeDto) {
-        NoticeEntity entity = noticeRepository.findById(noticeDto.getNotice_id()).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
-        entity.setNotice_title(noticeDto.getNotice_title());
-        entity.setNotice_content(noticeDto.getNotice_content());
+        NoticeEntity entity = noticeRepository.findById(noticeDto.getNoticeId()).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
+        entity.setNoticeTitle(noticeDto.getNoticeTitle());
+        entity.setNoticeContent(noticeDto.getNoticeContent());
         return noticeRepository.save(entity);
     }
     /**

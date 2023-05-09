@@ -17,9 +17,9 @@ public class LectureRoomFileEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "LECTURE_ROOM_ID")
-    private long lecture_room_id;   //강의자료실 글번호
+    private long lectureRoomId;   //강의자료실 글번호
     @Column(name = "FILE_NAME")
-    private String file_name;   //강의자료 파일명
+    private String fileName;   //강의자료 파일명
     @Column(name = "FILE_RENAME")
-    private String file_rename;   //변경된 강의자료 파일명
+    private String fileRename;   //변경된 강의자료 파일명
 }

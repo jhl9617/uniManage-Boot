@@ -18,22 +18,22 @@ public class CancelledLectureEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "LECTURE_ID")
-    private long lecture_id;   //강의번호
+    private long lectureId;   //강의번호
     @Column(name = "MEMBER_ID")
-    private long member_id;   //아이디
+    private long memberId;   //아이디
     @Column(name = "LECTURE_ROOM_CODE")
-    private String lecture_room_code;   //바뀐 강의실 코드
+    private String lectureRoomCode;   //바뀐 강의실 코드
     @Column(name = "ATTENDANCE_DAY")
-    private int attendance_day;   //수업회차
+    private int attendanceDay;   //수업회차
     @Column(name = "SUPPLY_DATE")
-    private Date supply_date;   //보강일시
+    private Date supplyDate;   //보강일시
     @Column(name = "REASON")
     private String reason;   //사유
     @Column(name = "CANCELLED_FILE")
-    private String cancelled_file;   //제출서류 파일명
+    private String cancelledFile;   //제출서류 파일명
     @Column(name = "CANCELLED_RENAME")
-    private String cancelled_rename;   //변경된 제출서류 파일명
+    private String cancelledRename;   //변경된 제출서류 파일명
     @Column(name = "CANCELLED_APPLY")
-    private char cancelled_apply;   //휴강승인여부
+    private char cancelledApply;   //휴강승인여부
 
 }

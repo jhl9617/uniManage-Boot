@@ -17,9 +17,9 @@ public class LectureScheduleEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "MEMBER_ID")
-    private long member_id;   //아이디
+    private long memberId;   //아이디
     @Column(name = "TIMECODE")
     private String timecode;  //시간코드
     @Column(name = "LECTURE_ID")
-    private long lecture_id;  //강의번호
+    private long lectureId;  //강의번호
 }

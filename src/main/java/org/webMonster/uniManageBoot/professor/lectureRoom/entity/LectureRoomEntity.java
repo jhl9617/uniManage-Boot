@@ -18,17 +18,17 @@ public class LectureRoomEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "LECTURE_ROOM_ID")
-    private long lecture_room_id;   //강의자료실 글번호
+    private long lectureRoomId;   //강의자료실 글번호
     @Column(name = "LECTURE_ID")
-    private long lecture_id;   //강의번호
+    private long lectureId;   //강의번호
     @Column(name = "MEMBER_ID")
-    private long member_id;   //아이디
+    private long memberId;   //아이디
     @Column(name = "LECTURE_ROOM_TITLE")
-    private String lecture_room_title;   //강의자료 제목
+    private String lectureRoomTitle;   //강의자료 제목
     @Column(name = "LECTURE_ROOM_CONTENT")
-    private String lecture_room_content;   //강의자료 내용 
+    private String lectureRoomContent;   //강의자료 내용
     @Column(name = "CREATED_DATE")
-    private LocalDateTime created_date;   //강의자료 작성일
+    private LocalDateTime createdDate;   //강의자료 작성일
     @Column(name = "READCOUNT")
     private int readcount;   //조회수
 }

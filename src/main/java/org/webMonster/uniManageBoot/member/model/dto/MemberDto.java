@@ -14,11 +14,11 @@ import java.sql.Date;
 @ToString
 public class MemberDto {
 
-    private long member_idx;    //시퀀스
-    private long member_id;  //아이디
-    private String member_pwd;  //비밀번호
+    private long memberIdx;    //시퀀스
+    private long memberId;  //아이디
+    private String memberPwd;  //비밀번호
     private String name;        //이름
-    private int department_id;  //학과
+    private int departmentId;  //학과
     private int grade;        //학년
     private Date birthday;      //생년월일
     private String phone;       //전화번호
