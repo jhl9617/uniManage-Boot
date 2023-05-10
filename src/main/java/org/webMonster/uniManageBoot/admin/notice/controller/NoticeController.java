@@ -39,7 +39,6 @@ public class NoticeController {
     public NoticeEntity update(@RequestBody NoticeDto noticeDto) {
         return noticeService.update(noticeDto);
     }
-
     @DeleteMapping("/notice/{id}")
     public void delete(@PathVariable Long id) {
         noticeService.delete(id);

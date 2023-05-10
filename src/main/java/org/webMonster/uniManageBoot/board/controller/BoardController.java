@@ -20,18 +20,12 @@ import java.util.List;
 public class BoardController {
     private final BoardService boardService;
 
-/*
-    @GetMapping("/board/list")
-    public List<BoardDto> boardList() { return boardService.getBoardList(); }
-*/
-
     //페이지 단위로 목록 조회
     @GetMapping("/board/list")
     public Header<List<BoardDto>> boardList(
-            @PageableDefault(sort = {"idx"}) Pageable pageable,
-            SearchCondition searchCondition
+            @PageableDefault(sort = {"idx"}) Pageable pageable
     ) {
-        return boardService.getBoardList(pageable, searchCondition);
+        return boardService.getBoardList(pageable);
     }
 
     @GetMapping("/board/{id}")

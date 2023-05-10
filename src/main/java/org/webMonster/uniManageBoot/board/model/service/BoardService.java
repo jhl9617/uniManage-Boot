@@ -30,10 +30,10 @@ public class BoardService {
      * 게시글 목록 가져오기 + 페이징 처리
      * 검색조건 추가 변경함
      */
-    public Header<List<BoardDto>> getBoardList(Pageable pageable, SearchCondition searchCondition) {
+    public Header<List<BoardDto>> getBoardList(Pageable pageable) {
         List<BoardDto> dtos = new ArrayList<>();
 
-        Page<BoardEntity> boardEntities = boardRepositoryCustom.findAllBySearchCondition(pageable, searchCondition);
+        Page<BoardEntity> boardEntities = boardRepositoryCustom.findAllBySearchCondition(pageable);
         for (BoardEntity entity : boardEntities) {
             BoardDto dto = BoardDto.builder()
                     .idx(entity.getIdx())
