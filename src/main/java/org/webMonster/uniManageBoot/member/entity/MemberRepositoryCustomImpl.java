@@ -54,10 +54,38 @@ public class MemberRepositoryCustomImpl extends QuerydslRepositorySupport implem
                                 memberEntity.address2,
                                 departmentEntity.departmentName))
                         .from(memberEntity)
-                        .join(memberEntity.department, departmentEntity)
+                        .join(memberEntity.department, departmentEntity)    //memberEntity.department를 기반으로 조인
                         .where(memberEntity.memberId.eq(memberId).and(memberEntity.memberPwd.eq(memberPwd)))
-                        .fetchOne()
+                        .fetchOne() //단일결과 가져오기, 2개 이상이면 예외
         );
     }
+
+    @Override
+    public List<MemberDepartmentDto> findAllMembersWithDepartment() {
+        return queryFactory
+                .select(Projections.bean(
+                        MemberDepartmentDto.class,
+                        memberEntity.memberIdx,
+                        memberEntity.memberId,
+                        memberEntity.name,
+                        memberEntity.memberPwd,
+                        memberEntity.email,
+                        memberEntity.phone,
+                        memberEntity.address1,
+                        memberEntity.address2,
+                        memberEntity.departmentId,
+                        memberEntity.grade,
+                        memberEntity.birthday,
+                        memberEntity.postcode,
+                        memberEntity.auth,
+                        memberEntity.address1,
+                        memberEntity.address2,
+                        departmentEntity.departmentName))
+                .from(memberEntity)
+                .join(memberEntity.department, departmentEntity)
+                .fetch();
+    }
+
+
 
 }

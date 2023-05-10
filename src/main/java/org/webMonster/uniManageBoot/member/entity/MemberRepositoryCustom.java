@@ -9,4 +9,6 @@ public interface MemberRepositoryCustom {
     List<MemberDepartmentDto> fetchMemberDepartmentData();
 
     Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId, String memberPwd);
+
+    public List<MemberDepartmentDto> findAllMembersWithDepartment();
 }

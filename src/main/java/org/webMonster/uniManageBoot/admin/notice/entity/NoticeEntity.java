@@ -13,7 +13,12 @@ import java.time.LocalDateTime;
 @Entity
 public class NoticeEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "notice_seq_gen")
+    @SequenceGenerator(
+            name = "notice_seq_gen",
+            sequenceName = "NOTICE_ID_SEQ",
+            allocationSize=1
+    )
     @Column(name = "NOTICE_ID")
     private long noticeId;   //공지사항 번호
     @Column(name = "NOTICE_TITLE")
