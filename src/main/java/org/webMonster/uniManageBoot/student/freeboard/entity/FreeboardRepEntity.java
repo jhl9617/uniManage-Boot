@@ -1,4 +1,4 @@
-package org.webMonster.uniManageBoot.student.freeboardRep.entity;
+package org.webMonster.uniManageBoot.student.freeboard.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Builder
 @Table(name = "FREEBOARD_REP")  //테이블 자동 생성시키는 어노테이션임
 @Entity
-public class FreeBoardRepEntity {
+public class FreeboardRepEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "FREE_REP_ID")
@@ -27,5 +27,6 @@ public class FreeBoardRepEntity {
     private LocalDateTime createdDate;   //댓글 작성일
     @Column(name = "MEMBER_ID")
     private long memberId;   //댓글 작성자
-
+//    @Column(name = "NAME")
+//    private String name; // 댓글 작성자 이름
 }

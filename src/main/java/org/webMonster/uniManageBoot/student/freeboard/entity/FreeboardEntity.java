@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Builder
 @Table(name = "FREEBOARD")  //테이블 자동 생성시키는 어노테이션임
 @Entity
-public class FreeBoardEntity {
+public class FreeboardEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "FREE_ID")
@@ -27,5 +27,7 @@ public class FreeBoardEntity {
     private LocalDateTime createdDate;   //자유게시판 작성일
     @Column(name = "MEMBER_ID")
     private long memberId;   //자유게시판 작성자
+//    @Column(name = "NAME")
+//    private String name; // 자유게시판 작성자 이름
 
 }
