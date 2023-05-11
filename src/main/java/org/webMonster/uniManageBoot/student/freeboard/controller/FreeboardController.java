@@ -47,7 +47,7 @@ public class FreeboardController {
         return freeboardService.create(freeboardDto);
     }
     // 게시글 수정
-    @PatchMapping("/eclass/board")
+    @PatchMapping("/eclass/board/{id}")
     public FreeboardEntity update(@RequestBody FreeboardDto freeboardDto) {
 
         return freeboardService.update(freeboardDto);
@@ -61,7 +61,7 @@ public class FreeboardController {
 
 
     // 댓글 작성
-    @PostMapping("/eclass/board")
+    @PostMapping("/eclass/board/{id}")
     public FreeboardRepEntity createRep(@RequestBody FreeboardRepDto freeboardRepDto) {
 
         return freeboardService.createRep(freeboardRepDto);
@@ -73,7 +73,7 @@ public class FreeboardController {
         return freeboardService.updateRep(freeboardRepDto);
     }
     // 댓글 삭제
-    @DeleteMapping("/eclass/board/{id}")
+    @DeleteMapping("/eclass/board/{id}/del")
     public void deleteRep(@PathVariable Long id) {
 
         freeboardService.deleteRep(id);
