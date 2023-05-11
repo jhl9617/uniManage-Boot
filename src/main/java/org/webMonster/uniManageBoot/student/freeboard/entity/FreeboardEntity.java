@@ -27,5 +27,7 @@ public class FreeboardEntity {
     private LocalDateTime createdDate;   //자유게시판 작성일
     @Column(name = "MEMBER_ID")
     private long memberId;   //자유게시판 작성자
+//    @Column(name = "NAME")
+//    private String name; // 자유게시판 작성자 이름
 
 }
