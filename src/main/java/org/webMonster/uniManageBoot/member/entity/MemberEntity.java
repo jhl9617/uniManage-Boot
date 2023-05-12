@@ -1,10 +1,8 @@
 package org.webMonster.uniManageBoot.member.entity;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -16,6 +14,8 @@ import java.sql.Date;
 @Builder
 @Table(name = "MEMBER")  //Board 테이블 자동 생성시키는 어노테이션임
 @Entity
+@Getter
+@Setter
 public class MemberEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -45,5 +45,11 @@ public class MemberEntity {
     private String address2;    //주소2
     @Column(name = "AUTH")
     private int auth;           //권한구분:교수 1, 교직원 2,재학생 3, 졸업생 4, 휴학생 5
+
+    @ManyToOne
+    @JoinColumn(name = "DEPARTMENT_ID", insertable = false, updatable = false)
+    private DepartmentEntity department;
+
+
 
 }

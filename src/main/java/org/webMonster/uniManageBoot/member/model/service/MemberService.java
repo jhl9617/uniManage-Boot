@@ -1,13 +1,14 @@
 package org.webMonster.uniManageBoot.member.model.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.member.entity.MemberRepository;
-import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
+import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
+
+import java.util.Optional;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -17,25 +18,21 @@ public class MemberService {
 
     @Autowired
     private MemberRepository memberRepository;
-    public MemberDto login(MemberLoginDto memberLoginDto) {
-        /*memberEntity.setMember_id(161350);
-        memberEntity.setMember_pwd("1234");
-        memberEntity.setName("홍길동");
-        memberEntity.setEmail("abc@d.com");
-        memberEntity.setAuth(3);    //3은 재학생, 필요시 변경  //권한구분:교수 1, 교직원 2,재학생 3, 졸업생 4, 휴학생 5
-        return memberEntity;*/
+    public MemberDepartmentDto login(MemberLoginDto memberLoginDto) {
+
         long memberId = memberLoginDto.getMemberId();
         String memberPwd = memberLoginDto.getMemberPwd();
 
-        MemberEntity memberEntity = memberRepository.findByMemberIdAndMemberPwd(memberId, memberPwd);
-        // Convert MemberEntity to MemberDto
+        Optional<MemberDepartmentDto> optionalMemberDepartmentDto =
+                memberRepository.findMemberWithDepartment(memberId, memberPwd);
 
-        MemberDto memberDto = MemberDto.fromEntity(memberEntity);
+        if (!optionalMemberDepartmentDto.isPresent()) {
+            throw new RuntimeException("Member not found");
+        }
+        MemberDepartmentDto memberDepartmentDto = optionalMemberDepartmentDto.get();
+        System.out.println(memberDepartmentDto);
         // Set other properties as needed
-
-
-
-        return memberDto;
+        return memberDepartmentDto;
     }
 
 
