@@ -15,8 +15,10 @@ import java.time.LocalDateTime;
 @Table(name = "FREEBOARD")  //테이블 자동 생성시키는 어노테이션임
 @Entity
 public class FreeboardEntity {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "FREE_ID_SEQ")
+    @SequenceGenerator(name = "FREE_ID_SEQ", sequenceName = "FREE_ID_SEQ", allocationSize = 1)
     @Column(name = "FREE_ID")
     private long freeId;   //자유게시판 번호
     @Column(name = "FREE_TITLE")

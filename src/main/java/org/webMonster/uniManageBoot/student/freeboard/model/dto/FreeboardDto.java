@@ -19,5 +19,5 @@ public class FreeboardDto {
     private String freeContent;   //자유게시판 내용
     private String createdDate;   //자유게시판 작성일
     private long memberId;   //자유게시판 작성자
-    private String name; // 자유게시판 작성자 이름
+//    private String name; // 자유게시판 작성자 이름
 }

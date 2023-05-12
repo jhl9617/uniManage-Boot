@@ -27,33 +27,33 @@ public class FreeboardController {
 //    }
 
     // 페이지 단위로 목록 조회
-    @GetMapping("/eclass/board/list")
+    @GetMapping("/Eclass/board/list")
     public Header<List<FreeboardDto>> freeboardList(
-            @PageableDefault(sort = {"id"}) Pageable pageable,
+            @PageableDefault(sort = {"free_id"}) Pageable pageable,
             SearchCondition searchCondition
     ) {
         return freeboardService.getBoardList(pageable, searchCondition);
     }
     // 게시글 선택 조회
-    @GetMapping("/eclass/board/{id}")
+    @GetMapping("/Eclass/board/{id}")
     public FreeboardDto getFreeBoard(@PathVariable Long id) {
 
         return freeboardService.getBoard(id);
     }
     // 게시글 작성
-    @PostMapping("/eclass/board")
+    @PostMapping("/Eclass/board")
     public FreeboardEntity create(@RequestBody FreeboardDto freeboardDto) {
 
         return freeboardService.create(freeboardDto);
     }
     // 게시글 수정
-    @PatchMapping("/eclass/board/{id}")
+    @PatchMapping("/Eclass/board/")
     public FreeboardEntity update(@RequestBody FreeboardDto freeboardDto) {
 
         return freeboardService.update(freeboardDto);
     }
     // 게시글 삭제
-    @DeleteMapping("/eclass/board/{id}")
+    @DeleteMapping("/Eclass/board/{id}")
     public void delete(@PathVariable Long id) {
 
         freeboardService.delete(id);
@@ -61,19 +61,19 @@ public class FreeboardController {
 
 
     // 댓글 작성
-    @PostMapping("/eclass/board/{id}")
+    @PostMapping("/Eclass/board/reply")
     public FreeboardRepEntity createRep(@RequestBody FreeboardRepDto freeboardRepDto) {
 
         return freeboardService.createRep(freeboardRepDto);
     }
     // 댓글 수정
-    @PatchMapping("/eclass/board")
+    @PatchMapping("/Eclass/board/reply/")
     public FreeboardRepEntity update(@RequestBody FreeboardRepDto freeboardRepDto) {
 
         return freeboardService.updateRep(freeboardRepDto);
     }
     // 댓글 삭제
-    @DeleteMapping("/eclass/board/{id}/del")
+    @DeleteMapping("/Eclass/board/reply/{id}")
     public void deleteRep(@PathVariable Long id) {
 
         freeboardService.deleteRep(id);
