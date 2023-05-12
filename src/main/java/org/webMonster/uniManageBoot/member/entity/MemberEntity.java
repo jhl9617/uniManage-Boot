@@ -2,10 +2,12 @@ package org.webMonster.uniManageBoot.member.entity;
 
 
 import lombok.*;
+import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.List;
 
 
 @Data

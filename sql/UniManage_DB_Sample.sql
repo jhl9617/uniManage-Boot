@@ -5303,6 +5303,46 @@ VALUES (lecture_class_idx_seq.nextval, 'C103', 'BL003', '인문사회관', 1, '103호'
 INSERT INTO LECTURE_CLASS (lecture_class_idx, lecture_room_code, building_code, building_name, number_floor, lecture_room_num, class_capacity)
 VALUES (lecture_class_idx_seq.nextval, 'C104', 'BL003', '인문사회관', 1, '104호', 40);
 
-
+/*SCHOLARSHIP장학금*/
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202301, '우수학생 장학금', 500000, 20123901);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 201801, '창의력 장학금', 750000, 20142401);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202102, '봉사활동 장학금', 400000, 20144502);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202001, '리더십 장학금', 600000, 20145701);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 201802, '학문업적 장학금', 550000, 20150102);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202301, '체육활동 장학금', 350000, 20140801);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202202, '문화예술 장학금', 450000, 20135201);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202101, '인문사회과학 장학금', 500000, 20142401);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202001, '공학기술 장학금', 650000, 20144502);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 201701, '의학 장학금', 700000, 20145701);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 201702, '미래산업 장학금', 800000, 20144701);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202102, '국제교류 장학금', 450000, 20152401);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202301, '지역발전 장학금', 550000, 20152503);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202301, '학문지원 장학금', 400000, 20153101);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 201702, 'IT분야 장학금', 600000, 20160101);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202001, '스포츠 장학금', 350000, 20171802);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202301, '예체능 장학금', 500000, 20180401);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202301, '창업 장학금', 750000, 20181101);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202301, '사회공헌 장학금', 400000, 20204401);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 201902, '환경보호 장학금', 550000, 20181101);
 
 COMMIT;
