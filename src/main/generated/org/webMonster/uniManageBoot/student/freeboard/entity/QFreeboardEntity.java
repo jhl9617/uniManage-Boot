@@ -7,6 +7,7 @@ import com.querydsl.core.types.dsl.*;
 import com.querydsl.core.types.PathMetadata;
 import javax.annotation.processing.Generated;
 import com.querydsl.core.types.Path;
+import com.querydsl.core.types.dsl.PathInits;
 
 
 /**
@@ -16,6 +17,8 @@ import com.querydsl.core.types.Path;
 public class QFreeboardEntity extends EntityPathBase<FreeboardEntity> {
 
     private static final long serialVersionUID = -1593211490L;
+
+    private static final PathInits INITS = PathInits.DIRECT2;
 
     public static final QFreeboardEntity freeboardEntity = new QFreeboardEntity("freeboardEntity");
 
@@ -27,18 +30,29 @@ public class QFreeboardEntity extends EntityPathBase<FreeboardEntity> {
 
     public final StringPath freeTitle = createString("freeTitle");
 
+    public final org.webMonster.uniManageBoot.member.entity.QMemberEntity member;
+
     public final NumberPath<Long> memberId = createNumber("memberId", Long.class);
 
     public QFreeboardEntity(String variable) {
-        super(FreeboardEntity.class, forVariable(variable));
+        this(FreeboardEntity.class, forVariable(variable), INITS);
     }
 
     public QFreeboardEntity(Path<? extends FreeboardEntity> path) {
-        super(path.getType(), path.getMetadata());
+        this(path.getType(), path.getMetadata(), PathInits.getFor(path.getMetadata(), INITS));
     }
 
     public QFreeboardEntity(PathMetadata metadata) {
-        super(FreeboardEntity.class, metadata);
+        this(metadata, PathInits.getFor(metadata, INITS));
+    }
+
+    public QFreeboardEntity(PathMetadata metadata, PathInits inits) {
+        this(FreeboardEntity.class, metadata, inits);
+    }
+
+    public QFreeboardEntity(Class<? extends FreeboardEntity> type, PathMetadata metadata, PathInits inits) {
+        super(type, metadata, inits);
+        this.member = inits.isInitialized("member") ? new org.webMonster.uniManageBoot.member.entity.QMemberEntity(forProperty("member"), inits.get("member")) : null;
     }
 
 }

@@ -1,9 +1,6 @@
 package org.webMonster.uniManageBoot.student.freeboard.model.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Column;
 import java.time.LocalDateTime;
@@ -12,6 +9,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Getter
+@Setter
 public class FreeboardDto {
 
     private long freeId;   //자유게시판 번호
@@ -19,5 +18,6 @@ public class FreeboardDto {
     private String freeContent;   //자유게시판 내용
     private String createdDate;   //자유게시판 작성일
     private long memberId;   //자유게시판 작성자
-//    private String name; // 자유게시판 작성자 이름
+
+    private String name; // 자유게시판 작성자 이름
 }

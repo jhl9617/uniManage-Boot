@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.webMonster.uniManageBoot.member.entity.MemberEntity;
+
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -31,5 +33,9 @@ public class FreeboardEntity {
     private long memberId;   //자유게시판 작성자
 //    @Column(name = "NAME")
 //    private String name; // 자유게시판 작성자 이름
+
+    @ManyToOne
+    @JoinColumn(name = "NAME", insertable = false, updatable = false)
+    private MemberEntity member;
 
 }

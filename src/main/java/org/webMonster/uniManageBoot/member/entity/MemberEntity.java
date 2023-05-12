@@ -3,9 +3,11 @@ package org.webMonster.uniManageBoot.member.entity;
 
 import lombok.*;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
+import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.List;
 
 
 @Data
@@ -50,6 +52,10 @@ public class MemberEntity {
     @JoinColumn(name = "DEPARTMENT_ID", insertable = false, updatable = false)
     private DepartmentEntity department;
 
-
-
+    @OneToMany(mappedBy = "member")
+    private List<FreeboardEntity> freeboardEntities;
 }
+
+
+
+

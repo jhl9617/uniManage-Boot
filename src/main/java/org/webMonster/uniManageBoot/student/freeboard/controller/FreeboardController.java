@@ -47,7 +47,7 @@ public class FreeboardController {
         return freeboardService.create(freeboardDto);
     }
     // 게시글 수정
-    @PatchMapping("/Eclass/board/")
+    @PatchMapping("/Eclass/board")
     public FreeboardEntity update(@RequestBody FreeboardDto freeboardDto) {
 
         return freeboardService.update(freeboardDto);
