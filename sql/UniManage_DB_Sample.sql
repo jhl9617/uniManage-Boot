@@ -622,8 +622,8 @@ VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145114, '비밀번호위치', '백혁호', 58, to_dat
 /* INSERT QUERY NO: 1 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20101501, 'password', '서성철', 15, 4, to_date('910830', 'yymmdd'), '010-8834-5065',
-        '20101501@koreaict.ac.kr', 54937, '전라북도 전주시 덕진구 진북동 416', '우성아파트 120동 1805호', 4);
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1234, 'password', '이종하', 15, 4, to_date('961105', 'yymmdd'), '010-1234-1234',
+        '163150@koreaict.ac.kr', 54937, '우리집', '집', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
 VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20122501, 'password', '정완렬', 25, 4, to_date('920828', 'yymmdd'), '010-4627-4476',
