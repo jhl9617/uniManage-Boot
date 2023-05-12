@@ -11,7 +11,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import java.util.List;
-
 import static org.webMonster.uniManageBoot.admin.notice.entity.QNoticeEntity.noticeEntity;
 
 @RequiredArgsConstructor
@@ -34,7 +33,6 @@ public class NoticeRepositoryCustom {
 
         return new PageImpl<>(results, pageable, total);
     }
-
     private BooleanExpression searchKeywords(String sk, String sv) {
         if("member_id".equals(sk)) {
             if(StringUtils.hasLength(sv)) {
@@ -54,7 +52,6 @@ public class NoticeRepositoryCustom {
                 return noticeEntity.noticeContent.contains(sv);
             }
         }
-
         return null;
     }
 }
