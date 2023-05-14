@@ -11,24 +11,24 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "SCORE")  //Board 테이블 자동 생성시키는 어노테이션임
+@Table(name = "SCORE")  //테이블 자동 생성시키는 어노테이션임
 @Entity
 public class ScoreEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "SCORE_ID")
-    private long score_id;   //성적 번호
+    private long scoreId;   //성적 번호
     @Column(name = "MEMBER_ID")
-    private long member_id;   //회원 아이디
+    private long memberId;   //회원 아이디
     @Column(name = "LECTURE_ID")
-    private long lecture_id;   //강의 아이디
+    private long lectureId;   //강의 아이디
     @Column(name = "MID_SCORE")
-    private int mid_score;   //중간고사 점수
+    private int midScore;   //중간고사 점수
     @Column(name = "FINAL_SCORE")
-    private int final_score;   //기말고사 점수
+    private int finalScore;   //기말고사 점수
     @Column(name = "ASSIGN_SCORE")
-    private int assign_score;   //과제 점수
+    private int assignScore;   //과제 점수
     @Column(name = "TOTAL_SCORE")
-    private int total_score;   //학기 총점수
+    private int totalScore;   //학기 총점수
 
 }
