@@ -19,8 +19,8 @@ public class ScholarshipMemberDto {
 
     private String name;  //학생명
 
-//    public static ScholarshipDto fromEntity(ScholarshipEntity scholarshipEntity){
-//        ScholarshipDto dto = new ScholarshipDto();
+//    public static ScholarshipMemberDto fromEntity(ScholarshipEntity scholarshipEntity){
+//        ScholarshipMemberDto dto = new ScholarshipMemberDto();
 //
 //        dto.setSchoId(scholarshipEntity.getSchoId());
 //        dto.setSchoTerm(scholarshipEntity.getSchoTerm());

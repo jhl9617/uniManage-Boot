@@ -34,8 +34,7 @@ public class ScholarshipEntity {
     @Column(name = "MEMBER_ID")
     private long memberId;   //멤버 아이디
 
-//    @ManyToOne
-//    @JoinColumn(name = "MEMBER_ID", insertable = false, updatable = false)
-//    private MemberEntity member;
-
+    @ManyToOne
+    @JoinColumn(name = "MEMBER_ID", referencedColumnName = "MEMBER_ID", insertable = false, updatable = false)
+    private MemberEntity member;
 }

@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipRepository;
 import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipRepositoryCustom;
+import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipRepositoryCustomImpl;
 import org.webMonster.uniManageBoot.admin.scholarship.model.dto.ScholarshipDto;
-import org.webMonster.uniManageBoot.admin.scholarship.model.dto.ScholarshipMemberDto;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
 import org.webMonster.uniManageBoot.common.SearchCondition;
@@ -23,6 +23,7 @@ import java.util.List;
 public class ScholarshipService {
     private final ScholarshipRepository scholarshipRepository;
     private final ScholarshipRepositoryCustom scholarshipRepositoryCustom;
+    private final ScholarshipRepositoryCustomImpl scholarshipRepositoryCustomImpl;
 
     //교직원 장학금관리 리스트 조회
     public Header<List<ScholarshipDto>> getScholarshipList(Pageable pageable, SearchCondition searchCondition) {
@@ -36,6 +37,7 @@ public class ScholarshipService {
                     .schoName(entity.getSchoName())
                     .amount(entity.getAmount())
                     .memberId(entity.getMemberId())
+                    .name(entity.getMember().getName())
                     .build();
             dtos.add(dto);
         }
@@ -51,20 +53,22 @@ public class ScholarshipService {
     }
    
     //교직원 장학금관리 글 상세보기 조회
-//    public ScholarshipMemberDto getScholarship(Long id) {
-//        ScholarshipEntity entity = scholarshipRepository.findById(id).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
-//        return ScholarshipMemberDto.builder()
-//                .schoId(entity.getSchoId())
-//                .schoTerm(entity.getSchoTerm())
-//                .schoName(entity.getSchoName())
-//                .amount(entity.getAmount())
-//                .name(entity.getMember().getName())
-//                .build();
-//    }
+    public ScholarshipDto getScholarship(Long id) {
+        ScholarshipEntity entity = scholarshipRepository.findById(id).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
+        return ScholarshipDto.builder()
+                .schoId(entity.getSchoId())
+                .schoTerm(entity.getSchoTerm())
+                .schoName(entity.getSchoName())
+                .amount(entity.getAmount())
+                .memberId(entity.getMemberId())
+                .name(entity.getMember().getName())
+                .build();
+    }
 
     //교직원 장학금관리 추가
     public ScholarshipEntity create(ScholarshipDto scholarshipDto) {
         ScholarshipEntity entity = ScholarshipEntity.builder()
+                .schoId(scholarshipDto.getSchoId())
                 .schoTerm(scholarshipDto.getSchoTerm())
                 .schoName(scholarshipDto.getSchoName())
                 .amount(scholarshipDto.getAmount())
@@ -78,6 +82,8 @@ public class ScholarshipService {
         ScholarshipEntity entity = scholarshipRepository.findById(scholarshipDto.getSchoId()).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
         entity.setSchoTerm(scholarshipDto.getSchoTerm());
         entity.setSchoName(scholarshipDto.getSchoName());
+        entity.setAmount(scholarshipDto.getAmount());
+        entity.setMemberId(scholarshipDto.getMemberId());
         return scholarshipRepository.save(entity);
     }
     

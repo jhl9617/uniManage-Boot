@@ -6,7 +6,9 @@ import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -18,7 +20,7 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-public class MemberEntity {
+public class MemberEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "MEMBER_IDX")
@@ -53,5 +55,6 @@ public class MemberEntity {
     private DepartmentEntity department;
 
 
-
+    @OneToMany(mappedBy = "member")
+    private List<ScholarshipEntity> scholarshipEntities = new ArrayList<>();
 }
