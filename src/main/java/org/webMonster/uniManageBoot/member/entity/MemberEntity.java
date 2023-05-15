@@ -52,8 +52,6 @@ public class  MemberEntity {
     @JoinColumn(name = "DEPARTMENT_ID", insertable = false, updatable = false)
     private DepartmentEntity department;
 
-    @OneToMany(mappedBy = "member")
-    private List<FreeboardEntity> freeboardEntities;
 }
 
 

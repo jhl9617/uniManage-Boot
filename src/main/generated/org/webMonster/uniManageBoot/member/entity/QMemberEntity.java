@@ -36,8 +36,6 @@ public class QMemberEntity extends EntityPathBase<MemberEntity> {
 
     public final StringPath email = createString("email");
 
-    public final ListPath<org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity, org.webMonster.uniManageBoot.student.freeboard.entity.QFreeboardEntity> freeboardEntities = this.<org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity, org.webMonster.uniManageBoot.student.freeboard.entity.QFreeboardEntity>createList("freeboardEntities", org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity.class, org.webMonster.uniManageBoot.student.freeboard.entity.QFreeboardEntity.class, PathInits.DIRECT2);
-
     public final NumberPath<Integer> grade = createNumber("grade", Integer.class);
 
     public final NumberPath<Long> memberId = createNumber("memberId", Long.class);

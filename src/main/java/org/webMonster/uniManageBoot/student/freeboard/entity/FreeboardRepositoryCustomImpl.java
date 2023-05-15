@@ -11,6 +11,7 @@ import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
+import org.webMonster.uniManageBoot.member.entity.QMemberEntity;
 import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardDto;
 
 import static org.webMonster.uniManageBoot.member.entity.QMemberEntity.memberEntity;
@@ -30,16 +31,9 @@ public class FreeboardRepositoryCustomImpl extends QuerydslRepositorySupport imp
 
     @Override
     public Page<FreeboardEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
-        JPAQuery<FreeboardEntity> query = queryFactory.select(Projections.bean(
-                        FreeboardEntity.class,
-                        freeboardEntity.memberId,
-                        freeboardEntity.freeId,
-                        freeboardEntity.freeTitle,
-                        freeboardEntity.freeContent,
-                        freeboardEntity.createdDate,
-                        memberEntity.name))
-                .from(freeboardEntity)
+        JPAQuery<FreeboardEntity> query = queryFactory.selectFrom(freeboardEntity)
                 .join(freeboardEntity.member, memberEntity)
+                .on(freeboardEntity.member.memberId.eq(memberEntity.memberId))
                 .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()));
 
         long total = query.stream().count();   //여기서 전체 카운트 후 아래에서 조건작업

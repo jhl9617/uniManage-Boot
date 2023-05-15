@@ -25,7 +25,7 @@ public class FreeboardService {
 
     private final FreeboardRepository freeboardRepository;
     private final FreeboardRepRepository freeboardRepRepository;
-    private final FreeboardRepositoryCustom freeboardRepositoryCustom;
+    private final FreeboardRepositoryCustomImpl freeboardRepositoryCustom;
 
     /**
      * 게시글 목록 가져오기(페이징 처리를 포함)
@@ -38,7 +38,7 @@ public class FreeboardService {
         for (FreeboardEntity entity : boardEntities) {
             FreeboardDto dto = FreeboardDto.builder()
                     .freeId(entity.getFreeId())
-                    .memberId(entity.getMemberId())
+                    .name(entity.getMember().getName())
                     .freeTitle(entity.getFreeTitle())
                     .freeContent(entity.getFreeContent())
                     .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))

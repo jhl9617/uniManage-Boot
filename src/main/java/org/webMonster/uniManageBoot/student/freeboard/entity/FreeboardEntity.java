@@ -35,7 +35,7 @@ public class FreeboardEntity {
 //    private String name; // 자유게시판 작성자 이름
 
     @ManyToOne
-    @JoinColumn(name = "NAME", insertable = false, updatable = false)
+    @JoinColumn(name = "NAME", referencedColumnName = "MEMBER_ID", insertable = false, updatable = false)
     private MemberEntity member;
 
 }
