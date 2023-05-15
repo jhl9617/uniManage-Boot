@@ -6,6 +6,7 @@ import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.Collection;
 
 
 @Data
@@ -51,5 +52,9 @@ public class  MemberEntity {
     private DepartmentEntity department;
 
 
-
+    public Collection<Object> getAuthList() {
+        Collection<Object> authList = new java.util.ArrayList<>();
+        authList.add(this.auth);
+        return this.getAuthList();
+    }
 }

@@ -2,12 +2,18 @@ server:
   port: 9090
   servlet:
     context-path: /
-spring:
-  jackson:
-    property-naming-strategy: SNAKE_CASE
 
-#  h2:
-#    console:
+
+
+#spring security 추가 속성
+    serialization:
+      fail-on-empty-beans: false
+      servlet:
+        multipart:
+          max-file-size: 10MB
+          max-request-size: 10MB
+
+  #    console:
 #      enabled: true
 #      settings:
 #        web-allow-others: true
@@ -22,11 +28,17 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.Oracle12cDialect
 
+
+
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
     url: jdbc:oracle:thin:@localhost:1521:XE
     username: C##WEBMONSTER
     password: WEBMONSTER
+
+org:
+  hdcd:
+    upload-path: C:/upload
 
 # sms api
 naver-cloud-sms:
@@ -34,4 +46,5 @@ naver-cloud-sms:
   secretKey: 8mrkRnI0ygWoP5kr4Zu6KvmugY8NKOWZUJ3o2LqF
   serviceId: ncp:sms:kr:259303388885:unimanage
   senderPhone: 01032475955
+
 

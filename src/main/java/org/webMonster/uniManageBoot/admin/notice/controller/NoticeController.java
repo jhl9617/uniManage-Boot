@@ -32,8 +32,6 @@ import java.util.List;
 public class NoticeController {
     private final NoticeService noticeService;
 
-
-
     @GetMapping("/notice/list")
     public Header<List<NoticeDto>> noticeList(
             @PageableDefault(sort = {"idx"}) Pageable pageable,
