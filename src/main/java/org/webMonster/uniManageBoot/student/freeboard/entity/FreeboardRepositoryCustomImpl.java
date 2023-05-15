@@ -11,7 +11,6 @@ import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
-import org.webMonster.uniManageBoot.member.entity.QMemberEntity;
 import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardDto;
 
 import static org.webMonster.uniManageBoot.member.entity.QMemberEntity.memberEntity;
@@ -23,7 +22,6 @@ import java.util.List;
 public class FreeboardRepositoryCustomImpl extends QuerydslRepositorySupport implements FreeboardRepositoryCustom {
     private final JPAQueryFactory queryFactory;
 
-
     public FreeboardRepositoryCustomImpl(JPAQueryFactory queryFactory) {
         super(FreeboardEntity.class);
         this.queryFactory = queryFactory;
@@ -33,7 +31,6 @@ public class FreeboardRepositoryCustomImpl extends QuerydslRepositorySupport imp
     public Page<FreeboardEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
         JPAQuery<FreeboardEntity> query = queryFactory.selectFrom(freeboardEntity)
                 .join(freeboardEntity.member, memberEntity)
-                .on(freeboardEntity.member.memberId.eq(memberEntity.memberId))
                 .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()));
 
         long total = query.stream().count();   //여기서 전체 카운트 후 아래에서 조건작업
@@ -49,15 +46,15 @@ public class FreeboardRepositoryCustomImpl extends QuerydslRepositorySupport imp
     }
 
     public BooleanExpression searchKeywords(String sk, String sv) {
-        if("author".equals(sk)) {
+        if("name".equals(sk)) {
             if(StringUtils.hasLength(sv)) {
-//                return (freeboardEntity.memberId).toString().contains(sv);
+                return freeboardEntity.member.name.contains(sv);
             }
-        } else if ("title".equals(sk)) {
+        } else if ("freeTitle".equals(sk)) {
             if(StringUtils.hasLength(sv)) {
                 return freeboardEntity.freeTitle.contains(sv);
             }
-        } else if ("contents".equals(sk)) {
+        } else if ("freeContent".equals(sk)) {
             if(StringUtils.hasLength(sv)) {
                 return freeboardEntity.freeContent.contains(sv);
             }
@@ -66,7 +63,7 @@ public class FreeboardRepositoryCustomImpl extends QuerydslRepositorySupport imp
         return null;
     }
 
-    @Override
+
     public List<FreeboardDto> findAllFreeboardWithMember() {
 
         return queryFactory

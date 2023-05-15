@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
@@ -11,6 +12,7 @@ import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
 import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardRepEntity;
 import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardDto;
 import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardRepDto;
+import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardWithRepDto;
 import org.webMonster.uniManageBoot.student.freeboard.model.service.FreeboardService;
 import java.util.List;
 
@@ -35,16 +37,37 @@ public class FreeboardController {
         return freeboardService.getBoardList(pageable, searchCondition);
     }
     // 게시글 선택 조회
+//    @GetMapping("/Eclass/board/{id}")
+//    public FreeboardDto getFreeBoard(@PathVariable Long id) {
+//
+//        return freeboardService.getBoard(id);
+//    }
     @GetMapping("/Eclass/board/{id}")
-    public FreeboardDto getFreeBoard(@PathVariable Long id) {
-
-        return freeboardService.getBoard(id);
+    public FreeboardWithRepDto getFreeBoardWithRep(@PathVariable Long id) {
+        FreeboardWithRepDto response = new FreeboardWithRepDto();
+        response.setFreeboard(freeboardService.getBoard(id));
+        response.setFreeboardReps(freeboardService.getBoardRep(id));
+        return response;
     }
     // 게시글 작성
+//    @PostMapping("/Eclass/board")
+//    public FreeboardEntity create(@RequestBody FreeboardDto freeboardDto) {
+//
+//        return freeboardService.create(freeboardDto);
+//    }
     @PostMapping("/Eclass/board")
-    public FreeboardEntity create(@RequestBody FreeboardDto freeboardDto) {
-
-        return freeboardService.create(freeboardDto);
+    public ResponseEntity<?> create(@RequestBody Object requestObject) {
+        if (requestObject instanceof FreeboardDto) {
+            FreeboardDto freeboardDto = (FreeboardDto) requestObject;
+            FreeboardEntity freeboardEntity = freeboardService.create(freeboardDto);
+            return ResponseEntity.ok(freeboardEntity);
+        } else if (requestObject instanceof FreeboardRepDto) {
+            FreeboardRepDto freeboardRepDto = (FreeboardRepDto) requestObject;
+            FreeboardRepEntity freeboardRepEntity = freeboardService.createRep(freeboardRepDto);
+            return ResponseEntity.ok(freeboardRepEntity);
+        } else {
+            return ResponseEntity.badRequest().build();
+        }
     }
     // 게시글 수정
     @PatchMapping("/Eclass/board")
@@ -61,11 +84,11 @@ public class FreeboardController {
 
 
     // 댓글 작성
-    @PostMapping("/Eclass/board/reply")
-    public FreeboardRepEntity createRep(@RequestBody FreeboardRepDto freeboardRepDto) {
-
-        return freeboardService.createRep(freeboardRepDto);
-    }
+//    @PostMapping("/Eclass/board/reply")
+//    public FreeboardRepEntity createRep(@RequestBody FreeboardRepDto freeboardRepDto) {
+//
+//        return freeboardService.createRep(freeboardRepDto);
+//    }
     // 댓글 수정
     @PatchMapping("/Eclass/board/reply/")
     public FreeboardRepEntity update(@RequestBody FreeboardRepDto freeboardRepDto) {

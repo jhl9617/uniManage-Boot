@@ -24,6 +24,8 @@ public class QFreeboardEntity extends EntityPathBase<FreeboardEntity> {
 
     public final DateTimePath<java.time.LocalDateTime> createdDate = createDateTime("createdDate", java.time.LocalDateTime.class);
 
+    public final ListPath<FreeboardRepEntity, QFreeboardRepEntity> freeboardRepEntities = this.<FreeboardRepEntity, QFreeboardRepEntity>createList("freeboardRepEntities", FreeboardRepEntity.class, QFreeboardRepEntity.class, PathInits.DIRECT2);
+
     public final StringPath freeContent = createString("freeContent");
 
     public final NumberPath<Long> freeId = createNumber("freeId", Long.class);
