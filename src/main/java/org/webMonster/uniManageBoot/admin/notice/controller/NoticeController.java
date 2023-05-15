@@ -1,16 +1,25 @@
 package org.webMonster.uniManageBoot.admin.notice.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestClientException;
 import org.webMonster.uniManageBoot.admin.notice.entity.NoticeEntity;
+import org.webMonster.uniManageBoot.admin.notice.model.dto.MessageDto;
 import org.webMonster.uniManageBoot.admin.notice.model.dto.NoticeDto;
+import org.webMonster.uniManageBoot.admin.notice.model.dto.SmsResponseDto;
 import org.webMonster.uniManageBoot.admin.notice.model.service.NoticeService;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URISyntaxException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 @Slf4j
@@ -18,7 +27,7 @@ import java.util.List;
 @CrossOrigin
 @RestController
 public class NoticeController {
-    public final NoticeService noticeService;
+    private final NoticeService noticeService;
 
     @GetMapping("/notice/list")
     public Header<List<NoticeDto>> noticeList(
@@ -44,5 +53,17 @@ public class NoticeController {
         noticeService.delete(id);
     }
 
+    @GetMapping("/send")
+    public String getSmsPage() {
+        return "sendSms";
+    }
 
+
+    @PostMapping("/sms/send")
+    public String sendSms(@RequestBody MessageDto messageDto, Model model) throws JsonProcessingException, RestClientException, URISyntaxException, InvalidKeyException, NoSuchAlgorithmException, UnsupportedEncodingException {
+        System.out.println("messageDto = " + messageDto);
+        SmsResponseDto response = noticeService.sendSms(messageDto);
+        model.addAttribute("response", response);
+        return "result";
+    }
 }
