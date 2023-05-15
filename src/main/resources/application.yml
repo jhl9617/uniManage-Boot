@@ -28,6 +28,7 @@ spring:
     username: C##WEBMONSTER
     password: WEBMONSTER
 
+# sms api
 naver-cloud-sms:
   accessKey: Md988bz0Sy92tk210YtZ
   secretKey: 8mrkRnI0ygWoP5kr4Zu6KvmugY8NKOWZUJ3o2LqF

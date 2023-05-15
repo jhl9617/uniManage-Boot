@@ -3,8 +3,11 @@ package org.webMonster.uniManageBoot.admin.notice.controller;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.mail.MailSender;
+import org.springframework.mail.SimpleMailMessage;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestClientException;
@@ -29,6 +32,8 @@ import java.util.List;
 public class NoticeController {
     private final NoticeService noticeService;
 
+
+
     @GetMapping("/notice/list")
     public Header<List<NoticeDto>> noticeList(
             @PageableDefault(sort = {"idx"}) Pageable pageable,
@@ -52,18 +57,19 @@ public class NoticeController {
     public void delete(@PathVariable Long id) {
         noticeService.delete(id);
     }
-
     @GetMapping("/send")
     public String getSmsPage() {
         return "sendSms";
     }
 
-
     @PostMapping("/sms/send")
     public String sendSms(@RequestBody MessageDto messageDto, Model model) throws JsonProcessingException, RestClientException, URISyntaxException, InvalidKeyException, NoSuchAlgorithmException, UnsupportedEncodingException {
         System.out.println("messageDto = " + messageDto);
-        SmsResponseDto response = noticeService.sendSms(messageDto);
-        model.addAttribute("response", response);
+        /*SmsResponseDto response = noticeService.sendSms(messageDto);*/
+
+        noticeService.sendEmail(messageDto.getContent());
+
+/*        model.addAttribute("response", response);*/
         return "result";
     }
 }

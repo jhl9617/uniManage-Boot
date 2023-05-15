@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.tomcat.util.codec.binary.Base64;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -12,6 +13,12 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
+
+import org.springframework.mail.MailSender;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
@@ -28,6 +35,7 @@ import org.webMonster.uniManageBoot.common.SearchCondition;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
+import javax.mail.internet.MimeMessage;
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -38,12 +46,18 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Slf4j
 @RequiredArgsConstructor
 @Service
 public class NoticeService {
     private final NoticeRepository noticeRepository;
     private final NoticeRepositoryCustom noticeRepositoryCustom;
+
+    @Autowired
+    private JavaMailSender mailSender;
+
+
 
     //sms api
     @Value("${naver-cloud-sms.accessKey}")
@@ -187,4 +201,26 @@ public class NoticeService {
         return response;
     }
 
+
+    //email 보내기
+    public void sendEmail(String content) {
+
+        String setFrom = "itsyksj@naver.com";
+        String toMail = "jhl9617@gmail.com";
+        String title = "cookology에서 보내는 인증이메일 입니다.";
+
+        try {
+            MimeMessage message = mailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
+            helper.setFrom(setFrom);
+            helper.setTo(toMail);
+            helper.setSubject(title);
+            helper.setText(content, true);
+            mailSender.send(message);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+    }
 }
