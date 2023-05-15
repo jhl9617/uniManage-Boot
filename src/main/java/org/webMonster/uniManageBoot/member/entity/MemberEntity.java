@@ -16,7 +16,7 @@ import java.sql.Date;
 @Entity
 @Getter
 @Setter
-public class MemberEntity {
+public class  MemberEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "MEMBER_IDX")

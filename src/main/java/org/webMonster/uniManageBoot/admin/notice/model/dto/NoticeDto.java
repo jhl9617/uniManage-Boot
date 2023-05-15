@@ -1,7 +1,6 @@
 package org.webMonster.uniManageBoot.admin.notice.model.dto;
 
 import lombok.*;
-import org.springframework.web.bind.annotation.GetMapping;
 
 @Data
 @AllArgsConstructor

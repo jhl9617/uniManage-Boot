@@ -28,7 +28,6 @@ public class MemberDto {
     private String address2;    //주소2
     private int auth;           //권한구분:교수 1, 교직원 2,재학생 3, 졸업생 4, 휴학생 5
 
-    private String departmentName;  //학과명
 
     public static MemberDto fromEntity(MemberEntity memberEntity) {
         MemberDto memberDto = new MemberDto();
