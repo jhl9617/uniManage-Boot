@@ -3,22 +3,20 @@ package org.webMonster.uniManageBoot.student.freeboard.model.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
 import org.webMonster.uniManageBoot.common.SearchCondition;
-import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
-import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardRepEntity;
-import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardRepository;
-import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardRepRepository;
-import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardRepositoryCustom;
+import org.webMonster.uniManageBoot.student.freeboard.entity.*;
 import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardDto;
 import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardRepDto;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Slf4j
@@ -26,22 +24,25 @@ import java.util.List;
 @Service
 public class FreeboardService {
 
+
     private final FreeboardRepository freeboardRepository;
     private final FreeboardRepRepository freeboardRepRepository;
-    private final FreeboardRepositoryCustom freeboardRepositoryCustom;
+    private final FreeboardRepositoryCustomImpl freeboardRepositoryCustom;
 
     /**
      * 게시글 목록 가져오기(페이징 처리를 포함)
      */
 
     public Header<List<FreeboardDto>> getBoardList(Pageable pageable, SearchCondition searchCondition) {
+
         List<FreeboardDto> list = new ArrayList<>();
 
         Page<FreeboardEntity> boardEntities = freeboardRepositoryCustom.findAllBySearchCondition(pageable, searchCondition);
+
         for (FreeboardEntity entity : boardEntities) {
             FreeboardDto dto = FreeboardDto.builder()
                     .freeId(entity.getFreeId())
-                    .memberId(entity.getMemberId())
+                    .name(entity.getMember().getName())
                     .freeTitle(entity.getFreeTitle())
                     .freeContent(entity.getFreeContent())
                     .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
@@ -92,11 +93,30 @@ public class FreeboardService {
         FreeboardEntity entity = freeboardRepository.findById(id).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
         return FreeboardDto.builder()
                 .freeId(entity.getFreeId())
-                .memberId(entity.getMemberId())
+                .name(entity.getMember().getName())
                 .freeTitle(entity.getFreeTitle())
                 .freeContent(entity.getFreeContent())
                 .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                .memberId(entity.getMemberId())
                 .build();
+
+
+    }
+
+    public List<FreeboardRepDto> getBoardRep(Long id) {
+        List<FreeboardRepDto> list = new ArrayList<>();
+        List<FreeboardRepEntity> entity = freeboardRepRepository.findByFreeId(id);
+        for (FreeboardRepEntity Repentity : entity) {
+            FreeboardRepDto dto = FreeboardRepDto.builder()
+                    .freeId(Repentity.getFreeId())
+                    .freeRepId(Repentity.getFreeRepId())
+                    .memberId(Repentity.getMemberId())
+                    .freeRepContent(Repentity.getFreeRepContent())
+                    .createdDate(Repentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .build();
+            list.add(dto);
+        }
+        return list;
 
     }
 

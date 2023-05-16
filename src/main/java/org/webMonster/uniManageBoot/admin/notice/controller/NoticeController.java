@@ -34,26 +34,26 @@ public class NoticeController {
 
 
 
-    @GetMapping("/notice/list")
+    @GetMapping("admin/notice/list")
     public Header<List<NoticeDto>> noticeList(
-            @PageableDefault(sort = {"idx"}) Pageable pageable,
+            @PageableDefault(sort = {"notice_id"}) Pageable pageable,
             SearchCondition searchCondition
     ) {
         return noticeService.getNoticeList(pageable, searchCondition);
     }
-    @GetMapping("/notice/{id}")
+    @GetMapping("admin/notice/{id}")
     public NoticeDto getNotice(@PathVariable Long id) {
         return noticeService.getNotice(id);
     }
-    @PostMapping("/notice")
+    @PostMapping("admin/notice")
     public NoticeEntity create(@RequestBody NoticeDto noticeDto) {
         return noticeService.create(noticeDto);
     }
-    @PatchMapping("/notice")
+    @PatchMapping("admin/notice")
     public NoticeEntity update(@RequestBody NoticeDto noticeDto) {
         return noticeService.update(noticeDto);
     }
-    @DeleteMapping("/notice/{id}")
+    @DeleteMapping("admin/notice/{id}")
     public void delete(@PathVariable Long id) {
         noticeService.delete(id);
     }
