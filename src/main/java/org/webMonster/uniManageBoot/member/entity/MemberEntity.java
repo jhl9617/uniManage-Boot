@@ -2,6 +2,7 @@ package org.webMonster.uniManageBoot.member.entity;
 
 
 import lombok.*;
+import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
 
@@ -19,6 +20,7 @@ import java.util.List;
 @Table(name = "MEMBER")  //Board 테이블 자동 생성시키는 어노테이션임
 @Entity
 @Getter
+@Setter
 public class MemberEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -56,8 +58,10 @@ public class MemberEntity implements Serializable {
     @OneToMany(mappedBy = "member")
     private List<FreeboardEntity> freeboardEntities = new ArrayList<>();
 
-}
 
+    @OneToMany(mappedBy = "member")
+    private List<ScholarshipEntity> scholarshipEntities = new ArrayList<>();
+}
 
 
 
