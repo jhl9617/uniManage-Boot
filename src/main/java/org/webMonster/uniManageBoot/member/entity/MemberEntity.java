@@ -3,6 +3,7 @@ package org.webMonster.uniManageBoot.member.entity;
 
 import lombok.*;
 import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
+import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 
 import javax.persistence.*;
@@ -54,7 +55,11 @@ public class MemberEntity implements Serializable {
     @JoinColumn(name = "DEPARTMENT_ID", insertable = false, updatable = false)
     private DepartmentEntity department;
 
-
+    @Builder.Default
     @OneToMany(mappedBy = "member")
     private List<ScholarshipEntity> scholarshipEntities = new ArrayList<>();
+
+    @Builder.Default
+    @OneToMany(mappedBy = "member")
+    private List<LectureEntity> lectureEntities = new ArrayList<>();
 }
