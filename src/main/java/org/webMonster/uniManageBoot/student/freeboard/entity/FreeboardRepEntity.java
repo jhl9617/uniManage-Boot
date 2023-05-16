@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -16,7 +17,8 @@ import java.time.LocalDateTime;
 @Entity
 public class FreeboardRepEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "FREE_REP_ID_SEQ")
+    @SequenceGenerator(name = "FREE_REP_ID_SEQ", sequenceName = "FREE_REP_ID_SEQ", allocationSize = 1)
     @Column(name = "FREE_REP_ID")
     private long freeRepId;   //자유게시판 댓글 번호
     @Column(name = "FREE_ID")
@@ -27,6 +29,9 @@ public class FreeboardRepEntity {
     private LocalDateTime createdDate;   //댓글 작성일
     @Column(name = "MEMBER_ID")
     private long memberId;   //댓글 작성자
-//    @Column(name = "NAME")
-//    private String name; // 댓글 작성자 이름
+
+    @ManyToOne
+    @JoinColumn(name = "FREE_ID", referencedColumnName = "FREE_ID", insertable = false, updatable = false)
+    private FreeboardEntity freeboard;
+
 }

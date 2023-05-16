@@ -7,6 +7,7 @@ import com.querydsl.core.types.dsl.*;
 import com.querydsl.core.types.PathMetadata;
 import javax.annotation.processing.Generated;
 import com.querydsl.core.types.Path;
+import com.querydsl.core.types.dsl.PathInits;
 
 
 /**
@@ -17,9 +18,13 @@ public class QFreeboardRepEntity extends EntityPathBase<FreeboardRepEntity> {
 
     private static final long serialVersionUID = -498688187L;
 
+    private static final PathInits INITS = PathInits.DIRECT2;
+
     public static final QFreeboardRepEntity freeboardRepEntity = new QFreeboardRepEntity("freeboardRepEntity");
 
     public final DateTimePath<java.time.LocalDateTime> createdDate = createDateTime("createdDate", java.time.LocalDateTime.class);
+
+    public final QFreeboardEntity freeboard;
 
     public final NumberPath<Long> freeId = createNumber("freeId", Long.class);
 
@@ -30,15 +35,24 @@ public class QFreeboardRepEntity extends EntityPathBase<FreeboardRepEntity> {
     public final NumberPath<Long> memberId = createNumber("memberId", Long.class);
 
     public QFreeboardRepEntity(String variable) {
-        super(FreeboardRepEntity.class, forVariable(variable));
+        this(FreeboardRepEntity.class, forVariable(variable), INITS);
     }
 
     public QFreeboardRepEntity(Path<? extends FreeboardRepEntity> path) {
-        super(path.getType(), path.getMetadata());
+        this(path.getType(), path.getMetadata(), PathInits.getFor(path.getMetadata(), INITS));
     }
 
     public QFreeboardRepEntity(PathMetadata metadata) {
-        super(FreeboardRepEntity.class, metadata);
+        this(metadata, PathInits.getFor(metadata, INITS));
+    }
+
+    public QFreeboardRepEntity(PathMetadata metadata, PathInits inits) {
+        this(FreeboardRepEntity.class, metadata, inits);
+    }
+
+    public QFreeboardRepEntity(Class<? extends FreeboardRepEntity> type, PathMetadata metadata, PathInits inits) {
+        super(type, metadata, inits);
+        this.freeboard = inits.isInitialized("freeboard") ? new QFreeboardEntity(forProperty("freeboard"), inits.get("freeboard")) : null;
     }
 
 }

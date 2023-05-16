@@ -3,9 +3,13 @@ package org.webMonster.uniManageBoot.member.entity;
 
 import lombok.*;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
+import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Data
@@ -15,8 +19,7 @@ import java.sql.Date;
 @Table(name = "MEMBER")  //Board 테이블 자동 생성시키는 어노테이션임
 @Entity
 @Getter
-@Setter
-public class  MemberEntity {
+public class MemberEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "MEMBER_IDX")
@@ -50,6 +53,11 @@ public class  MemberEntity {
     @JoinColumn(name = "DEPARTMENT_ID", insertable = false, updatable = false)
     private DepartmentEntity department;
 
-
+    @OneToMany(mappedBy = "member")
+    private List<FreeboardEntity> freeboardEntities = new ArrayList<>();
 
 }
+
+
+
+
