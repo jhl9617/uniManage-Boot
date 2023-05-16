@@ -23,7 +23,7 @@ public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint {
 		
 		ApiErrorInfo apiErrorInfo = new ApiErrorInfo();
 		if (InsufficientAuthenticationException.class == authException.getClass()) {
-			apiErrorInfo.setMessage("Not Logined!!!");
+			apiErrorInfo.setMessage("Not Logined!!!!#$");
 			res.setStatus(HttpStatus.UNAUTHORIZED.value());
 		}
 		else {

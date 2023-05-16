@@ -40,8 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	protected void configure(HttpSecurity http) throws Exception {
 		log.info("security config ...");
 		
-		http.formLogin().disable()
-		.httpBasic().disable();	
+		http.formLogin();
 		
 		http.cors();
 		
@@ -56,8 +55,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		.requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
 		.antMatchers("/").permitAll()
 		.antMatchers("/codes/**").access("permitAll")
-		.antMatchers("/users/**").access("permitAll")
-		.antMatchers("/codegroups/**").access("hasRole('ADMIN')")
+		.antMatchers("/s/**").access("permitAll")
+		.antMatchers("/admin/**").access("hasRole('ADMIN')")
 		.antMatchers("/codedetails/**").access("hasRole('ADMIN')")
 		.antMatchers("/boards/**").access("request.method == 'GET' ? permitAll : hasAnyRole('MEMBER', 'ADMIN')")
 		.antMatchers("/notices/**").access("request.method == 'GET' ? permitAll : hasRole('ADMIN')")
