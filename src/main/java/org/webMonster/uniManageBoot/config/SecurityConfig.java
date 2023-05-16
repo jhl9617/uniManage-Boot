@@ -54,7 +54,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		http.authorizeRequests()
 		.requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
 		.antMatchers("/").permitAll()
-		.antMatchers("/codes/**").access("permitAll")
+		.antMatchers("/login").permitAll()
+		/*.antMatchers("/codes/**").access("permitAll")
 		.antMatchers("/s/**").access("permitAll")
 		.antMatchers("/admin/**").access("hasRole('ADMIN')")
 		.antMatchers("/codedetails/**").access("hasRole('ADMIN')")
@@ -63,7 +64,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		.antMatchers("/items/**").access("request.method == 'GET' ? permitAll : hasRole('ADMIN')")
 		.antMatchers("/coins/**").access("hasRole('MEMBER')")
 		.antMatchers("/useritems/**").access("hasAnyRole('MEMBER', 'ADMIN')")
-		.antMatchers("/pds/**").access("request.method == 'GET' ? permitAll : hasRole('ADMIN')")
+		.antMatchers("/pds/**").access("request.method == 'GET' ? permitAll : hasRole('ADMIN')")*/
 		.anyRequest().authenticated();
 		
 		http.exceptionHandling()
