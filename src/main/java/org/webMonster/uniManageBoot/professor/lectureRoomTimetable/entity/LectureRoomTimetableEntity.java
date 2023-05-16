@@ -22,5 +22,6 @@ public class LectureRoomTimetableEntity {
     private String timecode;   //시간코드
     @Column(name = "LECTURE_ROOM_CODE")
     private String lectureRoomCode;   //강의실코드
-
+    @Column(name = "OPERATION")
+    private char operation; //사용여부
 }
