@@ -6,6 +6,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
@@ -29,4 +30,24 @@ public class LectureController {
     ) {
         return lectureService.getLectureList(pageable, searchCondition);
     }
+
+    //교직원 개설 강의 관리 상세보기글 조회
+    @GetMapping("/admin/manage/lecture/{id}")
+    public LectureDto getLecture(@PathVariable Long id) { return lectureService.getLecture(id); }
+
+
+    //교직원 강의개설요청 관리 리스트 조회
+    @GetMapping("/admin/manage/appliedlecture")
+    public Header<List<LectureDto>> appliedlectureList(
+            @PageableDefault(sort = {"lectureId"}) Pageable pageable,
+            SearchCondition searchCondition
+    ) {
+        return lectureService.getAppliedLectureList(pageable, searchCondition);
+    }
+
+    //교직원 강의개설요청 관리 상세보기글 조회
+    @GetMapping("/admin/manage/appliedlecture/{id}")
+    public LectureDto getAppliedLecture(@PathVariable Long id) { return lectureService.getLecture(id); }
+
+
 }

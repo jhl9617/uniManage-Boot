@@ -7,6 +7,7 @@ import org.webMonster.uniManageBoot.common.SearchCondition;
 
 public interface LectureClassRepositoryCustom {
 
+
     public Page<LectureClassEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition);
 
     public BooleanExpression searchKeywords(String sk, String sv);

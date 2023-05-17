@@ -5,10 +5,12 @@ import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 
 import java.sql.Date;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
+@Builder
 @Getter
+@Setter
 @ToString
 public class MemberDepartmentDto {
     private long memberIdx;    //시퀀스

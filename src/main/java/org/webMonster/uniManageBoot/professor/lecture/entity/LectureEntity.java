@@ -68,9 +68,9 @@ public class LectureEntity {
     @JoinColumn(name = "DEPARTMENT_ID", referencedColumnName = "DEPARTMENT_ID", insertable = false, updatable = false)
     private DepartmentEntity department;
 
-    @ManyToOne
-    @JoinColumn(name = "LECTURE_CLASS_IDX", referencedColumnName = "LECTURE_CLASS_IDX", insertable = false, updatable = false)
-    private LectureClassEntity lectureClass;
+//    @ManyToOne
+//    @JoinColumn(name = "LECTURE_CLASS_IDX", referencedColumnName = "LECTURE_CLASS_IDX", insertable = false, updatable = false)
+//    private LectureClassEntity lectureClass;
 
 
 }

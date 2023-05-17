@@ -12,6 +12,7 @@ import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import java.util.List;
 import static org.webMonster.uniManageBoot.admin.notice.entity.QNoticeEntity.noticeEntity;
+import static org.webMonster.uniManageBoot.professor.lectureClass.entity.QLectureClassEntity.lectureClassEntity;
 
 @RequiredArgsConstructor
 @Repository
@@ -34,20 +35,12 @@ public class NoticeRepositoryCustom {
         return new PageImpl<>(results, pageable, total);
     }
     private BooleanExpression searchKeywords(String sk, String sv) {
-        if("member_id".equals(sk)) {
-            if(StringUtils.hasLength(sv)) {
-                long memberId;
-                try {
-                    memberId = Long.parseLong(sv);
-                } catch (NumberFormatException e) {
-                    return null; // Invalid input, skip filtering
-                }
-            }
-        } else if ("notice_title".equals(sk)) {
+
+        if("notice_title".equals(sk)) {   //제목으로 검색
             if(StringUtils.hasLength(sv)) {
                 return noticeEntity.noticeTitle.contains(sv);
             }
-        } else if ("notice_content".equals(sk)) {
+        } else if ("notice_content".equals(sk)) {   //내용으로 검색
             if(StringUtils.hasLength(sv)) {
                 return noticeEntity.noticeContent.contains(sv);
             }

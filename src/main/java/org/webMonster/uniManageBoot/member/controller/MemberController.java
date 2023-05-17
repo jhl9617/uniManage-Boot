@@ -1,5 +1,10 @@
 package org.webMonster.uniManageBoot.member.controller;
 
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
+import org.webMonster.uniManageBoot.admin.scholarship.model.dto.ScholarshipDto;
+import org.webMonster.uniManageBoot.common.Header;
+import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
@@ -11,6 +16,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Slf4j
 @CrossOrigin
@@ -46,4 +52,14 @@ public class MemberController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(null);
         }
     }
+
+    //교직원 학생관리 리스트 조회
+   @GetMapping("/admin/manage/student")
+    public Header<List<MemberDepartmentDto>> studentList(
+            @PageableDefault(sort = {"memberIdx"}) Pageable pageable,
+            SearchCondition searchCondition
+    ) {
+        return memberService.getStudentList(pageable, searchCondition);
+    }
+
 }

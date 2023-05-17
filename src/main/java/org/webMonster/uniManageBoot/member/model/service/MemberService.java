@@ -3,11 +3,20 @@ package org.webMonster.uniManageBoot.member.model.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.webMonster.uniManageBoot.common.Header;
+import org.webMonster.uniManageBoot.common.Pagination;
+import org.webMonster.uniManageBoot.common.SearchCondition;
+import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import org.webMonster.uniManageBoot.member.entity.MemberRepository;
+import org.webMonster.uniManageBoot.member.entity.MemberRepositoryCustom;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Slf4j
@@ -15,9 +24,9 @@ import java.util.Optional;
 @Service
 public class MemberService {
 
+    private final MemberRepository memberRepository;
+    private final MemberRepositoryCustom memberRepositoryCustom;
 
-    @Autowired
-    private MemberRepository memberRepository;
     public MemberDepartmentDto login(MemberLoginDto memberLoginDto) {
 
         long memberId = memberLoginDto.getMemberId();
@@ -35,5 +44,28 @@ public class MemberService {
         return memberDepartmentDto;
     }
 
+    //교직원 학생관리 리스트 조회
+    public Header<List<MemberDepartmentDto>> getStudentList(Pageable pageable, SearchCondition searchCondition) {
+        List<MemberDepartmentDto> dtos = new ArrayList<>();
 
+        Page<MemberEntity> studentDepartmentEntities = memberRepositoryCustom.findAllBySearchConditionsAndAuth(pageable, searchCondition);
+        for (MemberEntity entity : studentDepartmentEntities) {
+            MemberDepartmentDto dto = MemberDepartmentDto.builder()
+                    .name(entity.getName())
+                    .memberId(entity.getMemberId())
+                    .departmentName(entity.getDepartment().getDepartmentName())
+                    .build();
+            dtos.add(dto);
+        }
+
+        Pagination pagination = new Pagination(
+                (int) studentDepartmentEntities.getTotalElements()
+                , pageable.getPageNumber() + 1
+                , pageable.getPageSize()
+                , 10
+        );
+        log.info("dtos:" + dtos);
+
+        return Header.OK(dtos, pagination);
+    }
 }

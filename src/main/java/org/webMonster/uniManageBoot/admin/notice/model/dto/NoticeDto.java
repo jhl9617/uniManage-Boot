@@ -18,4 +18,6 @@ public class NoticeDto {
     private String createdDate;
     private int readcount;
 
+
+
 }

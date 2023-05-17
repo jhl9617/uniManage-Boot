@@ -2,6 +2,7 @@ package org.webMonster.uniManageBoot.member.entity;
 
 
 import lombok.*;
+import org.webMonster.uniManageBoot.admin.notice.entity.NoticeEntity;
 import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
@@ -36,7 +37,7 @@ public class MemberEntity implements Serializable {
     @Column(name = "DEPARTMENT_ID")
     private int departmentId;  //학과 번호
     @Column(name = "GRADE")
-    private int grade;        //학년
+    private Integer  grade;        //학년
     @Column(name = "BIRTHDAY")
     private Date birthday;      //생년월일
     @Column(name = "PHONE")
@@ -56,9 +57,9 @@ public class MemberEntity implements Serializable {
     @JoinColumn(name = "DEPARTMENT_ID", insertable = false, updatable = false)
     private DepartmentEntity department;
 
+    @Builder.Default
     @OneToMany(mappedBy = "member")
     private List<FreeboardEntity> freeboardEntities = new ArrayList<>();
-
 
     @Builder.Default
     @OneToMany(mappedBy = "member")
@@ -67,4 +68,5 @@ public class MemberEntity implements Serializable {
     @Builder.Default
     @OneToMany(mappedBy = "member")
     private List<LectureEntity> lectureEntities = new ArrayList<>();
+
 }
