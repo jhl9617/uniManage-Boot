@@ -1,6 +1,5 @@
 package org.webMonster.uniManageBoot.common.security;
 
-
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,19 +11,27 @@ import org.webMonster.uniManageBoot.member.entity.MemberRepository;
 
 @Slf4j
 public class CustomUserDetailsService implements UserDetailsService {
-	
+
 	@Autowired
 	private MemberRepository repository;
 
 	@Override
-	public UserDetails loadUserByUsername(String memberId) throws UsernameNotFoundException {
-		log.info("userName : " + memberId);
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-		MemberEntity member = repository.findByMemberId(Long.parseLong(memberId)).get(0);
+		try {
+			long memberId = Long.parseLong(username);
+			log.info("memberId : " + memberId);
+			MemberEntity member = repository.findByMemberId(memberId);
 
-		log.info("member : " + member);
+			log.info("memberrr : " + member);
 
-		return member == null ? null : new CustomUser(member);
+			if (member == null) {
+				throw new UsernameNotFoundException("User not found: " + username);
+			}
+
+			return new CustomUser(member);
+		} catch (NumberFormatException e) {
+			throw new UsernameNotFoundException("Invalid user ID format: " + username, e);
+		}
 	}
-
 }

@@ -1,6 +1,7 @@
 package org.webMonster.uniManageBoot.common.security.jwt.filter;
 
-
+import com.fasterxml.jackson.databind.ObjectMapper;
+import io.jsonwebtoken.io.IOException;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -8,6 +9,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.webMonster.uniManageBoot.common.security.domain.CustomUser;
+import org.webMonster.uniManageBoot.common.security.domain.UserCredentials;
 import org.webMonster.uniManageBoot.common.security.jwt.constants.SecurityConstants;
 import org.webMonster.uniManageBoot.common.security.jwt.provider.JwtTokenProvider;
 
@@ -33,12 +35,20 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
-        
-        Authentication authenticationToken = new UsernamePasswordAuthenticationToken(username, password);
-        
-        return authenticationManager.authenticate(authenticationToken);
+        try {
+            // Parse the JSON body of the request
+            UserCredentials credentials = new ObjectMapper().readValue(request.getInputStream(), UserCredentials.class);
+
+            System.out.println("\nattemptAuthentication\n" + credentials.getUsername() + " " + credentials.getPassword());
+
+            // Create an authentication token
+            Authentication authenticationToken = new UsernamePasswordAuthenticationToken(credentials.getUsername(), credentials.getPassword());
+
+            // Authenticate the user
+            return authenticationManager.authenticate(authenticationToken);
+        } catch (IOException | java.io.IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

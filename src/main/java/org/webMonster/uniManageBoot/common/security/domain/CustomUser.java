@@ -22,6 +22,7 @@ public class CustomUser extends User {
 	}
 
 	public CustomUser(MemberEntity member) {
+
 		super(Long.toString(member.getMemberId()), member.getMemberPwd(), member.getAuthList().stream()
 				.map(auth -> new SimpleGrantedAuthority(Integer.toString(member.getAuth()))).collect(Collectors.toList()));
 
