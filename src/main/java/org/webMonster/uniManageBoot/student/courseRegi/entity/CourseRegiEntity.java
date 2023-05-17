@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 
 import javax.persistence.*;
 
@@ -24,5 +25,9 @@ public class CourseRegiEntity {
     private long lectureId;   //강의 아이디
     @Column(name = "COURSE_REGI_TERM")
     private long courseRegiTerm;   //신청학기
+
+    @ManyToOne
+    @JoinColumn(name = "LECTURE_ID", referencedColumnName = "LECTURE_ID", insertable = false, updatable = false)
+    private LectureEntity lecture;
 }
 

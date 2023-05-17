@@ -1,6 +1,5 @@
 package org.webMonster.uniManageBoot.professor.lecture.entity;
 
-import com.querydsl.core.types.ParamExpression;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,8 +7,11 @@ import lombok.NoArgsConstructor;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
+import org.webMonster.uniManageBoot.student.courseRegi.entity.CourseRegiEntity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -68,9 +70,10 @@ public class LectureEntity {
     @JoinColumn(name = "DEPARTMENT_ID", referencedColumnName = "DEPARTMENT_ID", insertable = false, updatable = false)
     private DepartmentEntity department;
 
-    @ManyToOne
-    @JoinColumn(name = "LECTURE_CLASS_IDX", referencedColumnName = "LECTURE_CLASS_IDX", insertable = false, updatable = false)
-    private LectureClassEntity lectureClass;
+//    @ManyToOne
+//    @JoinColumn(name = "LECTURE_CLASS_IDX", referencedColumnName = "LECTURE_CLASS_IDX", insertable = false, updatable = false)
+//    private LectureClassEntity lectureClass;
 
-
+    @OneToMany(mappedBy = "lecture")
+    private List<CourseRegiEntity> courseRegiEntities = new ArrayList<>();
 }
