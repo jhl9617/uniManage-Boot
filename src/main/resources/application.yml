@@ -28,6 +28,10 @@ server:
       hibernate:
         dialect: org.hibernate.dialect.Oracle12cDialect
 
+logging:
+  level:
+    org.hibernate.SQL: debug    # Logger
+    org.hibernate.type: trace   # Show Query Parameter
 
 
   datasource:

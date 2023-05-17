@@ -39,7 +39,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
             // Parse the JSON body of the request
             UserCredentials credentials = new ObjectMapper().readValue(request.getInputStream(), UserCredentials.class);
 
-            System.out.println("\nattemptAuthentication\n" + credentials.getUsername() + " " + credentials.getPassword());
+            System.out.println("\nattemptAuthentication\n" + credentials.getUsername() + "," + credentials.getPassword());
 
             // Create an authentication token
             Authentication authenticationToken = new UsernamePasswordAuthenticationToken(credentials.getUsername(), credentials.getPassword());
