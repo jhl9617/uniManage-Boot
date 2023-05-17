@@ -108,6 +108,7 @@ public class FreeboardService {
         List<FreeboardRepEntity> entity = freeboardRepRepository.findByFreeId(id);
         for (FreeboardRepEntity Repentity : entity) {
             FreeboardRepDto dto = FreeboardRepDto.builder()
+                    .name(Repentity.getFreeboard().getMember().getName())
                     .freeId(Repentity.getFreeId())
                     .freeRepId(Repentity.getFreeRepId())
                     .memberId(Repentity.getMemberId())
@@ -155,11 +156,11 @@ public class FreeboardService {
     /**
      * 댓글 등록
      */
-    public FreeboardRepEntity createRep(FreeboardRepDto freeboardRepDto) {
+    public FreeboardRepEntity createRep(FreeboardRepDto freeboardRepDto, Long id) {
         FreeboardRepEntity entity = FreeboardRepEntity.builder()
-                .freeId(freeboardRepDto.getFreeId())
+                .freeId(id)
                 .freeRepId(freeboardRepDto.getFreeRepId())
-                .memberId(freeboardRepDto.getMemberId())
+                .memberId(20180102)
                 .freeRepContent(freeboardRepDto.getFreeRepContent())
                 .createdDate(LocalDateTime.now())
                 .build();

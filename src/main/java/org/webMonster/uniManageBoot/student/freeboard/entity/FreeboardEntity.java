@@ -1,9 +1,6 @@
 package org.webMonster.uniManageBoot.student.freeboard.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 
 
@@ -12,12 +9,14 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Table(name = "FREEBOARD")  //테이블 자동 생성시키는 어노테이션임
 @Entity
+@Setter
+@Getter
 public class FreeboardEntity {
 
     @Id
