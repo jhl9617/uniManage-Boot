@@ -1,9 +1,13 @@
 package org.webMonster.uniManageBoot.professor.lecture.entity;
 
+import com.querydsl.core.types.ParamExpression;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.webMonster.uniManageBoot.member.entity.MemberEntity;
+import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassEntity;
+import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 
 import javax.persistence.*;
 
@@ -15,7 +19,12 @@ import javax.persistence.*;
 @Entity
 public class LectureEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "lecture_id_seq_gen")
+    @SequenceGenerator(
+            name = "lecture_id_seq_gen",
+            sequenceName = "LECTURE_ID_SEQ",
+            allocationSize = 1
+    )
     @Column(name = "LECTURE_ID")
     private long lectureId;  //강의번호
     @Column(name = "MEMBER_ID")
@@ -50,4 +59,18 @@ public class LectureEntity {
     private String syllabusRename;   //강의계획서_리네임
     @Column(name = "LECTURE_APPLY_STATUS")
     private char lectureApplyStatus;   //강의 승인여부
+
+    @ManyToOne
+    @JoinColumn(name = "MEMBER_ID", referencedColumnName = "MEMBER_ID", insertable = false, updatable = false)
+    private MemberEntity member;
+
+    @ManyToOne
+    @JoinColumn(name = "DEPARTMENT_ID", referencedColumnName = "DEPARTMENT_ID", insertable = false, updatable = false)
+    private DepartmentEntity department;
+
+    @ManyToOne
+    @JoinColumn(name = "LECTURE_CLASS_IDX", referencedColumnName = "LECTURE_CLASS_IDX", insertable = false, updatable = false)
+    private LectureClassEntity lectureClass;
+
+
 }

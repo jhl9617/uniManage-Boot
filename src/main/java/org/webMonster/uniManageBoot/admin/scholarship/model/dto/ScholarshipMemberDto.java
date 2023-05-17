@@ -1,15 +1,15 @@
 package org.webMonster.uniManageBoot.admin.scholarship.model.dto;
 
 import lombok.*;
+import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Setter
 @Getter
 @ToString
-public class ScholarshipDto {
+@Builder
+public class ScholarshipMemberDto {
 
     private long schoId;   //순번
     private long schoTerm;   //학기
@@ -17,5 +17,6 @@ public class ScholarshipDto {
     private int amount;   //장학금액
     private long memberId;   //학생번호
 
-    private String name;
+    private String name;  //학생명
+
 }

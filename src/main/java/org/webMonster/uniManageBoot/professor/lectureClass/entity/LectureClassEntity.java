@@ -4,8 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
+import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -15,7 +19,12 @@ import javax.persistence.*;
 @Entity
 public class LectureClassEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "lecture_class_idx_seq_gen")
+    @SequenceGenerator(
+            name = "lecture_class_idx_seq_gen",
+            sequenceName = "LECTURE_CLASS_IDX_SEQ",
+            allocationSize = 1
+    )
     @Column(name = "LECTURE_CLASS_IDX")
     private long lectureClassIdx;   //강의실 번호
     @Column(name = "LECTURE_ROOM_CODE")
@@ -30,4 +39,8 @@ public class LectureClassEntity {
     private String lectureRoomNum;   //강의실 호수
     @Column(name = "CLASS_CAPACITY")
     private int classCapacity;   //강의실 수용인원
+
+    @Builder.Default
+    @OneToMany(mappedBy = "lectureClass")
+    private List<LectureEntity> lectureEntities = new ArrayList<>();
 }
