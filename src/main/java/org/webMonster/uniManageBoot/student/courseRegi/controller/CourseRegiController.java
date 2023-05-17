@@ -35,4 +35,6 @@ public class CourseRegiController {
 
         return courseRegiService.create(courseRegiDto);
     }
+
+
 }

@@ -31,6 +31,8 @@ public class CourseRegiService {
         List<CourseRegiEntity> entity = courseRegiRepository.findByMemberId(id);
         for (CourseRegiEntity coentity : entity) {
             CourseRegiDto dto = CourseRegiDto.builder()
+                    .courseRegiTerm(coentity.getCourseRegiTerm())
+                    .lectureId(coentity.getLectureId())
                     .lectureTitle(coentity.getLecture().getLectureTitle())
                     .courseRegiId(coentity.getCourseRegiId())
                     .timecode1(coentity.getLecture().getTimecode1())
@@ -53,5 +55,7 @@ public class CourseRegiService {
                 .build();
         return courseRegiRepository.save(entity);
     }
+
+
 }
 

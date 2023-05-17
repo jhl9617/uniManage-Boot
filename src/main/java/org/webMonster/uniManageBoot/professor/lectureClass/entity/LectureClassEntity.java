@@ -4,12 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
-import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
