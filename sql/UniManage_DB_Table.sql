@@ -1,4 +1,7 @@
 /*수정사항
+0516 강의실 테이블
+-not null 조건 수정
+
 학적변동 테이블
 -not null 조건 수정
 -default값 수정
@@ -428,7 +431,7 @@ COMMENT ON COLUMN LECTURE_SCHEDULE.LECTURE_ID IS '강의번호';
 
 CREATE TABLE LECTURE_CLASS(
                               LECTURE_CLASS_IDX NUMBER PRIMARY KEY,
-                              LECTURE_ROOM_CODE VARCHAR2(10),
+                              LECTURE_ROOM_CODE VARCHAR2(10) NOT NULL,
                               BUILDING_CODE VARCHAR2(30) NOT NULL,
                               BUILDING_NAME VARCHAR2(30) NOT NULL,
                               NUMBER_FLOOR NUMBER NOT NULL,

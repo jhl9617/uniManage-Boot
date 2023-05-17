@@ -3,6 +3,7 @@ package org.webMonster.uniManageBoot.member.entity;
 
 import lombok.*;
 import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
+import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
 
@@ -59,9 +60,11 @@ public class MemberEntity implements Serializable {
     private List<FreeboardEntity> freeboardEntities = new ArrayList<>();
 
 
+    @Builder.Default
     @OneToMany(mappedBy = "member")
     private List<ScholarshipEntity> scholarshipEntities = new ArrayList<>();
+
+    @Builder.Default
+    @OneToMany(mappedBy = "member")
+    private List<LectureEntity> lectureEntities = new ArrayList<>();
 }
-
-
-

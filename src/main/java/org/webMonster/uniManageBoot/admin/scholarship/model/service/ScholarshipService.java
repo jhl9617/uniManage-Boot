@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipRepository;
 import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipRepositoryCustom;
-import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipRepositoryCustomImpl;
 import org.webMonster.uniManageBoot.admin.scholarship.model.dto.ScholarshipDto;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
@@ -23,7 +22,6 @@ import java.util.List;
 public class ScholarshipService {
     private final ScholarshipRepository scholarshipRepository;
     private final ScholarshipRepositoryCustom scholarshipRepositoryCustom;
-    private final ScholarshipRepositoryCustomImpl scholarshipRepositoryCustomImpl;
 
     //교직원 장학금관리 리스트 조회
     public Header<List<ScholarshipDto>> getScholarshipList(Pageable pageable, SearchCondition searchCondition) {

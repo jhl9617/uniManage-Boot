@@ -2,8 +2,10 @@ package org.webMonster.uniManageBoot.student.department.entity;
 
 import lombok.*;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
+import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -26,4 +28,8 @@ public class DepartmentEntity {
 
     @OneToMany(mappedBy = "department")
     private List<MemberEntity> members;
+
+    @Builder.Default
+    @OneToMany(mappedBy = "department")
+    private List<LectureEntity> lectureEntities = new ArrayList<>();
 }

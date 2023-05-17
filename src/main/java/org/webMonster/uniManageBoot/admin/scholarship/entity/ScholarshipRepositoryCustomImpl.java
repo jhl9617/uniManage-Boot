@@ -5,7 +5,6 @@ import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import org.springframework.data.domain.*;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
-import org.springframework.data.repository.query.FluentQuery;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;

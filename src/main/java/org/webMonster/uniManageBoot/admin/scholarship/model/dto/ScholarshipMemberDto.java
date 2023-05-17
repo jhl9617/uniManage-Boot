@@ -19,15 +19,4 @@ public class ScholarshipMemberDto {
 
     private String name;  //학생명
 
-//    public static ScholarshipMemberDto fromEntity(ScholarshipEntity scholarshipEntity){
-//        ScholarshipMemberDto dto = new ScholarshipMemberDto();
-//
-//        dto.setSchoId(scholarshipEntity.getSchoId());
-//        dto.setSchoTerm(scholarshipEntity.getSchoTerm());
-//        dto.setSchoName(scholarshipEntity.getSchoName());
-//        dto.setAmount(scholarshipEntity.getAmount());
-//        dto.setMemberId(scholarshipEntity.getMemberId());
-//        dto.setName(scholarshipEntity.getMember().getName());
-//        return dto;
-//    }
 }
