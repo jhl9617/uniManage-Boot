@@ -4,9 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -31,4 +33,8 @@ public class LectureRoomEntity {
     private LocalDateTime createdDate;   //강의자료 작성일
     @Column(name = "READCOUNT")
     private int readcount;   //조회수
+
+    // 다른 엔티티와의 관계 설정
+    @OneToMany(mappedBy = "lectureClass")
+    private List<LectureRoomTimetableEntity> lectureRoomTimetables;
 }
