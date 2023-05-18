@@ -35,9 +35,9 @@ public class LectureDto {
     private String departmentName;
 
     //강의실관련
-    private String buildingCode;
-    private String lectureRoomNum;
-    private int classCapacity;
+//    private String buildingCode;
+//    private String lectureRoomNum;
+//    private int classCapacity;
 
 
 }

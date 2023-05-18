@@ -1,6 +1,8 @@
 package org.webMonster.uniManageBoot.admin.notice.entity;
 
 import lombok.*;
+import org.webMonster.uniManageBoot.member.entity.MemberEntity;
+import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -31,4 +33,5 @@ public class NoticeEntity {
     private LocalDateTime createdDate;   //등록일
     @Column(name = "READCOUNT")
     private int readcount;   //조회수
+
 }

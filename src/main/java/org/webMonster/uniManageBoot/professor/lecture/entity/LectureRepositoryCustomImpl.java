@@ -26,15 +26,31 @@ public class LectureRepositoryCustomImpl extends QuerydslRepositorySupport imple
         this.queryFactory = queryFactory;
     }
 
+//    public Page<LectureEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
+//        JPAQuery<LectureEntity> query = queryFactory.selectFrom(lectureEntity)
+//                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()));
+//
+//        long total = query.stream().count();   //여기서 전체 카운트 후 아래에서 조건작업
+//
+//        List<LectureEntity> results = query
+//                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
+//                .offset(pageable.getOffset())
+//                .limit(pageable.getPageSize())
+//                .orderBy(lectureEntity.lectureId.desc())
+//                .fetch();
+//
+//        return new PageImpl<>(results, pageable, total);
+//    }
 
-    public Page<LectureEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
+    //교직원 개설강의관리 리스트 출력
+    public Page<LectureEntity> findAllBySearchConditionAndStatus(Pageable pageable, SearchCondition searchCondition) {
         JPAQuery<LectureEntity> query = queryFactory.selectFrom(lectureEntity)
-                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()));
+                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
+                .where(lectureEntity.lectureApplyStatus.eq('2'));
 
-        long total = query.stream().count();   //여기서 전체 카운트 후 아래에서 조건작업
+        long total = query.fetchCount();
 
         List<LectureEntity> results = query
-                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
                 .offset(pageable.getOffset())
                 .limit(pageable.getPageSize())
                 .orderBy(lectureEntity.lectureId.desc())
@@ -43,6 +59,24 @@ public class LectureRepositoryCustomImpl extends QuerydslRepositorySupport imple
         return new PageImpl<>(results, pageable, total);
     }
 
+    //교직원 강의개설요청관리 리스트 출력
+    public Page<LectureEntity> findAllBySearchConditionsAndStatus(Pageable pageable, SearchCondition searchCondition) {
+        JPAQuery<LectureEntity> query = queryFactory.selectFrom(lectureEntity)
+                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
+                .where(lectureEntity.lectureApplyStatus.eq('1'));
+
+        long total = query.fetchCount();
+
+        List<LectureEntity> results = query
+                .offset(pageable.getOffset())
+                .limit(pageable.getPageSize())
+                .orderBy(lectureEntity.lectureId.desc())
+                .fetch();
+
+        return new PageImpl<>(results, pageable, total);
+    }
+
+    //교직원 개설강의관리 리스트에서 검색용
     public BooleanExpression searchKeywords(String sk, String sv) {
         if("lecture_title".equals(sk)) {   //강의명으로 검색
             if(StringUtils.hasLength(sv)) {

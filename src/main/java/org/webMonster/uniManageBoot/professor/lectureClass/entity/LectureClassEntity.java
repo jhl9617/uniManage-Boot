@@ -40,7 +40,7 @@ public class LectureClassEntity {
     @Column(name = "CLASS_CAPACITY")
     private int classCapacity;   //강의실 수용인원
 
-    @Builder.Default
-    @OneToMany(mappedBy = "lectureClass")
-    private List<LectureEntity> lectureEntities = new ArrayList<>();
+//    @Builder.Default
+//    @OneToMany(mappedBy = "lectureClass")
+//    private List<LectureEntity> lectureEntities = new ArrayList<>();
 }

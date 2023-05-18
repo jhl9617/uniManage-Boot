@@ -29,7 +29,6 @@ public class ScholarshipRepositoryCustomImpl extends QuerydslRepositorySupport i
 
     public Page<ScholarshipEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
         JPAQuery<ScholarshipEntity> query = queryFactory.selectFrom(scholarshipEntity)
-                .join(scholarshipEntity.member, memberEntity)
                 .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()));
 
         long total = query.stream().count();   //여기서 전체 카운트 후 아래에서 조건작업
