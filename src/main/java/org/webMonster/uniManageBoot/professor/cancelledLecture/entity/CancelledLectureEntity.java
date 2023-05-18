@@ -44,14 +44,14 @@ public class CancelledLectureEntity {
     private char cancelledApply = 1;        //휴강승인여부
 
     @ManyToOne
-    @JoinColumn(name = "LECTURE_ID")
+    @JoinColumn(name = "LECTURE_ID", insertable = false, updatable = false)
     private LectureEntity lecture;
 
     @ManyToOne
-    @JoinColumn(name = "MEMBER_ID")
+    @JoinColumn(name = "MEMBER_ID", insertable = false, updatable = false)
     private MemberEntity member;
 
     @ManyToOne
-    @JoinColumn(name = "LECTURE_ROOM_CODE")
+    @JoinColumn(name = "LECTURE_ROOM_CODE", insertable = false, updatable = false)
     private LectureClassEntity lectureClass;
 }

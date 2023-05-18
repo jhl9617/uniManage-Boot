@@ -16,6 +16,7 @@ public class CancelledLectureController {
     //페이지 단위로 조회(페이징 처리)
 
 
+
     //휴강게시물 등록
     @PostMapping("/prof/lecture/cancelled/write")
     public CancelledLectureEntity create(@RequestBody CancelledLectureDto cancelledLectureDto){
@@ -23,8 +24,8 @@ public class CancelledLectureController {
     }
 
     //휴강게시글(승인여부) 수정
-    @PatchMapping ("/admin/manage/closelecture")
-    public CancelledLectureEntity update(@RequestBody ApplyDto applyDto){
-        return cancelledLectureService.update(applyDto);
-    }
+//    @PatchMapping ("/admin/manage/closelecture")
+//    public CancelledLectureEntity update(@RequestBody ApplyDto applyDto){
+//        return cancelledLectureService.update(applyDto);
+//    }
 }
