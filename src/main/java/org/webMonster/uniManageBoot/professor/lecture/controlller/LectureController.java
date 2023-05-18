@@ -39,7 +39,7 @@ public class LectureController {
 
     //교직원 개설 강의 관리 상세보기글 조회
     @GetMapping("/admin/manage/lecture/{id}")
-    public LectureDto getLecture(@PathVariable Long id) { return lectureService.getLecture(id); }
+    public LectureDto getAdminLecture(@PathVariable Long id) { return lectureService.getLecture(id); }
 
 
 
@@ -61,10 +61,7 @@ public class LectureController {
     //Eclass 선택된 강의 정보 조회 - 강의 메인화면
     @GetMapping("/eclass/lecture/{id}")
     public LectureDto getLecture(@PathVariable Long id){
-
         return lectureService.getLecture(id);
-
-
     }
     //Eclass 선택된 강의 정보 조회 - 출력
     @GetMapping("/eclass/lecture/lectureinfo/{id}")

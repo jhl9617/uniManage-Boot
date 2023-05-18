@@ -1,6 +1,6 @@
 package org.webMonster.uniManageBoot.member.model.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;

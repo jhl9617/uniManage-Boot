@@ -22,6 +22,7 @@ import java.util.List;
 @Table(name = "MEMBER")  //Board 테이블 자동 생성시키는 어노테이션임
 @Entity
 @Getter
+@Setter
 public class MemberEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

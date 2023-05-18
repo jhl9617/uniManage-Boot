@@ -13,6 +13,8 @@ import java.time.LocalDateTime;
 @Builder
 @Table(name = "NOTICE")
 @Entity
+@Setter
+@Getter
 public class NoticeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "notice_seq_gen")
