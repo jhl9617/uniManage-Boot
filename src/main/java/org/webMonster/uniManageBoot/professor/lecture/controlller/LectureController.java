@@ -22,11 +22,7 @@ import java.util.List;
 @CrossOrigin
 @RestController
 public class LectureController {
-
-    @Autowired
-    private LectureService lectureService;
-    @Autowired
-    private FreeboardService freeboardService;
+    private final LectureService lectureService;
 
     //교직원 개설 강의 관리 리스트 조회
     @GetMapping("/admin/manage/lecture")
@@ -69,6 +65,8 @@ public class LectureController {
         return lectureService.getLecture(id);
 
     }
+
+
 
 
 

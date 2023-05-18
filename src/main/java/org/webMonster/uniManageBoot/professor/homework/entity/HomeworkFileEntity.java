@@ -1,4 +1,4 @@
-package org.webMonster.uniManageBoot.professor.homeworkFile.entity;
+package org.webMonster.uniManageBoot.professor.homework.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
