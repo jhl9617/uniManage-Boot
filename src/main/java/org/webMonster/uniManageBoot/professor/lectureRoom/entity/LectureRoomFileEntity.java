@@ -1,4 +1,4 @@
-package org.webMonster.uniManageBoot.professor.lectureRoomFile.entity;
+package org.webMonster.uniManageBoot.professor.lectureRoom.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -28,7 +29,7 @@ public class HomeworkEntity {
     @Column(name = "HOMEWORK_CONTENT")
     private String homeworkContent;   //과제 내용
     @Column(name = "DEADLINE")
-    private Date deadline;   //과제 제출기한
+    private LocalDateTime deadline;   //과제 제출기한
     @Column(name = "SUBMITTED")
     private char submitted;   //과제 제출여부
 }
