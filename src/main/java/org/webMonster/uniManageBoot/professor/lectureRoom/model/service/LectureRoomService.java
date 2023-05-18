@@ -35,11 +35,11 @@ public class LectureRoomService {
     private LectureRoomRepositoryCustom lectureRoomRepositoryCustom;
     
     // 강의자료 목록 조회
-    public Header<List<LectureRoomDto>> getSourceList(Pageable pageable, SearchCondition searchCondition) {
+    public Header<List<LectureRoomDto>> getSourceList(Pageable pageable, SearchCondition searchCondition, Long id) {
 
         List<LectureRoomDto> list = new ArrayList<>();
 
-        Page<LectureRoomEntity> lectureRoomEntities = lectureRoomRepositoryCustom.findAllBySearchCondition(pageable, searchCondition);
+        Page<LectureRoomEntity> lectureRoomEntities = lectureRoomRepositoryCustom.findAllBySearchCondition(pageable, searchCondition, id);
 
         for (LectureRoomEntity entity : lectureRoomEntities) {
             LectureRoomDto dto = LectureRoomDto.builder()

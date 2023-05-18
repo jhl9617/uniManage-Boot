@@ -26,8 +26,9 @@ public class LectureRoomRepositoryCustomImpl extends QuerydslRepositorySupport i
         this.queryFactory = queryFactory;
     }
     @Override
-    public Page<LectureRoomEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
+    public Page<LectureRoomEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition, Long id) {
         JPAQuery<LectureRoomEntity> query = queryFactory.selectFrom(lectureRoomEntity)
+                .where(lectureRoomEntity.lectureId.eq(id))
                 .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()));
 
         long total = query.stream().count();   //여기서 전체 카운트 후 아래에서 조건작업

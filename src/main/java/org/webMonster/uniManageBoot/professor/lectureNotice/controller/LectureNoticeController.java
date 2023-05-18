@@ -25,13 +25,12 @@ public class LectureNoticeController {
     private LectureNoticeService lectureNoticeService;
 
     // 페이지 단위로 목록 조회
-    @GetMapping("/eclass/lecture/notice/list/{id}")
+    @GetMapping("/eclass/lecture/notice/list")
     public Header<List<LectureNoticeDto>> lectureNoticeList(
-            @PageableDefault(sort = {"lecture_id"}) Pageable pageable,
-            SearchCondition searchCondition,
-            @PathVariable("id") Long id
+            @PageableDefault(sort = {"lecture_notice_id"}) Pageable pageable,
+            SearchCondition searchCondition
     ) {
-        return lectureNoticeService.getLectureNoticeList(pageable, searchCondition, id);
+        return lectureNoticeService.getLectureNoticeList(pageable, searchCondition, 170);
     }
 
     //게시글 선택 조회, 게시글 번호에 해당하는 댓글리스트 조회

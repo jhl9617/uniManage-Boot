@@ -8,7 +8,7 @@ import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
 
 public interface LectureRoomRepositoryCustom {
 
-    public Page<LectureRoomEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition);
+    public Page<LectureRoomEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition, Long id);
 
     public BooleanExpression searchKeywords(String sk, String sv);
 }

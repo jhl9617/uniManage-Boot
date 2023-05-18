@@ -28,12 +28,13 @@ public class LectureRoomController {
     private LectureRoomService lectureRoomService;
 
     // 페이지 단위로 목록 조회
-    @GetMapping("/eclass/lecture/source/list")
+    @GetMapping("/eclass/lecture/source/list/{id}")
     public Header<List<LectureRoomDto>> sourceList(
             @PageableDefault(sort = {"lecture_room_id"}) Pageable pageable,
-            SearchCondition searchCondition
+            SearchCondition searchCondition,
+            @PathVariable("id") Long id
     ) {
-        return lectureRoomService.getSourceList(pageable, searchCondition);
+        return lectureRoomService.getSourceList(pageable, searchCondition, id);
     }
 
     //게시글 선택 조회, 게시글 번호에 해당하는 파일까지 같이 조회

@@ -29,7 +29,7 @@ public class LectureNoticeService {
     private LectureNoticeRepositoryCustom lectureNoticeRepositoryCustom;
 
     // 강의별 공지사항 리스트 조회
-    public Header<List<LectureNoticeDto>> getLectureNoticeList(Pageable pageable, SearchCondition searchCondition, Long id) {
+    public Header<List<LectureNoticeDto>> getLectureNoticeList(Pageable pageable, SearchCondition searchCondition, long id) {
         List<LectureNoticeDto> list = new ArrayList<>();
 
         Page<LectureNoticeEntity> lectureNoticeEntities = lectureNoticeRepositoryCustom.findAllBySearchCondition(pageable, searchCondition, id);
