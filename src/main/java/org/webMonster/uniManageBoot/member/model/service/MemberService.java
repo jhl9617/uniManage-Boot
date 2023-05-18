@@ -1,10 +1,12 @@
 package org.webMonster.uniManageBoot.member.model.service;
 
 
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
@@ -15,6 +17,7 @@ import org.webMonster.uniManageBoot.member.entity.MemberRepositoryCustom;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -23,7 +26,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 @Service
 public class MemberService {
-
+    private final PasswordEncoder passwordEncoder;
     private final MemberRepository memberRepository;
     private final MemberRepositoryCustom memberRepositoryCustom;
 
@@ -67,5 +70,23 @@ public class MemberService {
         log.info("dtos:" + dtos);
 
         return Header.OK(dtos, pagination);
+    }
+
+    public MemberEntity insert() {
+        MemberEntity memberEntity = MemberEntity.builder()
+
+                .memberId(4321)
+                .name("이종하")
+                .memberPwd(passwordEncoder.encode("1234"))
+                .auth(2)
+                .departmentId(17)
+                .birthday(Date.valueOf("1995-01-01"))
+                .phone("010-1234-5678")
+                .email("asd@weqwe")
+                .postcode(1234)
+                .address1("서울시")
+                .address2("강남구")
+                .build();
+        return memberRepository.save(memberEntity);
     }
 }

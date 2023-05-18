@@ -62,4 +62,10 @@ public class MemberController {
         return memberService.getStudentList(pageable, searchCondition);
     }
 
+    @PostMapping("/insert")
+    public ResponseEntity<MemberEntity> insert() {
+        MemberEntity memberEntity = memberService.insert();
+        return ResponseEntity.ok(memberEntity);
+    }
+
 }

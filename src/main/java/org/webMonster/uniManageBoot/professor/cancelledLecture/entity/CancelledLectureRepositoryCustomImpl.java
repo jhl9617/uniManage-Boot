@@ -4,6 +4,7 @@ import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
+import org.springframework.stereotype.Repository;
 import org.webMonster.uniManageBoot.member.entity.QMemberEntity;
 import org.webMonster.uniManageBoot.professor.cancelledLecture.model.dto.CancelledLectureDto;
 import org.webMonster.uniManageBoot.professor.lecture.entity.QLectureEntity;
