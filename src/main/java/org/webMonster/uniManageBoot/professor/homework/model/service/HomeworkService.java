@@ -2,6 +2,7 @@ package org.webMonster.uniManageBoot.professor.homework.model.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -11,10 +12,6 @@ import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.professor.homework.entity.*;
 import org.webMonster.uniManageBoot.professor.homework.model.dto.HomeworkDto;
 import org.webMonster.uniManageBoot.professor.homework.model.dto.HomeworkFileDto;
-import org.webMonster.uniManageBoot.professor.lectureRoom.entity.LectureRoomEntity;
-import org.webMonster.uniManageBoot.professor.lectureRoom.entity.LectureRoomFileEntity;
-import org.webMonster.uniManageBoot.professor.lectureRoom.model.dto.LectureRoomDto;
-import org.webMonster.uniManageBoot.professor.lectureRoom.model.dto.LectureRoomFileDto;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -26,10 +23,11 @@ import java.util.List;
 @Service
 public class HomeworkService {
 
+    @Autowired
     private HomeworkRepository homeworkRepository;
-
+    @Autowired
     private HomeworkRepositoryCustom homeworkRepositoryCustom;
-
+    @Autowired
     private HomeworkFileRepository homeworkFileRepository;
 
     //과제 리스트 조회

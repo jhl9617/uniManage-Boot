@@ -25,9 +25,13 @@ import java.util.List;
 @Service
 public class LectureRoomService {
 
+    @Autowired
     private LectureRoomRepository lectureRoomRepository;
 
+    @Autowired
     private LectureRoomFileRepository lectureRoomFileRepository;
+
+    @Autowired
     private LectureRoomRepositoryCustom lectureRoomRepositoryCustom;
     
     // 강의자료 목록 조회
@@ -70,7 +74,7 @@ public class LectureRoomService {
                 .memberId(entity.getMemberId())
                 .lectureRoomTitle(entity.getLectureRoomTitle())
                 .lectureRoomContent(entity.getLectureRoomContent())
-                .readcount(entity.getReadcount())
+                .readcount(entity.getReadcount() + 1)
                 .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
                 .build();
 
