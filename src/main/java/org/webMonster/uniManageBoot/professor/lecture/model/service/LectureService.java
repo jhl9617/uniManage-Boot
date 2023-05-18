@@ -105,7 +105,7 @@ public class LectureService {
         return Header.OK(dtos, pagination);
     }
 
-    //교직원  개설 강의 관리 글 상세보기 조회
+    //교직원 강의 관리 글 상세보기 조회
     public LectureDto getLecture(Long id) {
         LectureEntity entity = lectureRepository.findById(id).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
         return LectureDto.builder()

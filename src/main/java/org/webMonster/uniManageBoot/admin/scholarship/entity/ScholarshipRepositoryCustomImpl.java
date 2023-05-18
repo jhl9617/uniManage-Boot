@@ -12,7 +12,6 @@ import org.webMonster.uniManageBoot.common.SearchCondition;
 import java.util.List;
 
 import static org.webMonster.uniManageBoot.admin.scholarship.entity.QScholarshipEntity.scholarshipEntity;
-import static org.webMonster.uniManageBoot.member.entity.QMemberEntity.memberEntity;
 
 
 //교직원 장학금관리 리스트에서 검색용
