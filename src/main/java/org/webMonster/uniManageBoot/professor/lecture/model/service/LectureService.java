@@ -130,7 +130,4 @@ public class LectureService {
 
         return Header.OK(dtos, pagination);
     }
-
-
-
 }

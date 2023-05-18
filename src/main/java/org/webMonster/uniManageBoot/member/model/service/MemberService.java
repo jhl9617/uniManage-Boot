@@ -13,6 +13,7 @@ import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import org.webMonster.uniManageBoot.member.entity.MemberRepository;
 import org.webMonster.uniManageBoot.member.entity.MemberRepositoryCustom;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
+import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
 
 import java.util.ArrayList;
@@ -51,8 +52,19 @@ public class MemberService {
         Page<MemberEntity> studentDepartmentEntities = memberRepositoryCustom.findAllBySearchConditionsAndAuth(pageable, searchCondition);
         for (MemberEntity entity : studentDepartmentEntities) {
             MemberDepartmentDto dto = MemberDepartmentDto.builder()
+                    .memberIdx(entity.getMemberIdx())
                     .name(entity.getName())
                     .memberId(entity.getMemberId())
+                    .memberPwd(entity.getMemberPwd())
+                    .departmentId(entity.getDepartmentId())
+                    .grade(entity.getGrade())
+                    .birthday(entity.getBirthday())
+                    .phone(entity.getPhone())
+                    .email(entity.getEmail())
+                    .postcode(entity.getPostcode())
+                    .address1(entity.getAddress1())
+                    .address2(entity.getAddress2())
+                    .auth(entity.getAuth())
                     .departmentName(entity.getDepartment().getDepartmentName())
                     .build();
             dtos.add(dto);
@@ -68,4 +80,81 @@ public class MemberService {
 
         return Header.OK(dtos, pagination);
     }
+
+    // 교직원 학생/교수관리 상세보기 조회
+    public MemberDepartmentDto getMember(Long id) {
+        MemberEntity entity = memberRepository.findById(id).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
+        return MemberDepartmentDto.builder()
+                .memberId(entity.getMemberId())
+                .memberPwd(entity.getMemberPwd())
+                .name(entity.getName())
+                .departmentId(entity.getDepartmentId())
+                .grade(entity.getGrade())
+                .birthday(entity.getBirthday())
+                .phone(entity.getPhone())
+                .email(entity.getEmail())
+                .postcode(entity.getPostcode())
+                .address1(entity.getAddress1())
+                .address2(entity.getAddress2())
+                .auth(entity.getAuth())
+                .departmentName(entity.getDepartment().getDepartmentName())
+                .build();
+    }
+
+    //교직원 학생관리 추가
+    public MemberEntity create(MemberDto memberDto) {
+        MemberEntity entity = MemberEntity.builder()
+                .memberIdx(memberDto.getMemberIdx())
+                .memberId(memberDto.getMemberId())
+                .memberPwd(memberDto.getMemberPwd())
+                .name(memberDto.getName())
+                .departmentId(memberDto.getDepartmentId())
+                .grade(memberDto.getGrade())
+                .birthday(memberDto.getBirthday())
+                .phone(memberDto.getPhone())
+                .email(memberDto.getEmail())
+                .postcode(memberDto.getPostcode())
+                .address1(memberDto.getAddress1())
+                .address2(memberDto.getAddress2())
+                .auth(memberDto.getAuth())
+                .build();
+        return memberRepository.save(entity);
+    }
+
+
+    //교직원 교수관리 리스트 조회
+    public Header<List<MemberDepartmentDto>> getProfessorList(Pageable pageable, SearchCondition searchCondition) {
+        List<MemberDepartmentDto> dtos = new ArrayList<>();
+
+        Page<MemberEntity> studentDepartmentEntities = memberRepositoryCustom.findAllBySearchConditionAndAuth(pageable, searchCondition);
+        for (MemberEntity entity : studentDepartmentEntities) {
+            MemberDepartmentDto dto = MemberDepartmentDto.builder()
+                    .memberIdx(entity.getMemberIdx())
+                    .name(entity.getName())
+                    .memberId(entity.getMemberId())
+                    .memberPwd(entity.getMemberPwd())
+                    .departmentId(entity.getDepartmentId())
+                    .birthday(entity.getBirthday())
+                    .phone(entity.getPhone())
+                    .email(entity.getEmail())
+                    .postcode(entity.getPostcode())
+                    .address1(entity.getAddress1())
+                    .address2(entity.getAddress2())
+                    .auth(entity.getAuth())
+                    .departmentName(entity.getDepartment().getDepartmentName())
+                    .build();
+            dtos.add(dto);
+        }
+
+        Pagination pagination = new Pagination(
+                (int) studentDepartmentEntities.getTotalElements()
+                , pageable.getPageNumber() + 1
+                , pageable.getPageSize()
+                , 10
+        );
+        log.info("dtos:" + dtos);
+
+        return Header.OK(dtos, pagination);
+    }
+
 }

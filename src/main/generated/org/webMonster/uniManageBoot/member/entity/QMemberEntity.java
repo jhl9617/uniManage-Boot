@@ -32,7 +32,7 @@ public class QMemberEntity extends EntityPathBase<MemberEntity> {
 
     public final org.webMonster.uniManageBoot.student.department.entity.QDepartmentEntity department;
 
-    public final NumberPath<Integer> departmentId = createNumber("departmentId", Integer.class);
+    public final NumberPath<Long> departmentId = createNumber("departmentId", Long.class);
 
     public final StringPath email = createString("email");
 

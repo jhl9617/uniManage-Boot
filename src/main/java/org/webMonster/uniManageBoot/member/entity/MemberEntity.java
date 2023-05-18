@@ -25,7 +25,12 @@ import java.util.List;
 @Setter
 public class MemberEntity implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "member_idx_seq_gen")
+    @SequenceGenerator(
+            name = "member_idx_seq_gen",
+            sequenceName = "MEMBER_IDX_SEQ",
+            allocationSize = 1
+    )
     @Column(name = "MEMBER_IDX")
     private long memberIdx;             //시퀀스
     @Column(name = "MEMBER_ID")
@@ -35,7 +40,7 @@ public class MemberEntity implements Serializable {
     @Column(name = "NAME")
     private String name;        //이름
     @Column(name = "DEPARTMENT_ID")
-    private int departmentId;  //학과 번호
+    private long departmentId;  //학과 번호
     @Column(name = "GRADE")
     private Integer grade;        //학년
     @Column(name = "BIRTHDAY")

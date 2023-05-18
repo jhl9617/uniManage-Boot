@@ -7,7 +7,7 @@ import org.webMonster.uniManageBoot.common.SearchCondition;
 
 public interface ScholarshipRepositoryCustom {
 
-    public Page<ScholarshipEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition);
+    Page<ScholarshipEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition);
 
-    public BooleanExpression searchKeywords(String sk, String sv);
+    BooleanExpression searchKeywords(String sk, String sv);
 }

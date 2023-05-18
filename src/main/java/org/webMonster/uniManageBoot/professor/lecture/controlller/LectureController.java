@@ -53,7 +53,6 @@ public class LectureController {
     public LectureDto getAppliedLecture(@PathVariable Long id) { return lectureService.getLecture(id); }
 
 
-
     //Eclass 선택된 강의 정보 조회 - 강의 메인화면
     @GetMapping("/eclass/lecture/{id}")
     public LectureDto getLecture(@PathVariable Long id){

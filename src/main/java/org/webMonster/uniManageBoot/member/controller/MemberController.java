@@ -1,7 +1,9 @@
 package org.webMonster.uniManageBoot.member.controller;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 import org.webMonster.uniManageBoot.admin.scholarship.model.dto.ScholarshipDto;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
@@ -19,14 +21,13 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Slf4j
+@RequiredArgsConstructor
 @CrossOrigin
 @RestController
 public class MemberController {
 
     private final MemberService memberService;
-    public MemberController(MemberService memberService) {
-        this.memberService = memberService;
-    }
+
     @PostMapping("/onLogin")
     public ResponseEntity<String> login(@RequestBody MemberLoginDto memberLoginDto, HttpSession session) {
         MemberDepartmentDto memberDepartmentDto = memberService.login(memberLoginDto);
@@ -61,5 +62,27 @@ public class MemberController {
     ) {
         return memberService.getStudentList(pageable, searchCondition);
     }
+
+    //교직원 학생관리 상세보기글 조회
+    @GetMapping("/admin/manage/student/{id}")
+    public MemberDepartmentDto getStudent(@PathVariable Long id) { return memberService.getMember(id); }
+
+    //교직원 학생관리 추가하기
+    @PostMapping("/admin/manage/student")
+    public MemberEntity create(@RequestBody MemberDto memberDto) { return memberService.create(memberDto); }
+
+    //교직원 교수관리 리스트 조회
+    @GetMapping("/admin/manage/professor")
+    public Header<List<MemberDepartmentDto>> professorList(
+            @PageableDefault(sort = {"memberIdx"}) Pageable pageable,
+            SearchCondition searchCondition
+    ) {
+        return memberService.getProfessorList(pageable, searchCondition);
+    }
+
+    //교직원 교수관리 상세보기글 조회
+    @GetMapping("/admin/manage/professor/{id}")
+    public MemberDepartmentDto getProfessor(@PathVariable Long id) { return memberService.getMember(id); }
+
 
 }
