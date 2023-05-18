@@ -39,6 +39,7 @@ public class FreeboardEntity {
     @JoinColumn(name = "MEMBER_ID", referencedColumnName = "MEMBER_ID", insertable = false, updatable = false)
     private MemberEntity member;
 
+    @Builder.Default
     @OneToMany(mappedBy = "freeboard")
     private List<FreeboardRepEntity> freeboardRepEntities = new ArrayList<>();
 

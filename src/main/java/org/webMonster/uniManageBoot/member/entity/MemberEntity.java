@@ -22,7 +22,6 @@ import java.util.List;
 @Table(name = "MEMBER")  //Board 테이블 자동 생성시키는 어노테이션임
 @Entity
 @Getter
-@Setter
 public class MemberEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,7 +36,7 @@ public class MemberEntity implements Serializable {
     @Column(name = "DEPARTMENT_ID")
     private int departmentId;  //학과 번호
     @Column(name = "GRADE")
-    private Integer  grade;        //학년
+    private Integer grade;        //학년
     @Column(name = "BIRTHDAY")
     private Date birthday;      //생년월일
     @Column(name = "PHONE")
@@ -68,5 +67,4 @@ public class MemberEntity implements Serializable {
     @Builder.Default
     @OneToMany(mappedBy = "member")
     private List<LectureEntity> lectureEntities = new ArrayList<>();
-
 }

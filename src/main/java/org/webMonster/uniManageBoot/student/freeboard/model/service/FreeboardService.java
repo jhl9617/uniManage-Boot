@@ -4,6 +4,7 @@ package org.webMonster.uniManageBoot.student.freeboard.model.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -24,10 +25,12 @@ import java.util.List;
 @Service
 public class FreeboardService {
 
-
-    private final FreeboardRepository freeboardRepository;
-    private final FreeboardRepRepository freeboardRepRepository;
-    private final FreeboardRepositoryCustomImpl freeboardRepositoryCustom;
+    @Autowired
+    private FreeboardRepository freeboardRepository;
+    @Autowired
+    private FreeboardRepRepository freeboardRepRepository;
+    @Autowired
+    private FreeboardRepositoryCustomImpl freeboardRepositoryCustom;
 
     /**
      * 게시글 목록 가져오기(페이징 처리를 포함)

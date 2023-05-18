@@ -8,7 +8,7 @@ import org.webMonster.uniManageBoot.common.SearchCondition;
 
 public interface LectureRepositoryCustom {
 //    Page<LectureEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition);
-    
+
     BooleanExpression searchKeywords(String sk, String sv);
 
     //교직원 개설강의관리 리스트 출력용
