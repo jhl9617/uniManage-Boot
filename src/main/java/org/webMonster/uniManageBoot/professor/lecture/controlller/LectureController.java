@@ -22,11 +22,7 @@ import java.util.List;
 @CrossOrigin
 @RestController
 public class LectureController {
-
-    @Autowired
-    private LectureService lectureService;
-    @Autowired
-    private FreeboardService freeboardService;
+    private final LectureService lectureService;
 
     //교직원 개설 강의 관리 리스트 조회
     @GetMapping("/admin/manage/lecture")
@@ -59,4 +55,24 @@ public class LectureController {
         return lectureService.getLecture(id);
 
     }
+
+    //교직원 개설 강의 관리 상세보기글 조회
+    @GetMapping("/admin/manage/lecture/{id}")
+    public LectureDto getLecture(@PathVariable Long id) { return lectureService.getLecture(id); }
+
+
+    //교직원 강의개설요청 관리 리스트 조회
+    @GetMapping("/admin/manage/appliedlecture")
+    public Header<List<LectureDto>> appliedlectureList(
+            @PageableDefault(sort = {"lectureId"}) Pageable pageable,
+            SearchCondition searchCondition
+    ) {
+        return lectureService.getAppliedLectureList(pageable, searchCondition);
+    }
+
+    //교직원 강의개설요청 관리 상세보기글 조회
+    @GetMapping("/admin/manage/appliedlecture/{id}")
+    public LectureDto getAppliedLecture(@PathVariable Long id) { return lectureService.getLecture(id); }
+
+
 }
