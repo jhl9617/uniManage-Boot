@@ -83,7 +83,7 @@ public class MemberService {
 
     // 교직원 학생/교수관리 상세보기 조회
     public MemberDepartmentDto getMember(Long id) {
-        MemberEntity entity = memberRepository.findById(id).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
+        MemberEntity entity = memberRepository.findByMemberId(id);
         return MemberDepartmentDto.builder()
                 .memberIdx(entity.getMemberIdx())
                 .memberId(entity.getMemberId())

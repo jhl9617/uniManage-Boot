@@ -13,10 +13,7 @@ public interface MemberRepository extends JpaRepository<MemberEntity, Long>, Mem
     @Query("SELECT m FROM MemberEntity m WHERE m.memberId = :memberId AND m.memberPwd = :memberPwd")
     MemberEntity findByMemberIdAndMemberPwd(@Param("memberId") long memberId, @Param("memberPwd") String memberPwd);
 
-
-
-
-
-
+    @Query("SELECT m FROM MemberEntity m WHERE m.memberId = :memberId")
+    MemberEntity findByMemberId(@Param("memberId") long memberId);
 
 }

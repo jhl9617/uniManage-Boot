@@ -20,7 +20,6 @@ import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.student.department.entity.QDepartmentEntity;
 
 import static org.webMonster.uniManageBoot.member.entity.QMemberEntity.memberEntity;
-import static org.webMonster.uniManageBoot.professor.lecture.entity.QLectureEntity.lectureEntity;
 import static org.webMonster.uniManageBoot.student.department.entity.QDepartmentEntity.departmentEntity;
 
 import java.util.List;

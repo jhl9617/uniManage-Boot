@@ -1,5 +1,6 @@
 package org.webMonster.uniManageBoot.admin.scholarship.entity;
 
+import com.querydsl.core.QueryResults;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
@@ -24,7 +25,6 @@ public class ScholarshipRepositoryCustomImpl extends QuerydslRepositorySupport i
         super(ScholarshipEntity.class);
         this.queryFactory = queryFactory;
     }
-
 
     public Page<ScholarshipEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
         JPAQuery<ScholarshipEntity> query = queryFactory.selectFrom(scholarshipEntity)
@@ -59,5 +59,24 @@ public class ScholarshipRepositoryCustomImpl extends QuerydslRepositorySupport i
 
         return null;
     }
+
+    //교직원 학생관리 학생정보상세 장학금 리스트 조회
+    @Override
+    public Page<ScholarshipEntity> findByMemberId(Pageable pageable, Long memberId, SearchCondition searchCondition) {
+        QScholarshipEntity scholarshipEntity = QScholarshipEntity.scholarshipEntity;
+        JPAQuery<ScholarshipEntity> query = queryFactory.selectFrom(scholarshipEntity)
+                .where(scholarshipEntity.memberId.eq(memberId))
+                .offset(pageable.getOffset())
+                .limit(pageable.getPageSize());
+
+        // 페이징 처리
+        QueryResults<ScholarshipEntity> results = query.fetchResults();
+        List<ScholarshipEntity> content = results.getResults();
+        long total = results.getTotal();
+
+        return new PageImpl<>(content, pageable, total);
+    }
+
+
 
 }

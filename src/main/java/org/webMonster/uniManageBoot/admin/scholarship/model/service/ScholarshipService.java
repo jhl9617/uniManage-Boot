@@ -90,4 +90,25 @@ public class ScholarshipService {
         ScholarshipEntity entity = scholarshipRepository.findById(id).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
         scholarshipRepository.delete(entity);
     }
+
+    //교직원 학생관리 학생정보상세 장학금 리스트 조회
+    public Header<List<ScholarshipDto>> getStudentScholarshipList(Pageable pageable, SearchCondition searchCondition, Long memberId) {
+        List<ScholarshipDto> dtos = new ArrayList<>();
+
+        Page<ScholarshipEntity> scholarshipEntities = scholarshipRepositoryCustom.findByMemberId(pageable, memberId, searchCondition);
+        for (ScholarshipEntity entity : scholarshipEntities) {
+            ScholarshipDto dto = ScholarshipDto.builder()
+                    .schoId(entity.getSchoId())
+                    .schoTerm(entity.getSchoTerm())
+                    .schoName(entity.getSchoName())
+                    .amount(entity.getAmount())
+                    .memberId(entity.getMemberId())
+                    .name(entity.getMember().getName())
+                    .build();
+            dtos.add(dto);
+        }
+
+        return Header.OK(dtos);
+    }
+
 }

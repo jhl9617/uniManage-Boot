@@ -20,6 +20,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 import org.webMonster.uniManageBoot.admin.notice.entity.NoticeEntity;
@@ -106,8 +107,21 @@ public class NoticeService {
                 .noticeTitle(entity.getNoticeTitle())
                 .noticeContent(entity.getNoticeContent())
                 .memberId(entity.getMemberId())
+                .readcount(entity.getReadcount())
                 .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
                 .build();
+    }
+
+    //게시글 조회시 조회수 1씩 증가
+    @Transactional
+    public void increaseReadCount(Long id) {
+        NoticeEntity entity = noticeRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
+
+        entity.setReadcount(entity.getReadcount() + 1); // 조회수 증가
+
+        // 조회수 업데이트 저장
+        noticeRepository.save(entity);
     }
     /**
      * 게시글 등록
@@ -223,4 +237,6 @@ public class NoticeService {
 
 
     }
+
+
 }
