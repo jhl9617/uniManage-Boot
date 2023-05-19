@@ -32,8 +32,6 @@ public class QLectureEntity extends EntityPathBase<LectureEntity> {
 
     public final ComparablePath<Character> lectureApplyStatus = createComparable("lectureApplyStatus", Character.class);
 
-    public final org.webMonster.uniManageBoot.professor.lectureClass.entity.QLectureClassEntity lectureClass;
-
     public final NumberPath<Long> lectureId = createNumber("lectureId", Long.class);
 
     public final StringPath lectureTitle = createString("lectureTitle");
@@ -81,7 +79,6 @@ public class QLectureEntity extends EntityPathBase<LectureEntity> {
     public QLectureEntity(Class<? extends LectureEntity> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
         this.department = inits.isInitialized("department") ? new org.webMonster.uniManageBoot.student.department.entity.QDepartmentEntity(forProperty("department")) : null;
-        this.lectureClass = inits.isInitialized("lectureClass") ? new org.webMonster.uniManageBoot.professor.lectureClass.entity.QLectureClassEntity(forProperty("lectureClass")) : null;
         this.member = inits.isInitialized("member") ? new org.webMonster.uniManageBoot.member.entity.QMemberEntity(forProperty("member"), inits.get("member")) : null;
     }
 

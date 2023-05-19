@@ -7,7 +7,6 @@ import com.querydsl.core.types.dsl.*;
 import com.querydsl.core.types.PathMetadata;
 import javax.annotation.processing.Generated;
 import com.querydsl.core.types.Path;
-import com.querydsl.core.types.dsl.PathInits;
 
 
 /**
@@ -27,8 +26,6 @@ public class QLectureClassEntity extends EntityPathBase<LectureClassEntity> {
     public final NumberPath<Integer> classCapacity = createNumber("classCapacity", Integer.class);
 
     public final NumberPath<Long> lectureClassIdx = createNumber("lectureClassIdx", Long.class);
-
-    public final ListPath<org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity, org.webMonster.uniManageBoot.professor.lecture.entity.QLectureEntity> lectureEntities = this.<org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity, org.webMonster.uniManageBoot.professor.lecture.entity.QLectureEntity>createList("lectureEntities", org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity.class, org.webMonster.uniManageBoot.professor.lecture.entity.QLectureEntity.class, PathInits.DIRECT2);
 
     public final StringPath lectureRoomCode = createString("lectureRoomCode");
 
