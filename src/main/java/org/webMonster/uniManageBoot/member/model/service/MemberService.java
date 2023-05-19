@@ -83,8 +83,9 @@ public class MemberService {
 
     // 교직원 학생/교수관리 상세보기 조회
     public MemberDepartmentDto getMember(Long id) {
-        MemberEntity entity = memberRepository.findById(id).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
+        MemberEntity entity = memberRepository.findById(id).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
         return MemberDepartmentDto.builder()
+                .memberIdx(entity.getMemberIdx())
                 .memberId(entity.getMemberId())
                 .memberPwd(entity.getMemberPwd())
                 .name(entity.getName())
@@ -101,7 +102,7 @@ public class MemberService {
                 .build();
     }
 
-    //교직원 학생관리 추가
+    //교직원 학생/교수관리 추가
     public MemberEntity create(MemberDto memberDto) {
         MemberEntity entity = MemberEntity.builder()
                 .memberIdx(memberDto.getMemberIdx())
@@ -121,6 +122,30 @@ public class MemberService {
         return memberRepository.save(entity);
     }
 
+    //교직원 학생/교수관리 수정
+    public MemberEntity update(MemberDto memberDto) {
+        MemberEntity entity = memberRepository.findById(memberDto.getMemberIdx()).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
+        entity.setMemberIdx(memberDto.getMemberIdx());
+        entity.setMemberId(memberDto.getMemberId());
+        entity.setMemberPwd(memberDto.getMemberPwd());
+        entity.setName(memberDto.getName());
+        entity.setDepartmentId(memberDto.getDepartmentId());
+        entity.setGrade(memberDto.getGrade());
+        entity.setBirthday(memberDto.getBirthday());
+        entity.setPhone(memberDto.getPhone());
+        entity.setEmail(memberDto.getEmail());
+        entity.setPostcode(memberDto.getPostcode());
+        entity.setAddress1(memberDto.getAddress1());
+        entity.setAddress2(memberDto.getAddress2());
+        entity.setAuth(memberDto.getAuth());
+        return memberRepository.save(entity);
+    }
+
+    //교직원 학생/교수관리 삭제
+    public void delete(Long id) {
+        MemberEntity entity = memberRepository.findById(id).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
+        memberRepository.delete(entity);
+    }
 
     //교직원 교수관리 리스트 조회
     public Header<List<MemberDepartmentDto>> getProfessorList(Pageable pageable, SearchCondition searchCondition) {

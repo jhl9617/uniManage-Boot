@@ -82,7 +82,7 @@ public class NoticeService {
                     .noticeTitle(entity.getNoticeTitle())
                     .noticeContent(entity.getNoticeContent())
                     .memberId(entity.getMemberId())
-                    .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
                     .build();
             dtos.add(dto);
         }
@@ -106,7 +106,7 @@ public class NoticeService {
                 .noticeTitle(entity.getNoticeTitle())
                 .noticeContent(entity.getNoticeContent())
                 .memberId(entity.getMemberId())
-                .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
                 .build();
     }
     /**
