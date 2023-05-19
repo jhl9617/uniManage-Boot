@@ -3,7 +3,6 @@ package org.webMonster.uniManageBoot.professor.lecture.entity;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.Query;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 
 public interface LectureRepositoryCustom {

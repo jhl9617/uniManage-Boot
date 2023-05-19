@@ -31,7 +31,7 @@ public class FreeboardController {
 //    }
 
     // 페이지 단위로 목록 조회
-    @GetMapping("/Eclass/lecture/board/list")
+    @GetMapping("/eclass/lecture/board/list")
     public Header<List<FreeboardDto>> freeboardList(
             @PageableDefault(sort = {"free_id"}) Pageable pageable,
             SearchCondition searchCondition
@@ -45,7 +45,7 @@ public class FreeboardController {
 //        return freeboardService.getBoard(id);
 //    }
     //게시글 선택 조회, 게시글 번호에 해당하는 댓글리스트 조회
-    @GetMapping("/Eclass/lecture/board/{id}")
+    @GetMapping("/eclass/lecture/board/{id}")
     public FreeboardWithRepDto getFreeBoardWithRep(@PathVariable Long id) {
         FreeboardWithRepDto response = new FreeboardWithRepDto();
         response.setFreeboard(freeboardService.getBoard(id));
@@ -54,7 +54,7 @@ public class FreeboardController {
 
     }
      //게시글 작성
-    @PostMapping("/eclass/lecture/board")
+    @PostMapping("/Eclass/lecture/board")
     public FreeboardEntity create(@RequestBody FreeboardDto freeboardDto) {
 
         return freeboardService.create(freeboardDto);

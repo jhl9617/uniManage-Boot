@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
@@ -62,6 +63,24 @@ public class FreeboardService {
         );
 
         return Header.OK(list, pagination);
+    }
+
+    // 게시글 목록 가져오기(페이징 x)
+    public List<FreeboardDto> getBoardList(){
+        List<FreeboardDto> list = new ArrayList<>();
+        List<FreeboardEntity> entity = freeboardRepository.findAll();
+        for (FreeboardEntity fentity : entity) {
+            FreeboardDto dto = FreeboardDto.builder()
+                    .freeId(fentity.getFreeId())
+                    .name(fentity.getMember().getName())
+                    .freeTitle(fentity.getFreeTitle())
+                    .freeContent(fentity.getFreeContent())
+                    .createdDate(fentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .build();
+            list.add(dto);
+        }
+        return list;
+
     }
 
     /**

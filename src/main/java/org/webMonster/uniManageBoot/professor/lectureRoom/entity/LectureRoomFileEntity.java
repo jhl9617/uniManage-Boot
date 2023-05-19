@@ -1,18 +1,17 @@
 package org.webMonster.uniManageBoot.professor.lectureRoom.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Data
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Table(name = "LECTURE_ROOM_FILE")
 @Entity
+@Getter
+@Setter
 public class LectureRoomFileEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

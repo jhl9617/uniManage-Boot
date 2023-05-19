@@ -3,7 +3,6 @@ package org.webMonster.uniManageBoot.professor.homework.model.dto;
 
 import lombok.*;
 
-import java.sql.Date;
 
 @Data
 @AllArgsConstructor

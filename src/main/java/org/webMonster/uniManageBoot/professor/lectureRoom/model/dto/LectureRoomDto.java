@@ -2,10 +2,8 @@ package org.webMonster.uniManageBoot.professor.lectureRoom.model.dto;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import java.time.LocalDateTime;
 
-@Data
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder

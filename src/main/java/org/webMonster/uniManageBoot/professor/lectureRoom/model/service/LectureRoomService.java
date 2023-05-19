@@ -64,6 +64,25 @@ public class LectureRoomService {
 
         return Header.OK(list, pagination);
     }
+
+    // 강의 자료 리스트 조회(페이징 x) - eclass 메인화면에서 사용
+    public List<LectureRoomDto> getSourceList(Long id){
+        List<LectureRoomDto> list = new ArrayList<>();
+        List<LectureRoomEntity> entity = lectureRoomRepository.findByLectureId(id);
+        for (LectureRoomEntity lentity : entity) {
+            LectureRoomDto dto = LectureRoomDto.builder()
+                    .lectureRoomId(lentity.getLectureRoomId())
+                    .lectureId(lentity.getLectureId())
+                    .memberId(lentity.getMemberId())
+                    .lectureRoomTitle(lentity.getLectureRoomTitle())
+                    .lectureRoomContent(lentity.getLectureRoomContent())
+                    .readcount(lentity.getReadcount())
+                    .createdDate(lentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .build();
+            list.add(dto);
+        }
+        return list;
+    }
     
     // 강의 자료 선택 조회
     public LectureRoomDto getSource(Long id) {
@@ -74,7 +93,7 @@ public class LectureRoomService {
                 .memberId(entity.getMemberId())
                 .lectureRoomTitle(entity.getLectureRoomTitle())
                 .lectureRoomContent(entity.getLectureRoomContent())
-                .readcount(entity.getReadcount() + 1)
+                .readcount(entity.getReadcount())
                 .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
                 .build();
 

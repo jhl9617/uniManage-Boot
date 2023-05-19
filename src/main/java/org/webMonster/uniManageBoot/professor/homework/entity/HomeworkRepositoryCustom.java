@@ -7,7 +7,7 @@ import org.webMonster.uniManageBoot.common.SearchCondition;
 
 public interface HomeworkRepositoryCustom {
 
-    public Page<HomeworkEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition);
+    public Page<HomeworkEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition, Long id);
 
     public BooleanExpression searchKeywords(String sk, String sv);
 }

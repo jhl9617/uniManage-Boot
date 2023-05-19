@@ -1,12 +1,11 @@
 package org.webMonster.uniManageBoot.professor.lecture.entity;
 
-import com.querydsl.core.types.ParamExpression;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
-import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 
 import javax.persistence.*;

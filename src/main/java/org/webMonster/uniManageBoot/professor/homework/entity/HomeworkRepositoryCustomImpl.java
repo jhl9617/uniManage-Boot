@@ -27,8 +27,9 @@ public class HomeworkRepositoryCustomImpl extends QuerydslRepositorySupport impl
     }
 
     @Override
-    public Page<HomeworkEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
+    public Page<HomeworkEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition, Long id) {
         JPAQuery<HomeworkEntity> query = queryFactory.selectFrom(homeworkEntity)
+                .where(homeworkEntity.lectureId.eq(id))
                 .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()));
 
         long total = query.stream().count();   //여기서 전체 카운트 후 아래에서 조건작업
