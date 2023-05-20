@@ -43,6 +43,9 @@ public class NoticeController {
     }
     @GetMapping("admin/notice/{id}")
     public NoticeDto getNotice(@PathVariable Long id) {
+        // 조회수 증가
+        noticeService.increaseReadCount(id);
+        //게시글 조회
         return noticeService.getNotice(id);
     }
     @PostMapping("admin/notice")
@@ -72,4 +75,5 @@ public class NoticeController {
 /*        model.addAttribute("response", response);*/
         return "result";
     }
+
 }

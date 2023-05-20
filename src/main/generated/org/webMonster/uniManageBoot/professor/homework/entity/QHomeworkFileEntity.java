@@ -1,4 +1,4 @@
-package org.webMonster.uniManageBoot.professor.homeworkFile.entity;
+package org.webMonster.uniManageBoot.professor.homework.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -15,7 +15,7 @@ import com.querydsl.core.types.Path;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QHomeworkFileEntity extends EntityPathBase<HomeworkFileEntity> {
 
-    private static final long serialVersionUID = -442168676L;
+    private static final long serialVersionUID = -2005174784L;
 
     public static final QHomeworkFileEntity homeworkFileEntity = new QHomeworkFileEntity("homeworkFileEntity");
 

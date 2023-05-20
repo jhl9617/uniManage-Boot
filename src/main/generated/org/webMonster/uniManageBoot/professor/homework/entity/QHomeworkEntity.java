@@ -19,7 +19,7 @@ public class QHomeworkEntity extends EntityPathBase<HomeworkEntity> {
 
     public static final QHomeworkEntity homeworkEntity = new QHomeworkEntity("homeworkEntity");
 
-    public final DatePath<java.sql.Date> deadline = createDate("deadline", java.sql.Date.class);
+    public final DateTimePath<java.time.LocalDateTime> deadline = createDateTime("deadline", java.time.LocalDateTime.class);
 
     public final StringPath homeworkContent = createString("homeworkContent");
 

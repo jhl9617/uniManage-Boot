@@ -16,6 +16,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassEntity;
+import org.webMonster.uniManageBoot.professor.lectureClass.model.dto.LectureClassDto;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
@@ -69,7 +71,15 @@ public class MemberController {
 
     //교직원 학생관리 추가하기
     @PostMapping("/admin/manage/student")
-    public MemberEntity create(@RequestBody MemberDto memberDto) { return memberService.create(memberDto); }
+    public MemberEntity createStudent(@RequestBody MemberDto memberDto) { return memberService.create(memberDto); }
+
+    //교직원 학생관리 수정하기
+    @PatchMapping("/admin/manage/student")
+    public MemberEntity update(@RequestBody MemberDto memberDto){ return memberService.update(memberDto); }
+
+    //교직원 학생관리 삭제하기
+    @DeleteMapping("/admin/manage/student/{id}")
+    public void delete(@PathVariable Long id) { memberService.delete(id); }
 
     //교직원 교수관리 리스트 조회
     @GetMapping("/admin/manage/professor")
@@ -83,6 +93,10 @@ public class MemberController {
     //교직원 교수관리 상세보기글 조회
     @GetMapping("/admin/manage/professor/{id}")
     public MemberDepartmentDto getProfessor(@PathVariable Long id) { return memberService.getMember(id); }
+
+    //교직원 교수관리 추가하기
+    @PostMapping("/admin/manage/professor")
+    public MemberEntity createProfessor(@RequestBody MemberDto memberDto) { return memberService.create(memberDto); }
 
 
 }
