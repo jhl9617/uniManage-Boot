@@ -2,7 +2,6 @@ package org.webMonster.uniManageBoot.professor.lectureRoom.model.dto;
 
 import lombok.*;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder

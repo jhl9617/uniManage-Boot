@@ -2,7 +2,6 @@ package org.webMonster.uniManageBoot.professor.lectureNotice.model.dto;
 
 import lombok.*;
 
-import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

@@ -15,6 +15,7 @@ import org.webMonster.uniManageBoot.professor.lectureNotice.entity.LectureNotice
 import org.webMonster.uniManageBoot.professor.lectureNotice.model.dto.LectureNoticeDto;
 
 
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -26,10 +27,12 @@ public class LectureNoticeService {
     @Autowired
     private LectureNoticeRepository lectureNoticeRepository;
 
+    @Autowired
     private LectureNoticeRepositoryCustom lectureNoticeRepositoryCustom;
 
     // 강의별 공지사항 리스트 조회
-    public Header<List<LectureNoticeDto>> getLectureNoticeList(Pageable pageable, SearchCondition searchCondition, long id) {
+    public Header<List<LectureNoticeDto>> getLectureNoticeList(Pageable pageable, SearchCondition searchCondition, Long id) {
+
         List<LectureNoticeDto> list = new ArrayList<>();
 
         Page<LectureNoticeEntity> lectureNoticeEntities = lectureNoticeRepositoryCustom.findAllBySearchCondition(pageable, searchCondition, id);
@@ -55,6 +58,25 @@ public class LectureNoticeService {
         );
 
         return Header.OK(list, pagination);
+
+    }
+
+    //강의 공지사항 리스트 조회(페이징 x)
+    public List<LectureNoticeDto> getLectureNoticeList(Long id){
+        List<LectureNoticeDto> list = new ArrayList<>();
+        List<LectureNoticeEntity> entity = lectureNoticeRepository.findByLectureId(id);
+        for (LectureNoticeEntity lentity : entity) {
+            LectureNoticeDto dto = LectureNoticeDto.builder()
+                    .lectureNoticeId(lentity.getLectureNoticeId())
+                    .lectureId(lentity.getLectureId())
+                    .lectureNoticeTitle(lentity.getLectureNoticeTitle())
+                    .lectureNoticeContent(lentity.getLectureNoticeContent())
+                    .createdDate(lentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .readcount(lentity.getReadcount())
+                    .build();
+            list.add(dto);
+        }
+        return list;
 
     }
 

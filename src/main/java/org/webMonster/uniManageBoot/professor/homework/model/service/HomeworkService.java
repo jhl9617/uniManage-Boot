@@ -13,6 +13,7 @@ import org.webMonster.uniManageBoot.professor.homework.entity.*;
 import org.webMonster.uniManageBoot.professor.homework.model.dto.HomeworkDto;
 import org.webMonster.uniManageBoot.professor.homework.model.dto.HomeworkFileDto;
 
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -31,10 +32,10 @@ public class HomeworkService {
     private HomeworkFileRepository homeworkFileRepository;
 
     //과제 리스트 조회
-    public Header<List<HomeworkDto>> getHomeworkList(Pageable pageable, SearchCondition searchCondition) {
+    public Header<List<HomeworkDto>> getHomeworkList(Pageable pageable, SearchCondition searchCondition, Long id) {
         List<HomeworkDto> list = new ArrayList<>();
 
-        Page<HomeworkEntity> homeworkEntities = homeworkRepositoryCustom.findAllBySearchCondition(pageable, searchCondition);
+        Page<HomeworkEntity> homeworkEntities = homeworkRepositoryCustom.findAllBySearchCondition(pageable, searchCondition, id);
 
         for (HomeworkEntity entity : homeworkEntities) {
             HomeworkDto dto = HomeworkDto.builder()
@@ -58,6 +59,25 @@ public class HomeworkService {
         );
 
         return Header.OK(list, pagination);
+    }
+
+    //과제 리스트 조회(페이징 x )
+    public List<HomeworkDto> getHomeworkList(Long id){
+        List<HomeworkDto> list = new ArrayList<>();
+        List<HomeworkEntity> entity = homeworkRepository.findByLectureId(id);
+        for (HomeworkEntity hentity : entity) {
+            HomeworkDto dto = HomeworkDto.builder()
+                    .homeworkId(hentity.getHomeworkId())
+                    .memberId(hentity.getMemberId())
+                    .lectureId(hentity.getLectureId())
+                    .homeworkName(hentity.getHomeworkName())
+                    .homeworkContent(hentity.getHomeworkContent())
+                    .submitted(hentity.getSubmitted())
+                    .deadline(hentity.getDeadline().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .build();
+            list.add(dto);
+        }
+        return list;
     }
 
     //과제 선택 조회

@@ -1,21 +1,20 @@
 package org.webMonster.uniManageBoot.professor.lectureRoom.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Data
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Table(name = "LECTURE_ROOM")
 @Entity
+@Getter
+@Setter
 public class LectureRoomEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
