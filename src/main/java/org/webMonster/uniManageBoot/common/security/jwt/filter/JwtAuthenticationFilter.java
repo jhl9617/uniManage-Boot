@@ -65,9 +65,8 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     @Override
     protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain, Authentication authentication) throws ServletException, IOException {
 
-
         CustomUser user = ((CustomUser) authentication.getPrincipal());
-        System.out.println(user + "123");
+        System.out.println(user + " 로그인 성공 ");
 
     	long userNo = user.getUserNo();
     	String userId = user.getUserId();
@@ -78,7 +77,8 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
             .collect(Collectors.toList());
         System.out.println("roles : " + roles);
         String token = jwtTokenProvider.createToken(userNo, userId, roles);
-        System.out.println("token : " + token);
+        System.out.println("토큰 생성 성공 : " + token);
+
         response.addHeader(SecurityConstants.TOKEN_HEADER, SecurityConstants.TOKEN_PREFIX + token);
 
 
