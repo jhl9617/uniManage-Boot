@@ -1,4 +1,6 @@
 package org.webMonster.uniManageBoot.student.score.entity;
 
-public interface ScoreRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ScoreRepository extends JpaRepository<ScoreEntity, Long> {
 }
