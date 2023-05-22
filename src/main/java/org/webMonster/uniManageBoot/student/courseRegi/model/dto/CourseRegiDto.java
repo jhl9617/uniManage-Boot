@@ -2,6 +2,7 @@ package org.webMonster.uniManageBoot.student.courseRegi.model.dto;
 
 import lombok.*;
 
+import javax.persistence.Column;
 
 
 @Data
@@ -25,5 +26,10 @@ public class CourseRegiDto {
     private String timecode1; // 강의시간코드1
     private String timecode2; // 강의시간코드2
     private String timecode3;  // 강의시간코드3
+    private int numberOfStudent;   //정원
+    private int credit;   //학점
+    private String roomcode1;   //강의실코드1
+    private String roomcode2;   //강의실코드2
+    private String roomcode3;   //강의실코드3
 
 }
