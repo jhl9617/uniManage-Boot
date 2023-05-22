@@ -18,7 +18,7 @@ public class MemberDto {
     private long memberId;  //아이디
     private String memberPwd;  //비밀번호
     private String name;        //이름
-    private int departmentId;  //학과
+    private long departmentId;  //학과
     private int grade;        //학년
     private Date birthday;      //생년월일
     private String phone;       //전화번호
@@ -47,22 +47,22 @@ public class MemberDto {
         return memberDto;
     }
 
-    public MemberEntity toEntity() {
-        MemberEntity memberEntity = new MemberEntity();
-        memberEntity.setMemberIdx(this.getMemberIdx());
-        memberEntity.setMemberId(this.getMemberId());
-        memberEntity.setMemberPwd(this.getMemberPwd());
-        memberEntity.setName(this.getName());
-        memberEntity.setDepartmentId(this.getDepartmentId());
-        memberEntity.setGrade(this.getGrade());
-        memberEntity.setBirthday(this.getBirthday());
-        memberEntity.setPhone(this.getPhone());
-        memberEntity.setEmail(this.getEmail());
-        memberEntity.setPostcode(this.getPostcode());
-        memberEntity.setAddress1(this.getAddress1());
-        memberEntity.setAddress2(this.getAddress2());
-        memberEntity.setAuth(this.getAuth());
-        return memberEntity;
-    }
+//    public MemberEntity toEntity() {
+//        MemberEntity memberEntity = new MemberEntity();
+//        memberEntity.setMemberIdx(this.getMemberIdx());
+//        memberEntity.setMemberId(this.getMemberId());
+//        memberEntity.setMemberPwd(this.getMemberPwd());
+//        memberEntity.setName(this.getName());
+//        memberEntity.setDepartmentId(this.getDepartmentId());
+//        memberEntity.setGrade(this.getGrade());
+//        memberEntity.setBirthday(this.getBirthday());
+//        memberEntity.setPhone(this.getPhone());
+//        memberEntity.setEmail(this.getEmail());
+//        memberEntity.setPostcode(this.getPostcode());
+//        memberEntity.setAddress1(this.getAddress1());
+//        memberEntity.setAddress2(this.getAddress2());
+//        memberEntity.setAuth(this.getAuth());
+//        return memberEntity;
+//    }
 
 }

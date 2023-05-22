@@ -2,6 +2,7 @@ package org.webMonster.uniManageBoot.student.freeboard.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +22,8 @@ import java.util.List;
 @CrossOrigin
 @RestController
 public class FreeboardController {
-    private final FreeboardService freeboardService;
+    @Autowired
+    private FreeboardService freeboardService;
 
 //    @GetMapping("/board/list")
 //    public List<BoardDto> boardList() {
@@ -29,7 +31,7 @@ public class FreeboardController {
 //    }
 
     // 페이지 단위로 목록 조회
-    @GetMapping("/Eclass/board/list")
+    @GetMapping("/eclass/lecture/board/list")
     public Header<List<FreeboardDto>> freeboardList(
             @PageableDefault(sort = {"free_id"}) Pageable pageable,
             SearchCondition searchCondition
@@ -42,65 +44,45 @@ public class FreeboardController {
 //
 //        return freeboardService.getBoard(id);
 //    }
-    @GetMapping("/Eclass/board/{id}")
+    //게시글 선택 조회, 게시글 번호에 해당하는 댓글리스트 조회
+    @GetMapping("/eclass/lecture/board/{id}")
     public FreeboardWithRepDto getFreeBoardWithRep(@PathVariable Long id) {
         FreeboardWithRepDto response = new FreeboardWithRepDto();
         response.setFreeboard(freeboardService.getBoard(id));
         response.setFreeboardReps(freeboardService.getBoardRep(id));
         return response;
+
     }
-    // 게시글 작성
-//    @PostMapping("/Eclass/board")
-//    public FreeboardEntity create(@RequestBody FreeboardDto freeboardDto) {
-//
-//        return freeboardService.create(freeboardDto);
-//    }
-    @PostMapping("/Eclass/board")
-    public ResponseEntity<?> create(@RequestBody Object requestObject) {
-        if (requestObject instanceof FreeboardDto) {
-            FreeboardDto freeboardDto = (FreeboardDto) requestObject;
-            FreeboardEntity freeboardEntity = freeboardService.create(freeboardDto);
-            return ResponseEntity.ok(freeboardEntity);
-        } else if (requestObject instanceof FreeboardRepDto) {
-            FreeboardRepDto freeboardRepDto = (FreeboardRepDto) requestObject;
-            FreeboardRepEntity freeboardRepEntity = freeboardService.createRep(freeboardRepDto);
-            return ResponseEntity.ok(freeboardRepEntity);
-        } else {
-            return ResponseEntity.badRequest().build();
-        }
+     //게시글 작성
+    @PostMapping("/Eclass/lecture/board")
+    public FreeboardEntity create(@RequestBody FreeboardDto freeboardDto) {
+
+        return freeboardService.create(freeboardDto);
+    }
+    //댓글 작성
+    @PostMapping("/eclass/lecture/board/{id}")
+    public FreeboardRepEntity createRep(@PathVariable Long id, @RequestBody FreeboardRepDto freeboardRepDto) {
+
+        return freeboardService.createRep(freeboardRepDto, id);
     }
     // 게시글 수정
-    @PatchMapping("/Eclass/board")
+    @PatchMapping("/eclass/lecture/board")
     public FreeboardEntity update(@RequestBody FreeboardDto freeboardDto) {
 
         return freeboardService.update(freeboardDto);
     }
-    // 게시글 삭제
-    @DeleteMapping("/Eclass/board/{id}")
-    public void delete(@PathVariable Long id) {
-
-        freeboardService.delete(id);
+    // 게시글, 댓글 삭제
+    @DeleteMapping("/eclass/lecture/board/{id}")
+    public void delete(@PathVariable Long id, @RequestParam(name="id", required=false) Long repId) {
+        if(repId != null){
+            freeboardService.deleteRep(repId);
+        } else {
+            freeboardService.delete(id);
+        }
     }
 
 
-    // 댓글 작성
-//    @PostMapping("/Eclass/board/reply")
-//    public FreeboardRepEntity createRep(@RequestBody FreeboardRepDto freeboardRepDto) {
-//
-//        return freeboardService.createRep(freeboardRepDto);
-//    }
-    // 댓글 수정
-    @PatchMapping("/Eclass/board/reply/")
-    public FreeboardRepEntity update(@RequestBody FreeboardRepDto freeboardRepDto) {
 
-        return freeboardService.updateRep(freeboardRepDto);
-    }
-    // 댓글 삭제
-    @DeleteMapping("/Eclass/board/reply/{id}")
-    public void deleteRep(@PathVariable Long id) {
-
-        freeboardService.deleteRep(id);
-    }
 
 
 

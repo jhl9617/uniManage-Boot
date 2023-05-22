@@ -21,6 +21,8 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.Oracle12cDialect
+        hbm2ddl:
+          auto: none  # entity에 설정한 조인 관계에 대한 제약조건(외래키 등)을 hibernate에서 자동으로 생성하지 않게 하는 코드
 
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
@@ -34,4 +36,3 @@ naver-cloud-sms:
   secretKey: 8mrkRnI0ygWoP5kr4Zu6KvmugY8NKOWZUJ3o2LqF
   serviceId: ncp:sms:kr:259303388885:unimanage
   senderPhone: 01032475955
-

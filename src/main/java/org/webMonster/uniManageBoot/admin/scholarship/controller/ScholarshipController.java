@@ -44,4 +44,14 @@ public class ScholarshipController {
     //교직원 장학금관리 삭제하기
     @DeleteMapping("/admin/manage/scholarship/{id}")
     public void delete(@PathVariable Long id) { scholarshipService.delete(id); }
+
+    //교직원 학생관리 학생정보상세 장학금 리스트 조회
+    @GetMapping("/admin/manage/student/scholarship/{member_id}")
+    public Header<List<ScholarshipDto>> studentSchoList(
+            @PageableDefault(sort = {"schoId"}) Pageable pageable,
+            SearchCondition searchCondition,
+            @PathVariable("member_id") Long memberId
+    ) {
+        return scholarshipService.getStudentScholarshipList(pageable, searchCondition, memberId);
+    }
 }
