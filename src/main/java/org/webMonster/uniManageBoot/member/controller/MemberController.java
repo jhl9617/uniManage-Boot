@@ -62,17 +62,17 @@ public class MemberController {
         return memberService.getStudentList(pageable, searchCondition);
     }
 
-    //개인정보 조회(교수용)
-/*    @GetMapping("/prof/info")
-    public MemberDepartmentDto professorInfo(HttpSession session){
-        MemberDepartmentDto memberDepartmentDto = (MemberDepartmentDto) session.getAttribute("loginMember");
-        System.out.println(memberDepartmentDto);
-        return memberService.getProfessorInfo(memberDepartmentDto.getMemberId());
-    }*/
     @GetMapping("/prof/info")
     public MemberDepartmentDto professorInfo(HttpSession session) {
         MemberDepartmentDto loginMember = (MemberDepartmentDto) session.getAttribute("loginMember");
         return loginMember;
     }
 
+    //교수 개인정보 페이지 수정
+    @PatchMapping("/prof/info")
+    public MemberEntity update(@RequestBody MemberDepartmentDto memberDepartmentDto, HttpSession session){
+        session.setAttribute("loginMember", memberDepartmentDto);
+        return memberService.update(memberDepartmentDto);
+
+    }
 }
