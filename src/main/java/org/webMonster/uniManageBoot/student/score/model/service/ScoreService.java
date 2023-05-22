@@ -37,6 +37,7 @@ public class ScoreService {
                     .assignScore(entity.getAssignScore())
                     .totalScore(entity.getTotalScore())
                     .name(entity.getMember().getName())
+                    .lectureTitle(entity.getLecture().getLectureTitle())
                     .build();
             dtos.add(dto);
         }
