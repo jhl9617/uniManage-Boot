@@ -13,11 +13,11 @@ import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import org.webMonster.uniManageBoot.member.entity.MemberRepository;
 import org.webMonster.uniManageBoot.member.entity.MemberRepositoryCustom;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
+import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -67,5 +67,24 @@ public class MemberService {
         log.info("dtos:" + dtos);
 
         return Header.OK(dtos, pagination);
+    }
+
+
+    //개인정보 조회(교수용)
+    public MemberDepartmentDto getProfessorInfo(Long id) {
+        MemberEntity entity = memberRepository.findAllById(id);
+        return MemberDepartmentDto.builder()
+                .memberId(entity.getMemberId())
+                .memberPwd(entity.getMemberPwd())
+                .name(entity.getName())
+                .departmentId(entity.getDepartmentId())
+                .departmentName(entity.getDepartment().getDepartmentName())
+                .birthday(entity.getBirthday())
+                .phone(entity.getPhone())
+                .email(entity.getEmail())
+                .postcode(entity.getPostcode())
+                .address1(entity.getAddress1())
+                .address2(entity.getAddress2())
+                .build();
     }
 }

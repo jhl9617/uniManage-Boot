@@ -62,4 +62,10 @@ public class MemberController {
         return memberService.getStudentList(pageable, searchCondition);
     }
 
+    //개인정보 조회(교수용)
+    @GetMapping("/prof/info")
+    public MemberDepartmentDto professorInfo(@PathVariable Long id){
+        return memberService.getProfessorInfo(id);
+    }
+
 }
