@@ -38,6 +38,10 @@ public class CourseRegiService {
                     .timecode1(coentity.getLecture().getTimecode1())
                     .timecode2(coentity.getLecture().getTimecode2())
                     .timecode3(coentity.getLecture().getTimecode3())
+                    .roomcode1(coentity.getLecture().getRoomcode1())
+                    .roomcode2(coentity.getLecture().getRoomcode2())
+                    .roomcode3(coentity.getLecture().getRoomcode3())
+                    .credit(coentity.getLecture().getCredit())
                     .build();
             list.add(dto);
         }

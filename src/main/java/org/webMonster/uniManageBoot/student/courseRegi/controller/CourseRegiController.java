@@ -24,9 +24,9 @@ public class CourseRegiController {
     @Autowired
     private CourseRegiService courseRegiService;
 
-    @GetMapping("/Eclass")
-    public List<CourseRegiDto> courseRegiList(Long id) {
-        id = 20180102L;
+    @GetMapping("/eclass/{id}")
+    public List<CourseRegiDto> courseRegiList(@PathVariable Long id) {
+
         return courseRegiService.courseRegiList(id);
     }
 

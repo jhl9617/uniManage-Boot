@@ -32,7 +32,7 @@ public class MemberController {
         session.setAttribute("loginMember", memberDepartmentDto);
         String path = null;
         if (memberDepartmentDto.getAuth() == 3 || memberDepartmentDto.getAuth() == 4 || memberDepartmentDto.getAuth() == 5) {   //학생
-            path = "/student";
+            path = "/student/studentinfomain";
         } else if (memberDepartmentDto.getAuth() == 1) {                 //교수
             path = "/prof/main";
         } else if (memberDepartmentDto.getAuth() == 2) {                 //교직원
