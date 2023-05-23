@@ -7,13 +7,8 @@ import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.student.courseRegi.entity.CourseRegiEntity;
 import org.webMonster.uniManageBoot.student.courseRegi.entity.CourseRegiRepository;
 import org.webMonster.uniManageBoot.student.courseRegi.model.dto.CourseRegiDto;
-import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
-import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardRepEntity;
-import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardDto;
-import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardRepDto;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+
 import java.util.ArrayList;
 import java.util.List;
 

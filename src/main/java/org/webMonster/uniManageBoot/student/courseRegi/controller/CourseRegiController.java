@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import org.webMonster.uniManageBoot.student.courseRegi.entity.CourseRegiEntity;
 import org.webMonster.uniManageBoot.student.courseRegi.model.dto.CourseRegiDto;
 import org.webMonster.uniManageBoot.student.courseRegi.model.service.CourseRegiService;
-import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
-import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardDto;
 
 
 import java.util.List;
@@ -23,7 +21,7 @@ public class CourseRegiController {
 
     @Autowired
     private CourseRegiService courseRegiService;
-
+    //Eclass 메인화면에서 현재 수강중인 강의 리스트를 조회
     @GetMapping("/eclass/{id}")
     public List<CourseRegiDto> courseRegiList(@PathVariable Long id) {
 
