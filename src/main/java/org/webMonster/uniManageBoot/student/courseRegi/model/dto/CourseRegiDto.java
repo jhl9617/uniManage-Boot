@@ -2,8 +2,6 @@ package org.webMonster.uniManageBoot.student.courseRegi.model.dto;
 
 import lombok.*;
 
-import javax.persistence.Column;
-
 
 @Data
 @AllArgsConstructor

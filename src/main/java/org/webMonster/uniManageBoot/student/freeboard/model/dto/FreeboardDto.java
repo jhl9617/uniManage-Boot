@@ -3,8 +3,6 @@ package org.webMonster.uniManageBoot.student.freeboard.model.dto;
 import lombok.*;
 import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
 
-import javax.persistence.Column;
-import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
