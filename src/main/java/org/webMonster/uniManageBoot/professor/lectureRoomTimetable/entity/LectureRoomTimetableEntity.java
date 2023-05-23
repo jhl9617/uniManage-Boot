@@ -1,5 +1,6 @@
 package org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity;
 
+import com.querydsl.core.support.ExtendedSubQuery;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
