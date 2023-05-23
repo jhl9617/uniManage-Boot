@@ -33,6 +33,8 @@ import org.webMonster.uniManageBoot.admin.notice.model.dto.SmsResponseDto;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
 import org.webMonster.uniManageBoot.common.SearchCondition;
+import org.webMonster.uniManageBoot.professor.homework.entity.HomeworkEntity;
+import org.webMonster.uniManageBoot.professor.homework.model.dto.HomeworkDto;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
@@ -237,6 +239,24 @@ public class NoticeService {
         }
 
 
+    }
+
+    //학생정보시스템 메인페이지 공지사항 리스트 4개 조회용
+    public List<NoticeDto> getNoticeList(){
+        List<NoticeDto> list = new ArrayList<>();
+        List<NoticeEntity> entity = noticeRepository.findAll();
+        for (NoticeEntity nentity : entity) {
+            NoticeDto dto = NoticeDto.builder()
+                    .noticeId(nentity.getNoticeId())
+                    .noticeTitle(nentity.getNoticeTitle())
+                    .noticeContent(nentity.getNoticeContent())
+                    .memberId(nentity.getMemberId())
+                    .createdDate(nentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .readcount(nentity.getReadcount())
+                    .build();
+            list.add(dto);
+        }
+        return list;
     }
 
 

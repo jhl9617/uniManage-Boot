@@ -5,6 +5,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.webMonster.uniManageBoot.admin.notice.entity.NoticeEntity;
+import org.webMonster.uniManageBoot.admin.notice.model.dto.NoticeDto;
 import org.webMonster.uniManageBoot.admin.schedule.entity.ScheduleEntity;
 import org.webMonster.uniManageBoot.admin.schedule.entity.ScheduleRepository;
 import org.webMonster.uniManageBoot.admin.schedule.entity.ScheduleRepositoryCustom;
@@ -48,6 +50,23 @@ public class ScheduleService {
         );
 
         return Header.OK(dtos, pagination);
+    }
+
+    //학생정보시스템 메인페이지 학사일정 리스트 4개 조회용
+    public List<ScheduleDto> getScheduleList(){
+        List<ScheduleDto> list = new ArrayList<>();
+        List<ScheduleEntity> entity = scheduleRepository.findAll();
+        for (ScheduleEntity sentity : entity) {
+            ScheduleDto dto = ScheduleDto.builder()
+                    .scheId(sentity.getScheId())
+                    .scheTitle(sentity.getScheTitle())
+                    .scheContent(sentity.getScheContent())
+                    .startDate(sentity.getStartDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .endDate(sentity.getEndDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .build();
+            list.add(dto);
+        }
+        return list;
     }
 
 }
