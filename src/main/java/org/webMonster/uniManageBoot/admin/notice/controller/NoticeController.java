@@ -18,12 +18,16 @@ import org.webMonster.uniManageBoot.admin.notice.model.dto.SmsResponseDto;
 import org.webMonster.uniManageBoot.admin.notice.model.service.NoticeService;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
+import org.webMonster.uniManageBoot.member.entity.MemberEntity;
+import org.webMonster.uniManageBoot.member.entity.MemberRepository;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -32,6 +36,7 @@ import java.util.List;
 public class NoticeController {
     private final NoticeService noticeService;
 
+    private final MemberRepository memberRepository;
 
 
     @GetMapping("admin/notice/list")
@@ -60,21 +65,33 @@ public class NoticeController {
     public void delete(@PathVariable Long id) {
         noticeService.delete(id);
     }
+
     @GetMapping("/send")
     public String getSmsPage() {
         return "sendSms";
     }
 
+    //공지사항 메세지 발송용
     @PostMapping("/sms/send")
-    public String sendSms(@RequestBody MessageDto messageDto, Model model) throws JsonProcessingException, RestClientException, URISyntaxException, InvalidKeyException, NoSuchAlgorithmException, UnsupportedEncodingException {
-        System.out.println("messageDto = " + messageDto);
-        /*SmsResponseDto response = noticeService.sendSms(messageDto);*/
+    public SmsResponseDto sendSms(@RequestParam(name="notice_content")String content) throws JsonProcessingException, RestClientException, URISyntaxException, InvalidKeyException, NoSuchAlgorithmException, UnsupportedEncodingException {
+        MessageDto messageDto = new MessageDto();
+        messageDto.setContent(content);
+        List<MemberEntity> memberEntities = memberRepository.findAll().stream()
+                .collect(Collectors.toMap(MemberEntity::getPhone, Function.identity(), (existing, replacement) -> existing))
+                .values()
+                .stream()
+                .collect(Collectors.toList());
 
-        noticeService.sendEmail(messageDto.getContent());
+        //        messageDto.setTo("");
+        return noticeService.sendSms(messageDto);
 
-/*        model.addAttribute("response", response);*/
-        return "result";
+//        for(MemberEntity entity : memberEntities){
+//            messageDto.setTo(entity.getPhone());
+//            noticeService.sendSms(messageDto);
+//        }
+//        return new SmsResponseDto();
     }
+
 
     //학생정보시스템 공지사항 리스트 조회용
     @GetMapping("student/notice")

@@ -128,6 +128,7 @@ public class NoticeService {
      */
     public NoticeEntity create(NoticeDto noticeDto) {
         NoticeEntity entity = NoticeEntity.builder()
+                .noticeId(noticeDto.getNoticeId())
                 .noticeTitle(noticeDto.getNoticeTitle())
                 .noticeContent(noticeDto.getNoticeContent())
                 .memberId(noticeDto.getMemberId())
@@ -152,7 +153,7 @@ public class NoticeService {
         noticeRepository.delete(entity);
     }
 
-    //sms api
+//    sms api
     public String makeSignature(Long time) throws NoSuchAlgorithmException, UnsupportedEncodingException, InvalidKeyException {
         String space = " ";
         String newLine = "\n";
