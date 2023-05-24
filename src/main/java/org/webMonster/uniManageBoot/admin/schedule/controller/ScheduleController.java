@@ -4,9 +4,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.webMonster.uniManageBoot.admin.schedule.entity.ScheduleEntity;
 import org.webMonster.uniManageBoot.admin.schedule.model.dto.ScheduleDto;
 import org.webMonster.uniManageBoot.admin.schedule.model.service.ScheduleService;
 import org.webMonster.uniManageBoot.common.Header;
@@ -21,6 +20,7 @@ import java.util.List;
 public class ScheduleController {
     private final ScheduleService scheduleService;
 
+    //교직원 학사일정관리 리스트 조회용
     @GetMapping("/admin/schedule")
     public Header<List<ScheduleDto>> scheduleList(
             @PageableDefault(sort = {"sche_id"}) Pageable pageable,
@@ -29,4 +29,9 @@ public class ScheduleController {
         return scheduleService.getScheduleList(pageable, searchCondition);
     }
 
+    //교직원 학사일정 추가용
+    @PostMapping("admin/schedule")
+    public ScheduleEntity create(@RequestBody ScheduleDto scheduleDto){
+        return scheduleService.create(scheduleDto);
+    }
 }

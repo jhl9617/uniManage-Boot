@@ -34,6 +34,6 @@ public class LectureRoomEntity {
     private int readcount;   //조회수
 
     // 다른 엔티티와의 관계 설정
-    @OneToMany(mappedBy = "lectureClass")
-    private List<LectureRoomTimetableEntity> lectureRoomTimetables;
+//    @OneToMany(mappedBy = "lectureClass")
+//    private List<LectureRoomTimetableEntity> lectureRoomTimetables;
 }
