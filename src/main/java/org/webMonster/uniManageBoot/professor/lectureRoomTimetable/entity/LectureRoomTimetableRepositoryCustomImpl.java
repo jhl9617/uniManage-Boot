@@ -43,7 +43,7 @@ public class LectureRoomTimetableRepositoryCustomImpl extends QuerydslRepository
         List<LectureRoomTimetableEntity> results = query
                 .offset(pageable.getOffset())
                 .limit(pageable.getPageSize())
-                .orderBy(lectureRoomTimetableEntity.lectureRoomTimetableIdx.desc())
+                .orderBy(lectureRoomTimetableEntity.lectureRoomTimetableIdx.asc())
                 .fetch();
 
         return new PageImpl<>(results, pageable, total);
