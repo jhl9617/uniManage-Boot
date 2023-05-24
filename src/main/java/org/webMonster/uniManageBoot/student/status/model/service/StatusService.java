@@ -2,13 +2,17 @@ package org.webMonster.uniManageBoot.student.status.model.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
+import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.student.status.entity.StatusEntity;
 import org.webMonster.uniManageBoot.student.status.entity.StatusRepository;
 import org.webMonster.uniManageBoot.student.status.model.dto.StatusDto;
 
 import java.sql.Date;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -61,5 +65,27 @@ public class StatusService {
                 .allowedLeave('2')
                 .build();
         return statusRepository.save(entity);
+    }
+
+
+    //학생 학생정보시스템 학적변동내역 리스트 출력용
+    public List<StatusDto> getStatusList(Long id) {
+        List<StatusDto> list = new ArrayList<>();
+        List<StatusEntity> entity = statusRepository.findByMemberId(id);
+        for (StatusEntity sentity : entity) {
+            StatusDto dto = StatusDto.builder()
+                    .statusId(sentity.getStatusId())
+                    .memberId(sentity.getMemberId())
+                    .startDate(sentity.getStartDate())
+                    .endDate(sentity.getEndDate())
+                    .reasonOfLeave(sentity.getReasonOfLeave())
+                    .returnDate(sentity.getReturnDate())
+                    .applyLeaveDate(sentity.getApplyLeaveDate())
+                    .applyReturnDate(sentity.getApplyReturnDate())
+                    .allowedLeave(sentity.getAllowedLeave())
+                    .build();
+            list.add(dto);
+        }
+        return list;
     }
 }

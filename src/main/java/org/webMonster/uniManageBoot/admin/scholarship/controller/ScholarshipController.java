@@ -69,11 +69,4 @@ public class ScholarshipController {
     ) {
         return scholarshipService.getStudentScholarshipList(pageable, searchCondition, memberId);
     }
-//    @GetMapping("/student/scholarship")
-//    public Header<List<ScholarshipDto>> StudentscholarshipList(
-//            @PageableDefault(sort = {"schoId"}) Pageable pageable,
-//            SearchCondition searchCondition
-//    ) {
-//        return scholarshipService.getScholarshipList(pageable, searchCondition);
-//    }
 }

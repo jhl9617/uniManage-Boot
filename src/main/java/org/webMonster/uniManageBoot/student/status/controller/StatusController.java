@@ -7,6 +7,8 @@ import org.webMonster.uniManageBoot.student.status.entity.StatusEntity;
 import org.webMonster.uniManageBoot.student.status.model.dto.StatusDto;
 import org.webMonster.uniManageBoot.student.status.model.service.StatusService;
 
+import java.util.List;
+
 @Slf4j
 @RequiredArgsConstructor
 @CrossOrigin
@@ -38,6 +40,10 @@ public class StatusController {
         return statusService.getStatusAppliedView(id);
     }
 
-
+    //학생 학생정보시스템 학적변동내역 리스트 조회
+    @GetMapping("/student/status/{id}")
+   public List<StatusDto> statusList(@PathVariable Long id){
+        return statusService.getStatusList(id);
+    }
 
 }
