@@ -35,7 +35,7 @@ public class CancelledLectureEntity {
     @Column(name = "CANCELLED_FILE")
     private String cancelledFile;           //제출서류 파일명
     @Column(name = "CANCELLED_FILE_RENAME")
-    private String cancelledRename;         //변경된 제출서류 파일명
+    private String cancelledFileRename;         //변경된 제출서류 파일명
 
     @Builder.Default
     @Column(name = "CANCELLED_APPLY")

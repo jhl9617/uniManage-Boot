@@ -20,6 +20,6 @@ public class CancelledLectureDto {
     private Date supplyDate;            //보강일시
     private String reason;              //보강사유
     private String cancelledFile;       //제출된 파일명
-    private String cancelledRename;     //변경된 제출서류 파일명
+    private String cancelledFileRename;     //변경된 제출서류 파일명
     private char cancelledApply;        //휴강승인여부
 }

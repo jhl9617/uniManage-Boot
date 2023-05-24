@@ -1,7 +1,8 @@
 package org.webMonster.uniManageBoot.professor.cancelledLecture.entity;
 
-import com.querydsl.core.types.Projections;
+
 import com.querydsl.core.types.dsl.BooleanExpression;
+import com.querydsl.jpa.JPAExpressions;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import org.springframework.data.domain.Page;
@@ -11,15 +12,12 @@ import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
-import org.webMonster.uniManageBoot.member.entity.MemberEntity;
-import org.webMonster.uniManageBoot.professor.cancelledLecture.model.dto.CancelledLectureDto;
-
-import static org.webMonster.uniManageBoot.member.entity.QMemberEntity.memberEntity;
-import static org.webMonster.uniManageBoot.professor.cancelledLecture.entity.QCancelledLectureEntity.cancelledLectureEntity;
-import static org.webMonster.uniManageBoot.professor.lecture.entity.QLectureEntity.lectureEntity;
-import static org.webMonster.uniManageBoot.professor.lectureClass.entity.QLectureClassEntity.lectureClassEntity;
+import org.webMonster.uniManageBoot.member.entity.QMemberEntity;
 
 import java.util.List;
+
+import static org.webMonster.uniManageBoot.professor.cancelledLecture.entity.QCancelledLectureEntity.cancelledLectureEntity;
+
 
 @Repository
 public class CancelledLectureRepositoryCustomImpl extends QuerydslRepositorySupport implements CancelledLectureRepositoryCustom {
@@ -29,90 +27,110 @@ public class CancelledLectureRepositoryCustomImpl extends QuerydslRepositorySupp
         this.queryFactory = queryFactory;
     }
 
-    //페이징처리 + 검색기능
-    @Override
-    public Page<CancelledLectureEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
+    //본인이 신청한 휴강신청 리스트 출력(교수용)
+//    public Page<CancelledLectureEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition, HttpSession session) {
+//        JPAQuery<CancelledLectureEntity> query = queryFactory.selectFrom(cancelledLectureEntity)
+//                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
+//                .where(cancelledLectureEntity.memberId.eq(session.));
+//
+//        long total = query.fetchCount();
+//
+//        List<CancelledLectureEntity> results = query
+//                .offset(pageable.getOffset())
+//                .limit(pageable.getPageSize())
+//                .orderBy(cancelledLectureEntity.lectureId.desc())
+//                .fetch();
+//        return new PageImpl<>(results, pageable, total);
+//    }
+
+    //본인이 작성한 휴강신청 리스트 조회(교수용)
+    public Page<CancelledLectureEntity> findAllBySearchConditionByMemberId(Pageable pageable, SearchCondition searchCondition, long memberId) {
+        QCancelledLectureEntity cancelledLectureEntity = QCancelledLectureEntity.cancelledLectureEntity;
         JPAQuery<CancelledLectureEntity> query = queryFactory
                 .selectFrom(cancelledLectureEntity)
-                .join(cancelledLectureEntity.lecture, lectureEntity)
-                .join(cancelledLectureEntity.member, memberEntity)
-                .join(cancelledLectureEntity.lectureClass, lectureClassEntity)
-                .where(searchKeyWord(searchCondition.getSk(), searchCondition.getSv()));
-        long total = query.stream().count();
-
-        List<CancelledLectureEntity> results = query
-                .where(searchKeyWord(searchCondition.getSk(), searchCondition.getSv()))
-                .offset(pageable.getOffset())
-                .limit(pageable.getPageSize())
-                .orderBy(cancelledLectureEntity.cancelledLectureIdx.desc())
-                .fetch();
+                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
+                .where(cancelledLectureEntity.memberId.eq(memberId));
+                long total = query.fetchCount();
+                List<CancelledLectureEntity> results = query
+                        .offset(pageable.getOffset())
+                        .limit(pageable.getPageSize())
+                        .orderBy(cancelledLectureEntity.lectureId.desc())
+                        .fetch();
         return new PageImpl<>(results, pageable, total);
     }
 
-    //(키워드)검색기능 => 강의명, 교수이름
-    @Override
-    public BooleanExpression searchKeyWord(String sk, String sv) {
-       if("lectureId".equals(sk)){
-           if(StringUtils.hasLength(sv)){
-               return cancelledLectureEntity.lecture.lectureTitle.eq(sv);
-           }
-       }else if("memberId".equals(sk)){
-           if(StringUtils.hasLength(sv)){
-               return cancelledLectureEntity.member.name.contains(sv);
-           }
-       }
-       return null;
-    }
-
-    @Override
-    public List<CancelledLectureEntity> findAllBySearchConditionByMemberId(Pageable pageable, SearchCondition searchCondition) {
-        return null;
-    }
-
-    //휴강게시글 리스트 전체 조회(교직원용)
-//    @Override
-//    public List<CancelledLectureDto> findAllBySearchConditionByMemberId(Pageable pageable, SearchCondition searchCondition) {
-//        return queryFactory
-//                .select(Projections.bean(
-//                        CancelledLectureDto.class,
-//                        cancelledLectureEntity.cancelledLectureIdx,
-//                        lectureEntity.lectureId,
-//                        memberEntity.memberId,
-//                        lectureClassEntity.lectureRoomCode,
-//                        cancelledLectureEntity.attendanceDay,
-//                        cancelledLectureEntity.supplyDate,
-//                        cancelledLectureEntity.reason,
-//                        cancelledLectureEntity.cancelledFile,
-//                        cancelledLectureEntity.cancelledRename,
-//                        cancelledLectureEntity.cancelledApply))
-//                .from(cancelledLectureEntity)
-//                .join(cancelledLectureEntity.lecture, lectureEntity)
-//                .join(cancelledLectureEntity.member, memberEntity)
-//                .join(cancelledLectureEntity.lectureClass, lectureClassEntity)
-//                .fetch();
+//    @Repository
+//    public class CancelledLectureRepositoryCustomImpl implements CancelledLectureRepositoryCustom {
+//        private final EntityManager entityManager;
+//
+//        public CancelledLectureRepositoryCustomImpl(EntityManager entityManager) {
+//            this.entityManager = entityManager;
+//        }
+//
+//        @Override
+//        public List<CancelledLectureDto> findCancelledLecturesByWriterId(Pageable pageable, SearchCondition searchCondition, String memberId) {
+//            CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
+//            CriteriaQuery<CancelledLectureDto> query = criteriaBuilder.createQuery(CancelledLectureDto.class);
+//            Root<CancelledLecture> root = query.from(CancelledLecture.class);
+//
+//            query.select(criteriaBuilder.construct(
+//                    CancelledLectureDto.class,
+//                    root.get("lectureId"),
+//                    root.get("lectureTitle"),
+//                    root.get("writerId")
+//            ));
+//
+//            List<Predicate> predicates = new ArrayList<>();
+//            if (searchCondition != null) {
+//                if (searchCondition.getStartDate() != null) {
+//                    predicates.add(criteriaBuilder.greaterThanOrEqualTo(root.get("lectureDate"), searchCondition.getStartDate()));
+//                }
+//                if (searchCondition.getEndDate() != null) {
+//                    predicates.add(criteriaBuilder.lessThanOrEqualTo(root.get("lectureDate"), searchCondition.getEndDate()));
+//                }
+//                // Add more search conditions as needed
+//            }
+//
+//            predicates.add(criteriaBuilder.equal(root.get("writerId"), memberId));
+//
+//            if (!predicates.isEmpty()) {
+//                query.where(criteriaBuilder.and(predicates.toArray(new Predicate[0])));
+//            }
+//
+//            TypedQuery<CancelledLectureDto> typedQuery = entityManager.createQuery(query);
+//            typedQuery.setFirstResult((int) pageable.getOffset());
+//            typedQuery.setMaxResults(pageable.getPageSize());
+//
+//            return typedQuery.getResultList();
+//        }
 //    }
 
 
-    //휴강게시물 리스트 id로 조회(교수용)
-    public List<CancelledLectureDto> findAllBySearchConditionByMemberId(Long memberId) {
-        return queryFactory
-                .select(Projections.bean(
-                        CancelledLectureDto.class,
-                        cancelledLectureEntity.cancelledLectureIdx,
-                        lectureEntity.lectureId,
-                        memberEntity.memberId,
-                        lectureClassEntity.lectureRoomCode,
-                        cancelledLectureEntity.attendanceDay,
-                        cancelledLectureEntity.supplyDate,
-                        cancelledLectureEntity.reason,
-                        cancelledLectureEntity.cancelledFile,
-                        cancelledLectureEntity.cancelledRename,
-                        cancelledLectureEntity.cancelledApply))
-                .from(cancelledLectureEntity)
-                .join(cancelledLectureEntity.lecture, lectureEntity)
-                .join(cancelledLectureEntity.member, memberEntity)
-                .join(cancelledLectureEntity.lectureClass, lectureClassEntity)
-                .where(cancelledLectureEntity.memberId.eq(memberId))
-                .fetch();
+
+
+
+
+
+
+
+    @Override
+    public Page<CancelledLectureEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
+        return null;
+    }
+
+    //휴강 리스트 검색용(교직원용)
+    @Override
+    public BooleanExpression searchKeywords(String sk, String sv) {
+        if("name".equals(sk)) {                      //교수명으로 검색
+            if (StringUtils.hasLength(sv)) {
+                QMemberEntity memberEntity = QMemberEntity.memberEntity;
+                return cancelledLectureEntity.memberId.in(
+                        JPAExpressions.selectFrom(memberEntity)
+                                .where(memberEntity.name.contains(sv))
+                                .select(memberEntity.memberId)
+                );
+            }
+        }
+        return null;
     }
 }

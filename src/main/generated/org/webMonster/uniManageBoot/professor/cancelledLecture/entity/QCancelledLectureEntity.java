@@ -28,9 +28,9 @@ public class QCancelledLectureEntity extends EntityPathBase<CancelledLectureEnti
 
     public final StringPath cancelledFile = createString("cancelledFile");
 
-    public final NumberPath<Long> cancelledLectureIdx = createNumber("cancelledLectureIdx", Long.class);
+    public final StringPath cancelledFileRename = createString("cancelledFileRename");
 
-    public final StringPath cancelledRename = createString("cancelledRename");
+    public final NumberPath<Long> cancelledLectureIdx = createNumber("cancelledLectureIdx", Long.class);
 
     public final org.webMonster.uniManageBoot.professor.lecture.entity.QLectureEntity lecture;
 
