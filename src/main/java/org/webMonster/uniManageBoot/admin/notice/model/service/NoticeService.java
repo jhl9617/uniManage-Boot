@@ -57,22 +57,20 @@ public class NoticeService {
     private final NoticeRepository noticeRepository;
     private final NoticeRepositoryCustom noticeRepositoryCustom;
 
-    @Autowired
-    private JavaMailSender mailSender;
-
-
+//    @Autowired
+//    private JavaMailSender mailSender;
 
     //sms api
-    @Value("${naver-cloud-sms.accessKey}")
+    @Value("xZyI5jAHb2m9zxAO897V")
     private String accessKey;
 
-    @Value("${naver-cloud-sms.secretKey}")
+    @Value("gmkl7dShqdeqRXNUnzt5tM88bjqDflCWsVFqcS62")
     private String secretKey;
 
-    @Value("${naver-cloud-sms.serviceId}")
+    @Value("ncp:sms:kr:308639486747:unimanage")
     private String serviceId;
 
-    @Value("${naver-cloud-sms.senderPhone}")
+    @Value("01062316109")
     private String phone;
     
     public Header<List<NoticeDto>> getNoticeList(Pageable pageable, SearchCondition searchCondition) {
