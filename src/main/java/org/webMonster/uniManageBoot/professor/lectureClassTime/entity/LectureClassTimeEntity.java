@@ -16,7 +16,7 @@ import java.util.List;
 @Builder
 @Table(name = "LECTURE_CLASS_TIME")
 @Entity
-public class LectureClassTimeEntity {
+public class LectureClassTimeEntity implements java.io.Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "lecture_class_time_idx_seq_gen")
     @SequenceGenerator(

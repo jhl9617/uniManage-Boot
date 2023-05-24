@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
 import org.webMonster.uniManageBoot.common.SearchCondition;
+import org.webMonster.uniManageBoot.common.SearchRoom;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableRepository;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableRepositoryCustom;
@@ -24,10 +25,10 @@ public class LectureRoomTimetableService {
     private final LectureRoomTimetableRepositoryCustom lectureRoomTimetableRepositoryCustom;
 
     //강의실 리스트 조회
-    public Header<List<LectureRoomTimetableDto>> getLectureRoomList(Pageable pageable, SearchCondition searchCondition) {
+    public Header<List<LectureRoomTimetableDto>> getLectureRoomList(Pageable pageable, SearchRoom searchRoom) {
         List<LectureRoomTimetableDto> dtos = new ArrayList<>();
 
-        Page<LectureRoomTimetableEntity> lectureRoomTimetableEntities = lectureRoomTimetableRepositoryCustom.findAllBySearchConditionAndStatus(pageable, searchCondition);
+        Page<LectureRoomTimetableEntity> lectureRoomTimetableEntities = lectureRoomTimetableRepositoryCustom.findAllBySearchConditionAndStatus(pageable, searchRoom);
         for (LectureRoomTimetableEntity entity : lectureRoomTimetableEntities) {
             LectureRoomTimetableDto dto = LectureRoomTimetableDto.builder()
                     .lectureRoomTimetableIdx(entity.getLectureRoomTimetableIdx())
