@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -26,7 +27,7 @@ public class LectureClassEntity {
     @Column(name = "BUILDING_CODE")
     private String buildingCode;   //건물코드
     @Column(name = "BUILDING_NAME")
-    private String buildingName;   //건물명
+    private String buildingName;   //건물명npm
     @Column(name = "NUMBER_FLOOR")
     private int numberFloor;   //층수
     @Column(name = "LECTURE_ROOM_NUM")
@@ -38,6 +39,7 @@ public class LectureClassEntity {
 //    @OneToMany(mappedBy = "lectureClass")
 //    private List<LectureEntity> lectureEntities = new ArrayList<>();
 // 다른 엔티티와의 관계 설정
+    @Builder.Default
     @OneToMany(mappedBy = "lectureClass")
-    private List<LectureRoomTimetableEntity> lectureRoomTimetables;
+    private List<LectureRoomTimetableEntity> lectureRoomTimetables = new ArrayList<>();
 }
