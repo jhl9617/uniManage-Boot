@@ -107,7 +107,6 @@ public class MemberController {
 
     //교직원 교수관리 수정하기
     @PatchMapping("/admin/manage/professor")
-//    public MemberEntity updateProfessor(@RequestBody MemberDto memberDto){ return memberService.update(memberDto); }
     public MemberDto updateProfessor(@RequestBody MemberDto memberDto) {
         MemberEntity entity = memberService.update(memberDto);
         return MemberDto.fromEntity(entity);
