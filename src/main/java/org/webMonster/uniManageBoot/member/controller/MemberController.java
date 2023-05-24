@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Map;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -33,22 +34,20 @@ public class MemberController {
 
     private final ScheduleService scheduleService;
 
-    @PostMapping("/onLogin")
-    public ResponseEntity<String> login(@RequestBody MemberLoginDto memberLoginDto, HttpSession session) {
-        MemberDepartmentDto memberDepartmentDto = memberService.login(memberLoginDto);
+
+    @PostMapping("/getProfile")
+    public void getProfile(@RequestBody Map<String, String> body, HttpSession session) {
+        String memberIdStr = body.get("memberId");
+        long memberId = Long.parseLong(memberIdStr);
+
+        MemberLoginDto memberLoginDto = new MemberLoginDto();
+        memberLoginDto.setMemberId(memberId);
+        MemberDepartmentDto memberDepartmentDto = memberService.getProfile(memberLoginDto);
         session.setAttribute("loginMember", memberDepartmentDto);
-        String path = null;
-        if (memberDepartmentDto.getAuth() == 3 || memberDepartmentDto.getAuth() == 4 || memberDepartmentDto.getAuth() == 5) {   //학생
-            path = "/student";
-        } else if (memberDepartmentDto.getAuth() == 1) {                 //교수
-            path = "/prof/main";
-        } else if (memberDepartmentDto.getAuth() == 2) {                 //교직원
-            path = "/admin";
-        }
-        return ResponseEntity.ok(path);
     }
 
-    //세션에 있는지 확인
+
+    //세션이 있는지 확인
     @GetMapping("/sessionCheck")
     public ResponseEntity<MemberDepartmentDto> getSession(HttpSession session) {
         MemberDepartmentDto loginMember = (MemberDepartmentDto) session.getAttribute("loginMember");
@@ -144,4 +143,18 @@ public class MemberController {
         session.setAttribute("loginMember", sessionMember);
         return memberService.update(sessionMember);
     }
+    @PostMapping("/insert")
+    public ResponseEntity<MemberEntity> insert() {
+        MemberEntity memberEntity = memberService.insert();
+        return ResponseEntity.ok(memberEntity);
+    }
+
+    //로그아웃 처리 세션 삭제
+    @PostMapping("/logout")
+    public void logout(HttpSession session) {
+        System.out.println("\n\n세션 삭제 완료\n\n");
+        session.invalidate();
+    }
+
+
 }

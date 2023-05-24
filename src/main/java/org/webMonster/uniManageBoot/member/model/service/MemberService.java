@@ -1,10 +1,12 @@
 package org.webMonster.uniManageBoot.member.model.service;
 
 
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
@@ -17,22 +19,26 @@ import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
 
 import java.util.*;
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @RequiredArgsConstructor
 @Service
 public class MemberService {
-
+    private final PasswordEncoder passwordEncoder;
     private final MemberRepository memberRepository;
     private final MemberRepositoryCustom memberRepositoryCustom;
 
-    public MemberDepartmentDto login(MemberLoginDto memberLoginDto) {
+    public MemberDepartmentDto getProfile(MemberLoginDto memberLoginDto) {
 
         long memberId = memberLoginDto.getMemberId();
-        String memberPwd = memberLoginDto.getMemberPwd();
+
 
         Optional<MemberDepartmentDto> optionalMemberDepartmentDto =
-                memberRepository.findMemberWithDepartment(memberId, memberPwd);
+                memberRepository.findMemberWithDepartment(memberId);
 
         if (!optionalMemberDepartmentDto.isPresent()) {
             throw new RuntimeException("Member not found");
@@ -81,7 +87,7 @@ public class MemberService {
 
     // 교직원 학생/교수관리 상세보기 조회
     public MemberDepartmentDto getMember(Long id) {
-        MemberEntity entity = memberRepository.findByMemberId(id);
+        MemberEntity entity = (MemberEntity) memberRepository.findByMemberId(id);
         return MemberDepartmentDto.builder()
                 .memberIdx(entity.getMemberIdx())
                 .memberId(entity.getMemberId())
@@ -141,7 +147,7 @@ public class MemberService {
 
     //교직원 학생/교수관리 삭제
     public void delete(Long id) {
-        MemberEntity entity = memberRepository.findByMemberId(id);
+        MemberEntity entity = (MemberEntity) memberRepository.findByMemberId(id);
         memberRepository.delete(entity);
     }
 
@@ -192,5 +198,23 @@ public class MemberService {
             return  memberRepository.save(entity);
         }
         return entity;
+    }
+
+    public MemberEntity insert() {
+        MemberEntity memberEntity = MemberEntity.builder()
+
+                .memberId(4321)
+                .name("이종하")
+                .memberPwd(passwordEncoder.encode("1234"))
+                .auth(2)
+                .departmentId(17)
+                .birthday(Date.valueOf("1995-01-01"))
+                .phone("010-1234-5678")
+                .email("asd@weqwe")
+                .postcode(1234)
+                .address1("서울시")
+                .address2("강남구")
+                .build();
+        return memberRepository.save(memberEntity);
     }
 }

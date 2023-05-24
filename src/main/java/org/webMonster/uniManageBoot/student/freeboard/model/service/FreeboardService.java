@@ -1,6 +1,5 @@
 package org.webMonster.uniManageBoot.student.freeboard.model.service;
 
-
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -51,7 +50,6 @@ public class FreeboardService {
                     .freeContent(entity.getFreeContent())
                     .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
                     .build();
-
             list.add(dto);
         }
 

@@ -5,13 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.webMonster.uniManageBoot.admin.notice.entity.NoticeEntity;
+import org.webMonster.uniManageBoot.admin.notice.model.dto.NoticeDto;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
+import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.professor.homework.model.service.HomeworkService;
+import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 import org.webMonster.uniManageBoot.professor.lecture.model.dto.LectureDto;
 import org.webMonster.uniManageBoot.professor.lecture.model.dto.LectureMainDto;
 import org.webMonster.uniManageBoot.professor.lecture.model.service.LectureService;
@@ -19,6 +20,7 @@ import org.webMonster.uniManageBoot.professor.lectureNotice.model.service.Lectur
 import org.webMonster.uniManageBoot.professor.lectureRoom.model.service.LectureRoomService;
 import org.webMonster.uniManageBoot.student.freeboard.model.service.FreeboardService;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Slf4j
@@ -88,8 +90,37 @@ public class LectureController {
 
     }
 
-
-
-
-
+    //교수 강의 신청 리스트
+    @GetMapping("prof/create/list")
+    public Header<List<LectureDto>> profLectureList(
+            @PageableDefault(sort = {"lectureId"}) Pageable pageable,
+            SearchCondition searchCondition,
+            HttpSession session
+    ) {
+        MemberDepartmentDto memberDepartmentDto = (MemberDepartmentDto) session.getAttribute("loginMember");
+        Long memberId = memberDepartmentDto.getMemberId();
+        return lectureService.getProfLectureList(pageable, searchCondition, memberId);
+    }
+    //교수 신청 강의 상세보기
+    @GetMapping("prof/create/{id}")
+    public LectureDto getProfLecture(@PathVariable Long id) {
+        return lectureService.getProfLecture(id);
+    }
+    //교수 강의 생성
+    @PostMapping("prof/create")
+    public LectureEntity create(@RequestBody LectureDto lectureDto, HttpSession session) {
+        MemberDepartmentDto memberDepartmentDto = (MemberDepartmentDto) session.getAttribute("loginMember");
+        System.out.println(memberDepartmentDto);
+        return lectureService.create(lectureDto);
+    }
+    //교수 신청 강의 수정
+    @PatchMapping("prof/create")
+    public LectureEntity update(@RequestBody LectureDto lectureDto) {
+        return lectureService.update(lectureDto);
+    }
+    //교수 신청 강의 삭제
+    @DeleteMapping("prof/create/{id}")
+    public void delete(@PathVariable Long id) {
+        lectureService.delete(id);
+    }
 }

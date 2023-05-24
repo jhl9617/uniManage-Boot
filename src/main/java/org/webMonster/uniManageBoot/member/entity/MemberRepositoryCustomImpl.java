@@ -48,7 +48,7 @@ public class MemberRepositoryCustomImpl extends QuerydslRepositorySupport implem
     }
 
     @Override
-    public Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId, String memberPwd) {
+    public Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId) {
         return Optional.ofNullable(
                 queryFactory
                         .select(Projections.bean(
@@ -71,7 +71,7 @@ public class MemberRepositoryCustomImpl extends QuerydslRepositorySupport implem
                                 departmentEntity.departmentName))
                         .from(memberEntity)
                         .join(memberEntity.department, departmentEntity)    //memberEntity.department를 기반으로 조인
-                        .where(memberEntity.memberId.eq(memberId).and(memberEntity.memberPwd.eq(memberPwd)))
+                        .where(memberEntity.memberId.eq(memberId))
                         .fetchOne() //단일결과 가져오기, 2개 이상이면 예외
         );
     }

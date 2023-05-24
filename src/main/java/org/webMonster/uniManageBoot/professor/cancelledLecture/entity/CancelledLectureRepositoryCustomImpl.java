@@ -9,6 +9,8 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
+import org.webMonster.uniManageBoot.member.entity.QMemberEntity;
+import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
