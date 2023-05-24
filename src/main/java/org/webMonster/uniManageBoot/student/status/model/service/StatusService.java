@@ -7,6 +7,9 @@ import org.webMonster.uniManageBoot.student.status.entity.StatusEntity;
 import org.webMonster.uniManageBoot.student.status.entity.StatusRepository;
 import org.webMonster.uniManageBoot.student.status.model.dto.StatusDto;
 
+import java.sql.Date;
+import java.time.LocalDate;
+
 @Slf4j
 @RequiredArgsConstructor
 @Service
@@ -17,12 +20,17 @@ public class StatusService {
 
     //학생 휴학신청 추가
     public StatusEntity createTakeOff(StatusDto statusDto) {
+        LocalDate currentDate = LocalDate.now();
+        Date sqlCurrentDate = Date.valueOf(currentDate);
+
         StatusEntity entity = StatusEntity.builder()
                 .statusId(statusDto.getStatusId())
                 .memberId(statusDto.getMemberId())
                 .startDate(statusDto.getStartDate())
                 .endDate(statusDto.getEndDate())
                 .reasonOfLeave(statusDto.getReasonOfLeave())
+                .applyLeaveDate(sqlCurrentDate)  // java.sql.Date로 변환하여 저장
+                .allowedLeave('1')
                 .build();
         return statusRepository.save(entity);
     }
@@ -42,10 +50,15 @@ public class StatusService {
 
     //학생 복학신청 추가
     public StatusEntity createReturn(StatusDto statusDto) {
+        LocalDate currentDate = LocalDate.now();
+        Date sqlCurrentDate = Date.valueOf(currentDate);
+
         StatusEntity entity = StatusEntity.builder()
                 .statusId(statusDto.getStatusId())
                 .memberId(statusDto.getMemberId())
                 .returnDate(statusDto.getReturnDate())
+                .applyReturnDate(sqlCurrentDate)
+                .allowedLeave('2')
                 .build();
         return statusRepository.save(entity);
     }
