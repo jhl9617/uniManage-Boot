@@ -57,22 +57,20 @@ public class NoticeService {
     private final NoticeRepository noticeRepository;
     private final NoticeRepositoryCustom noticeRepositoryCustom;
 
-    @Autowired
-    private JavaMailSender mailSender;
-
-
+//    @Autowired
+//    private JavaMailSender mailSender;
 
     //sms api
-    @Value("${naver-cloud-sms.accessKey}")
+    @Value("xZyI5jAHb2m9zxAO897V")
     private String accessKey;
 
-    @Value("${naver-cloud-sms.secretKey}")
+    @Value("gmkl7dShqdeqRXNUnzt5tM88bjqDflCWsVFqcS62")
     private String secretKey;
 
-    @Value("${naver-cloud-sms.serviceId}")
+    @Value("ncp:sms:kr:308639486747:unimanage")
     private String serviceId;
 
-    @Value("${naver-cloud-sms.senderPhone}")
+    @Value("01062316109")
     private String phone;
     
     public Header<List<NoticeDto>> getNoticeList(Pageable pageable, SearchCondition searchCondition) {
@@ -220,26 +218,24 @@ public class NoticeService {
 
 
     //email 보내기
-    public void sendEmail(String content) {
-
-        String setFrom = "itsyksj@naver.com";
-        String toMail = "jhl9617@gmail.com";
-        String title = "cookology에서 보내는 인증이메일 입니다.";
-
-        try {
-            MimeMessage message = mailSender.createMimeMessage();
-            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
-            helper.setFrom(setFrom);
-            helper.setTo(toMail);
-            helper.setSubject(title);
-            helper.setText(content, true);
-            mailSender.send(message);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
-    }
+//    public void sendEmail(String content) {
+//
+//        String setFrom = "itsyksj@naver.com";
+//        String toMail = "jhl9617@gmail.com";
+//        String title = "cookology에서 보내는 인증이메일 입니다.";
+//
+//        try {
+//            MimeMessage message = mailSender.createMimeMessage();
+//            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
+//            helper.setFrom(setFrom);
+//            helper.setTo(toMail);
+//            helper.setSubject(title);
+//            helper.setText(content, true);
+//            mailSender.send(message);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     //학생정보시스템 메인페이지 공지사항 리스트 4개 조회용
     public List<NoticeDto> getNoticeList(){
@@ -251,7 +247,7 @@ public class NoticeService {
                     .noticeTitle(nentity.getNoticeTitle())
                     .noticeContent(nentity.getNoticeContent())
                     .memberId(nentity.getMemberId())
-                    .createdDate(nentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .createdDate(nentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
                     .readcount(nentity.getReadcount())
                     .build();
             list.add(dto);

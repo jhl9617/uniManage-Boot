@@ -107,7 +107,6 @@ public class MemberController {
 
     //교직원 교수관리 수정하기
     @PatchMapping("/admin/manage/professor")
-//    public MemberEntity updateProfessor(@RequestBody MemberDto memberDto){ return memberService.update(memberDto); }
     public MemberDto updateProfessor(@RequestBody MemberDto memberDto) {
         MemberEntity entity = memberService.update(memberDto);
         return MemberDto.fromEntity(entity);
@@ -128,4 +127,21 @@ public class MemberController {
     }
 
 
+    @GetMapping("/prof/info")
+    public MemberDepartmentDto professorInfo(HttpSession session) {
+        MemberDepartmentDto loginMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+        return loginMember;
+    }
+
+    //교수 개인정보 페이지 수정
+    @PostMapping("/prof/info")
+    public MemberEntity update(@RequestBody MemberDepartmentDto memberDepartmentDto, HttpSession session){
+        MemberDepartmentDto sessionMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+        sessionMember.setPhone(memberDepartmentDto.getPhone());
+        sessionMember.setPostcode(memberDepartmentDto.getPostcode());
+        sessionMember.setAddress1(memberDepartmentDto.getAddress1());
+        sessionMember.setAddress2(memberDepartmentDto.getAddress2());
+        session.setAttribute("loginMember", sessionMember);
+        return memberService.update(sessionMember);
+    }
 }

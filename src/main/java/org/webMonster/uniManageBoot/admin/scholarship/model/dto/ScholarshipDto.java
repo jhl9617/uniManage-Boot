@@ -23,11 +23,11 @@ public class ScholarshipDto {
 
     public static ScholarshipDto fromEntity(ScholarshipEntity scholarshipEntity) {
         ScholarshipDto scholarshipDto = new ScholarshipDto();
-        scholarshipDto.setSchoId(scholarshipDto.getSchoId());
-        scholarshipDto.setSchoTerm(scholarshipDto.getSchoTerm());
-        scholarshipDto.setSchoName(scholarshipDto.getSchoName());
-        scholarshipDto.setAmount(scholarshipDto.getAmount());
-        scholarshipDto.setMemberId(scholarshipDto.getMemberId());
+        scholarshipDto.setSchoId(scholarshipEntity.getSchoId());
+        scholarshipDto.setSchoTerm(scholarshipEntity.getSchoTerm());
+        scholarshipDto.setSchoName(scholarshipEntity.getSchoName());
+        scholarshipDto.setAmount(scholarshipEntity.getAmount());
+        scholarshipDto.setMemberId(scholarshipEntity.getMemberId());
         return scholarshipDto;
     }
 

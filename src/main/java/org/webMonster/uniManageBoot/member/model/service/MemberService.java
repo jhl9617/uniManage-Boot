@@ -16,9 +16,7 @@ import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -182,4 +180,17 @@ public class MemberService {
         return Header.OK(dtos, pagination);
     }
 
+
+    //교수 개인정보 페이지 수정
+    public MemberEntity update(MemberDepartmentDto sessionMember) {
+        MemberEntity entity = memberRepository.findById(sessionMember.getMemberId()).orElse(null);
+        if(entity != null){
+            entity.setPhone(sessionMember.getPhone());
+            entity.setPostcode(sessionMember.getPostcode());
+            entity.setAddress1(sessionMember.getAddress1());
+            entity.setAddress2(sessionMember.getAddress2());
+            return  memberRepository.save(entity);
+        }
+        return entity;
+    }
 }

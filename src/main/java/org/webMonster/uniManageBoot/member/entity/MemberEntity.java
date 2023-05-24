@@ -67,7 +67,6 @@ public class MemberEntity implements Serializable {
     @OneToMany(mappedBy = "member")
     private List<FreeboardEntity> freeboardEntities = new ArrayList<>();
 
-
     @Builder.Default
     @OneToMany(mappedBy = "member")
     private List<ScholarshipEntity> scholarshipEntities = new ArrayList<>();

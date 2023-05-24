@@ -1,9 +1,7 @@
 package org.webMonster.uniManageBoot.professor.cancelledLecture.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.sun.istack.NotNull;
+import lombok.*;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassEntity;
@@ -36,7 +34,7 @@ public class CancelledLectureEntity {
     private String reason;                  //휴강사유
     @Column(name = "CANCELLED_FILE")
     private String cancelledFile;           //제출서류 파일명
-    @Column(name = "CANCELLED_RENAME")
+    @Column(name = "CANCELLED_FILE_RENAME")
     private String cancelledRename;         //변경된 제출서류 파일명
 
     @Builder.Default

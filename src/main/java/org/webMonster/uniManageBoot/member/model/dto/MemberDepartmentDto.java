@@ -46,7 +46,4 @@ public class MemberDepartmentDto {
         dto.setDepartmentName(memberEntity.getDepartment().getDepartmentName());
         return dto;
     }
-
-
-
 }
