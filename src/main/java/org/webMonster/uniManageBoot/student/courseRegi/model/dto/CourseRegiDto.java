@@ -30,4 +30,6 @@ public class CourseRegiDto {
     private String roomcode2;   //강의실코드2
     private String roomcode3;   //강의실코드3
 
+    private String name; // 강의 개설 교수명
+
 }

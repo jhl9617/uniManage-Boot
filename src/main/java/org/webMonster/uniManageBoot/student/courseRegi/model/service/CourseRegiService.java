@@ -3,12 +3,17 @@ package org.webMonster.uniManageBoot.student.courseRegi.model.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
+
 import org.webMonster.uniManageBoot.student.courseRegi.entity.CourseRegiEntity;
 import org.webMonster.uniManageBoot.student.courseRegi.entity.CourseRegiRepository;
+
 import org.webMonster.uniManageBoot.student.courseRegi.model.dto.CourseRegiDto;
 
 
+
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,12 +26,15 @@ public class CourseRegiService {
     @Autowired
     private CourseRegiRepository courseRegiRepository;
 
+
+
     public List<CourseRegiDto> courseRegiList(Long id) {
         List<CourseRegiDto> list = new ArrayList<>();
         List<CourseRegiEntity> entity = courseRegiRepository.findByMemberId(id);
         for (CourseRegiEntity coentity : entity) {
             CourseRegiDto dto = CourseRegiDto.builder()
                     .courseRegiTerm(coentity.getCourseRegiTerm())
+                    .name(coentity.getLecture().getMember().getName())
                     .lectureId(coentity.getLectureId())
                     .lectureTitle(coentity.getLecture().getLectureTitle())
                     .courseRegiId(coentity.getCourseRegiId())
@@ -56,5 +64,8 @@ public class CourseRegiService {
     }
 
 
+//    public List<CourseRegiDto> timeTableList(Long id, Long courseRegiTerm) {
+//    }
 }
+
 

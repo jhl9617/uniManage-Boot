@@ -47,6 +47,14 @@ public class MemberController {
         }
         return ResponseEntity.ok(path);
     }
+    
+    // 로그아웃
+    @PostMapping("/logout")
+    public ResponseEntity<String> logout(HttpSession session) {
+            session.invalidate(); // 세션 종료
+            return ResponseEntity.ok("/"); // 로그아웃 후 이동할 경로 반환
+
+    }
 
     //세션에 있는지 확인
     @GetMapping("/sessionCheck")

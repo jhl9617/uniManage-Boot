@@ -13,4 +13,6 @@ public interface FreeboardRepositoryCustom {
     public BooleanExpression searchKeywords(String sk, String sv);
 
 
+
+
 }

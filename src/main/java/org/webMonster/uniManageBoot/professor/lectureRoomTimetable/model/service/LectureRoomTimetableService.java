@@ -2,6 +2,7 @@ package org.webMonster.uniManageBoot.professor.lectureRoomTimetable.model.servic
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,8 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service
 public class LectureRoomTimetableService {
-    private final LectureRoomTimetableRepository lectureRoomTimetableRepository;
+
+
     private final LectureRoomTimetableRepositoryCustom lectureRoomTimetableRepositoryCustom;
 
     //강의실 리스트 조회

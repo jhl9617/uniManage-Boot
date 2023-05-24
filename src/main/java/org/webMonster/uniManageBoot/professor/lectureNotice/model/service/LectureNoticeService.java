@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.webMonster.uniManageBoot.admin.notice.entity.NoticeEntity;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
 import org.webMonster.uniManageBoot.common.SearchCondition;
@@ -80,6 +82,7 @@ public class LectureNoticeService {
 
     }
 
+    // 강의 공지사항 선택 조회
     public LectureNoticeDto getLectureNotice(Long id) {
         LectureNoticeEntity entity = lectureNoticeRepository.findById(id).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
         return LectureNoticeDto.builder()
@@ -88,10 +91,23 @@ public class LectureNoticeService {
                 .lectureNoticeTitle(entity.getLectureNoticeTitle())
                 .lectureNoticeContent(entity.getLectureNoticeContent())
                 .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
-                .readcount(entity.getReadcount() + 1)
+                .readcount(entity.getReadcount())
                 .build();
     }
 
+    //게시글 조회시 조회수 1씩 증가
+    @Transactional
+    public void increaseReadCount(Long id) {
+        LectureNoticeEntity entity = lectureNoticeRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
+
+        entity.setReadcount(entity.getReadcount() + 1); // 조회수 증가
+
+        // 조회수 업데이트 저장
+        lectureNoticeRepository.save(entity);
+    }
+
+    // 강의 공지 생성
     public LectureNoticeEntity create(LectureNoticeDto lectureNoticeDto) {
        LectureNoticeEntity entity = LectureNoticeEntity.builder()
                .lectureNoticeId(lectureNoticeDto.getLectureNoticeId())
@@ -104,6 +120,7 @@ public class LectureNoticeService {
         return lectureNoticeRepository.save(entity);
     }
 
+    // 강의 공지 수정
     public LectureNoticeEntity update(LectureNoticeDto lectureNoticeDto) {
         LectureNoticeEntity entity = lectureNoticeRepository.findById(lectureNoticeDto.getLectureNoticeId()).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
         entity.setLectureNoticeTitle(lectureNoticeDto.getLectureNoticeTitle());
@@ -111,6 +128,7 @@ public class LectureNoticeService {
         return lectureNoticeRepository.save(entity);
     }
 
+    // 강의 공지 삭제
     public void delete(Long id) {
         LectureNoticeEntity entity = lectureNoticeRepository.findById(id).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
         lectureNoticeRepository.delete(entity);
