@@ -124,7 +124,7 @@ public class MemberService {
 
     //교직원 학생/교수관리 수정
     public MemberEntity update(MemberDto memberDto) {
-        MemberEntity entity = memberRepository.findById(memberDto.getMemberIdx()).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
+        MemberEntity entity = memberRepository.findByMemberId(memberDto.getMemberId());
         entity.setMemberIdx(memberDto.getMemberIdx());
         entity.setMemberId(memberDto.getMemberId());
         entity.setMemberPwd(memberDto.getMemberPwd());
@@ -143,7 +143,7 @@ public class MemberService {
 
     //교직원 학생/교수관리 삭제
     public void delete(Long id) {
-        MemberEntity entity = memberRepository.findById(id).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
+        MemberEntity entity = memberRepository.findByMemberId(id);
         memberRepository.delete(entity);
     }
 

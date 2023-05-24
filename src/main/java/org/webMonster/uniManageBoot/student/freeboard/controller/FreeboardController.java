@@ -54,7 +54,7 @@ public class FreeboardController {
 
     }
      //게시글 작성
-    @PostMapping("/Eclass/lecture/board")
+    @PostMapping("/eclass/lecture/board")
     public FreeboardEntity create(@RequestBody FreeboardDto freeboardDto) {
 
         return freeboardService.create(freeboardDto);
@@ -67,9 +67,10 @@ public class FreeboardController {
     }
     // 게시글 수정
     @PatchMapping("/eclass/lecture/board")
-    public FreeboardEntity update(@RequestBody FreeboardDto freeboardDto) {
+    public FreeboardDto update(@RequestBody FreeboardDto freeboardDto) {
 
-        return freeboardService.update(freeboardDto);
+        FreeboardEntity entity = freeboardService.update(freeboardDto);
+        return FreeboardDto.modifyFreeboard(entity);
     }
     // 게시글, 댓글 삭제
     @DeleteMapping("/eclass/lecture/board/{id}")

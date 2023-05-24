@@ -1,5 +1,6 @@
 package org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity;
 
+import com.querydsl.core.support.ExtendedSubQuery;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,7 +18,12 @@ import javax.persistence.*;
 @Entity
 public class LectureRoomTimetableEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "lecture_room_timetable_idx_seq_gen")
+    @SequenceGenerator(
+            name = "lecture_room_timetable_idx_seq_gen",
+            sequenceName = "LECTURE_ROOM_TIMETABLE_IDX_SEQ",
+            allocationSize = 1
+    )
     @Column(name = "LECTURE_ROOM_TIMETABLE_IDX")
     private long lectureRoomTimetableIdx;   //강의실시간표 번호
 

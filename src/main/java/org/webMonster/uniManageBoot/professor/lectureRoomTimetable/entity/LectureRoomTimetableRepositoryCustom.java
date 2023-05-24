@@ -1,10 +1,14 @@
 package org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity;
 
+import com.querydsl.core.types.dsl.BooleanExpression;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 
 public interface LectureRoomTimetableRepositoryCustom {
-    Page<LectureRoomTimetableEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition);
+
+    BooleanExpression searchKeywords(String sk, String sv);
+
+    Page<LectureRoomTimetableEntity> findAllBySearchConditionAndStatus(Pageable pageable, SearchCondition searchCondition);
 
 }

@@ -9,6 +9,7 @@ import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity;
+import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableRepository;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableRepositoryCustom;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.model.dto.LectureRoomTimetableDto;
 
@@ -19,17 +20,14 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service
 public class LectureRoomTimetableService {
-    private LectureRoomTimetableRepositoryCustom lectureRoomTimetableRepositoryCustom;
-
-    public LectureRoomTimetableService(LectureRoomTimetableRepositoryCustom lectureRoomTimetableRepositoryCustom) {
-        this.lectureRoomTimetableRepositoryCustom = lectureRoomTimetableRepositoryCustom;
-    }
+    private final LectureRoomTimetableRepository lectureRoomTimetableRepository;
+    private final LectureRoomTimetableRepositoryCustom lectureRoomTimetableRepositoryCustom;
 
     //강의실 리스트 조회
     public Header<List<LectureRoomTimetableDto>> getLectureRoomList(Pageable pageable, SearchCondition searchCondition) {
         List<LectureRoomTimetableDto> dtos = new ArrayList<>();
 
-        Page<LectureRoomTimetableEntity> lectureRoomTimetableEntities = lectureRoomTimetableRepositoryCustom.findAllBySearchCondition(pageable, searchCondition);
+        Page<LectureRoomTimetableEntity> lectureRoomTimetableEntities = lectureRoomTimetableRepositoryCustom.findAllBySearchConditionAndStatus(pageable, searchCondition);
         for (LectureRoomTimetableEntity entity : lectureRoomTimetableEntities) {
             LectureRoomTimetableDto dto = LectureRoomTimetableDto.builder()
                     .lectureRoomTimetableIdx(entity.getLectureRoomTimetableIdx())

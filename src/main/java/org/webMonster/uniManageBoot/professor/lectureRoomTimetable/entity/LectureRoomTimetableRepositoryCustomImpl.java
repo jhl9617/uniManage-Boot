@@ -1,19 +1,25 @@
 package org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity;
 
 import com.querydsl.core.types.dsl.BooleanExpression;
+import com.querydsl.jpa.JPAExpressions;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
+import org.springframework.context.annotation.Primary;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
+import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
+import org.webMonster.uniManageBoot.professor.lectureClass.entity.QLectureClassEntity;
+import org.webMonster.uniManageBoot.professor.lectureClassTime.entity.QLectureClassTimeEntity;
 
 import java.util.List;
 
 import static org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.QLectureRoomTimetableEntity.lectureRoomTimetableEntity;
 
+@Repository
 public class LectureRoomTimetableRepositoryCustomImpl extends QuerydslRepositorySupport implements LectureRoomTimetableRepositoryCustom {
     private final JPAQueryFactory queryFactory;
 
@@ -22,10 +28,10 @@ public class LectureRoomTimetableRepositoryCustomImpl extends QuerydslRepository
         this.queryFactory = queryFactory;
     }
 
-    @Override
-    public Page<LectureRoomTimetableEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
+    public Page<LectureRoomTimetableEntity> findAllBySearchConditionAndStatus(Pageable pageable, SearchCondition searchCondition) {
         JPAQuery<LectureRoomTimetableEntity> query = queryFactory.selectFrom(lectureRoomTimetableEntity)
-                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()));
+                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
+                .where(lectureRoomTimetableEntity.operation.eq('N'));
 
         long total = query.fetchCount();
 
@@ -39,17 +45,35 @@ public class LectureRoomTimetableRepositoryCustomImpl extends QuerydslRepository
     }
 
     public BooleanExpression searchKeywords(String sk, String sv) {
-        if ("buildingName".equals(sk)) {   // 건물이름으로 검색
+        if ("building_name".equals(sk)) {   // 건물이름으로 검색
             if (StringUtils.hasLength(sv)) {
-                return lectureRoomTimetableEntity.lectureClass.buildingName.contains(sv);
+                QLectureClassEntity lectureClassEntity = QLectureClassEntity.lectureClassEntity;
+                return lectureRoomTimetableEntity.lectureRoomCode.in(
+                        JPAExpressions.select(lectureClassEntity)
+                                .from(lectureClassEntity)
+                                .where(lectureClassEntity.buildingName.contains(sv))
+                                .select(lectureClassEntity.lectureRoomCode)
+                );
             }
-        } else if ("dayTime".equals(sk)) {   // 요일로 검색
+        } else if ("day_time".equals(sk)) {   // 요일로 검색
             if (StringUtils.hasLength(sv)) {
-                return lectureRoomTimetableEntity.lectureClassTime.dayTime.contains(sv);
+                QLectureClassTimeEntity lectureClassTimeEntity = QLectureClassTimeEntity.lectureClassTimeEntity;
+                return lectureRoomTimetableEntity.timecode.in(
+                        JPAExpressions.select(lectureClassTimeEntity)
+                                .from(lectureClassTimeEntity)
+                                .where(lectureClassTimeEntity.dayTime.contains(sv))
+                                .select(lectureClassTimeEntity.timecode)
+                );
             }
-        } else if ("lectureRoomNum".equals(sk)) {   // 강의실호수로 검색
+        } else if ("lecture_room_num".equals(sk)) {   // 강의실호수로 검색
             if (StringUtils.hasLength(sv)) {
-                return lectureRoomTimetableEntity.lectureClass.lectureRoomNum.contains(sv);
+                QLectureClassEntity lectureClassEntity = QLectureClassEntity.lectureClassEntity;
+                return lectureRoomTimetableEntity.lectureRoomCode.in(
+                        JPAExpressions.select(lectureClassEntity)
+                                .from(lectureClassEntity)
+                                .where(lectureClassEntity.lectureRoomNum.contains(sv))
+                                .select(lectureClassEntity.lectureRoomCode)
+                );
             }
         }
 

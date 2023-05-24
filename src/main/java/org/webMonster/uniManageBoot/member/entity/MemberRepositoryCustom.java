@@ -3,10 +3,8 @@ package org.webMonster.uniManageBoot.member.entity;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.Query;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
-import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 
 import java.lang.reflect.Member;
 import java.util.List;

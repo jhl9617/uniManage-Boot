@@ -157,7 +157,7 @@ public class FreeboardService {
         FreeboardRepEntity entity = FreeboardRepEntity.builder()
                 .freeId(id)
                 .freeRepId(freeboardRepDto.getFreeRepId())
-                .memberId(20180102)
+                .memberId(freeboardRepDto.getMemberId())
                 .freeRepContent(freeboardRepDto.getFreeRepContent())
                 .createdDate(LocalDateTime.now())
                 .build();

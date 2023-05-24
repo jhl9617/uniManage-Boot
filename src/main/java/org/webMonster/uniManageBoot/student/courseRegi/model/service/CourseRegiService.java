@@ -7,13 +7,8 @@ import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.student.courseRegi.entity.CourseRegiEntity;
 import org.webMonster.uniManageBoot.student.courseRegi.entity.CourseRegiRepository;
 import org.webMonster.uniManageBoot.student.courseRegi.model.dto.CourseRegiDto;
-import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
-import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardRepEntity;
-import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardDto;
-import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardRepDto;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,6 +33,10 @@ public class CourseRegiService {
                     .timecode1(coentity.getLecture().getTimecode1())
                     .timecode2(coentity.getLecture().getTimecode2())
                     .timecode3(coentity.getLecture().getTimecode3())
+                    .roomcode1(coentity.getLecture().getRoomcode1())
+                    .roomcode2(coentity.getLecture().getRoomcode2())
+                    .roomcode3(coentity.getLecture().getRoomcode3())
+                    .credit(coentity.getLecture().getCredit())
                     .build();
             list.add(dto);
         }

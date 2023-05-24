@@ -3,21 +3,20 @@ package org.webMonster.uniManageBoot.member.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
-import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
-import org.webMonster.uniManageBoot.admin.scholarship.model.dto.ScholarshipDto;
+import org.webMonster.uniManageBoot.admin.notice.model.service.NoticeService;
+import org.webMonster.uniManageBoot.admin.schedule.model.service.ScheduleService;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
+import org.webMonster.uniManageBoot.member.model.dto.StudentMainDto;
 import org.webMonster.uniManageBoot.member.model.service.MemberService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassEntity;
-import org.webMonster.uniManageBoot.professor.lectureClass.model.dto.LectureClassDto;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
@@ -29,6 +28,10 @@ import java.util.List;
 public class MemberController {
 
     private final MemberService memberService;
+
+    private final NoticeService noticeService;
+
+    private final ScheduleService scheduleService;
 
     @PostMapping("/onLogin")
     public ResponseEntity<String> login(@RequestBody MemberLoginDto memberLoginDto, HttpSession session) {
@@ -75,11 +78,15 @@ public class MemberController {
 
     //교직원 학생관리 수정하기
     @PatchMapping("/admin/manage/student")
-    public MemberEntity update(@RequestBody MemberDto memberDto){ return memberService.update(memberDto); }
+//    public MemberEntity updateStudent(@RequestBody MemberDto memberDto){return memberService.update(memberDto);}
+    public MemberDto updateStudent(@RequestBody MemberDto memberDto) {
+        MemberEntity entity = memberService.update(memberDto);
+        return MemberDto.fromEntity(entity);
+    }
 
     //교직원 학생관리 삭제하기
     @DeleteMapping("/admin/manage/student/{id}")
-    public void delete(@PathVariable Long id) { memberService.delete(id); }
+    public void deleteStudent(@PathVariable Long id) { memberService.delete(id); }
 
     //교직원 교수관리 리스트 조회
     @GetMapping("/admin/manage/professor")
@@ -97,6 +104,28 @@ public class MemberController {
     //교직원 교수관리 추가하기
     @PostMapping("/admin/manage/professor")
     public MemberEntity createProfessor(@RequestBody MemberDto memberDto) { return memberService.create(memberDto); }
+
+    //교직원 교수관리 수정하기
+    @PatchMapping("/admin/manage/professor")
+//    public MemberEntity updateProfessor(@RequestBody MemberDto memberDto){ return memberService.update(memberDto); }
+    public MemberDto updateProfessor(@RequestBody MemberDto memberDto) {
+        MemberEntity entity = memberService.update(memberDto);
+        return MemberDto.fromEntity(entity);
+    }
+
+    //교직원 교수관리 삭제하기
+    @DeleteMapping("/admin/manage/professor/{id}")
+    public void deleteProfessor(@PathVariable Long id) { memberService.delete(id); }
+
+    //학생정보시스템 메인페이지에서 공지사항 4개 리스트 조회
+    @GetMapping("/student")
+    public StudentMainDto getStudentMain(){
+        StudentMainDto response = new StudentMainDto();
+        response.setNoticeDto(noticeService.getNoticeList());
+        response.setScheduleDto(scheduleService.getScheduleList());
+
+        return response;
+    }
 
 
 }
