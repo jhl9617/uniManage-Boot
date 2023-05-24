@@ -15,13 +15,15 @@ import java.sql.Date;
 @Builder
 @Table(name = "CANCELLED_LECTURE")
 @Entity
+@Getter
+@Setter
 public class CancelledLectureEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "CANCELLED_LECTURE_IDX_SEQ")
-    private long cancelledLectureIdx;   //휴강게시물 시퀀스
+    @Column(name = "CANCELLED_LECTURE_IDX")
+    private Long cancelledLectureIdx;   //휴강게시물 시퀀스
     @Column(name = "LECTURE_ID")
-    private long lectureId;             //강의번호
+    private Long lectureId;             //강의번호
     @Column(name = "MEMBER_ID")
     private long memberId;              //아이디(작성자)
     @Column(name = "LECTURE_ROOM_CODE")

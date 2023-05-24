@@ -7,8 +7,8 @@ import org.webMonster.uniManageBoot.common.SearchCondition;
 
 public interface CancelledLectureRepositoryCustom {
 
-    //휴강게시글 리스트 출력용
-    Page<CancelledLectureEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition);
+    //본인이 작성한 휴강신청 리스트 조회(교수용)
+    Page<CancelledLectureEntity> findAllBySearchConditionByMemberId(Pageable pageable, SearchCondition searchCondition, long memberId);
 
     BooleanExpression searchKeywords(String sk, String sv);
 

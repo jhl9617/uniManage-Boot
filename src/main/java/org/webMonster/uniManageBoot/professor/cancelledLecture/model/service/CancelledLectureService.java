@@ -26,6 +26,8 @@ public class CancelledLectureService {
 
     @Autowired
     private CancelledLectureRepository cancelledLectureRepository;
+
+    @Autowired
     private CancelledLectureRepositoryCustomImpl cancelledLectureRepositoryCustom;
 
 

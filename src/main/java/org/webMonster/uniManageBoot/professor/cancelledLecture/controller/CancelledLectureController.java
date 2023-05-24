@@ -41,8 +41,12 @@ public class CancelledLectureController {
     @GetMapping("/prof/lecture/cancelled/list")
     public Header<List<CancelledLectureDto>> cancelledLectureList(
             @PageableDefault(sort = {"Cancelled_lecture_idx_seq"})Pageable pageable, SearchCondition searchCondition, HttpSession session){
+        System.out.println("cancelledLectureList 실행");
         MemberDepartmentDto sessionMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+
         Long memberId = sessionMember.getMemberId();
+        System.out.println("memberId : " + memberId);
+
         return cancelledLectureService.getCancelledLectureList(pageable, searchCondition, memberId);
     }
 

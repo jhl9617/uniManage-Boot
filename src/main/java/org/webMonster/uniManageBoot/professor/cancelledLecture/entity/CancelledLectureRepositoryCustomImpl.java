@@ -44,13 +44,14 @@ public class CancelledLectureRepositoryCustomImpl extends QuerydslRepositorySupp
 //    }
 
     //본인이 작성한 휴강신청 리스트 조회(교수용)
+    @Override
     public Page<CancelledLectureEntity> findAllBySearchConditionByMemberId(Pageable pageable, SearchCondition searchCondition, long memberId) {
-        QCancelledLectureEntity cancelledLectureEntity = QCancelledLectureEntity.cancelledLectureEntity;
+        /*QCancelledLectureEntity cancelledLectureEntity = QCancelledLectureEntity.cancelledLectureEntity;*/
         JPAQuery<CancelledLectureEntity> query = queryFactory
                 .selectFrom(cancelledLectureEntity)
                 .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
                 .where(cancelledLectureEntity.memberId.eq(memberId));
-                long total = query.fetchCount();
+                long total = query.stream().count();
                 List<CancelledLectureEntity> results = query
                         .offset(pageable.getOffset())
                         .limit(pageable.getPageSize())
@@ -109,14 +110,6 @@ public class CancelledLectureRepositoryCustomImpl extends QuerydslRepositorySupp
 
 
 
-
-
-
-
-    @Override
-    public Page<CancelledLectureEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition) {
-        return null;
-    }
 
     //휴강 리스트 검색용(교직원용)
     @Override
