@@ -15,10 +15,11 @@ public interface MemberRepositoryCustom {
 
     Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId, String memberPwd);
 
-//    List<MemberDepartmentDto> findAllMembersWithDepartment();
+    List<MemberDepartmentDto> findAllMembersWithDepartment();
 
     //교직원 학생관리 리스트 출력용
     Page<MemberEntity> findAllBySearchConditionsAndAuth(Pageable pageable, SearchCondition searchCondition);
+
 
     //교직원 교수관리 리스트 출력용
     Page<MemberEntity> findAllBySearchConditionAndAuth(Pageable pageable, SearchCondition searchCondition);
