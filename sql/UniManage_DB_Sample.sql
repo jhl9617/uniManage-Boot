@@ -154,2955 +154,2955 @@ VALUES (DEPARTMENT_ID_SEQ.NEXTVAL, '사무처', '행정부');
 
 /*MEMBER-교수*/
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145001, '비밀번호위치', '김진영', 52, to_date('600530', 'yymmdd'), '010-9971-7057', 'kimjyoung@koreaict.ac.kr', 07551, '서울시 강서구 등촌1동', '대동아파트 103-704', 1);
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김진영', 52, to_date('600530', 'yymmdd'), '010-9971-7057', 'kimjyoung@koreaict.ac.kr', 07551, '서울시 강서구 등촌1동', '대동아파트 103-704', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145002, '비밀번호위치', '양윤필', 17, to_date('770510', 'yymmdd'), '010-6390-8237',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '양윤필', 17, to_date('770510', 'yymmdd'), '010-6390-8237',
         'yangypil@koreaict.ac.kr', 06114, '서울특별시 강남구 논현동 164-4', '두보빌딩', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145003, '비밀번호위치', '신원하', 39, to_date('800808', 'yymmdd'), '010-8671-8400',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145003, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신원하', 39, to_date('800808', 'yymmdd'), '010-8671-8400',
         'sinwha@koreaict.ac.kr', 21535, '인천광역시 남동구 만수동 925-6', '오림빌라 1102호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145004, '비밀번호위치', '백옥현', 43, to_date('630718', 'yymmdd'), '010-0987-8859',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145004, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '백옥현', 43, to_date('630718', 'yymmdd'), '010-0987-8859',
         'baekyhyeon@koreaict.ac.kr', 11005, '경기도 연천군 군남면 옥계리 737-7', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145005, '비밀번호위치', '조경숙', 31, to_date('860326', 'yymmdd'), '010-6433-0631',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145005, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조경숙', 31, to_date('860326', 'yymmdd'), '010-6433-0631',
         'joksuk@koreaict.ac.kr', 01026, '서울특별시 강북구 수유동 280-46', '광진하이츠빌라 408호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145006, '비밀번호위치', '김영주', 52, to_date('820910', 'yymmdd'), '010-5422-3904',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145006, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김영주', 52, to_date('820910', 'yymmdd'), '010-5422-3904',
         'kimyju@koreaict.ac.kr', 16979, '경기도 용인시 기흥구 구갈동 591', '더힐, 갈곡로 5', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145007, '비밀번호위치', '윤수현', 36, to_date('770609', 'yymmdd'), '010-5589-6784',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145007, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤수현', 36, to_date('770609', 'yymmdd'), '010-5589-6784',
         'yunshyeon@koreaict.ac.kr', 10802, '경기도 파주시 적성면 가월리 389-1', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145008, '비밀번호위치', '홍순연', 22, to_date('640101', 'yymmdd'), '010-6942-6959',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145008, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '홍순연', 22, to_date('640101', 'yymmdd'), '010-6942-6959',
         'hongsyeon@koreaict.ac.kr', 06232, '서울특별시 강남구 역삼동 825-9', '준빌딩 강남대로 378', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145009, '비밀번호위치', '황헌중', 21, to_date('751030', 'yymmdd'), '010-2317-8591',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145009, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '황헌중', 21, to_date('751030', 'yymmdd'), '010-2317-8591',
         'hwanghjung@koreaict.ac.kr', 03442, '서울특별시 은평구 신사동 335-1', '다보빌딩, 가좌로 269', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145010, '비밀번호위치', '석경환', 34, to_date('670315', 'yymmdd'), '010-8136-7846',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145010, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '석경환', 34, to_date('670315', 'yymmdd'), '010-8136-7846',
         'sukkhwan@koreaict.ac.kr', 01803, '서울특별시 노원구 공릉동 644-45', '공릉하이즈빌리지 109동 302호', 1);
 
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145011, '비밀번호위치', '이양희', 4, to_date('820822', 'yymmdd'), '010-1496-0812',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145011, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이양희', 4, to_date('820822', 'yymmdd'), '010-1496-0812',
         'leeyhee@koreaict.ac.kr', 06761, '서울특별시 서초구 방배동 2922-3', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145012, '비밀번호위치', '유용석', 63, to_date('630714', 'yymmdd'), '010-0840-1728',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145012, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유용석', 63, to_date('630714', 'yymmdd'), '010-0840-1728',
         'youysuk@koreaict.ac.kr', 13503, '경기도 성남시 분당구 야탑동 270 매화마을 화성빌리지', '704동 401호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145013, '비밀번호위치', '이미경', 5, to_date('841016', 'yymmdd'), '010-7886-7903',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145013, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이미경', 5, to_date('841016', 'yymmdd'), '010-7886-7903',
         'leemkyung@koreaict.ac.kr', 13312, '경기도 성남시 수정구 수진2동 삼부아파트', '103동 1505호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145014, '비밀번호위치', '백은정', 63, to_date('780228', 'yymmdd'), '010-9734-8835',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145014, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '백은정', 63, to_date('780228', 'yymmdd'), '010-9734-8835',
         'beakejung@koreaict.ac.kr', 18144, '경기도 오산시 원동', '한주아파트 101동 103호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145015, '비밀번호위치', '박주홍', 9, to_date('680721', 'yymmdd'), '010-2716-7018',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145015, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박주홍', 9, to_date('680721', 'yymmdd'), '010-2716-7018',
         'parkjhong@koreaict.ac.kr', 11139, '경기도 포천시 기지리', '산호아파트 103동 304호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145016, '비밀번호위치', '이은선', 34, to_date('780502', 'yymmdd'), '010-9005-8945',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145016, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이은선', 34, to_date('780502', 'yymmdd'), '010-9005-8945',
         'leeesun@koreaict.ac.kr', 34870, '대전광역시 중구 용두동 99-4 극동', '늘푸른아파트 102동 1033호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145017, '비밀번호위치', '노인순', 8, to_date('620602', 'yymmdd'), '010-4591-4648',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145017, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '노인순', 8, to_date('620602', 'yymmdd'), '010-4591-4648',
         'noisun@koreaict.ac.kr', 05200, '서울특별시 강동구 고덕1동 8단지', ' 공무원아파트 807동 302호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145018, '비밀번호위치', '박재우', 40, to_date('611016', 'yymmdd'), '010-2201-4730',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145018, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박재우', 40, to_date('611016', 'yymmdd'), '010-2201-4730',
         'parkjyoo@koreaict.ac.kr', 03169, '서울특별시 종로구 내자동 145', '오투원룸텔', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145019, '비밀번호위치', '성수미', 24, to_date('730329', 'yymmdd'), '010-4246-1477',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145019, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '성수미', 24, to_date('730329', 'yymmdd'), '010-4246-1477',
         'sungsmi@koreaict.ac.kr', 08334, '서울특별시 구로구 개봉본동 130-26', '2618-0424', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145020, '비밀번호위치', '장남희', 55, to_date('551211', 'yymmdd'), '010-6182-5416',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145020, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '장남희', 55, to_date('551211', 'yymmdd'), '010-6182-5416',
         'jangnhee@koreaict.ac.kr', 04133, '서울특별시 마포구 공덕동 188-108', '마포현대아파트 5-203', 1);
 
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145021, '비밀번호위치', '김정연', 58, to_date('740219', 'yymmdd'), '010-8073-3945',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145021, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김정연', 58, to_date('740219', 'yymmdd'), '010-8073-3945',
         'kimjyoung@koreaict.ac.kr', 05720, '서울특별시 송파구 오금동 94-4', '청일빌라 201호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145022, '비밀번호위치', '김민나', 27, to_date('580218', 'yymmdd'), '010-1847-3619',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145022, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김민나', 27, to_date('580218', 'yymmdd'), '010-1847-3619',
         'kimmna@koreaict.ac.kr', 14203, '경기도 광명시 광명동159-39', '월드빌라 101호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145023, '비밀번호위치', '설주미', 28, to_date('720225', 'yymmdd'), '010-6650-2685',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145023, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '설주미', 28, to_date('720225', 'yymmdd'), '010-6650-2685',
         'seoljmi@koreaict.ac.kr', 04808, '서울특별시 성동구 용답동235-8', 'JS빌딩', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145024, '비밀번호위치', '김현경', 9, to_date('680105', 'yymmdd'), '010-2781-5899',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145024, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김현경', 9, to_date('680105', 'yymmdd'), '010-2781-5899',
         'kimhkyung@koreaict.ac.kr', 12276, '경기남양주 와부읍 도곡리', '쌍용아파트 102동 301호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145025, '비밀번호위치', '홍남수', 5, to_date('640304', 'yymmdd'), '010-8372-5662',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145025, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '홍남수', 5, to_date('640304', 'yymmdd'), '010-8372-5662',
         'hongnsu@koreaict.ac.kr', 14516, '경기도 부천시 오정구 삼정동342-2', '한양프라자', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145026, '비밀번호위치', '이경석', 11, to_date('750712', 'yymmdd'), '010-3491-1571',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145026, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이경석', 11, to_date('750712', 'yymmdd'), '010-3491-1571',
         'leekseok@koreaict.ac.kr', 03668, '서울특별시 서대문구 북가좌동 3-167', '현대아파트 101동 303호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145027, '비밀번호위치', '남명길', 40, to_date('640103', 'yymmdd'), '010-3045-2134',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145027, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '남명길', 40, to_date('640103', 'yymmdd'), '010-3045-2134',
         'nammgill@koreaict.ac.kr', 07016, '서울특별시 동작구 사당1동 419-125', '동산빌라 301호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145028, '비밀번호위치', '김명석', 39, to_date('880702', 'yymmdd'), '010-2355-2934',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145028, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김명석', 39, to_date('880702', 'yymmdd'), '010-2355-2934',
         'kimmseok@koreaict.ac.kr', 03746, '서울특별시 서대문구 북아현동 1-696', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145029, '비밀번호위치', '제상철', 2, to_date('900304', 'yymmdd'), '010-9179-5186',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145029, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '제상철', 2, to_date('900304', 'yymmdd'), '010-9179-5186',
         'jeschul@koreaict.ac.kr', 02512, '서울특별시 동대문구 휘경동 49-5', '서울가든아파트 101호 101동', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145030, '비밀번호위치', '김하정', 51, to_date('780717', 'yymmdd'), '010-4332-7473',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145030, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김하정', 51, to_date('780717', 'yymmdd'), '010-4332-7473',
         'kimhjeng@koreaict.ac.kr', 04374, '서울특별시 용산구 이촌동 210-12', '시범아파트 6동 505호', 1);
 
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145031, '비밀번호위치', '조영철', 42, to_date('651011', 'yymmdd'), '010-8615-9514',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145031, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조영철', 42, to_date('651011', 'yymmdd'), '010-8615-9514',
         'joychul@koreaict.ac.kr', 07742, '서울 강서구 화곡2동 166-23', '천우아트빌 402호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145032, '비밀번호위치', '김은애', 51, to_date('780212', 'yymmdd'), '010-0724-7416',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145032, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김은애', 51, to_date('780212', 'yymmdd'), '010-0724-7416',
         'kimeae@koreaict.ac.kr', 10344, '경기도 고양시 일산서구 탄현동 1582', '탄현마을14단지 101동 1006호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145033, '비밀번호위치', '백양임', 58, to_date('550215', 'yymmdd'), '010-3565-9992',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145033, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '백양임', 58, to_date('550215', 'yymmdd'), '010-3565-9992',
         'baekyim@koreaict.ac.kr', 07343, '서울특별시 영등포구 여의도동 53-12', '경성아파트 201호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145034, '비밀번호위치', '박태환', 26, to_date('700704', 'yymmdd'), '010-3901-7723',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145034, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박태환', 26, to_date('700704', 'yymmdd'), '010-3901-7723',
         'parkthwan@koreaict.ac.kr', 14096, '경기도 안양시 만안구 안양동 373-3', '백조아파트 202동 506호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145035, '비밀번호위치', '임진숙', 5, to_date('740125', 'yymmdd'), '010-8416-4999',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145035, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임진숙', 5, to_date('740125', 'yymmdd'), '010-8416-4999',
         'imjsook@koreaict.ac.kr', 03614, '서울특별시 서대문구 홍은동 440-1', '반석블레스아파트 나동 101호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145036, '비밀번호위치', '최귀화', 53, to_date('800619', 'yymmdd'), '010-3132-4880',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145036, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최귀화', 53, to_date('800619', 'yymmdd'), '010-3132-4880',
         'choighwa@koreaict.ac.kr', 02178, '서울특별시 중랑구 망우동 163-62', '그린빌라 가동 103호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145037, '비밀번호위치', '박은미', 16, to_date('770127', 'yymmdd'), '010-8005-4965',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145037, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박은미', 16, to_date('770127', 'yymmdd'), '010-8005-4965',
         'parkemi@koreaict.ac.kr', 11914, '경기도 구리시 인창동 487-32', '아름마을일신아파트 102동 905호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145038, '비밀번호위치', '송가영', 7, to_date('710121', 'yymmdd'), '010-3709-6412',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145038, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송가영', 7, to_date('710121', 'yymmdd'), '010-3709-6412',
         'songgyoung@koreaict.ac.kr', 06232, '서울특별시 강남구 신사동 521-8', '104동 206호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145039, '비밀번호위치', '조창주', 45, to_date('810205', 'yymmdd'), '010-0186-4997',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145039, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조창주', 45, to_date('810205', 'yymmdd'), '010-0186-4997',
         'jocju@koreaict.ac.kr', 04604, '서울특별시 중구 신당동 432-811', '금성로얄맨션 201호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145040, '비밀번호위치', '한은수', 55, to_date('781210', 'yymmdd'), '010-8545-4459',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145040, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한은수', 55, to_date('781210', 'yymmdd'), '010-8545-4459',
         'hanesu@koreaict.ac.kr', 07289, '서울특별시 영등포구 문래동2가 36-10', '130동 110호', 1);
 
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145041, '비밀번호위치', '김봉건', 13, to_date('810130', 'yymmdd'), '010-5532-8138',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145041, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김봉건', 13, to_date('810130', 'yymmdd'), '010-5532-8138',
         'kimbgun@koreaict.ac.kr', 01349, '서울특별시 도봉구 도봉동 610-4', '서원아파트 103동 1302동', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145042, '비밀번호위치', '정혜민', 56, to_date('830123', 'yymmdd'), '010-7997-0057',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145042, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정혜민', 56, to_date('830123', 'yymmdd'), '010-7997-0057',
         'junghmin@koreaict.ac.kr', 05305, '서울특별시 강동구 천호동 18-174', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145043, '비밀번호위치', '임정화', 49, to_date('650802', 'yymmdd'), '010-5729-5831',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145043, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임정화', 49, to_date('650802', 'yymmdd'), '010-5729-5831',
         'imjhwa@koreaict.ac.kr', 01222, '서울특별시 강북구 미아동 49-53', '미아아파트 204동 1102호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145044, '비밀번호위치', '김해룡', 30, to_date('710420', 'yymmdd'), '010-7625-2795',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145044, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김해룡', 30, to_date('710420', 'yymmdd'), '010-7625-2795',
         'kimhryong@koreaict.ac.kr', 16825, '경기도 용인시 수지구 동천동 910', '원천마을푸르지오아파트 101동 1411호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145045, '비밀번호위치', '정진정', 50, to_date('581002', 'yymmdd'), '010-0857-6563',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145045, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정진정', 50, to_date('581002', 'yymmdd'), '010-0857-6563',
         'jeongjjeong@koreaict.ac.kr', 17086, '경기도 용인시 기흥구 고매동 883', '기흥써니밸리아파트 107동 1805호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145046, '비밀번호위치', '박준호', 59, to_date('821020', 'yymmdd'), '010-7823-3063',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145046, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박준호', 59, to_date('821020', 'yymmdd'), '010-7823-3063',
         'parkjho@koreaict.ac.kr', 13279, '경기도 성남시 수정구 태평동 7298-9', '성경빌라 108동 805호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145047, '비밀번호위치', '이지호', 52, to_date('670904', 'yymmdd'), '010-4666-3399',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145047, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이지호', 52, to_date('670904', 'yymmdd'), '010-4666-3399',
         'leejho@koreaict.ac.kr', 10802, '서울특별시 은평구 갈현동 419-12', '갈현동근생및다세대주택', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145048, '비밀번호위치', '홍부철', 60, to_date('640110', 'yymmdd'), '010-7803-8996',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145048, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '홍부철', 60, to_date('640110', 'yymmdd'), '010-7803-8996',
         'hongbchul@koreaict.ac.kr', 01189, '서울특별시 강북구 미아동 791-2166', '서그내아파트 104동 204호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145049, '비밀번호위치', '이은미', 32, to_date('690401', 'yymmdd'), '010-4280-0734',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145049, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이은미', 32, to_date('690401', 'yymmdd'), '010-4280-0734',
         'leeemi@koreaict.ac.kr', 13007, '경기도 하남시 학암동 6-11', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145050, '비밀번호위치', '김선정', 1, to_date('661222', 'yymmdd'), '010-3049-4051',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145050, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김선정', 1, to_date('661222', 'yymmdd'), '010-3049-4051',
         'kimsheong@koreaict.ac.kr', 14662, '경기도 부천시 역곡동 28-16', null, 1);
 
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145051, '비밀번호위치', '권귀빈', 4, to_date('581022', 'yymmdd'), '010-8134-8241',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145051, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '권귀빈', 4, to_date('581022', 'yymmdd'), '010-8134-8241',
         'kwongbin@koreaict.ac.kr', 21977, '인천광역시 연수구 동춘동 929', '풍림2차아파트 104동 505호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145052, '비밀번호위치', '임해정', 63, to_date('630617', 'yymmdd'), '010-3179-6076',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145052, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임해정', 63, to_date('630617', 'yymmdd'), '010-3179-6076',
         'imhjung@koreaict.ac.kr', 14550, '경기도 부천시 중동 1103', '꿈마을아파트 1010동 301호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145053, '비밀번호위치', '김기수', 32, to_date('580613', 'yymmdd'), '010-4056-4503',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145053, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김기수', 32, to_date('580613', 'yymmdd'), '010-4056-4503',
         'kimgsu@koreaict.ac.kr', 06680, '서울특별시 서초구 방배동 322-1', '방배동내동하이츠빌라 201호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145054, '비밀번호위치', '변현주', 17, to_date('610117', 'yymmdd'), '010-1825-7391',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145054, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '변현주', 17, to_date('610117', 'yymmdd'), '010-1825-7391',
         'byeonhju@koreaict.ac.kr', 08615, '서울특별시 금천구 시흥동 1009', '시흥목련아파트 106동 803호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145055, '비밀번호위치', '박연국', 58, to_date('750722', 'yymmdd'), '010-1632-0409',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145055, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박연국', 58, to_date('750722', 'yymmdd'), '010-1632-0409',
         'parkyguk@koreaict.ac.kr', 06799, '서울특별시 서초구 원지동 254-8', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145056, '비밀번호위치', '강용진', 57, to_date('750620', 'yymmdd'), '010-0780-2868',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145056, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강용진', 57, to_date('750620', 'yymmdd'), '010-0780-2868',
         'kangyjin@koreaict.ac.kr', 03395, '서울특별시 은평구 대조동 39-30', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145057, '비밀번호위치', '홍인표', 28, to_date('690221', 'yymmdd'), '010-1862-0545',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145057, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '홍인표', 28, to_date('690221', 'yymmdd'), '010-1862-0545',
         'honginpyo@koreaict.ac.kr', 08223, '서울특별시 구로구 고척동 327', '고척동동아한신아파트 101동 403호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145058, '비밀번호위치', '이협수', 16, to_date('771224', 'yymmdd'), '010-8559-6139',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145058, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이협수', 16, to_date('771224', 'yymmdd'), '010-8559-6139',
         'leehsu@koreaict.ac.kr', 06987, '서울특별시 동작구 흑석동 256-69', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145059, '비밀번호위치', '김계선', 19, to_date('621201', 'yymmdd'), '010-8929-0970',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145059, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김계선', 19, to_date('621201', 'yymmdd'), '010-8929-0970',
         'kimgseon@koreaict.ac.kr', 08743, '서울특별시 관악구 봉천동 41-538', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145060, '비밀번호위치', '김소영', 34, to_date('700801', 'yymmdd'), '010-6709-8960',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145060, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김소영', 34, to_date('700801', 'yymmdd'), '010-6709-8960',
         'kimsyoung@koreaict.ac.kr', 21632, '인천광역시 남동구 논현동 448', '논현2차푸르지오시티 206동 205호', 1);
 
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145061, '비밀번호위치', '전소운', 39, to_date('810405', 'yymmdd'), '010-2556-3013',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145061, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '전소운', 39, to_date('810405', 'yymmdd'), '010-2556-3013',
         'jeonsyoon@koreaict.ac.kr', 08791, '서울특별시 관악구 봉천동 1594-6', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145062, '비밀번호위치', '권정희', 15, to_date('770326', 'yymmdd'), '010-3775-5784',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145062, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '권정희', 15, to_date('770326', 'yymmdd'), '010-3775-5784',
         'kwonjhee@koreaict.ac.kr', 07752, '서울특별시 강서구 화곡동 396-9', '계명주택', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145063, '비밀번호위치', '최요한', 10, to_date('600830', 'yymmdd'), '010-7280-9509',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145063, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최요한', 10, to_date('600830', 'yymmdd'), '010-7280-9509',
         'cheyhan@koreaict.ac.kr', 12015, '경기도 남양주시 진접읍 장현리 593', '동부주택', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145064, '비밀번호위치', '이도현', 16, to_date('581120', 'yymmdd'), '010-0540-8054',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145064, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이도현', 16, to_date('581120', 'yymmdd'), '010-0540-8054',
         'leedhyen@koreaict.ac.kr', 02095, '서울특별시 중랑구 중화동 450', '송화한신아파트 102동 207호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145065, '비밀번호위치', '서미화', 60, to_date('591130', 'yymmdd'), '010-5573-8504',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145065, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '서미화', 60, to_date('591130', 'yymmdd'), '010-5573-8504',
         'semhwa@koreaict.ac.kr', 16273, '경기도 수원시 장안구 영화동 417-14', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145066, '비밀번호위치', '김경미', 9, to_date('750816', 'yymmdd'), '010-7254-0820',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145066, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김경미', 9, to_date('750816', 'yymmdd'), '010-7254-0820',
         'kimgmi@koreaict.ac.kr', 12955, '경기도 하남시 창우동 521', '꿈동산신안아파트 412동 1403호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145067, '비밀번호위치', '하정균', 53, to_date('800510', 'yymmdd'), '010-8162-2272',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145067, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '하정균', 53, to_date('800510', 'yymmdd'), '010-8162-2272',
         'hajgyun@koreaict.ac.kr', 02583, '서울특별시 동대문구 용두동 234-51', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145068, '비밀번호위치', '심석천', 22, to_date('670825', 'yymmdd'), '010-7752-3106',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145068, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '심석천', 22, to_date('670825', 'yymmdd'), '010-7752-3106',
         'seimschun@koreaict.ac.kr', 08818, '서울특별시 관악구 신림동 251-328', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145069, '비밀번호위치', '허문표', 7, to_date('740128', 'yymmdd'), '010-5645-4709',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145069, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '허문표', 7, to_date('740128', 'yymmdd'), '010-5645-4709',
         'hempyo@koreaict.ac.kr', 11784, '경기도 의정부시 용현동 391-19', '용현건영아파트 107동 104호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145070, '비밀번호위치', '전오원', 53, to_date('590222', 'yymmdd'), '010-9196-0122',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145070, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '전오원', 53, to_date('590222', 'yymmdd'), '010-9196-0122',
         'junowon@koreaict.ac.kr', 11784, '서울특별시 노원구 상계동 90-1', '현대하이츠아파트 105동 2104호', 1);
 
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145071, '비밀번호위치', '김선필', 26, to_date('590114', 'yymmdd'), '010-5956-7319',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145071, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김선필', 26, to_date('590114', 'yymmdd'), '010-5956-7319',
         'kimspil@koreaict.ac.kr', 04561, '서울특별시 중구 을지로5가 77-13', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145072, '비밀번호위치', '양준호', 21, to_date('780309', 'yymmdd'), '010-2933-4079',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145072, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '양준호', 21, to_date('780309', 'yymmdd'), '010-2933-4079',
         'yangjho@koreaict.ac.kr', 12210, '경기도 남양주시 와부읍 덕소리 604-3', '우송그린아파트 110동 1000호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145073, '비밀번호위치', '서주연', 33, to_date('590205', 'yymmdd'), '010-5043-0626',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145073, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '서주연', 33, to_date('590205', 'yymmdd'), '010-5043-0626',
         'seohyeon@koreaict.ac.kr', 07761, '서울특별시 강서구 화곡동 372-91', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145074, '비밀번호위치', '석애영', 10, to_date('741208', 'yymmdd'), '010-3987-4821',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145074, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '석애영', 10, to_date('741208', 'yymmdd'), '010-3987-4821',
         'seokayoung@koreaict.ac.kr', 14990, '경기도 시흥시 조남동 502-3', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145075, '비밀번호위치', '강혁', 21, to_date('701004', 'yymmdd'), '010-6243-5478',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145075, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강혁', 21, to_date('701004', 'yymmdd'), '010-6243-5478',
         'kangh@koreaict.ac.kr', 13284, '경기도 성남시 수정구 태평동 970', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145076, '비밀번호위치', '최국열', 44, to_date('661130', 'yymmdd'), '010-8684-1985',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145076, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최국열', 44, to_date('661130', 'yymmdd'), '010-8684-1985',
         'chekyeol@koreaict.ac.kr', 08766, '서울특별시 관악구 신림동 561-10', '아리아나하우스', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145077, '비밀번호위치', '이경수', 23, to_date('770208', 'yymmdd'), '010-5861-2509',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145077, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이경수', 23, to_date('770208', 'yymmdd'), '010-5861-2509',
         'leegsu@koreaict.ac.kr', 02241, '서울특별시 중랑구 면목동 339-36', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145078, '비밀번호위치', '이주진', 17, to_date('640810', 'yymmdd'), '010-8214-9493',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145078, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이주진', 17, to_date('640810', 'yymmdd'), '010-8214-9493',
         'leejjin@koreaict.ac.kr', 17769, '경기도 평택시 서정동 592-17', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145079, '비밀번호위치', '신영호', 6, to_date('880501', 'yymmdd'), '010-3081-9503',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145079, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신영호', 6, to_date('880501', 'yymmdd'), '010-3081-9503',
         'sinyho@koreaict.ac.kr', 01469, '서울특별시 도봉구 창동 804', '창동대우아파트 106동 1302호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145080, '비밀번호위치', '박지평', 37, to_date('860210', 'yymmdd'), '010-9239-7159',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145080, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박지평', 37, to_date('860210', 'yymmdd'), '010-9239-7159',
         'parkgipyeng@koreaict.ac.kr', 21034, '인천광역시 계양구 임학동 10-17', '조광빌라 2동 101호', 1);
 
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145081, '비밀번호위치', '김유림', 12, to_date('640202', 'yymmdd'), '010-1941-8632',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145081, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김유림', 12, to_date('640202', 'yymmdd'), '010-1941-8632',
         'kimylim@koreaict.ac.kr', 10922, '경기도 파주시 금촌동 122-10', '교성빌라', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145082, '비밀번호위치', '강현주', 44, to_date('720601', 'yymmdd'), '010-7198-5076',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145082, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강현주', 44, to_date('720601', 'yymmdd'), '010-7198-5076',
         'kanghju@koreaict.ac.kr', 10211, '경기도 고양시 일산서구 가좌동 1087', '가좌마을5단지아파트 101동 1805호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145083, '비밀번호위치', '오정현', 39, to_date('661225', 'yymmdd'), '010-2730-7636',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145083, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '오정현', 39, to_date('661225', 'yymmdd'), '010-2730-7636',
         'ohjhyun@koreaict.ac.kr', 21535, '인천광역시 남동구 만수1동', '삼한아파트 204-1102', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145084, '비밀번호위치', '김방현', 34, to_date('741124', 'yymmdd'), '010-5239-3235',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145084, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김방현', 34, to_date('741124', 'yymmdd'), '010-5239-3235',
         'kimbhyun@koreaict.ac.kr', 10307, '경기도 고양시 일산동구 풍동 532-35', '성원아파트 109동 401호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145085, '비밀번호위치', '김선희', 5, to_date('651030', 'yymmdd'), '010-0947-7565',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145085, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김선희', 5, to_date('651030', 'yymmdd'), '010-0947-7565',
         'kimshee@koreaict.ac.kr', 05800, '서울특별시 송파구 문정동 115-11', '센트럴인', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145086, '비밀번호위치', '추민정', 37, to_date('641201', 'yymmdd'), '010-6276-4504',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145086, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '추민정', 37, to_date('641201', 'yymmdd'), '010-6276-4504',
         'chumjung@koreaict.ac.kr', 16910, '경기도 용인시 기흥구 마북동 638', '교통마을구성자이3차아파트 108동 203호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145087, '비밀번호위치', '이재호', 45, to_date('671005', 'yymmdd'), '010-7881-3143',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145087, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이재호', 45, to_date('671005', 'yymmdd'), '010-7881-3143',
         'leejho@koreaict.ac.kr', 17020, '경기도 용인시 처인구 역북동 399-9', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145088, '비밀번호위치', '한상욱', 23, to_date('700326', 'yymmdd'), '010-7608-7024',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145088, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한상욱', 23, to_date('700326', 'yymmdd'), '010-7608-7024',
         'hanswook@koreaict.ac.kr', 05339, '서울특별시 강동구 천호동 565', '현대타워아파트 708호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145089, '비밀번호위치', '김희민', 42, to_date('611009', 'yymmdd'), '010-8129-7474',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145089, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김희민', 42, to_date('611009', 'yymmdd'), '010-8129-7474',
         'kimhmin@koreaict.ac.kr', 05339, '서울특별시 강동구 천호동 565', '현대코아아파트 402호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145090, '비밀번호위치', '홍재준', 24, to_date('750828', 'yymmdd'), '010-2544-2233',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145090, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '홍재준', 24, to_date('750828', 'yymmdd'), '010-2544-2233',
         'hongjjun@koreaict.ac.kr', 05328, '서울특별시 강동구 천호동 425-3', '천호역한강푸르지오시티 1003동 205호', 1);
 
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145091, '비밀번호위치', '이무룡', 24, to_date('860219', 'yymmdd'), '010-5790-4613',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145091, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이무룡', 24, to_date('860219', 'yymmdd'), '010-5790-4613',
         'leemryong@koreaict.ac.kr', 11340, '경기도 동두천시 상패동 259-13', '무궁화타운제 13동 704호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145092, '비밀번호위치', '장재일', 55, to_date('800816', 'yymmdd'), '010-1688-4914',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145092, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '장재일', 55, to_date('800816', 'yymmdd'), '010-1688-4914',
         'jangjil@koreaict.ac.kr', 14913, '경기도 시흥시 대야동 563', '서해아파트 103동 1903호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145093, '비밀번호위치', '민태영', 22, to_date('700720', 'yymmdd'), '010-5225-4899',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145093, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '민태영', 22, to_date('700720', 'yymmdd'), '010-5225-4899',
         'mintyoung@koreaict.ac.kr', 01617, '서울특별시 노원구 상계동 624', '204-1102', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145094, '비밀번호위치', '김승주', 55, to_date('661101', 'yymmdd'), '010-2338-9189',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145094, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김승주', 55, to_date('661101', 'yymmdd'), '010-2338-9189',
         'kimsju@koreaict.ac.kr', 16392, '경기도 수원시 권선구 금곡동 104-3', '주공아파트 1503동 1011호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145095, '비밀번호위치', '노현주', 8, to_date('750330', 'yymmdd'), '010-4108-2671',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145095, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '노현주', 8, to_date('750330', 'yymmdd'), '010-4108-2671',
         'nohju@koreaict.ac.kr', 16392, '경기도 수원시 권선구 금곡동 104-3', '거산아파트 101동 706호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145096, '비밀번호위치', '이선영', 10, to_date('840924', 'yymmdd'), '010-7265-8873',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145096, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이선영', 10, to_date('840924', 'yymmdd'), '010-7265-8873',
         'leesyoung@koreaict.ac.kr', 13502, '경기도 성남시 분당구 야탑동 211', '매화마을주공4단지아파트 403동 203호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145097, '비밀번호위치', '이지현', 2, to_date('710130', 'yymmdd'), '010-6336-5604',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145097, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이지현', 2, to_date('710130', 'yymmdd'), '010-6336-5604',
         'leejheon@koreaict.ac.kr', 07409, '서울특별시 영등포구 대림동 755-6', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145098, '비밀번호위치', '김성균', 38, to_date('721011', 'yymmdd'), '010-2258-6695',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145098, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김성균', 38, to_date('721011', 'yymmdd'), '010-2258-6695',
         'kimsgyun@koreaict.ac.kr', 10385, '경기도 고양시 일산서구 주엽동 98', '강선마을19단지 104동 704호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145099, '비밀번호위치', '장윤실', 51, to_date('621112', 'yymmdd'), '010-5207-0235',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145099, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '장윤실', 51, to_date('621112', 'yymmdd'), '010-5207-0235',
         'jangysil@koreaict.ac.kr', 13589, '경기도 성남시 분당구 서현동 96', '시범단지우성아파트 413동 2801호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145100, '비밀번호위치', '박강아름', 57, to_date('781201', 'yymmdd'), '010-1345-9786',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145100, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박강아름', 57, to_date('781201', 'yymmdd'), '010-1345-9786',
         'parkgareum@koreaict.ac.kr', 04141, '서울시 마포구 공덕동 370-9', '현대아파트 108동 105호', 1);
 
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145101, '비밀번호위치', '박철우', 50, to_date('680405', 'yymmdd'), '010-6047-8396',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박철우', 50, to_date('680405', 'yymmdd'), '010-6047-8396',
         'parkcu@koreaict.ac.kr', 01754, '서울특별시 노원구 상계동 757', '한양아파트 2-103호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145102, '비밀번호위치', '안세현', 15, to_date('720303', 'yymmdd'), '010-2574-1242',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '안세현', 15, to_date('720303', 'yymmdd'), '010-2574-1242',
         'anshyen@koreaict.ac.kr', 16461, '경기도 성남시 중원구 하대원동 128-18', '라인맨션 106호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145103, '비밀번호위치', '김태봉', 18, to_date('860421', 'yymmdd'), '010-6274-9484',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145103, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김태봉', 18, to_date('860421', 'yymmdd'), '010-6274-9484',
         'kimtbong@koreaict.ac.kr', 16461, '경기도 과천시 별양동 7', '주공아파트 401동 703호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145104, '비밀번호위치', '이종석', 2, to_date('750604', 'yymmdd'), '010-1736-3410',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145104, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이종석', 2, to_date('750604', 'yymmdd'), '010-1736-3410',
         'leejseok@koreaict.ac.kr', 11335, '경기도 연천군 군남면 옥계리 사서함 92-16', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145105, '비밀번호위치', '김수경', 10, to_date('820602', 'yymmdd'), '010-4098-2467',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145105, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김수경', 10, to_date('820602', 'yymmdd'), '010-4098-2467',
         'kimskyung@koreaict.ac.kr', 14739, '경기도 부천시 송내동 600-1', '아펠빌리지아파트 107동 503호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145106, '비밀번호위치', '주영상', 25, to_date('900707', 'yymmdd'), '010-8180-7082',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145106, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '주영상', 25, to_date('900707', 'yymmdd'), '010-8180-7082',
         'juysang@koreaict.ac.kr', 12758, '경기도 광주시 경안동 20-65', '광영빌딩', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145107, '비밀번호위치', '김정민', 45, to_date('680305', 'yymmdd'), '010-3158-2229',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145107, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김정민', 45, to_date('680305', 'yymmdd'), '010-3158-2229',
         'kimjmin@koreaict.ac.kr', 12798, '경기도 광주시 매산동 704', '파인팰리스 101동 1082호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145108, '비밀번호위치', '최지선', 55, to_date('660429', 'yymmdd'), '010-6179-6785',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145108, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최지선', 55, to_date('660429', 'yymmdd'), '010-6179-6785',
         'chejseon@koreaict.ac.kr', 06254, '서울특별시 강남구 역삼동 839-5', '역삼동839-5공동주택', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145109, '비밀번호위치', '서준원', 34, to_date('691010', 'yymmdd'), '010-2169-9880',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145109, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '서준원', 34, to_date('691010', 'yymmdd'), '010-2169-9880',
         'sehyun@koreaict.ac.kr', 01129, '서울특별시 강북구 미아동 159-11', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145110, '비밀번호위치', '임희도', 1, to_date('800703', 'yymmdd'), '010-9999-2041',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145110, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임희도', 1, to_date('800703', 'yymmdd'), '010-9999-2041',
         'imhdo@koreaict.ac.kr', 06242, '서울특별시 강남구 역삼동 831', null, 1);
 
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145111, '비밀번호위치', '정재우', 31, to_date('811118', 'yymmdd'), '010-7433-0500',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145111, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정재우', 31, to_date('811118', 'yymmdd'), '010-7433-0500',
         'hungjwoo@koreaict.ac.kr', 10584, '경기도 고양시 덕양구 지축동 309-1', '백운아파트 103동 304호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145112, '비밀번호위치', '금민정', 40, to_date('620411', 'yymmdd'), '010-7867-1740',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145112, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '금민정', 40, to_date('620411', 'yymmdd'), '010-7867-1740',
         'geummjeong@koreaict.ac.kr', 01752, '서울특별시 노원구 상계동 720-7', '상계주공아파트 622동 1205호', 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145113, '비밀번호위치', '변해원', 59, to_date('830809', 'yymmdd'), '010-2889-7787',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145113, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '변해원', 59, to_date('830809', 'yymmdd'), '010-2889-7787',
         'byunhwon@koreaict.ac.kr', 05200, '서울특별시 강동구 고덕동 2-2', null, 1);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, BIRTHDAY, PHONE, EMAIL, POSTCODE, ADDRESS1,
                     ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145114, '비밀번호위치', '백혁호', 58, to_date('670510', 'yymmdd'), '010-9223-9672',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1517145114, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '백혁호', 58, to_date('670510', 'yymmdd'), '010-9223-9672',
         'baekhho@koreaict.ac.kr', 02512, '서울특별시 동대문구 휘경동 49-5', '서울가든아파트 903호 ', 1);
 
 /*MEMBER멤버 - 학생*/
 /* INSERT QUERY NO: 1 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1234, 'password', '이종하', 15, 4, to_date('961105', 'yymmdd'), '010-1234-1234',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 1234, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이종하', 15, 4, to_date('961105', 'yymmdd'), '010-1234-1234',
         '163150@koreaict.ac.kr', 54937, '우리집', '집', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20122501, 'password', '정완렬', 25, 4, to_date('920828', 'yymmdd'), '010-4627-4476',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20122501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정완렬', 25, 4, to_date('920828', 'yymmdd'), '010-4627-4476',
         '20122501@koreaict.ac.kr', 07966, '서울특별시 양천구 목동 806-25', '목동동도아파트 108동 310호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20123901, 'password', '김우성', 39, 4, to_date('941017', 'yymmdd'), '010-4322-4168',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20123901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김우성', 39, 4, to_date('941017', 'yymmdd'), '010-4322-4168',
         '20123901@koreaict.ac.kr', 57970, '전라남도 순천시 조례동 1802', '왕지현대1차아파트 503동 306호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20130101, 'password', '조정훈', 1, 4, to_date('950720', 'yymmdd'), '010-8952-8502',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20130101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조정훈', 1, 4, to_date('950720', 'yymmdd'), '010-8952-8502',
         '20130101@koreaict.ac.kr', 55085, '전라북도 전주시 완산구 효자동1가 654', '제일효자타운 101동 505호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20130701, 'password', '김춘진', 7, 4, to_date('930808', 'yymmdd'), '010-2081-2233',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20130701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김춘진', 7, 4, to_date('930808', 'yymmdd'), '010-2081-2233',
         '20130701@koreaict.ac.kr', 07002, '서울특별시 동작구 사당동 1133 ', '동작삼성래미안아파트 406동 803호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20130901, 'password', '김소정', 9, 4, to_date('930924', 'yymmdd'), '010-3946-0340',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20130901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김소정', 9, 4, to_date('930924', 'yymmdd'), '010-3946-0340',
         '20130901@koreaict.ac.kr', 54928, '전라북도 전주시 덕진구 진북동 336-19', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20131301, 'password', '조정화', 13, 4, to_date('940601', 'yymmdd'), '010-7311-9185',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20131301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조정화', 13, 4, to_date('940601', 'yymmdd'), '010-7311-9185',
         '20131301@koreaict.ac.kr', 55038, '전라북도 전주시 완산구 다가동1가 69 ', '굿모닝빌라 101호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20131401, 'password', '박완용', 14, 4, to_date('930612', 'yymmdd'), '010-3779-7916',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20131401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박완용', 14, 4, to_date('930612', 'yymmdd'), '010-3779-7916',
         '20131401@koreaict.ac.kr', 05366, '서울특별시 강동구 둔촌동 622-9', '주풍빌리지 110호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20131701, 'password', '최정희', 17, 4, to_date('941215', 'yymmdd'), '010-8444-6072',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20131701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최정희', 17, 4, to_date('941215', 'yymmdd'), '010-8444-6072',
         '20131701@koreaict.ac.kr', 55056, '전라북도 전주시 완산구 효자동1가 408-1', '광진라미안아파트 104동 508호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20131901, 'password', '이권민', 19, 4, to_date('940717', 'yymmdd'), '010-5448-7865',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20131901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이권민', 19, 4, to_date('940717', 'yymmdd'), '010-5448-7865',
         '20131901@koreaict.ac.kr', 28172, '충청북도 청주시 흥덕구 강내면 탑연리 301-1', '주은반석아파트 102동 1008호', 4);
 
 /* INSERT QUERY NO: 11 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20132101, 'password', '지정훈', 21, 4, to_date('940518', 'yymmdd'), '010-8896-1728',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20132101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '지정훈', 21, 4, to_date('940518', 'yymmdd'), '010-8896-1728',
         '20132101@koreaict.ac.kr', 54937, '전라북도 전주시 덕진구 진북동 416', '우성아파트 11동 1402호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20132201, 'password', '장충미', 22, 4, to_date('930807', 'yymmdd'), '010-3668-1372',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20132201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '장충미', 22, 4, to_date('930807', 'yymmdd'), '010-3668-1372',
         '20132201@koreaict.ac.kr', 21541, '인천광역시 남동구 만수동 1005', '만수주공아파트 802동 405호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20132701, 'password', '박우진', 27, 4, to_date('950706', 'yymmdd'), '010-1678-5339',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20132701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박우진', 27, 4, to_date('950706', 'yymmdd'), '010-1678-5339',
         '20132701@koreaict.ac.kr', 32555, '충청남도 공주시 산성동 129', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20133201, 'password', '김우중', 32, 4, to_date('950421', 'yymmdd'), '010-9609-2307',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20133201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김우중', 32, 4, to_date('950421', 'yymmdd'), '010-9609-2307',
         '20133201@koreaict.ac.kr', 31100, '충청남도 천안시 서북구 두정동 1000', '한성필하우스1차아파트 103동 1303호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20133801, 'password', '박정호', 38, 4, to_date('940605', 'yymmdd'), '010-3805-4080',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20133801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박정호', 38, 4, to_date('940605', 'yymmdd'), '010-3805-4080',
         '20133801@koreaict.ac.kr', 56188, '전라북도 정읍시 상동 560-1', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20133901, 'password', '이진원', 39, 4, to_date('930808', 'yymmdd'), '010-0651-5314',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20133901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이진원', 39, 4, to_date('930808', 'yymmdd'), '010-0651-5314',
         '20133901@koreaict.ac.kr', 07535, '서울특별시 강서구 염창동 70-20', '삼천리아파트 101동 1003호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20134001, 'password', '이춘평', 40, 4, to_date('940620', 'yymmdd'), '010-0782-8052',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20134001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이춘평', 40, 4, to_date('940620', 'yymmdd'), '010-0782-8052',
         '20134001@koreaict.ac.kr', 10356, '경기도 고양시 일산서구 일산동 1107', '후곡마을12단지아파트 1209동 705호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20134501, 'password', '김충원', 45, 4, to_date('931107', 'yymmdd'), '010-8836-1056',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20134501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김충원', 45, 4, to_date('931107', 'yymmdd'), '010-8836-1056',
         '20134501@koreaict.ac.kr', 55010, '전라북도 전주시 덕진구 인후동1가 145-2 ', '진영연립주택', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20134601, 'password', '김소라', 46, 4, to_date('940514', 'yymmdd'), '010-1145-0858',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20134601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김소라', 46, 4, to_date('940514', 'yymmdd'), '010-1145-0858',
         '20134601@koreaict.ac.kr', 55049, '전라북도 전주시 완산구 중화산동2가 545', '오성은하아파트 2동 610호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20135201, 'password', '손소희', 52, 4, to_date('930930', 'yymmdd'), '010-7351-0811',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20135201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '손소희', 52, 4, to_date('930930', 'yymmdd'), '010-7351-0811',
         '20135201@koreaitc.ac.kr', 55121, '전라북도 전주시 완산구 평화동1가 522 ', '일성아파트 208동 401호', 4);
 
 /* INSERT QUERY NO: 21 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140101, 'password', '박규상', 1, 4, to_date('950212', 'yymmdd'), '010-6081-2245',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박규상', 1, 4, to_date('950212', 'yymmdd'), '010-6081-2245',
         '20140101@koreaict.ac.kr', 13540, '경기도 성남시 분당구 운중동 916 ', '경남아너스빌아파트 710동 1302호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140102, 'password', '송근우', 1, 4, to_date('960125', 'yymmdd'), '010-9122-7477',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송근우', 1, 4, to_date('960125', 'yymmdd'), '010-9122-7477',
         '20140102@koreaict.ac.kr', 14569, '경기도 부천시 원미동 111-14', '원앙빌리지 1701동 405호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140201, 'password', '김용근', 2, 4, to_date('951102', 'yymmdd'), '010-9140-0966',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김용근', 2, 4, to_date('951102', 'yymmdd'), '010-9140-0966',
         '20140201@koreaict.ac.kr', 06284, '서울특별시 강남구 대치동 316 ', '은마아파트 11동 1107호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140301, 'password', '김수련', 3, 4, to_date('950905', 'yymmdd'), '010-9833-6095',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김수련', 3, 4, to_date('950905', 'yymmdd'), '010-9833-6095',
         '20140301@koreaict.ac.kr', 54832, '전라북도 전주시 덕진구 송천동1가 605-4', '한양아파트 101동 1303호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140302, 'password', '오근우', 3, 4, to_date('940619', 'yymmdd'), '010-2751-0979',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '오근우', 3, 4, to_date('940619', 'yymmdd'), '010-2751-0979',
         '20140302@koreaict.ac.kr', 08759, '서울특별시 관악구 신림동 1463-9', '씨티오피스텔 3층', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140401, 'password', '손종경', 4, 4, to_date('941225', 'yymmdd'), '010-0995-2876',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '손종경', 4, 4, to_date('941225', 'yymmdd'), '010-0995-2876',
         '20140401@koreaict.ac.kr', 55135, '전라북도 전주시 완산구 평화동2가 310-1', '미송평화하이존 101동 1310호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140501, 'password', '박재연', 5, 4, to_date('960607', 'yymmdd'), '010-5106-6891',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박재연', 5, 4, to_date('960607', 'yymmdd'), '010-5106-6891',
         '20140501@koreaict.ac.kr', 54617, '전라북도 익산시 남중동 455-5', '이화남중아파트 906호 609호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140801, 'password', '임기범', 8, 4, to_date('960205', 'yymmdd'), '010-2729-5270',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20140801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임기범', 8, 4, to_date('960205', 'yymmdd'), '010-2729-5270',
         '20140801@koreaict.ac.kr', 07225, '서울특별시 영등포구 당산동 376', '강변삼성래미안아파트 409동 1202호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20141001, 'password', '송정삼', 10, 4, to_date('950320', 'yymmdd'), '010-9734-1092',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20141001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송정삼', 10, 4, to_date('950320', 'yymmdd'), '010-9734-1092',
         '20141001@koreaict.ac.kr', 12190, '경기도 남양주시 화도읍 답내리 1074', '월산부영2단지 201동 2304호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20141501, 'password', '이기덕', 15, 4, to_date('960127', 'yymmdd'), '010-8973-0895',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20141501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이기덕', 15, 4, to_date('960127', 'yymmdd'), '010-8973-0895',
         '20141501@koreaict.ac.kr', 05284, '서울특별시 강동구 상일동 473', '상일동아아파트 101동 304호', 4);
 
 /* INSERT QUERY NO: 31 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20141502, 'password', '이종대', 15, 4, to_date('950117', 'yymmdd'), '010-9940-5853',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20141502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이종대', 15, 4, to_date('950117', 'yymmdd'), '010-9940-5853',
         '20141502@koreaict.ac.kr', 54978, '전라북도 전주시 완산구 중화산동2가 485-27', '광진햇빛찬2차아파트 130동 1407호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20141601, 'password', '박성훈', 16, 4, to_date('950113', 'yymmdd'), '010-4067-2121',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20141601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박성훈', 16, 4, to_date('950113', 'yymmdd'), '010-4067-2121',
         '20141601@koreaict.ac.kr', 03000, '서울특별시 종로구 구기동 121', '삼진파크맨션 402호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20141602, 'password', '허종명', 16, 4, to_date('950807', 'yymmdd'), '010-7120-4337',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20141602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '허종명', 16, 4, to_date('950807', 'yymmdd'), '010-7120-4337',
         '20141602@koreaict.ac.kr', 55056, '전라북도 전주시 완산구 효자동1가 415-2', '효자성원맨션 605호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20142201, 'password', '박규인', 22, 4, to_date('950215', 'yymmdd'), '010-1347-7322',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20142201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박규인', 22, 4, to_date('950215', 'yymmdd'), '010-1347-7322',
         '20142201@koreaict.ac.kr', 06284, '서울특별시 강남구 대치동 316', '은마아파트 22동 910호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20142301, 'password', '임충헌', 23, 4, to_date('950827', 'yymmdd'), '010-5363-9716',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20142301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임충헌', 23, 4, to_date('950827', 'yymmdd'), '010-5363-9716',
         '20142301@koreaict.ac.kr', 02076, '서울특별시 중랑구 신내동 783 ', '성원아파트 103동 1007호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20142401, 'password', '송근순', 24, 4, to_date('940704', 'yymmdd'), '010-7662-4023',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20142401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송근순', 24, 4, to_date('940704', 'yymmdd'), '010-7662-4023',
         '20142401@koreaict.ac.kr', 05553, '서울특별시 송파구 잠실동 40', '갤러리아팰리스 c동 4401호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20143101, 'password', '홍종대', 31, 4, to_date('940210', 'yymmdd'), '010-9013-1721',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20143101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '홍종대', 31, 4, to_date('940210', 'yymmdd'), '010-9013-1721',
         '20143101@koreaict.ac.kr', 54949, '전라북도 전주시 완산구 서신동 765-1?', '전주서신동아아파트 107동 1105호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20143801, 'password', '정기원', 38, 4, to_date('940123', 'yymmdd'), '010-2836-8518',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20143801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정기원', 38, 4, to_date('940123', 'yymmdd'), '010-2836-8518',
         '20143801@koreaict.ac.kr', 05783, '서울특별시 송파구 가락동 192', '극동아파트 6동 602호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20143802, 'password', '조기환', 38, 4, to_date('941002', 'yymmdd'), '010-6952-3460',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20143802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조기환', 38, 4, to_date('941002', 'yymmdd'), '010-6952-3460',
         '20143802@koreaict.ac.kr', 14941, '경기도 시흥시 매화동 194-1 ', '동진아파트 1동 104호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20143901, 'password', '이수미', 39, 4, to_date('960306', 'yymmdd'), '010-3618-7574',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20143901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이수미', 39, 4, to_date('960306', 'yymmdd'), '010-3618-7574',
         '20143901@koreaict.ac.kr', 55018, '전라북도 전주시 덕진구 인후동1가 858-2', '아중현대아파트 107동 1304호', 4);
 
 /* INSERT QUERY NO: 41 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20144101, 'password', '김제세', 41, 4, to_date('940720', 'yymmdd'), '010-0623-6188',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20144101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김제세', 41, 4, to_date('940720', 'yymmdd'), '010-0623-6188',
         '20144101@koreaict.ac.kr', 56318, '전라북도 부안군 부안읍 봉덕리 658-8 ', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20144501, 'password', '김수광', 45, 4, to_date('961119', 'yymmdd'), '010-7953-6157',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20144501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김수광', 45, 4, to_date('961119', 'yymmdd'), '010-7953-6157',
         '20144501@koreaict.ac.kr', 54336, '전라북도 김제시 용지면 효정리 220-2', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20144502, 'password', '문제중', 45, 4, to_date('940723', 'yymmdd'), '010-4431-2249',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20144502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '문제중', 45, 4, to_date('940723', 'yymmdd'), '010-4431-2249',
         '20144502@koreaict.ac.kr', 55010, '전라북도 전주시 덕진구 인후동1가 145-2 ', '진영연립주택', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20144701, 'password', '정기웅', 47, 4, to_date('950130', 'yymmdd'), '010-4494-9494',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20144701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정기웅', 47, 4, to_date('950130', 'yymmdd'), '010-4494-9494',
         '20144701@koreaict.ac.kr', 13520, '경기도 성남시 분당구 야탑동 510', '탑마을기산아파트 103동 205호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20144891, 'password', '이기범', 48, 4, to_date('950121', 'yymmdd'), '010-9245-2651',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20144891, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이기범', 48, 4, to_date('950121', 'yymmdd'), '010-9245-2651',
         '20144891@koreaict.ac.kr', 15804, '경기도 군포시 산본동 1088', '한양목련아파트 1224동 2002호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145201, 'password', '김계영', 52, 4, to_date('951211', 'yymmdd'), '010-7291-6149',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김계영', 52, 4, to_date('951211', 'yymmdd'), '010-7291-6149',
         '20145201@koreaitc.ac.kr', 16839, '경기도 용인시 수지구 풍덕천동 1018 ', '신정마을 극동임광 305-1703호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145501, 'password', '강민성', 55, 4, to_date('941010', 'yymmdd'), '010-3877-1881',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강민성', 55, 4, to_date('941010', 'yymmdd'), '010-3877-1881',
         '20145501@koreaitc.ac.kr', 06904, '서울특별시 동작구 흑석동 10', '명수대 현대아파트 108-703', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145502, 'password', '전기성', 55, 4, to_date('951210', 'yymmdd'), '010-3109-7358',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '전기성', 55, 4, to_date('951210', 'yymmdd'), '010-3109-7358',
         '20145502@koreaitc.ac.kr', 16843, '경기도 용인시 수지구 풍덕천동 239-3', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145601, 'password', '김수린', 56, 4, to_date('940620', 'yymmdd'), '010-0744-0094',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김수린', 56, 4, to_date('940620', 'yymmdd'), '010-0744-0094',
         '20145601@koreaitc.ac.kr', 54640, '전라북도 익산시 어양동 493-12 ', '현대아파트 103/1203', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145602, 'password', '조기현', 56, 4, to_date('940420', 'yymmdd'), '010-9092-2712',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조기현', 56, 4, to_date('940420', 'yymmdd'), '010-9092-2712',
         '20145602@koreaitc.ac.kr', 21512, '인천광역시 남동구 간석동 917-2 ', '두진아파트 101-1701호', 4);
 
 /* INSERT QUERY NO: 51 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145701, 'password', '박권석', 57, 4, to_date('961011', 'yymmdd'), '010-5874-0432',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박권석', 57, 4, to_date('961011', 'yymmdd'), '010-5874-0432',
         '20145701@koreaitc.ac.kr', 05805, '서울특별시 송파구 문정동 43-10 ', '훼밀리아파트 217-504', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145901, 'password', '조기현', 59, 4, to_date('940802', 'yymmdd'), '010-4206-5655',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20145901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조기현', 59, 4, to_date('940802', 'yymmdd'), '010-4206-5655',
         '20145901@koreaitc.ac.kr', 06718, '서울특별시 서초구 서초동 1446-11 ', '현대슈퍼빌 A-602', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150101, 'password', '권기환', 1, 4, to_date('961020', 'yymmdd'), '010-3086-3611',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '권기환', 1, 4, to_date('961020', 'yymmdd'), '010-3086-3611',
         '20150101@koreaict.ac.kr', 13584, '경기도 성남시 분당구 분당동 122-2', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150102, 'password', '노수미', 1, 4, to_date('961201', 'yymmdd'), '010-8095-1693',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '노수미', 1, 4, to_date('961201', 'yymmdd'), '010-8095-1693',
         '20150102@koreaict.ac.kr', 55038, '전라북도 전주시 완산구 중앙동1가 26-2', '한양빌딩', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150103, 'password', '한수현', 1, 4, to_date('950107', 'yymmdd'), '010-9555-8677',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150103, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한수현', 1, 4, to_date('950107', 'yymmdd'), '010-9555-8677',
         '20150103@koreaict.ac.kr', 54823, '전라북도 전주시 덕진구 송천동1가 101-3', '신일아파트 104동 1507호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150401, 'password', '손태빈', 4, 4, to_date('950828', 'yymmdd'), '010-3365-5711',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '손태빈', 4, 4, to_date('950828', 'yymmdd'), '010-3365-5711',
         '20150401@koreaict.ac.kr', 35247, '대전 서구 둔산동 한마루아파트 ', '한마루아파트 3동 406호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150501, 'password', '박수진', 5, 4, to_date('960218', 'yymmdd'), '010-3970-9694',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박수진', 5, 4, to_date('960218', 'yymmdd'), '010-3970-9694',
         '20150501@koreaict.ac.kr', 54922, '전라북도 전주시 덕진구 금암동 1564', '금암중앙하이츠아파트 704동 603호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150502, 'password', '박태규', 5, 4, to_date('950604', 'yymmdd'), '010-5735-0130',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박태규', 5, 4, to_date('950604', 'yymmdd'), '010-5735-0130',
         '20150502@koreaict.ac.kr', 57976, '전라남도 순천시 연향동 1344', '현대2차아파트 104동 202호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150503, 'password', '임도란', 5, 4, to_date('961201', 'yymmdd'), '010-4059-0785',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150503, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임도란', 5, 4, to_date('961201', 'yymmdd'), '010-4059-0785',
         '20150503@koreaict.ac.kr', 07282, '서울특별시 영등포구 문래동6가 54', '문래동미원아파트 102동 202호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150901, 'password', '나연우', 9, 4, to_date('970331', 'yymmdd'), '010-3066-3500',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '나연우', 9, 4, to_date('970331', 'yymmdd'), '010-3066-3500',
         '20150901@koreaict.ac.kr', 54957, '전라북도 전주시 완산구 효자동3가 1482-1', '서곡주공아파트 118동 206호 ', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150902, 'password', '차도홍', 9, 4, to_date('960405', 'yymmdd'), '010-6719-6126',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20150902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '차도홍', 9, 4, to_date('960405', 'yymmdd'), '010-6719-6126',
         '20150902@koreaict.ac.kr', 15816, '경기도 군포시 산본동 1052', '주공11단지아파트 1106동 503호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151001, 'password', '남나리', 10, 4, to_date('971222', 'yymmdd'), '010-0969-2175',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '남나리', 10, 4, to_date('971222', 'yymmdd'), '010-0969-2175',
         '20151001@koreaict.ac.kr', 12740, '경기도 광주시 송정동 560', '브라운스톤광주아파트 103-206호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151002, 'password', '오대근', 10, 4, to_date('960722', 'yymmdd'), '010-4650-1075',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '오대근', 10, 4, to_date('960722', 'yymmdd'), '010-4650-1075',
         '20151002@koreaict.ac.kr', 16862, '경경기도 용인시 수지구 상현동 867', '서원마을금호베스트빌5단지아파트 206동 1105호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151003, 'password', '최진아', 10, 4, to_date('950514', 'yymmdd'), '010-2701-3833',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151003, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최진아', 10, 4, to_date('950514', 'yymmdd'), '010-2701-3833',
         '20151003@koreaict.ac.kr', 06083, '서울특별시 강남구 삼성동 101-6', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151101, 'password', '심다정', 11, 4, to_date('950117', 'yymmdd'), '010-1197-5662',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '심다정', 11, 4, to_date('950117', 'yymmdd'), '010-1197-5662',
         '20151101@koreaict.ac.kr', 13939, '경기도 안양시 동안구 관양동 1437', '서한빌라 108호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151301, 'password', '문태구', 13, 4, to_date('970313', 'yymmdd'), '010-9069-4177',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '문태구', 13, 4, to_date('970313', 'yymmdd'), '010-9069-4177',
         '20151301@koreaict.ac.kr', 63584, '제주특별자치도 서귀포시 서홍동 314-44', '홍림주택', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151401, 'password', '이대원', 14, 4, to_date('970221', 'yymmdd'), '010-2368-6456',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이대원', 14, 4, to_date('970221', 'yymmdd'), '010-2368-6456',
         '20151401@koreaict.ac.kr', 06012, '서울특별시 강남구 청담동 108', '건영아파트 102동 606호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151601, 'password', '문수은', 16, 4, to_date('950221', 'yymmdd'), '010-6908-7051',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '문수은', 16, 4, to_date('950221', 'yymmdd'), '010-6908-7051',
         '20151601@koreaict.ac.kr', 55094, '전라북도 전주시 완산구 효자동1가 98', '금호아파트 4동  408호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151602, 'password', '박남정', 16, 4, to_date('970617', 'yymmdd'), '010-3122-8415',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박남정', 16, 4, to_date('970617', 'yymmdd'), '010-3122-8415',
         '20151602@koreaict.ac.kr', 13831, '경기도 과천시 부림동 41', '주공아파트 903동 408호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151603, 'password', '박영광', 16, 4, to_date('950622', 'yymmdd'), '010-7760-4835',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151603, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박영광', 16, 4, to_date('950622', 'yymmdd'), '010-7760-4835',
         '20151603@koreaict.ac.kr', 55918, '전라북도 임실군 성수면 양지리 276', null, 4);
 
 /* INSERT QUERY NO: 71 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151901, 'password', '정종설', 19, 4, to_date('950216', 'yymmdd'), '010-9843-9356',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20151901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정종설', 19, 4, to_date('950216', 'yymmdd'), '010-9843-9356',
         '20151901@koreaict.ac.kr', 54921, '전라북도 전주시 덕진구 금암동 1605-19', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152101, 'password', '이수진', 21, 4, to_date('950214', 'yymmdd'), '010-7803-0913',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이수진', 21, 4, to_date('950214', 'yymmdd'), '010-7803-0913',
         '20152101@koreaict.ac.kr', 16672, '경기도 수원시 권선구 곡반정동 588-3', '한솔주택', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152201, 'password', '김김랑', 22, 4, to_date('970904', 'yymmdd'), '010-1562-8296',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김김랑', 22, 4, to_date('970904', 'yymmdd'), '010-1562-8296',
         '20152201@koreaict.ac.kr', 07223, '서울특별시 영등포구 당산동6가 234-4', '모어리치빌 207호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152401, 'password', '김정석', 24, 4, to_date('960521', 'yymmdd'), '010-3764-1926',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김정석', 24, 4, to_date('960521', 'yymmdd'), '010-3764-1926',
         '20152401@koreaict.ac.kr', 05510, '서울특별시 송파구 신천동 7-17', '삼성웰리스아파트 1동 414호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152402, 'password', '신누리', 24, 4, to_date('970613', 'yymmdd'), '010-8451-7382',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신누리', 24, 4, to_date('970613', 'yymmdd'), '010-8451-7382',
         '20152402@koreaict.ac.kr', 15821, '경기도 군포시 산본동 1119-3', '극동백두아파트 105동 203호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152501, 'password', '김김훈', 25, 4, to_date('950110', 'yymmdd'), '010-0340-5070',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김김훈', 25, 4, to_date('950110', 'yymmdd'), '010-0340-5070',
         '20152501@koreaict.ac.kr', 21524, '인천광역시 남동구 만수동 867-20', '스타맨션 401호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152502, 'password', '이대은', 25, 4, to_date('971224', 'yymmdd'), '010-4622-1948',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이대은', 25, 4, to_date('971224', 'yymmdd'), '010-4622-1948',
         '20152502@koreaict.ac.kr', 46274, '부산광역시 금정구 구서동 420-12', '유림노르웨이아침 2301호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152503, 'password', '정태우', 25, 4, to_date('951229', 'yymmdd'), '010-1666-5176',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152503, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정태우', 25, 4, to_date('951229', 'yymmdd'), '010-1666-5176',
         '20152503@koreaict.ac.kr', 54945, '전라북도 전주시 완산구 서신동 961', '동아한일아파트 120동 301호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152601, 'password', '인정성', 26, 4, to_date('960406', 'yymmdd'), '010-2699-0849',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20152601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '인정성', 26, 4, to_date('960406', 'yymmdd'), '010-2699-0849',
         '20152601@koreaict.ac.kr', 05689, '서울특별시 송파구 석촌동 270-7', '석촌동다세대주택', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153001, 'password', '채영빈', 30, 4, to_date('971125', 'yymmdd'), '010-9718-0019',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '채영빈', 30, 4, to_date('971125', 'yymmdd'), '010-9718-0019',
         '20153001@koreaict.ac.kr', 55020, '전라북도 전주시 덕진구 인후동1가 880-3', '리치빌 704호', 4);
 
 /* INSERT QUERY NO: 81 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153101, 'password', '최도훈', 31, 4, to_date('950326', 'yymmdd'), '010-5489-7329',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최도훈', 31, 4, to_date('950326', 'yymmdd'), '010-5489-7329',
         '20153101@koreaict.ac.kr', 13564, '경기도 성남시 분당구 이매동 142', '아름마을선경아파트 603동 1404호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153201, 'password', '윤대연', 32, 4, to_date('950620', 'yymmdd'), '010-6305-1158',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤대연', 32, 4, to_date('950620', 'yymmdd'), '010-6305-1158',
         '20153201@koreaict.ac.kr', 21525, '인천광역시 남동구 만수동 29 ', '만수주공아파트1단지 313동 401호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153301, 'password', '이종선', 33, 4, to_date('960317', 'yymmdd'), '010-4741-8899',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이종선', 33, 4, to_date('960317', 'yymmdd'), '010-4741-8899',
         '20153301@koreaict.ac.kr', 55021, '전라북도 전주시 덕진구 인후동1가 918-1', '부영6차아파트 604동 203호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153302, 'password', '전태석', 33, 4, to_date('950731', 'yymmdd'), '010-6258-6529',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '전태석', 33, 4, to_date('950731', 'yymmdd'), '010-6258-6529',
         '20153302@koreaict.ac.kr', 35210, '대전광역시 서구 월평동 311-1', '하나로아파트 105동 1105호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153401, 'password', '이종엽', 34, 4, to_date('971011', 'yymmdd'), '010-9242-8306',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이종엽', 34, 4, to_date('971011', 'yymmdd'), '010-9242-8306',
         '20153401@koreaict.ac.kr', 54978, '전라북도 전주시 완산구 중화산동2가 482-1', '한신코아아파트 3동 1305호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153501, 'password', '김종선', 35, 4, to_date('951209', 'yymmdd'), '010-7092-2684',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김종선', 35, 4, to_date('951209', 'yymmdd'), '010-7092-2684',
         '20153501@koreaict.ac.kr', 55132, '전라북도 전주시 완산구 평화동2가 712-1', '두산푸른솔아파트 403동 102호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153502, 'password', '정도현', 35, 4, to_date('950801', 'yymmdd'), '010-2191-7017',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정도현', 35, 4, to_date('950801', 'yymmdd'), '010-2191-7017',
         '20153502@koreaict.ac.kr', 07910, '서울특별시 양천구 신월동 148-4', '신월동리버스타운 101동 201호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153701, 'password', '엄영배', 37, 4, to_date('971002', 'yymmdd'), '010-2463-3068',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '엄영배', 37, 4, to_date('971002', 'yymmdd'), '010-2463-3068',
         '20153701@koreaict.ac.kr', 56313, '전라북도 부안군 부안읍 서외리 536-6', '남부맨션연립', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153702, 'password', '이진우', 37, 4, to_date('960412', 'yymmdd'), '010-4244-7184',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153702, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이진우', 37, 4, to_date('960412', 'yymmdd'), '010-4244-7184',
         '20153702@koreaict.ac.kr', 13947, '경기도 안양시 동안구 관양동 1459-14', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153703, 'password', '주완재', 37, 4, to_date('960312', 'yymmdd'), '010-0687-4745',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153703, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '주완재', 37, 4, to_date('960312', 'yymmdd'), '010-0687-4745',
         '20153703@koreaict.ac.kr', 08833, '서울특별시 관악구 봉천동 1591-2', '서울대입구삼성아파트 302동 201호', 4);
 
 /* INSERT QUERY NO: 91 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153801, 'password', '양동민', 38, 4, to_date('951130', 'yymmdd'), '010-7730-0246',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '양동민', 38, 4, to_date('951130', 'yymmdd'), '010-7730-0246',
         '20153801@koreaict.ac.kr', 13588, '경기도 성남시 분당구 서현동 87', '시범단지삼성.한신아파트 401동 502호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153802, 'password', '최동균', 38, 4, to_date('971120', 'yymmdd'), '010-3087-2984',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최동균', 38, 4, to_date('971120', 'yymmdd'), '010-3087-2984',
         '20153802@koreaict.ac.kr', 07703, '서울특별시 강서구 화곡동 1091', '화곡푸르지오 109동 1003호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153901, 'password', '김종석', 39, 4, to_date('951104', 'yymmdd'), '010-1304-0881',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20153901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김종석', 39, 4, to_date('951104', 'yymmdd'), '010-1304-0881',
         '20153901@koreaict.ac.kr', 55039, '전라북도 전주시 완산구 경원동2가 3-2', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154101, 'password', '이성신', 41, 4, to_date('950118', 'yymmdd'), '010-4308-5367',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이성신', 41, 4, to_date('950118', 'yymmdd'), '010-4308-5367',
         '20154101@koreaict.ac.kr', 07340, '서울특별시 영등포구 여의도동 42', '한양아파트 108동 201호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154201, 'password', '김여주', 42, 4, to_date('950425', 'yymmdd'), '010-1000-7150',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김여주', 42, 4, to_date('950425', 'yymmdd'), '010-1000-7150',
         '20154201@koreaict.ac.kr', 15594, '경기도 안산시 상록구 사동 푸르지오6차 610-104', '안산고잔6차푸르지오 1동 305호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154301, 'password', '고민건', 43, 4, to_date('970305', 'yymmdd'), '010-4058-9024',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '고민건', 43, 4, to_date('970305', 'yymmdd'), '010-4058-9024',
         '20154301@koreaict.ac.kr', 06760, '서울특별시 서초구 방배동 2626-3', '방배에스에이치빌아파트 203동 204호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154302, 'password', '안영근', 43, 4, to_date('970901', 'yymmdd'), '010-4507-4328',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '안영근', 43, 4, to_date('970901', 'yymmdd'), '010-4507-4328',
         '20154302@koreaict.ac.kr', 54949, '전라북도 전주시 완산구 서신동 765-1', ' 전주서신동아아파트 201동 401호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154401, 'password', '최종연', 44, 4, to_date('960920', 'yymmdd'), '010-5189-4666',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최종연', 44, 4, to_date('960920', 'yymmdd'), '010-5189-4666',
         '20154401@koreaict.ac.kr', 55014, '전라북도 전주시 덕진구 우아동2가 853-1', '진버들대우아파트 205동 806호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154601, 'password', '김나루', 46, 4, to_date('950401', 'yymmdd'), '010-9397-3238',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김나루', 46, 4, to_date('950401', 'yymmdd'), '010-9397-3238',
         '20154601@koreaict.ac.kr', 03731, '서울특별시 서대문구 홍제동 47-2', '인왕빌라 2동 102호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154801, 'password', '최도희', 48, 4, to_date('950830', 'yymmdd'), '010-2375-5428',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20154801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최도희', 48, 4, to_date('950830', 'yymmdd'), '010-2375-5428',
         '20154801@koreaict.ac.kr', 10483, '경기도 고양시 덕양구 행신동 895', '햇빛마을18단지아파트 1081동 205호', 4);
 
 /* INSERT QUERY NO: 101 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155101, 'password', '김익헌', 51, 4, to_date('970118', 'yymmdd'), '010-0042-1001',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김익헌', 51, 4, to_date('970118', 'yymmdd'), '010-0042-1001',
         '20155101@koreaitc.ac.kr', 10417, '경기도 고양시 일산동구 마두동 734', '백마마을4단지아파트 108동 604호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155301, 'password', '김동민', 53, 4, to_date('950816', 'yymmdd'), '010-5979-2345',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김동민', 53, 4, to_date('950816', 'yymmdd'), '010-5979-2345',
         '20155301@koreaitc.ac.kr', 07362, '서울특별시 영등포구 신길동 4934 ', '삼성래미안아파트 101-2201호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155401, 'password', '김태광', 54, 4, to_date('950409', 'yymmdd'), '010-2296-6090',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김태광', 54, 4, to_date('950409', 'yymmdd'), '010-2296-6090',
         '20155401@koreaitc.ac.kr', 58634, '전라남도 목포시 산정동 292 ', '종원나이스 101-1002', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155501, 'password', '박나연', 55, 4, to_date('951022', 'yymmdd'), '010-4282-5126',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박나연', 55, 4, to_date('951022', 'yymmdd'), '010-4282-5126',
         '20155501@koreaitc.ac.kr', 12048, '경기도 남양주시 오남읍 오남리 888', '두산위브 112-1102호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155701, 'password', '김원규', 57, 4, to_date('950302', 'yymmdd'), '010-9295-8822',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김원규', 57, 4, to_date('950302', 'yymmdd'), '010-9295-8822',
         '20155701@koreaitc.ac.kr', 28658, '충청북도 청주시 서원구 모충동 439-2', '보영아파트 504', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155801, 'password', '김훈욱', 58, 4, to_date('951113', 'yymmdd'), '010-7614-3327',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20155801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김훈욱', 58, 4, to_date('951113', 'yymmdd'), '010-7614-3327',
         '20155801@koreaitc.ac.kr', 14727, '경기도 부천시 송내동 390-22 ', '한미쉐마빌 14동102호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20156201, 'password', '김종민', 62, 4, to_date('960324', 'yymmdd'), '010-9843-9865',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20156201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김종민', 62, 4, to_date('960324', 'yymmdd'), '010-9843-9865',
         '20156201@koreaitc.ac.kr', 54949, '전라북도 전주시 완산구 서신동 765-1', '동아아파트 108동 402호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20160101, 'password', '방민진', 1, 4, to_date('970510', 'yymmdd'), '010-0524-2473',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20160101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '방민진', 1, 4, to_date('970510', 'yymmdd'), '010-0524-2473',
         '20160101@koreaict.ac.kr', 13586, '경기도 성남시 분당구 서현동 304', '효자촌삼환아파트 313동 602호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20160301, 'password', '김민정', 3, 4, to_date('960411', 'yymmdd'), '010-8812-6936',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20160301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김민정', 3, 4, to_date('960411', 'yymmdd'), '010-8812-6936',
         '20160301@koreaict.ac.kr', 05646, '서울특별시 송파구 방이동 212-8 ', '코오롱아파트 103동 405호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20160302, 'password', '이태환', 3, 3, to_date('960609', 'yymmdd'), '010-6168-0831',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20160302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이태환', 3, 3, to_date('960609', 'yymmdd'), '010-6168-0831',
         '20160302@koreaict.ac.kr', 54934, '전라북도 전주시 덕진구 금암동 457-3', null, 5);
 
 /* INSERT QUERY NO: 111 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20160501, 'password', '손종하', 5, 4, to_date('960801', 'yymmdd'), '010-0285-5757',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20160501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '손종하', 5, 4, to_date('960801', 'yymmdd'), '010-0285-5757',
         '20160501@koreaict.ac.kr', 54389, '전라북도 김제시 요촌동 514-29', '서해화인빌', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20160701, 'password', '김태원', 7, 4, to_date('960806', 'yymmdd'), '010-7240-7852',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20160701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김태원', 7, 4, to_date('960806', 'yymmdd'), '010-7240-7852',
         '20160701@koreaict.ac.kr', 55085, '전라북도 전주시 완산구 효자동1가 660-1', '한강아파트 602동 101호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161201, 'password', '송동윤', 12, 4, to_date('960309', 'yymmdd'), '010-7551-4471',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송동윤', 12, 4, to_date('960309', 'yymmdd'), '010-7551-4471',
         '20161201@koreaict.ac.kr', 10496, '경기도 고양시 덕양구 화정동 936', '은빛마을6단지아파트 608동 302호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161401, 'password', '고종원', 14, 4, to_date('960727', 'yymmdd'), '010-0155-3921',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '고종원', 14, 4, to_date('960727', 'yymmdd'), '010-0155-3921',
         '20161401@koreaict.ac.kr', 55098, '전라북도 전주시 완산구 동완산동 56-6', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161402, 'password', '박원배', 14, 4, to_date('970107', 'yymmdd'), '010-7153-9854',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박원배', 14, 4, to_date('970107', 'yymmdd'), '010-7153-9854',
         '20161402@koreaict.ac.kr', 46507, '부산광역시 북구 금곡동 811-3', '금곡7단지주공아파트 701동 108호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161601, 'password', '최동준', 16, 4, to_date('971130', 'yymmdd'), '010-9814-2811',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최동준', 16, 4, to_date('971130', 'yymmdd'), '010-9814-2811',
         '20161601@koreaict.ac.kr', 46605, '부산광역시 북구 만덕동 216-7', '그린코아아파트 603동 803호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161701, 'password', '방동오', 17, 3, to_date('970222', 'yymmdd'), '010-0507-9258',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '방동오', 17, 3, to_date('970222', 'yymmdd'), '010-0507-9258',
         '20161701@koreaict.ac.kr', 16937, '경기도 용인시 수지구 상현동 843', '상현마을현대성우5차아파트 103동 502호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161801, 'password', '이종현', 18, 4, to_date('981015', 'yymmdd'), '010-8370-4211',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이종현', 18, 4, to_date('981015', 'yymmdd'), '010-8370-4211',
         '20161801@koreaict.ac.kr', 55122, '전라북도 전주시 완산구 평화동1가 696', '코오롱아파트 3동 1205호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161901, 'password', '이주미', 19, 4, to_date('960119', 'yymmdd'), '010-9712-6109',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이주미', 19, 4, to_date('960119', 'yymmdd'), '010-9712-6109',
         '20161901@koreaict.ac.kr', 54408, '전라북도 김제시 요촌동 175-5', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161902, 'password', '임은성', 19, 4, to_date('980827', 'yymmdd'), '010-8073-9583',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임은성', 19, 4, to_date('980827', 'yymmdd'), '010-8073-9583',
         '20161902@koreaict.ac.kr', 14105, '경기도 안양시 동안구 호계동 1115', '샘마을아파트 301동 1401호', 3);
 
 /* INSERT QUERY NO: 121 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161903, 'password', '허동현', 19, 4, to_date('980208', 'yymmdd'), '010-2024-0247',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20161903, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '허동현', 19, 4, to_date('980208', 'yymmdd'), '010-2024-0247',
         '20161903@koreaict.ac.kr', 15350, '경기도 안산시 단원구 고잔동 851 ', '안산센트럴푸르지오 4동 203호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162001, 'password', '주하나', 20, 4, to_date('970713', 'yymmdd'), '010-5336-0061',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '주하나', 20, 4, to_date('970713', 'yymmdd'), '010-5336-0061',
         '20162001@koreaict.ac.kr', 55706, '전라북도 남원시 보절면 진기리 1461-21', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162101, 'password', '정하나', 21, 4, to_date('980119', 'yymmdd'), '010-2883-7430',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정하나', 21, 4, to_date('980119', 'yymmdd'), '010-2883-7430',
         '20162101@koreaict.ac.kr', 55147, '전라북도 전주시 덕진구 송천동2가 1307', '에코시티자이2차 107동 301호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162201, 'password', '정주영', 22, 3, to_date('960808', 'yymmdd'), '010-5362-6081',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정주영', 22, 3, to_date('960808', 'yymmdd'), '010-5362-6081',
         '20162201@koreaict.ac.kr', 54394, '전라북도 김제시 요촌동 54', '삼송연립 101동 702호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162301, 'password', '김주학', 23, 4, to_date('980211', 'yymmdd'), '010-0434-5918',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김주학', 23, 4, to_date('980211', 'yymmdd'), '010-0434-5918',
         '20162301@koreaict.ac.kr', 15853, '경기도 군포시 당정동 988-6 ', '호영아파트 108동 905호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162501, 'password', '이동인', 25, 4, to_date('971208', 'yymmdd'), '010-9507-9555',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이동인', 25, 4, to_date('971208', 'yymmdd'), '010-9507-9555',
         '20162501@koreaict.ac.kr', 21553, '인천광역시 남동구 간석동 901-5 ', '풍성빌라 205호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162601, 'password', '서성엽', 26, 3, to_date('960808', 'yymmdd'), '010-9067-7360',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '서성엽', 26, 3, to_date('960808', 'yymmdd'), '010-9067-7360',
         '20162601@koreaict.ac.kr', 15821, '경기도 군포시 산본동 1119', '백두한양아파트 822동 802호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162702, 'password', '정성훈', 27, 4, to_date('970610', 'yymmdd'), '010-9643-2144',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162702, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정성훈', 27, 4, to_date('970610', 'yymmdd'), '010-9643-2144',
         '20162702@koreaict.ac.kr', 35248, '대전광역시 서구 둔산동 1509 ', '크로바아파트 203동 104호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162791, 'password', '남성준', 27, 3, to_date('980321', 'yymmdd'), '010-6379-4434',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162791, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '남성준', 27, 3, to_date('980321', 'yymmdd'), '010-6379-4434',
         '20162791@koreaict.ac.kr', 35389, '대전광역시 서구 가수원동 809', '은아아파트5단지 504동 203호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162801, 'password', '김하나', 28, 4, to_date('981211', 'yymmdd'), '010-2533-7445',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김하나', 28, 4, to_date('981211', 'yymmdd'), '010-2533-7445',
         '20162801@koreaict.ac.kr', 54361, '전라북도 김제시 백학동 267-3', null, 4);
 
 /* INSERT QUERY NO: 131 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162802, 'password', '윤종학', 28, 4, to_date('980805', 'yymmdd'), '010-2214-5558',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20162802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤종학', 28, 4, to_date('980805', 'yymmdd'), '010-2214-5558',
         '20162802@koreaict.ac.kr', 55018, '전라북도 전주시 덕진구 인후동1가 394-11', '인후연립주택', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163001, 'password', '류종철', 30, 4, to_date('970707', 'yymmdd'), '010-1420-8063',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '류종철', 30, 4, to_date('970707', 'yymmdd'), '010-1420-8063',
         '20163001@koreaict.ac.kr', 02559, '서울특별시 동대문구 전농동 620-47 ', '청량리역롯데캐슬SKY-L65 25동 310호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163401, 'password', '김고운', 34, 4, to_date('980218', 'yymmdd'), '010-2363-7461',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김고운', 34, 4, to_date('980218', 'yymmdd'), '010-2363-7461',
         '20163401@koreaict.ac.kr', 10937, '경기도 파주시 조리읍 봉일천리 147-1', '동문아파트 505호 305호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163402, 'password', '이주석', 34, 4, to_date('961206', 'yymmdd'), '010-5350-5393',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이주석', 34, 4, to_date('961206', 'yymmdd'), '010-5350-5393',
         '20163402@koreaict.ac.kr', 55018, '전라북도 전주시 덕진구 인후동1가 858-2 ', '아중현대아파트 101동 1305호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163601, 'password', '백동원', 36, 4, to_date('970114', 'yymmdd'), '010-2132-2090',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '백동원', 36, 4, to_date('970114', 'yymmdd'), '010-2132-2090',
         '20163601@koreaict.ac.kr', 05301, '서울특별시 강동구 길동 46-3', '길동다성이즈빌 103호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163801, 'password', '김태원', 38, 4, to_date('970106', 'yymmdd'), '010-2911-0228',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김태원', 38, 4, to_date('970106', 'yymmdd'), '010-2911-0228',
         '20163801@koreaict.ac.kr', 55050, '전라북도 전주시 완산구 효자동1가 364-3', '삼호아파트 3동 706호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163802, 'password', '박동영', 38, 4, to_date('960128', 'yymmdd'), '010-9799-4946',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20163802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박동영', 38, 4, to_date('960128', 'yymmdd'), '010-9799-4946',
         '20163802@koreaict.ac.kr', 01784, '서울특별시 노원구 하계동 284 ', '한신청구아파트 11동 401호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164001, 'password', '문민정', 40, 4, to_date('970809', 'yymmdd'), '010-2271-7721',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '문민정', 40, 4, to_date('970809', 'yymmdd'), '010-2271-7721',
         '20164001@koreaict.ac.kr', 16455, '경기도 수원시 팔달구 매산로1가 24', '매산아파트 107동 203호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164002, 'password', '차주영', 40, 3, to_date('960117', 'yymmdd'), '010-7910-4933',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '차주영', 40, 3, to_date('960117', 'yymmdd'), '010-7910-4933',
         '20164002@koreaict.ac.kr', 16460, '경기도 수원시 팔달구 매산로3가 105-2', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164101, 'password', '전재현', 41, 4, to_date('970407', 'yymmdd'), '010-2062-9524',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '전재현', 41, 4, to_date('970407', 'yymmdd'), '010-2062-9524',
         '20164101@koreaict.ac.kr', 07053, '서울특별시 동작구 신대방동 340-3', '대성빌라 406동 108호', 3);
 
 /* INSERT QUERY NO: 141 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164301, 'password', '이민형', 43, 3, to_date('980315', 'yymmdd'), '010-2093-8744',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이민형', 43, 3, to_date('980315', 'yymmdd'), '010-2093-8744',
         '20164301@koreaict.ac.kr', 08359, '서울특별시 구로구 오류동 108-1', '화랑빌라 1동 101호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164401, 'password', '이영식', 44, 4, to_date('970221', 'yymmdd'), '010-7062-5506',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이영식', 44, 4, to_date('970221', 'yymmdd'), '010-7062-5506',
         '20164401@koreaict.ac.kr', 54848, '전라북도 전주시 덕진구 여의동2가 459-1 ', '한강동산아파트 608동 102호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164402, 'password', '허민호', 44, 4, to_date('980224', 'yymmdd'), '010-5684-8246',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '허민호', 44, 4, to_date('980224', 'yymmdd'), '010-5684-8246',
         '20164402@koreaict.ac.kr', 08211, '서울특별시 구로구 신도림동 648', 'e편한세상대림6차아파트 804동 2102호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164501, 'password', '김재필', 45, 4, to_date('960202', 'yymmdd'), '010-3492-0569',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김재필', 45, 4, to_date('960202', 'yymmdd'), '010-3492-0569',
         '20164501@koreaict.ac.kr', 16961, '경기도 용인시 기흥구 언남동 500', '초원마을성원상떼빌아파트 110동 302호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164502, 'password', '이종화', 45, 4, to_date('970202', 'yymmdd'), '010-6520-6543',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이종화', 45, 4, to_date('970202', 'yymmdd'), '010-6520-6543',
         '20164502@koreaict.ac.kr', 55363, '전라북도 완주군 구이면 계곡리 316', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164503, 'password', '진동인', 45, 4, to_date('981004', 'yymmdd'), '010-0529-6757',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20164503, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '진동인', 45, 4, to_date('981004', 'yymmdd'), '010-0529-6757',
         '20164503@koreaict.ac.kr', 08313, '서울특별시 구로구 구로동 1265 ', '구로두산아파트 102동 2004호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20165001, 'password', '유동익', 50, 4, to_date('980205', 'yymmdd'), '010-5265-0873',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20165001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유동익', 50, 4, to_date('980205', 'yymmdd'), '010-5265-0873',
         '20165001@koreaitc.ac.kr', 16239, '경기도 수원시 팔달구 우만동 523-9 ', '영빌라 305동 201호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20165101, 'password', '이희경', 51, 4, to_date('980713', 'yymmdd'), '010-6195-7122',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20165101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이희경', 51, 4, to_date('980713', 'yymmdd'), '010-6195-7122',
         '20165101@koreaitc.ac.kr', 05120, '서울특별시 광진구 구의동 573', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20165301, 'password', '현흥진', 53, 4, to_date('971216', 'yymmdd'), '010-9815-4134',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20165301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '현흥진', 53, 4, to_date('971216', 'yymmdd'), '010-9815-4134',
         '20165301@koreaitc.ac.kr', 32955, '충청남도 논산시 부창동 209-4', '대림아파트 103/304', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20165501, 'password', '박인량', 55, 4, to_date('980804', 'yymmdd'), '010-7333-6653',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20165501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박인량', 55, 4, to_date('980804', 'yymmdd'), '010-7333-6653',
         '20165501@koreaitc.ac.kr', 06617, '서울특별시 서초구 서초동 1315', '진흥아파트 1동 1505호', 3);
 
 /* INSERT QUERY NO: 151 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20166001, 'password', '김동열', 60, 4, to_date('970825', 'yymmdd'), '010-1820-9665',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20166001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김동열', 60, 4, to_date('970825', 'yymmdd'), '010-1820-9665',
         '20166001@koreaitc.ac.kr', 15541, '경기도 안산시 상록구 본오동 871 ', '신안아파트 201-1005', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20166002, 'password', '허주옥', 60, 4, to_date('970227', 'yymmdd'), '010-7559-8476',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20166002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '허주옥', 60, 4, to_date('970227', 'yymmdd'), '010-7559-8476',
         '20166002@koreaitc.ac.kr', 55126, '전라북도 전주시 완산구 평화동2가 955', '골드클래스 104동 201호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20166201, 'password', '강동연', 62, 4, to_date('970510', 'yymmdd'), '010-6765-1761',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20166201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강동연', 62, 4, to_date('970510', 'yymmdd'), '010-6765-1761',
         '20166201@koreaitc.ac.kr', 11806, '경기도 의정부시 민락동 694', '산들마을 대림아파트 404-1404', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20170501, 'password', '오두용', 5, 4, to_date('980601', 'yymmdd'), '010-2739-0412',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20170501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '오두용', 5, 4, to_date('980601', 'yymmdd'), '010-2739-0412',
         '20170501@koreaict.ac.kr', 13611, '경기도 성남시 분당구 정자동 121', '상록마을우성아파트 405동 1902호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20170502, 'password', '윤잔디', 5, 4, to_date('980320', 'yymmdd'), '010-2780-1871',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20170502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤잔디', 5, 4, to_date('980320', 'yymmdd'), '010-2780-1871',
         '20170502@koreaict.ac.kr', 28904, '충청북도 보은군 내북면 이원리 289-3', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20170901, 'password', '김민식', 9, 3, to_date('970703', 'yymmdd'), '010-4563-7599',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20170901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김민식', 9, 3, to_date('970703', 'yymmdd'), '010-4563-7599',
         '20170901@koreaict.ac.kr', 14947, '경기도 시흥시 신천동 814-12', '동완하이츠빌 A동 202호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20170902, 'password', '김승겸', 9, 3, to_date('990815', 'yymmdd'), '010-9929-4140',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20170902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김승겸', 9, 3, to_date('990815', 'yymmdd'), '010-9929-4140',
         '20170902@koreaict.ac.kr', 54823, '전라북도 전주시 덕진구 송천동1가 101-3', '신일아파트 101동 803호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171001, 'password', '심주환', 10, 2, to_date('970401', 'yymmdd'), '010-3063-3861',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '심주환', 10, 2, to_date('970401', 'yymmdd'), '010-3063-3861',
         '20171001@koreaict.ac.kr', 07510, '서울특별시 강서구 방화동 814 ', ' 방화5단지아파트 504동 1001호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171002, 'password', '조한모', 10, 3, to_date('991114', 'yymmdd'), '010-6034-3416',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조한모', 10, 3, to_date('991114', 'yymmdd'), '010-6034-3416',
         '20171002@koreaict.ac.kr', 15822, '경기도 군포시 산본동 1148-4', ' 주공9단지금강아파트 318동 901호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171201, 'password', '이준영', 12, 3, to_date('980620', 'yymmdd'), '010-6542-9130',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이준영', 12, 3, to_date('980620', 'yymmdd'), '010-6542-9130',
         '20171201@koreaict.ac.kr', 13568, '경기도 성남시 분당구 이매동 116', '이매촌성지아파트 701동 202호', 3);
 
 /* INSERT QUERY NO: 161 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171301, 'password', '김성원', 13, 3, to_date('980119', 'yymmdd'), '010-9645-6415',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김성원', 13, 3, to_date('980119', 'yymmdd'), '010-9645-6415',
         '20171301@koreaict.ac.kr', 34167, '대전광역시 유성구 궁동 448-5', '장대다가구주택', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171302, 'password', '신두상', 13, 3, to_date('990202', 'yymmdd'), '010-2898-3949',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신두상', 13, 3, to_date('990202', 'yymmdd'), '010-2898-3949',
         '20171302@koreaict.ac.kr', 05710, '서울특별시 송파구 가락동 95-1', '가락금호아파트 101동 607호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171401, 'password', '김주현', 14, 2, to_date('970211', 'yymmdd'), '010-2631-5051',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김주현', 14, 2, to_date('970211', 'yymmdd'), '010-2631-5051',
         '20171401@koreaict.ac.kr', 07954, '서울특별시 양천구 목동 315-36', '수펠리스 101호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171501, 'password', '양정아', 15, 4, to_date('990715', 'yymmdd'), '010-0192-9854',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '양정아', 15, 4, to_date('990715', 'yymmdd'), '010-0192-9854',
         '20171501@koreaict.ac.kr', 14017, '경기도 안양시 만안구 박달동 139-202', '극동아파트 1동 505호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171601, 'password', '나영우', 16, 2, to_date('990429', 'yymmdd'), '010-7521-1219',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '나영우', 16, 2, to_date('990429', 'yymmdd'), '010-7521-1219',
         '20171601@koreaict.ac.kr', 55121, '전라북도 전주시 완산구 평화동1가 737-12', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171602, 'password', '박민희', 16, 4, to_date('971206', 'yymmdd'), '010-9067-7209',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박민희', 16, 4, to_date('971206', 'yymmdd'), '010-9067-7209',
         '20171602@koreaict.ac.kr', 07436, '서울특별시 영등포구 신길동 4656', '신길우성3차아파트 114동 120호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171801, 'password', '라동현', 18, 3, to_date('970810', 'yymmdd'), '010-1817-7548',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '라동현', 18, 3, to_date('970810', 'yymmdd'), '010-1817-7548',
         '20171801@koreaict.ac.kr', 10415, '경기도 고양시 일산동구 마두동 789', '강촌마을5단지 108동 802호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171802, 'password', '서가람', 18, 4, to_date('980530', 'yymmdd'), '010-7910-2807',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '서가람', 18, 4, to_date('980530', 'yymmdd'), '010-7910-2807',
         '20171802@koreaict.ac.kr', 10415, '경기도 고양시 일산동구 마두동 787', '강촌마을3단지아파트 704동 203호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171901, 'password', '신숙희', 19, 3, to_date('990919', 'yymmdd'), '010-7791-9034',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20171901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신숙희', 19, 3, to_date('990919', 'yymmdd'), '010-7791-9034',
         '20171901@koreaict.ac.kr', 54957, '전라북도 전주시 완산구 효자동3가 1473-2 ', '서곡현대아파트 103동 101호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172001, 'password', '박철웅', 20, 3, to_date('990211', 'yymmdd'), '010-5983-9541',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박철웅', 20, 3, to_date('990211', 'yymmdd'), '010-5983-9541',
         '20172001@koreaict.ac.kr', 07052, '서울 동작구 상도동 196-91', '대영빌라 301호', 3);
 
 /* INSERT QUERY NO: 171 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172002, 'password', '이희진', 20, 3, to_date('970403', 'yymmdd'), '010-4057-1989',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이희진', 20, 3, to_date('970403', 'yymmdd'), '010-4057-1989',
         '20172002@koreaict.ac.kr', 04394, '서울특별시 용산구 보광동 399-2', '은하빌라 503호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172101, 'password', '최허현', 21, 3, to_date('991102', 'yymmdd'), '010-9227-8437',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최허현', 21, 3, to_date('991102', 'yymmdd'), '010-9227-8437',
         '20172101@koreaict.ac.kr', 55146, '전라북도 전주시 덕진구 송천동2가 1300', '에코시티데시앙12블럭 402호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172301, 'password', '박해동', 23, 3, to_date('971030', 'yymmdd'), '010-8951-0896',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박해동', 23, 3, to_date('971030', 'yymmdd'), '010-8951-0896',
         '20172301@koreaict.ac.kr', 54642, '전라북도 익산시 영등동 682', '동신아파트 105동 405호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172401, 'password', '정인수', 24, 3, to_date('990227', 'yymmdd'), '010-9212-9782',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정인수', 24, 3, to_date('990227', 'yymmdd'), '010-9212-9782',
         '20172401@koreaict.ac.kr', 05341, '서울특별시 강동구 길동 373-7', '신암아파트 201동 104호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172501, 'password', '송재현', 25, 3, to_date('990811', 'yymmdd'), '010-6672-5937',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송재현', 25, 3, to_date('990811', 'yymmdd'), '010-6672-5937',
         '20172501@koreaict.ac.kr', 05070, '서울특별시 광진구 자양동 553-41', '자양우성5차아파트 311동 114호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172601, 'password', '박민화', 26, 4, to_date('980615', 'yymmdd'), '010-5700-9609',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박민화', 26, 4, to_date('980615', 'yymmdd'), '010-5700-9609',
         '20172601@koreaict.ac.kr', 46941, '부산광역시 사상구 덕포동 43-2', '대성하이츠빌라 104호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172701, 'password', '하성태', 27, 3, to_date('990813', 'yymmdd'), '010-4404-1355',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '하성태', 27, 3, to_date('990813', 'yymmdd'), '010-4404-1355',
         '20172701@koreaict.ac.kr', 62042, '광주광역시 서구 화정동 836-3', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172801, 'password', '이희수', 28, 4, to_date('970516', 'yymmdd'), '010-2326-2899',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이희수', 28, 4, to_date('970516', 'yymmdd'), '010-2326-2899',
         '20172801@koreaict.ac.kr', 12791, '경기도 광주시 쌍령동 418-10', '예자인2차 104동 103호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172901, 'password', '안순필', 29, 3, to_date('980109', 'yymmdd'), '010-0096-7983',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20172901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '안순필', 29, 3, to_date('980109', 'yymmdd'), '010-0096-7983',
         '20172901@koreaict.ac.kr', 55050, '전라북도 전주시 완산구 효자동1가 403-3 ', '유진청하맨션상가 B동 202호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173001, 'password', '오득래', 30, 4, to_date('991225', 'yymmdd'), '010-2939-3048',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '오득래', 30, 4, to_date('991225', 'yymmdd'), '010-2939-3048',
         '20173001@koreaict.ac.kr', 08240, '서울특별시 구로구 고척동 339-1', '고척파크푸리지오 108동 2003호', 5);
 
 /* INSERT QUERY NO: 181 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173101, 'password', '이원식', 31, 3, to_date('990305', 'yymmdd'), '010-1194-3474',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이원식', 31, 3, to_date('990305', 'yymmdd'), '010-1194-3474',
         '20173101@koreaict.ac.kr', 52738, '경상남도 진주시 초전동 1431-3', '청구타운 102동 905호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173201, 'password', '송박선', 32, 4, to_date('981002', 'yymmdd'), '010-1341-7176',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송박선', 32, 4, to_date('981002', 'yymmdd'), '010-1341-7176',
         '20173201@koreaict.ac.kr', 21527, '인천광역시 남동구 만수동 13', '만수주공아파트4단지 101동 403호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173401, 'password', '이준경', 34, 3, to_date('990217', 'yymmdd'), '010-7968-4426',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이준경', 34, 3, to_date('990217', 'yymmdd'), '010-7968-4426',
         '20173401@koreaict.ac.kr', 05510, '서울특별시 송파구 신천동 7-17', '삼성웰리스아파트 25동 810호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173501, 'password', '전원영', 35, 4, to_date('990404', 'yymmdd'), '010-1285-1105',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '전원영', 35, 4, to_date('990404', 'yymmdd'), '010-1285-1105',
         '20173501@koreaict.ac.kr', 37680, '경상북도 포항시 남구 대잠동 469-14', '이동현대홈타운아파트 207동 305호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173701, 'password', '현준영', 37, 3, to_date('980828', 'yymmdd'), '010-8583-8391',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '현준영', 37, 3, to_date('980828', 'yymmdd'), '010-8583-8391',
         '20173701@koreaict.ac.kr', 05783, '광주북구두암2동849-3', '극동아파트 3동 308호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173801, 'password', '김희훈', 38, 3, to_date('991017', 'yymmdd'), '010-2959-8171',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김희훈', 38, 3, to_date('991017', 'yymmdd'), '010-2959-8171',
         '20173801@koreaict.ac.kr', 21448, '인천광역시 부평구 십정동 228', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173802, 'password', '송동훈', 38, 2, to_date('990210', 'yymmdd'), '010-3847-1603',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송동훈', 38, 2, to_date('990210', 'yymmdd'), '010-3847-1603',
         '20173802@koreaict.ac.kr', 05397, '서울특별시 강동구 성내동 535-5', '신우파인빌', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173803, 'password', '유하미', 38, 4, to_date('970514', 'yymmdd'), '010-5026-2112',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20173803, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유하미', 38, 4, to_date('970514', 'yymmdd'), '010-5026-2112',
         '20173803@koreaict.ac.kr', 55123, '전라북도 전주시 완산구 평화동2가 336-6', '현대아파트 401동 205호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174101, 'password', '유인상', 41, 3, to_date('970401', 'yymmdd'), '010-2437-1322',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유인상', 41, 3, to_date('970401', 'yymmdd'), '010-2437-1322',
         '20174101@koreaict.ac.kr', 05834, '서울특별시 송파구 문정동 150', '올림픽훼밀리타운 110동 905호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174102, 'password', '이준석', 41, 3, to_date('970809', 'yymmdd'), '010-8904-5780',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이준석', 41, 3, to_date('970809', 'yymmdd'), '010-8904-5780',
         '20174102@koreaict.ac.kr', 15478, '경기도 안산시 단원구 고잔동 776', '그린빌주공7단지아파트104동 402호', 3);
 
 /* INSERT QUERY NO: 191 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174301, 'password', '윤영우', 43, 3, to_date('991122', 'yymmdd'), '010-9892-5782',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤영우', 43, 3, to_date('991122', 'yymmdd'), '010-9892-5782',
         '20174301@koreaict.ac.kr', 54950, '전라북도 전주시 완산구 서신동 209-7', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174601, 'password', '박하나', 46, 4, to_date('970530', 'yymmdd'), '010-9364-1604',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박하나', 46, 4, to_date('970530', 'yymmdd'), '010-9364-1604',
         '20174601@koreaict.ac.kr', 55115, '전라북도 전주시 완산구 대성동 376', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174701, 'password', '고수현', 47, 4, to_date('971119', 'yymmdd'), '010-8897-3478',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '고수현', 47, 4, to_date('971119', 'yymmdd'), '010-8897-3478',
         '20174701@koreaict.ac.kr', 54986, '전라북도 전주시 완산구 중화산동2가 27', '동남삼정아파트 2동 303호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174702, 'password', '김정호', 47, 3, to_date('990225', 'yymmdd'), '010-4555-6692',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174702, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김정호', 47, 3, to_date('990225', 'yymmdd'), '010-4555-6692',
         '20174702@koreaict.ac.kr', 47015, '부산광역시 사상구 주례동 595', '럭키주례아파트 1110동 805호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174801, 'password', '김한준', 48, 3, to_date('990914', 'yymmdd'), '010-2043-1235',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김한준', 48, 3, to_date('990914', 'yymmdd'), '010-2043-1235',
         '20174801@koreaict.ac.kr', 54947, '전라북도 전주시 완산구 서신동 762-1', '비사벌아파트 101동 201호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174901, 'password', '심유경', 49, 4, to_date('980704', 'yymmdd'), '010-8462-5904',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '심유경', 49, 4, to_date('980704', 'yymmdd'), '010-8462-5904',
         '20174901@koreaict.ac.kr', 54647, '전라북도 익산시 신동 819-44', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174902, 'password', '정준영', 49, 3, to_date('991213', 'yymmdd'), '010-9500-5625',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20174902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정준영', 49, 3, to_date('991213', 'yymmdd'), '010-9500-5625',
         '20174902@koreaict.ac.kr', 06630, '서울특별시 서초구 서초동 1334 ', '신동아아파트 7동 308호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175001, 'password', '윤리나', 50, 4, to_date('981124', 'yymmdd'), '010-6901-0991',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤리나', 50, 4, to_date('981124', 'yymmdd'), '010-6901-0991',
         '20175001@koreaitc.ac.kr', 21588, '인천광역시 남동구 구월동 635-27', null, 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175101, 'password', '나영운', 51, 4, to_date('970316', 'yymmdd'), '010-3123-9358',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '나영운', 51, 4, to_date('970316', 'yymmdd'), '010-3123-9358',
         '20175101@koreaitc.ac.kr', 05257, '서울특별시 강동구 명일동 312-257', '우성아파트 105동 104호', 4);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175102, 'password', '전미진', 51, 4, to_date('980604', 'yymmdd'), '010-3365-2256',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '전미진', 51, 4, to_date('980604', 'yymmdd'), '010-3365-2256',
         '20175102@koreaitc.ac.kr', 01907, '서울특별시 노원구 월계동 322-1', '성원아파트 403동 1205호', 3);
 
 /* INSERT QUERY NO: 201 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175103, 'password', '정한메', 51, 3, to_date('981005', 'yymmdd'), '010-7028-1233',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175103, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정한메', 51, 3, to_date('981005', 'yymmdd'), '010-7028-1233',
         '20175103@koreaitc.ac.kr', 54943, '전라북도 전주시 완산구 서신동 952-13', '현대빌라 106동 1204호 ', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175201, 'password', '김주형', 52, 3, to_date('990518', 'yymmdd'), '010-9662-8227',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김주형', 52, 3, to_date('990518', 'yymmdd'), '010-9662-8227',
         '20175201@koreaitc.ac.kr', 06998, '서울특별시 동작구 사당동 105', ' 신동아아파트 404/1206', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175202, 'password', '신허승', 52, 3, to_date('980508', 'yymmdd'), '010-2699-0551',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175202, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신허승', 52, 3, to_date('980508', 'yymmdd'), '010-2699-0551',
         '20175202@koreaitc.ac.kr', 54610, '전라북도 익산시 동산동 87-2   ', '삼호아파트 5-1001', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175401, 'password', '김원석', 54, 3, to_date('970717', 'yymmdd'), '010-1811-0669',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김원석', 54, 3, to_date('970717', 'yymmdd'), '010-1811-0669',
         '20175401@koreaitc.ac.kr', 37667, '경상북도 포항시 남구 지곡동 472 ', '효자그린아파트101-201', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175501, 'password', '유번닉', 55, 3, to_date('990717', 'yymmdd'), '010-9233-9772',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유번닉', 55, 3, to_date('990717', 'yymmdd'), '010-9233-9772',
         '20175501@koreaitc.ac.kr', 05833, '서울특별시 송파구 문정동 150-26 ', '훼미리아파트 27-103', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175801, 'password', '임장우', 58, 3, to_date('970618', 'yymmdd'), '010-8687-3497',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임장우', 58, 3, to_date('970618', 'yymmdd'), '010-8687-3497',
         '20175801@koreaitc.ac.kr', 35206, '대전광역시 서구 둔산동 909 ', '수정타운 10-1106', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175802, 'password', '최원희', 58, 4, to_date('971219', 'yymmdd'), '010-0252-0644',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최원희', 58, 4, to_date('971219', 'yymmdd'), '010-0252-0644',
         '20175802@koreaitc.ac.kr', 37650, '경상북도 포항시 북구 용흥동 366 ', '우방타운아파트 124/1208', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175803, 'password', '황숭인', 58, 4, to_date('980603', 'yymmdd'), '010-2690-0953',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20175803, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '황숭인', 58, 4, to_date('980603', 'yymmdd'), '010-2690-0953',
         '20175803@koreaitc.ac.kr', 54905, '라북도 전주시 덕진구 우아동3가 594-6 ', '우성아파트 110/303', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176001, 'password', '양은우', 60, 3, to_date('980412', 'yymmdd'), '010-4040-7066',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '양은우', 60, 3, to_date('980412', 'yymmdd'), '010-4040-7066',
         '20176001@koreaitc.ac.kr', 05375, '서울특별시 강동구 성내동 387-34	', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176002, 'password', '윤학준', 60, 3, to_date('980911', 'yymmdd'), '010-9622-3475',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤학준', 60, 3, to_date('980911', 'yymmdd'), '010-9622-3475',
         '20176002@koreaitc.ac.kr', 54905, '전라북도 전주시 덕진구 호성동1가 718', '엘지동아아파트 108-101', 3);
 
 /* INSERT QUERY NO: 211 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176003, 'password', '이은경', 60, 4, to_date('991201', 'yymmdd'), '010-0456-1175',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176003, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이은경', 60, 4, to_date('991201', 'yymmdd'), '010-0456-1175',
         '20176003@koreaitc.ac.kr', 05571, '서울특별시 송파구 잠실동 101-1', '우성아파트 9-905', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176004, 'password', '주강민', 60, 4, to_date('990808', 'yymmdd'), '010-5031-4081',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176004, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '주강민', 60, 4, to_date('990808', 'yymmdd'), '010-5031-4081',
         '20176004@koreaitc.ac.kr', 12563, '경기도 양평군 양평읍 회현리 591-6	', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176005, 'password', '추준영', 60, 3, to_date('980228', 'yymmdd'), '010-0337-6982',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176005, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '추준영', 60, 3, to_date('980228', 'yymmdd'), '010-0337-6982',
         '20176005@koreaitc.ac.kr', 01709, '서울특별시 노원구 중계동 587', '대림아파트 105동 1003호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176101, 'password', '이범희', 61, 4, to_date('991225', 'yymmdd'), '010-7868-7309',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이범희', 61, 4, to_date('991225', 'yymmdd'), '010-7868-7309',
         '20176101@koreaitc.ac.kr', 12736, '경기도 광주시 초월읍 쌍동리 253-9', '매경빌리지 A동 401호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176201, 'password', '박동환', 62, 3, to_date('990501', 'yymmdd'), '010-8730-3364',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20176201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박동환', 62, 3, to_date('990501', 'yymmdd'), '010-8730-3364',
         '20176201@koreaitc.ac.kr', 21378, '인천광역시 부평구 부평동 65-7', '욱일아파트 4-309', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180101, 'password', '김윤경', 1, 2, to_date('980118', 'yymmdd'), '010-5717-4166',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김윤경', 1, 2, to_date('980118', 'yymmdd'), '010-5717-4166',
         '20180101@koreaict.ac.kr', 55105, '전라북도 전주시 완산구 삼천동1가 740-3', '안행현대아파트 108동 301호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180102, 'password', '안병수', 1, 4, to_date('990823', 'yymmdd'), '010-7130-7114',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '안병수', 1, 4, to_date('990823', 'yymmdd'), '010-7130-7114',
         '20180102@koreaict.ac.kr', 15833, '경기도 군포시 금정동 869-3', '성도하이츠빌라 1803호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180103, 'password', '최유종', 1, 2, to_date('000216', 'yymmdd'), '010-0495-9334',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180103, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최유종', 1, 2, to_date('000216', 'yymmdd'), '010-0495-9334',
         '20180103@koreaict.ac.kr', 54077, '전라북도 군산시 경장동 492-1', '금성연립주택', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180104, 'password', '한승엽', 1, 2, to_date('980130', 'yymmdd'), '010-4375-7743',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180104, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한승엽', 1, 2, to_date('980130', 'yymmdd'), '010-4375-7743',
         '20180104@koreaict.ac.kr', 10418, '경기도 고양시 일산동구 백석동 1136 ', '백송마을7단지아파트 B동 515호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180301, 'password', '서현범', 3, 2, to_date('990606', 'yymmdd'), '010-1352-4467',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '서현범', 3, 2, to_date('990606', 'yymmdd'), '010-1352-4467',
         '20180301@koreaict.ac.kr', 16333, '경기도 수원시 장안구 정자동 871-3', '백설마을주공아파트 565동 1803호', 3);
 
 /* INSERT QUERY NO: 221 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180401, 'password', '이미애', 4, 4, to_date('980405', 'yymmdd'), '010-3899-1148',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이미애', 4, 4, to_date('980405', 'yymmdd'), '010-3899-1148',
         '20180401@koreaict.ac.kr', 36678, '경상북도 안동시 안기동 86-1 ', '아파트 4동 503호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180402, 'password', '이준형', 4, 2, to_date('990809', 'yymmdd'), '010-2257-5809',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이준형', 4, 2, to_date('990809', 'yymmdd'), '010-2257-5809',
         '20180402@koreaict.ac.kr', 03129, '서울특별시 종로구 연지동 206 ', '연지빌딩 5층', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180501, 'password', '박현우', 5, 2, to_date('991107', 'yymmdd'), '010-3901-3902',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박현우', 5, 2, to_date('991107', 'yymmdd'), '010-3901-3902',
         '20180501@koreaict.ac.kr', 15002, '경기도 시흥시 장곡동 828 ', '우성아파트 118동 1702호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180502, 'password', '정성원', 5, 2, to_date('000113', 'yymmdd'), '010-8152-2302',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정성원', 5, 2, to_date('000113', 'yymmdd'), '010-8152-2302',
         '20180502@koreaict.ac.kr', 28743, '충청북도 청주시 상당구 영운동 81-15 ', '청주2차아파트 403동 503호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180801, 'password', '김용문', 8, 2, to_date('000209', 'yymmdd'), '010-5980-1827',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김용문', 8, 2, to_date('000209', 'yymmdd'), '010-5980-1827',
         '20180801@koreaict.ac.kr', 01419, '서울특별시 도봉구 창동 31', '주공18단지아파트 1813동 502호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180802, 'password', '손건영', 8, 2, to_date('990718', 'yymmdd'), '010-1980-5740',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '손건영', 8, 2, to_date('990718', 'yymmdd'), '010-1980-5740',
         '20180802@koreaict.ac.kr', 21670, '인천광역시 남동구 논현동 577', '소래마을풍림아파트 502동 603호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180803, 'password', '이유일', 8, 2, to_date('980806', 'yymmdd'), '010-2320-4284',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180803, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이유일', 8, 2, to_date('980806', 'yymmdd'), '010-2320-4284',
         '20180803@koreaict.ac.kr', 55035, '전라북도 전주시 완산구 교동 964', '교동아파트 107동 903호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180804, 'password', '한문경', 8, 4, to_date('990924', 'yymmdd'), '010-1056-2282',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180804, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한문경', 8, 4, to_date('990924', 'yymmdd'), '010-1056-2282',
         '20180804@koreaict.ac.kr', 21977, '인천광역시 남동구 논현동 풍림아파트 107-1205', '풍림2차아파트 606동 703호 ', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180901, 'password', '이준원', 9, 2, to_date('001112', 'yymmdd'), '010-7148-4169',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20180901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이준원', 9, 2, to_date('001112', 'yymmdd'), '010-7148-4169',
         '20180901@koreaict.ac.kr', 06578, '서울특별시 서초구 반포동 65-1', '신반포궁전아파트 10동 505호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181001, 'password', '권병국', 10, 2, to_date('000720', 'yymmdd'), '010-5501-9185',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '권병국', 10, 2, to_date('000720', 'yymmdd'), '010-5501-9185',
         '20181001@koreaict.ac.kr', 17159, '경기도 용인시 처인구 양지면 주북리 50-1', null, 3);
 
 /* INSERT QUERY NO: 231 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181002, 'password', '김은석', 10, 2, to_date('980830', 'yymmdd'), '010-2483-7548',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김은석', 10, 2, to_date('980830', 'yymmdd'), '010-2483-7548',
         '20181002@koreaict.ac.kr', 05741, '서울특별시 송파구 오금동 166', '가락상아아파트 4동 403호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181101, 'password', '김정우', 11, 1, to_date('980420', 'yymmdd'), '010-5273-3030',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김정우', 11, 1, to_date('980420', 'yymmdd'), '010-5273-3030',
         '20181101@koreaict.ac.kr', 61433, '광주광역시 동구 지산동 671', '지산휴먼시아 402동 502호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181401, 'password', '우재형', 14, 2, to_date('981029', 'yymmdd'), '010-5891-5069',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '우재형', 14, 2, to_date('981029', 'yymmdd'), '010-5891-5069',
         '20181401@koreaict.ac.kr', 06751, '서울특별시 서초구 양재동 154-2', ' 우성아파트 103동 1205호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181601, 'password', '김미경', 16, 4, to_date('001011', 'yymmdd'), '010-7287-9437',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김미경', 16, 4, to_date('001011', 'yymmdd'), '010-7287-9437',
         '20181601@koreaict.ac.kr', 13621, '경기도 성남시 분당구 구미동 285', '우방도무스빌라 105동 301호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181602, 'password', '박성희', 16, 4, to_date('980326', 'yymmdd'), '010-8973-5557',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박성희', 16, 4, to_date('980326', 'yymmdd'), '010-8973-5557',
         '20181602@koreaict.ac.kr', 27372, '충청북도 충주시 연수동 418', '연수주공아파트 1동 302호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181701, 'password', '김현미', 17, 4, to_date('980505', 'yymmdd'), '010-4189-9550',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김현미', 17, 4, to_date('980505', 'yymmdd'), '010-4189-9550',
         '20181701@koreaict.ac.kr', 56053, '전라북도 순창군 금과면 동전리 450-3', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181702, 'password', '홍용삼', 17, 2, to_date('000609', 'yymmdd'), '010-4357-0588',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181702, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '홍용삼', 17, 2, to_date('000609', 'yymmdd'), '010-4357-0588',
         '20181702@koreaict.ac.kr', 13629, '경기도 성남시 분당구 구미동 82', '현대노블리스 823동 1302호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181801, 'password', '김명도', 18, 2, to_date('001005', 'yymmdd'), '010-3605-7478',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김명도', 18, 2, to_date('001005', 'yymmdd'), '010-3605-7478',
         '20181801@koreaict.ac.kr', 16892, '경기도 용인시 기흥구 청덕동 499', '구성물푸레마을6단지 104동 201호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181901, 'password', '장재황', 19, 2, to_date('980324', 'yymmdd'), '010-0906-5403',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20181901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '장재황', 19, 2, to_date('980324', 'yymmdd'), '010-0906-5403',
         '20181901@koreaict.ac.kr', 12086, '경기도 남양주시 별내면 청학리 420', '청학주공1단지아파트 310동 804호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182001, 'password', '김정열', 20, 2, to_date('980302', 'yymmdd'), '010-5159-9104',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김정열', 20, 2, to_date('980302', 'yymmdd'), '010-5159-9104',
         '20182001@koreaict.ac.kr', 06259, '서울특별시 강남구 도곡동 942-2', '세원빌딩 102호', 5);
 
 /* INSERT QUERY NO: 241 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182002, 'password', '박승우', 20, 4, to_date('980618', 'yymmdd'), '010-0585-1307',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박승우', 20, 4, to_date('980618', 'yymmdd'), '010-0585-1307',
         '20182002@koreaict.ac.kr', 15821, '경기도 군포시 산본동 1119-3', '백두(극동)아파트 958동 1802호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182003, 'password', '박현민', 20, 2, to_date('001111', 'yymmdd'), '010-6557-1564',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182003, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박현민', 20, 2, to_date('001111', 'yymmdd'), '010-6557-1564',
         '20182003@koreaict.ac.kr', 54937, '전라북도 전주시 덕진구 진북동 416', '우성아파트 113동 1305호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182101, 'password', '유승미', 21, 4, to_date('980504', 'yymmdd'), '010-6776-7985',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유승미', 21, 4, to_date('980504', 'yymmdd'), '010-6776-7985',
         '20182101@koreaict.ac.kr', 16671, '경기도 수원시 권선구 곡반정동 579 ', '한솔아파트 108동 602호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182301, 'password', '서준우', 23, 2, to_date('980815', 'yymmdd'), '010-3748-0859',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '서준우', 23, 2, to_date('980815', 'yymmdd'), '010-3748-0859',
         '20182301@koreaict.ac.kr', 10388, '경기도 고양시 일산서구 주엽동 29', '문촌마을4단지아파트 1406동 1103호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182302, 'password', '성병수', 23, 2, to_date('000810', 'yymmdd'), '010-5424-0503',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '성병수', 23, 2, to_date('000810', 'yymmdd'), '010-5424-0503',
         '20182302@koreaict.ac.kr', 03006, '서울특별시 종로구 평창동 365-3', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182401, 'password', '김명훈', 24, 2, to_date('000219', 'yymmdd'), '010-5598-0560',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김명훈', 24, 2, to_date('000219', 'yymmdd'), '010-5598-0560',
         '20182401@koreaict.ac.kr', 05672, '서울특별시 송파구 송파동 162', '송파삼성래미안아파트 203동 1106호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182501, 'password', '백준용', 25, 2, to_date('980601', 'yymmdd'), '010-8511-0719',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '백준용', 25, 2, to_date('980601', 'yymmdd'), '010-8511-0719',
         '20182501@koreaict.ac.kr', 07411, '서울특별시 영등포구 대림동 777-1 ', '신동아아파트 3동 304호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182601, 'password', '김현기', 26, 4, to_date('990219', 'yymmdd'), '010-4858-7185',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김현기', 26, 4, to_date('990219', 'yymmdd'), '010-4858-7185',
         '20182601@koreaict.ac.kr', 54945, '전라북도 전주시 완산구 서신동 965-3 ', '대우대창아파트 102동 1301호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182602, 'password', '손유현', 26, 2, to_date('980702', 'yymmdd'), '010-5726-2338',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '손유현', 26, 2, to_date('980702', 'yymmdd'), '010-5726-2338',
         '20182602@koreaict.ac.kr', 49412, '부산광역시 사하구 당리동 327-10', '송원아파트 306호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182603, 'password', '이세라', 26, 4, to_date('000130', 'yymmdd'), '010-1057-0985',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182603, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이세라', 26, 4, to_date('000130', 'yymmdd'), '010-1057-0985',
         '20182603@koreaict.ac.kr', 44699, '울산광역시 남구 삼산동 1461-1', '우성아파트 102동 1302호', 3);
 
 /* INSERT QUERY NO: 251 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182604, 'password', '이자영', 26, 4, to_date('990708', 'yymmdd'), '010-9465-9476',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182604, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이자영', 26, 4, to_date('990708', 'yymmdd'), '010-9465-9476',
         '20182604@koreaict.ac.kr', 34048, '대전광역시 유성구 전민동 462-4', '청구나래아파트 101동 401호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182701, 'password', '황재윤', 27, 2, to_date('001101', 'yymmdd'), '010-6237-9658',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '황재윤', 27, 2, to_date('001101', 'yymmdd'), '010-6237-9658',
         '20182701@koreaict.ac.kr', 55056, '전라북도 전주시 완산구 효자동1가 408-1', '광진라미안아파트 107동 208호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182801, 'password', '이세라', 28, 3, to_date('000119', 'yymmdd'), '010-8637-4061',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이세라', 28, 3, to_date('000119', 'yymmdd'), '010-8637-4061',
         '20182801@koreaict.ac.kr', 44934, '울산광역시 울주군 범서읍 굴화리 7-1', '굴화주공강변그린빌4단지 404동 702호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182901, 'password', '이승수', 29, 2, to_date('000515', 'yymmdd'), '010-9413-4131',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20182901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이승수', 29, 2, to_date('000515', 'yymmdd'), '010-9413-4131',
         '20182901@koreaict.ac.kr', 05398, '서울특별시 강동구 성내동 452', '포레스트 1004동 201호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183001, 'password', '박유연', 30, 3, to_date('990606', 'yymmdd'), '010-3754-4054',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박유연', 30, 3, to_date('990606', 'yymmdd'), '010-3754-4054',
         '20183001@koreaict.ac.kr', 54552, '전라북도 익산시 어양동 689 ', '어양주공8단지 504동 304호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183002, 'password', '이현성', 30, 2, to_date('991228', 'yymmdd'), '010-1005-9473',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이현성', 30, 2, to_date('991228', 'yymmdd'), '010-1005-9473',
         '20183002@koreaict.ac.kr', 08219, '서울특별시 구로구 고척동 338 ', '고척마젤란아파트 5동 208호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183101, 'password', '강재이', 31, 2, to_date('981207', 'yymmdd'), '010-1690-5224',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강재이', 31, 2, to_date('981207', 'yymmdd'), '010-1690-5224',
         '20183101@koreaict.ac.kr', 55053, '전라북도 전주시 완산구 효자동1가 636-2', '성원골드맨션아파트 110동 204호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183301, 'password', '엄현석', 33, 2, to_date('001119', 'yymmdd'), '010-0379-9948',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '엄현석', 33, 2, to_date('001119', 'yymmdd'), '010-0379-9948',
         '20183301@koreaict.ac.kr', 15853, '경기도 군포시 당정동 973-1 ', '당정마을엘지아파트 361동 105호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183401, 'password', '이은경', 34, 4, to_date('981026', 'yymmdd'), '010-7223-5329',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이은경', 34, 4, to_date('981026', 'yymmdd'), '010-7223-5329',
         '20183401@koreaict.ac.kr', 18429, '경기도 화성시 능동 1151', '동탄푸른마을모아미래도 701동 308호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183501, 'password', '김명희', 35, 4, to_date('990720', 'yymmdd'), '010-8043-4319',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김명희', 35, 4, to_date('990720', 'yymmdd'), '010-8043-4319',
         '20183501@koreaict.ac.kr', 10902, '경기도 파주시 동패동 211-37', '교하벽산아파트 110동 206호', 3);
 
 /* INSERT QUERY NO: 261 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183502, 'password', '박장욱', 35, 2, to_date('980411', 'yymmdd'), '010-6100-9629',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박장욱', 35, 2, to_date('980411', 'yymmdd'), '010-6100-9629',
         '20183502@koreaict.ac.kr', 47760, '부산광역시 동래구 명장동 497-4', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183601, 'password', '김유신', 36, 3, to_date('980110', 'yymmdd'), '010-7667-0531',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김유신', 36, 3, to_date('980110', 'yymmdd'), '010-7667-0531',
         '20183601@koreaict.ac.kr', 55081, '전라북도 전주시 완산구 효자동1가 284-4', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183602, 'password', '이성희', 36, 4, to_date('990402', 'yymmdd'), '010-3960-0896',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이성희', 36, 4, to_date('990402', 'yymmdd'), '010-3960-0896',
         '20183602@koreaict.ac.kr', 59705, '전라남도 여수시 여서동 489-1', '현대건설아파트 104동 502호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183603, 'password', '조병수', 36, 2, to_date('001122', 'yymmdd'), '010-5949-4208',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183603, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조병수', 36, 2, to_date('001122', 'yymmdd'), '010-5949-4208',
         '20183603@koreaict.ac.kr', 59705, '전라남도 여수시 여서동 489-1', '현대건설아파트 208동 309호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183901, 'password', '김현욱', 39, 2, to_date('990908', 'yymmdd'), '010-6955-9101',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20183901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김현욱', 39, 2, to_date('990908', 'yymmdd'), '010-6955-9101',
         '20183901@koreaict.ac.kr', 13831, '경기도 과천시 부림동 41?', '주공아파트 318동 901호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184001, 'password', '윤재홍', 40, 4, to_date('981014', 'yymmdd'), '010-4838-9061',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤재홍', 40, 4, to_date('981014', 'yymmdd'), '010-4838-9061',
         '20184001@koreaict.ac.kr', 06297, '서울특별시 강남구 도곡동 462', '개포럭키아파트 1동 606호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184002, 'password', '이무공', 40, 2, to_date('991101', 'yymmdd'), '010-0749-0724',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이무공', 40, 2, to_date('991101', 'yymmdd'), '010-0749-0724',
         '20184002@koreaict.ac.kr', 18603, '경기도 화성시 향남읍 행정리 465', '향남시범한우물마을휴먼시아 101동 105호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184101, 'password', '서미림', 41, 4, to_date('001201', 'yymmdd'), '010-6402-7189',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '서미림', 41, 4, to_date('001201', 'yymmdd'), '010-6402-7189',
         '20184101@koreaict.ac.kr', 12419, '경기도 가평군 가평읍 읍내리 358-4', '남이주택', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184102, 'password', '송재무', 41, 2, to_date('990706', 'yymmdd'), '010-9218-2816',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송재무', 41, 2, to_date('990706', 'yymmdd'), '010-9218-2816',
         '20184102@koreaict.ac.kr', 55521, '전라북도 무주군 무주읍 읍내리 364', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184201, 'password', '고리나', 42, 4, to_date('001030', 'yymmdd'), '010-9150-6742',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '고리나', 42, 4, to_date('001030', 'yymmdd'), '010-9150-6742',
         '20184201@koreaict.ac.kr', 21405, '인천광역시 부평구 부평동 283-112', null, 3);
 
 /* INSERT QUERY NO: 271 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184501, 'password', '오현일', 45, 2, to_date('980707', 'yymmdd'), '010-2684-2436',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '오현일', 45, 2, to_date('980707', 'yymmdd'), '010-2684-2436',
         '20184501@koreaict.ac.kr', 10867, '경기도 파주시 교하동 356-1', '교하하이빌2 104호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184601, 'password', '강혁로', 46, 2, to_date('990802', 'yymmdd'), '010-6280-7305',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강혁로', 46, 2, to_date('990802', 'yymmdd'), '010-6280-7305',
         '20184601@koreaict.ac.kr', 54929, '전라북도 전주시 덕진구 진북동 344-29', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184602, 'password', '김승우', 46, 2, to_date('990604', 'yymmdd'), '010-2999-1112',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김승우', 46, 2, to_date('990604', 'yymmdd'), '010-2999-1112',
         '20184602@koreaict.ac.kr', 08042, '서울특별시 양천구 신월동 987-1 ', '신월시영아파트 7동 809호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184603, 'password', '최유진', 46, 3, to_date('990630', 'yymmdd'), '010-3110-9755',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184603, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최유진', 46, 3, to_date('990630', 'yymmdd'), '010-3110-9755',
         '20184603@koreaict.ac.kr', 55018, '전라북도 전주시 덕진구 인후동1가 858-2 ', '아중현대아파트 109동 505호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184701, 'password', '김현구', 47, 2, to_date('980930', 'yymmdd'), '010-1873-4177',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김현구', 47, 2, to_date('980930', 'yymmdd'), '010-1873-4177',
         '20184701@koreaict.ac.kr', 55365, '전라북도 완주군 이서면 갈산리 650', '전북혁신엘에이치아파트10단지 104동 205호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184801, 'password', '강인호', 48, 2, to_date('981003', 'yymmdd'), '010-5497-3761',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강인호', 48, 2, to_date('981003', 'yymmdd'), '010-5497-3761',
         '20184801@koreaict.ac.kr', 57939, '전라남도 순천시 매곡동 6-2', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184802, 'password', '김명철', 48, 4, to_date('991009', 'yymmdd'), '010-3316-6109',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김명철', 48, 4, to_date('991009', 'yymmdd'), '010-3316-6109',
         '20184802@koreaict.ac.kr', 11156, '경기도 포천시 군내면 좌의리 7-5', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184803, 'password', '김명환', 48, 3, to_date('990828', 'yymmdd'), '010-0208-3038',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184803, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김명환', 48, 3, to_date('990828', 'yymmdd'), '010-0208-3038',
         '20184803@koreaict.ac.kr', 15821, '경기도 군포시 산본동 1119-3', '극동백두아파트 207동 201호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184901, 'password', '김명철', 49, 2, to_date('990326', 'yymmdd'), '010-7480-7182',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김명철', 49, 2, to_date('990326', 'yymmdd'), '010-7480-7182',
         '20184901@koreaict.ac.kr', 46557, '부산광역시 북구 만덕동 823-8', '만덕베르빌아파트 102동 204호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184902, 'password', '박인정', 49, 2, to_date('990115', 'yymmdd'), '010-2292-4146',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박인정', 49, 2, to_date('990115', 'yymmdd'), '010-2292-4146',
         '20184902@koreaict.ac.kr', 12192, '경기도 남양주시 화도읍 구암리 473-27', null, 3);
 
 /* INSERT QUERY NO: 281 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184903, 'password', '이성현', 49, 2, to_date('000918', 'yymmdd'), '010-3459-4839',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184903, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이성현', 49, 2, to_date('000918', 'yymmdd'), '010-3459-4839',
         '20184903@koreaict.ac.kr', 62043, '광주광역시 서구 화정동 859-1 ', '현대아파트 103동 311호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184904, 'password', '한승완', 49, 4, to_date('001102', 'yymmdd'), '010-0519-2687',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20184904, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한승완', 49, 4, to_date('001102', 'yymmdd'), '010-0519-2687',
         '20184904@koreaict.ac.kr', 21933, '인천광역시 연수구 연수동 579 ', '대우1차아파트 102동 201호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185001, 'password', '이유연', 50, 4, to_date('991006', 'yymmdd'), '010-1679-0849',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이유연', 50, 4, to_date('991006', 'yymmdd'), '010-1679-0849',
         '20185001@koreaitc.ac.kr', 55121, '전라북도 전주시 완산구 평화동1가 522 ', '일성아파트 105동 1602호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185002, 'password', '황문식', 50, 3, to_date('980130', 'yymmdd'), '010-7113-3426',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '황문식', 50, 3, to_date('980130', 'yymmdd'), '010-7113-3426',
         '20185002@koreaitc.ac.kr', 14107, '경기도 안양시 동안구 호계동 1098-4', '엘리트빌 G동 401호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185301, 'password', '김명훈', 53, 2, to_date('980816', 'yymmdd'), '010-7921-6568',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김명훈', 53, 2, to_date('980816', 'yymmdd'), '010-7921-6568',
         '20185301@koreaitc.ac.kr', 13588, '경기도 성남시 분당구 서현동 87  ', '시범단지삼성 한신아파트 110-802호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185302, 'password', '김은이', 53, 4, to_date('990721', 'yymmdd'), '010-2408-4646',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김은이', 53, 4, to_date('990721', 'yymmdd'), '010-2408-4646',
         '20185302@koreaitc.ac.kr', 46248, '부산광역시 금정구 장전동 60-5', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185303, 'password', '정승수', 53, 3, to_date('000712', 'yymmdd'), '010-4628-9697',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185303, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정승수', 53, 3, to_date('000712', 'yymmdd'), '010-4628-9697',
         '20185303@koreaitc.ac.kr', 04322, '서울특별시 용산구 갈월동 98-38', '청룡빌딩5층 SGS', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185401, 'password', '박미경', 54, 4, to_date('991112', 'yymmdd'), '010-6475-7627',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박미경', 54, 4, to_date('991112', 'yymmdd'), '010-6475-7627',
         '20185401@koreaitc.ac.kr', 13550, '경기도 성남시 분당구 궁내동 334-5', '중앙하이츠 208-401', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185402, 'password', '전재훈', 54, 2, to_date('990504', 'yymmdd'), '010-9381-0385',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '전재훈', 54, 2, to_date('990504', 'yymmdd'), '010-9381-0385',
         '20185402@koreaitc.ac.kr', 08247, '서울특별시 구로구 개봉동 98-31', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185403, 'password', '정장윤', 54, 3, to_date('980405', 'yymmdd'), '010-6534-6247',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185403, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정장윤', 54, 3, to_date('980405', 'yymmdd'), '010-6534-6247',
         '20185403@koreaitc.ac.kr', 44025, '울산광역시 동구 서부동 257-4', '현대패밀리서부아파트 121-1407', 3);
 
 /* INSERT QUERY NO: 291 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185501, 'password', '김준일', 55, 2, to_date('000916', 'yymmdd'), '010-2233-8832',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김준일', 55, 2, to_date('000916', 'yymmdd'), '010-2233-8832',
         '20185501@koreaitc.ac.kr', 10080, '경기도 김포시 장기동 1070-5', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185502, 'password', '허성준', 55, 3, to_date('001207', 'yymmdd'), '010-5493-0146',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '허성준', 55, 3, to_date('001207', 'yymmdd'), '010-5493-0146',
         '20185502@koreaitc.ac.kr', 49126, '부산광역시 영도구 동삼동 983-4', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185601, 'password', '김용범', 56, 3, to_date('001224', 'yymmdd'), '010-8221-3960',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김용범', 56, 3, to_date('001224', 'yymmdd'), '010-8221-3960',
         '20185601@koreaitc.ac.kr', 01881, '서울특별시 노원구 월계동 581', '주공아파트 214-803', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185701, 'password', '이현성', 57, 2, to_date('980213', 'yymmdd'), '010-5629-4031',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이현성', 57, 2, to_date('980213', 'yymmdd'), '010-5629-4031',
         '20185701@koreaitc.ac.kr', 21381, '인천광역시 부평구 산곡동 311-126', '현대아파트 212-204', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185702, 'password', '조현승', 57, 3, to_date('000522', 'yymmdd'), '010-2808-1157',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185702, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조현승', 57, 3, to_date('000522', 'yymmdd'), '010-2808-1157',
         '20185702@koreaitc.ac.kr', 15589, '경기도 안산시 상록구 사동 1312-5	', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185901, 'password', '양재영', 59, 3, to_date('991023', 'yymmdd'), '010-4133-5355',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20185901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '양재영', 59, 3, to_date('991023', 'yymmdd'), '010-4133-5355',
         '20185901@koreaitc.ac.kr', 55046, '전라북도 전주시 완산구 중화산동1가 161-18	', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186001, 'password', '김리나', 60, 4, to_date('001201', 'yymmdd'), '010-4776-2702',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김리나', 60, 4, to_date('001201', 'yymmdd'), '010-4776-2702',
         '20186001@koreaitc.ac.kr', 05652, '서울특별시 송파구 오금동 11', '현대아파트 44동 1001호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186002, 'password', '서임규', 60, 2, to_date('980209', 'yymmdd'), '010-7513-7338',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '서임규', 60, 2, to_date('980209', 'yymmdd'), '010-7513-7338',
         '20186002@koreaitc.ac.kr', 59603, '전라남도 여수시 율촌면 봉전리 694-2	', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186003, 'password', '주무진', 60, 4, to_date('980330', 'yymmdd'), '010-0878-9191',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186003, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '주무진', 60, 4, to_date('980330', 'yymmdd'), '010-0878-9191',
         '20186003@koreaitc.ac.kr', 21568, '인천광역시 남동구 구월동 1395-6', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186101, 'password', '국인수', 61, 2, to_date('980604', 'yymmdd'), '010-1435-7563',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '국인수', 61, 2, to_date('980604', 'yymmdd'), '010-1435-7563',
         '20186101@koreaitc.ac.kr', 05571, '서울특별시 송파구 잠실동 101-1', '우성아파트 15동 501호', 3);
 
 /* INSERT QUERY NO: 301 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186102, 'password', '권유상', 61, 3, to_date('980802', 'yymmdd'), '010-7264-7371',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '권유상', 61, 3, to_date('980802', 'yymmdd'), '010-7264-7371',
         '20186102@koreaitc.ac.kr', 55610, '전라북도 장수군 천천면 남양리 742-1', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186201, 'password', '박용봉', 62, 2, to_date('001226', 'yymmdd'), '010-0032-0163',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20186201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박용봉', 62, 2, to_date('001226', 'yymmdd'), '010-0032-0163',
         '20186201@koreaitc.ac.kr', 01410, '서울특별시 도봉구 창동 807', '쌍용아파트 104-204', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190101, 'password', '강승우', 1, 1, to_date('990117', 'yymmdd'), '010-3028-8374',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강승우', 1, 1, to_date('990117', 'yymmdd'), '010-3028-8374',
         '20190101@koreaict.ac.kr', 03396, '서울특별시 은평구 대조동 9-20', '모아아파트 109동 101호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190102, 'password', '송영준', 1, 1, to_date('990628', 'yymmdd'), '010-0641-4477',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송영준', 1, 1, to_date('990628', 'yymmdd'), '010-0641-4477',
         '20190102@koreaict.ac.kr', 06284, '서울특별시 강남구 대치동 316', '은마아파트 2동1013호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190201, 'password', '배용원', 2, 2, to_date('000223', 'yymmdd'), '010-1842-9943',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '배용원', 2, 2, to_date('000223', 'yymmdd'), '010-1842-9943',
         '20190201@koreaict.ac.kr', 06289, '서울특별시 강남구 대치동 503', '개포2차우성아파트 801동 503호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190401, 'password', '박준희', 4, 1, to_date('000627', 'yymmdd'), '010-3924-4315',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박준희', 4, 1, to_date('000627', 'yymmdd'), '010-3924-4315',
         '20190401@koreaict.ac.kr', 06274, '서울특별시 강남구 도곡동 183-7', '아파트(12세대) 1208호 ', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190402, 'password', '송용준', 4, 1, to_date('010203', 'yymmdd'), '010-7440-3347',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송용준', 4, 1, to_date('010203', 'yymmdd'), '010-7440-3347',
         '20190402@koreaict.ac.kr', 13456, '경기도 성남시 분당구 운중동 875', '판교월드힐스산운마을 1단지 409호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190403, 'password', '신사묵', 4, 1, to_date('001005', 'yymmdd'), '010-4654-5467',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190403, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신사묵', 4, 1, to_date('001005', 'yymmdd'), '010-4654-5467',
         '20190403@koreaict.ac.kr', 04206, '서울특별시 마포구 아현동 733 ', '효성인텔리안', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190404, 'password', '신윤빔', 4, 1, to_date('991116', 'yymmdd'), '010-6479-0444',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190404, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신윤빔', 4, 1, to_date('991116', 'yymmdd'), '010-6479-0444',
         '20190404@koreaict.ac.kr', 54970, '전라북도 전주시 완산구 중화산동2가 745-1', '현대에코르아파트 702동 506호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190405, 'password', '최병연', 4, 1, to_date('011207', 'yymmdd'), '010-5070-6186',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190405, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최병연', 4, 1, to_date('011207', 'yymmdd'), '010-5070-6186',
         '20190405@koreaict.ac.kr', 13346, '경기도 성남시 수정구 신흥동 3408', '송원맨션 406호', 3);
 
 /* INSERT QUERY NO: 311 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190501, 'password', '이승원', 5, 1, to_date('991225', 'yymmdd'), '010-3011-9371',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이승원', 5, 1, to_date('991225', 'yymmdd'), '010-3011-9371',
         '20190501@koreaict.ac.kr', 03663, '서울특별시 서대문구 홍은동 403-6', '동광빌리지 4층 018동', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190601, 'password', '박봉진', 6, 2, to_date('990324', 'yymmdd'), '010-8072-6932',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박봉진', 6, 2, to_date('990324', 'yymmdd'), '010-8072-6932',
         '20190601@koreaict.ac.kr', 54912, '전라북도 전주시 덕진구 우아동3가 285-8', '럭키아파트 122동 503호 ', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190602, 'password', '박중렬', 6, 1, to_date('000228', 'yymmdd'), '010-8396-5781',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박중렬', 6, 1, to_date('000228', 'yymmdd'), '010-8396-5781',
         '20190602@koreaict.ac.kr', 61153, '광주광역시 북구 두암동 63-1', '무등파크1차아파트 102동 603호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190701, 'password', '김보영', 7, 2, to_date('010408', 'yymmdd'), '010-7075-6895',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김보영', 7, 2, to_date('010408', 'yymmdd'), '010-7075-6895',
         '20190701@koreaict.ac.kr', 02528, '서울특별시 동대문구 장안동 293-15 ', '장안동다세대주택', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190702, 'password', '이윤성', 7, 3, to_date('000822', 'yymmdd'), '010-1411-2837',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190702, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이윤성', 7, 3, to_date('000822', 'yymmdd'), '010-1411-2837',
         '20190702@koreaict.ac.kr', 54144, '전라북도 군산시 나운동 155', '세경아파트 304동 305호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190801, 'password', '남가영', 8, 2, to_date('010510', 'yymmdd'), '010-1916-7548',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '남가영', 8, 2, to_date('010510', 'yymmdd'), '010-1916-7548',
         '20190801@koreaict.ac.kr', 21560, '인천광역시 남동구 구월동 1100-11', '서원빌라 401호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190802, 'password', '최상호', 8, 1, to_date('000220', 'yymmdd'), '010-8370-6887',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최상호', 8, 1, to_date('000220', 'yymmdd'), '010-8370-6887',
         '20190802@koreaict.ac.kr', 05406, '서울특별시 강동구 성내동 433-24', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190901, 'password', '문재주', 9, 1, to_date('990924', 'yymmdd'), '010-1989-5785',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '문재주', 9, 1, to_date('990924', 'yymmdd'), '010-1989-5785',
         '20190901@koreaict.ac.kr', 54984, '전라북도 전주시 완산구 중화산동2가 256', ' 우성근영타운 105동 105호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190902, 'password', '황형철', 9, 1, to_date('990430', 'yymmdd'), '010-2851-6389',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20190902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '황형철', 9, 1, to_date('990430', 'yymmdd'), '010-2851-6389',
         '20190902@koreaict.ac.kr', 57953, '전라남도 순천시 생목동 28-1', '현대아파트 106동 407호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191001, 'password', '김재훈', 10, 1, to_date('010917', 'yymmdd'), '010-7268-3552',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김재훈', 10, 1, to_date('010917', 'yymmdd'), '010-7268-3552',
         '20191001@koreaict.ac.kr', 10468, '경기도 고양시 덕양구 성사동 719', '신원당1단지아파트 802동 305호', 3);
 
 /* INSERT QUERY NO: 321 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191002, 'password', '최지선', 10, 3, to_date('010301', 'yymmdd'), '010-4842-8162',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최지선', 10, 3, to_date('010301', 'yymmdd'), '010-4842-8162',
         '20191002@koreaict.ac.kr', 54373, '전라북도 김제시 서암동 390-1', '서암3차동신아파트 가동 409호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191101, 'password', '김보람', 11, 3, to_date('010820', 'yymmdd'), '010-9966-5600',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김보람', 11, 3, to_date('010820', 'yymmdd'), '010-9966-5600',
         '20191101@koreaict.ac.kr', 14662, '경기도 부천시 역곡동 27-13', '현대그린빌라 나동 505호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191102, 'password', '김세웅', 11, 1, to_date('000815', 'yymmdd'), '010-3787-4033',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김세웅', 11, 1, to_date('000815', 'yymmdd'), '010-3787-4033',
         '20191102@koreaict.ac.kr', 37714, '경상북도 포항시 북구 항구동 347-29', '원영빌라 204호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191201, 'password', '송정균', 12, 1, to_date('000630', 'yymmdd'), '010-6075-4040',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송정균', 12, 1, to_date('000630', 'yymmdd'), '010-6075-4040',
         '20191201@koreaict.ac.kr', 08329, '서울특별시 구로구 개봉동 255-3', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191202, 'password', '채영준', 12, 1, to_date('990219', 'yymmdd'), '010-4482-5923',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191202, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '채영준', 12, 1, to_date('990219', 'yymmdd'), '010-4482-5923',
         '20191202@koreaict.ac.kr', 04020, '서울특별시 마포구 합정동 438-18 ', '삼성빌라 103호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191301, 'password', '김준호', 13, 2, to_date('010120', 'yymmdd'), '010-4956-6878',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김준호', 13, 2, to_date('010120', 'yymmdd'), '010-4956-6878',
         '20191301@koreaict.ac.kr', 14062, '경기도 안양시 동안구 평촌동 34 ', '삼성래미안아파트 113동 702호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191302, 'password', '조정은', 13, 1, to_date('010725', 'yymmdd'), '010-6795-2923',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조정은', 13, 1, to_date('010725', 'yymmdd'), '010-6795-2923',
         '20191302@koreaict.ac.kr', 34130, '대전광역시 유성구 가정동 277', '도룡포레미소지움아파트 14동 101호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191401, 'password', '김정원', 14, 1, to_date('990706', 'yymmdd'), '010-5448-9358',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김정원', 14, 1, to_date('990706', 'yymmdd'), '010-5448-9358',
         '20191401@koreaict.ac.kr', 57811, '전라남도 광양시 금호동 624-13', '사랑아파트 10동 104호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191402, 'password', '정상엽', 14, 1, to_date('010801', 'yymmdd'), '010-3738-0921',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정상엽', 14, 1, to_date('010801', 'yymmdd'), '010-3738-0921',
         '20191402@koreaict.ac.kr', 50885, '경상남도 김해시 내동 121-3', '한진아파트 203동 1103호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191501, 'password', '정상욱', 15, 3, to_date('990810', 'yymmdd'), '010-6542-5465',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정상욱', 15, 3, to_date('990810', 'yymmdd'), '010-6542-5465',
         '20191501@koreaict.ac.kr', 02756, '서울특별시 성북구 장위동 283-52', '장미원2차빌라 201호', 3);
 
 /* INSERT QUERY NO: 331 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191601, 'password', '강현주', 16, 3, to_date('011201', 'yymmdd'), '010-2448-3551',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강현주', 16, 3, to_date('011201', 'yymmdd'), '010-2448-3551',
         '20191601@koreaict.ac.kr', 06948, '서울특별시 동작구 대방동 5-2   ', '정원쉐르빌 304호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191801, 'password', '장형일', 18, 2, to_date('990505', 'yymmdd'), '010-2488-5220',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '장형일', 18, 2, to_date('990505', 'yymmdd'), '010-2488-5220',
         '20191801@koreaict.ac.kr', 57736, '전라남도 광양시 광양읍 구산리 762-2', '매화마을주공아파트 108동 203호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191901, 'password', '곽준호', 19, 2, to_date('010816', 'yymmdd'), '010-0190-9919',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20191901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '곽준호', 19, 2, to_date('010816', 'yymmdd'), '010-0190-9919',
         '20191901@koreaict.ac.kr', 08323, '서울특별시 구로구 구로동 642-33', '현대의보아파트 102동 303호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192001, 'password', '김현철', 20, 1, to_date('010225', 'yymmdd'), '010-2864-5753',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김현철', 20, 1, to_date('010225', 'yymmdd'), '010-2864-5753',
         '20192001@koreaict.ac.kr', 06082, '서울특별시 강남구 삼성동 99-12', '강변삼부아파트 101동 1102호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192002, 'password', '민정규', 20, 3, to_date('010621', 'yymmdd'), '010-8503-6611',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '민정규', 20, 3, to_date('010621', 'yymmdd'), '010-8503-6611',
         '20192002@koreaict.ac.kr', 01748, '서울특별시 노원구 하계동 256', '중계주공9단지아파트 14동 105호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192003, 'password', '성형규', 20, 1, to_date('991119', 'yymmdd'), '010-5545-0796',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192003, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '성형규', 20, 1, to_date('991119', 'yymmdd'), '010-5545-0796',
         '20192003@koreaict.ac.kr', 14333, '경기도 광명시 소하동 924-3', '금진청솔빌라 401호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192004, 'password', '이용태', 20, 3, to_date('011126', 'yymmdd'), '010-7605-6357',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192004, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이용태', 20, 3, to_date('011126', 'yymmdd'), '010-7605-6357',
         '20192004@koreaict.ac.kr', 21559, '인천광역시 남동구 구월동 1096-14', '다솜빌 101호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192101, 'password', '안윤상', 21, 1, to_date('991003', 'yymmdd'), '010-3364-1454',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '안윤상', 21, 1, to_date('991003', 'yymmdd'), '010-3364-1454',
         '20192101@koreaict.ac.kr', 55332, '전라북도 완주군 봉동읍 구미리 716-7', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192201, 'password', '고정호', 22, 1, to_date('011107', 'yymmdd'), '010-4844-4716',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '고정호', 22, 1, to_date('011107', 'yymmdd'), '010-4844-4716',
         '20192201@koreaict.ac.kr', 35307, '대전광역시 서구 용문동 244-21', '성오빌라 170동 203호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192301, 'password', '안희준', 23, 3, to_date('011001', 'yymmdd'), '010-9534-9585',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '안희준', 23, 3, to_date('011001', 'yymmdd'), '010-9534-9585',
         '20192301@koreaict.ac.kr', 59714, '전라남도 여수시 문수동 4-7', '근생아파트 103동 1509호', 3);
 
 /* INSERT QUERY NO: 341 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192401, 'password', '한세진', 24, 2, to_date('990620', 'yymmdd'), '010-3385-2397',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한세진', 24, 2, to_date('990620', 'yymmdd'), '010-3385-2397',
         '20192401@koreaict.ac.kr', 54905, '전라북도 전주시 덕진구 우아동3가 594-6', '우성아파트 701동 301호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192402, 'password', '한영은', 24, 3, to_date('990811', 'yymmdd'), '010-4589-0225',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한영은', 24, 3, to_date('990811', 'yymmdd'), '010-4589-0225',
         '20192402@koreaict.ac.kr', 12955, '경기도 하남시 창우동 521', '꿈동산신안아파트 420동 1008호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192501, 'password', '공현준', 25, 3, to_date('000915', 'yymmdd'), '010-5712-4706',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '공현준', 25, 3, to_date('000915', 'yymmdd'), '010-5712-4706',
         '20192501@koreaict.ac.kr', 12275, '경기도 남양주시 와부읍 도곡리 1012', '한강우성아파트 119동 203호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192502, 'password', '박건우', 25, 1, to_date('000326', 'yymmdd'), '010-4585-5648',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박건우', 25, 1, to_date('000326', 'yymmdd'), '010-4585-5648',
         '20192502@koreaict.ac.kr', 10804, '경기도 파주시 적성면 장현리 509-1', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192503, 'password', '배형구', 25, 1, to_date('000819', 'yymmdd'), '010-0019-1714',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192503, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '배형구', 25, 1, to_date('000819', 'yymmdd'), '010-0019-1714',
         '20192503@koreaict.ac.kr', 08334, '서울특별시 구로구 개봉동 403-187', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192504, 'password', '서부열', 25, 3, to_date('010217', 'yymmdd'), '010-7202-3680',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192504, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '서부열', 25, 3, to_date('010217', 'yymmdd'), '010-7202-3680',
         '20192504@koreaict.ac.kr', 05503, '서울특별시 송파구 잠실동 27-6', '잠실주공아파트5단지 503동 103호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192505, 'password', '이상언', 25, 3, to_date('010423', 'yymmdd'), '010-0782-2645',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192505, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이상언', 25, 3, to_date('010423', 'yymmdd'), '010-0782-2645',
         '20192505@koreaict.ac.kr', 11154, '경기도 포천시 군내면 용정리 475', '포애뜰행복주택', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192601, 'password', '김보성', 26, 1, to_date('990923', 'yymmdd'), '010-4165-3654',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김보성', 26, 1, to_date('990923', 'yymmdd'), '010-4165-3654',
         '20192601@koreaict.ac.kr', 59661, '전라남도 여수시 안산동 465-6', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192602, 'password', '차지수', 26, 3, to_date('010930', 'yymmdd'), '010-6783-1554',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '차지수', 26, 3, to_date('010930', 'yymmdd'), '010-6783-1554',
         '20192602@koreaict.ac.kr', 55043, '전라북도 전주시 완산구 전동3가 140-1', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192701, 'password', '윤상민', 27, 3, to_date('000610', 'yymmdd'), '010-6304-2408',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤상민', 27, 3, to_date('000610', 'yymmdd'), '010-6304-2408',
         '20192701@koreaict.ac.kr', 13957, '경기도 안양시 만안구 안양동 28-23', '베르사체2차 9동 101호', 3);
 
 /* INSERT QUERY NO: 351 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192801, 'password', '최정인', 28, 3, to_date('000621', 'yymmdd'), '010-8462-6930',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최정인', 28, 3, to_date('000621', 'yymmdd'), '010-8462-6930',
         '20192801@koreaict.ac.kr', 06537, '서울특별시 서초구 반포동 719-20', '에덴빌22차 105동 501호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192901, 'password', '이형선', 29, 1, to_date('990417', 'yymmdd'), '010-0557-8317',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20192901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이형선', 29, 1, to_date('990417', 'yymmdd'), '010-0557-8317',
         '20192901@koreaict.ac.kr', 57792, '전라남도 광양시 중동 1665 ', '성호2차아파트 203동 1806호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193001, 'password', '김보람', 30, 3, to_date('011111', 'yymmdd'), '010-7894-9945',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김보람', 30, 3, to_date('011111', 'yymmdd'), '010-7894-9945',
         '20193001@koreaict.ac.kr', 59683, '전라남도 여수시 신기동 6 ', '신기주공3단지 110동 1204호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193101, 'password', '강병호', 31, 3, to_date('010428', 'yymmdd'), '010-2142-0543',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강병호', 31, 3, to_date('010428', 'yymmdd'), '010-2142-0543',
         '20193101@koreaict.ac.kr', 01784, '서울특별시 노원구 하계동 284', '한신청구아파트 2동 417호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193102, 'password', '민봉균', 31, 1, to_date('010212', 'yymmdd'), '010-8196-7896',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '민봉균', 31, 1, to_date('010212', 'yymmdd'), '010-8196-7896',
         '20193102@koreaict.ac.kr', 54808, '전라북도 전주시 덕진구 반월동 1229', '반월주공아파트 502동 505호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193103, 'password', '이여선', 31, 3, to_date('000129', 'yymmdd'), '010-6828-6249',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193103, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이여선', 31, 3, to_date('000129', 'yymmdd'), '010-6828-6249',
         '20193103@koreaict.ac.kr', 54844, '전라북도 전주시 덕진구 팔복동1가 261-1', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193201, 'password', '김진현', 32, 3, to_date('000524', 'yymmdd'), '010-1695-1330',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김진현', 32, 3, to_date('000524', 'yymmdd'), '010-1695-1330',
         '20193201@koreaict.ac.kr', 15540, '경기도 안산시 상록구 본오동 880', '한양아파트 207동 805호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193202, 'password', '주상진', 32, 3, to_date('010208', 'yymmdd'), '010-4769-9742',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193202, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '주상진', 32, 3, to_date('010208', 'yymmdd'), '010-4769-9742',
         '20193202@koreaict.ac.kr', 06902, '서울특별시 동작구 노량진동 67-9', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193301, 'password', '임지민', 33, 3, to_date('010916', 'yymmdd'), '010-8374-3890',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임지민', 33, 3, to_date('010916', 'yymmdd'), '010-8374-3890',
         '20193301@koreaict.ac.kr', 54633, '전라북도 익산시 남중동 544-10', '소라연립 A동 201호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193401, 'password', '임재민', 34, 3, to_date('000215', 'yymmdd'), '010-3824-8248',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임재민', 34, 3, to_date('000215', 'yymmdd'), '010-3824-8248',
         '20193401@koreaict.ac.kr', 55050, '전라북도 전주시 완산구 효자동1가 363-1', '남양아이좋은집아파트 507동 2300호', 3);
 
 /* INSERT QUERY NO: 361 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193501, 'password', '김보라', 35, 3, to_date('010711', 'yymmdd'), '010-1782-4816',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김보라', 35, 3, to_date('010711', 'yymmdd'), '010-1782-4816',
         '20193501@koreaict.ac.kr', 12762, '경기도 광주시 경안동 172-11 ', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193502, 'password', '박현호', 35, 3, to_date('000201', 'yymmdd'), '010-9244-5536',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박현호', 35, 3, to_date('000201', 'yymmdd'), '010-9244-5536',
         '20193502@koreaict.ac.kr', 04415, '서울특별시 용산구 보광동 13-23', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193503, 'password', '윤상민', 35, 1, to_date('000909', 'yymmdd'), '010-4814-6148',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193503, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤상민', 35, 1, to_date('000909', 'yymmdd'), '010-4814-6148',
         '20193503@koreaict.ac.kr', 10344, '경기도 고양시 일산서구 탄현동 1582', '탄현마을14단지 104동 602호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193601, 'password', '김지아', 36, 3, to_date('011102', 'yymmdd'), '010-5356-9753',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김지아', 36, 3, to_date('011102', 'yymmdd'), '010-5356-9753',
         '20193601@koreaict.ac.kr', 54074, '전라북도 군산시 조촌동 491', '삼성아파트 3동 1105호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193701, 'password', '성빛나', 37, 2, to_date('010615', 'yymmdd'), '010-4637-5012',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '성빛나', 37, 2, to_date('010615', 'yymmdd'), '010-4637-5012',
         '20193701@koreaict.ac.kr', 61201, '광주광역시 북구 두암동 906-5', '철우주택', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193901, 'password', '고성준', 39, 3, to_date('000205', 'yymmdd'), '010-8333-7324',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '고성준', 39, 3, to_date('000205', 'yymmdd'), '010-8333-7324',
         '20193901@koreaict.ac.kr', 42979, '대구광역시 달성군 논공읍 북리 803-196', '북리다세대주택 301동 204호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193902, 'password', '김성욱', 39, 3, to_date('990725', 'yymmdd'), '010-1497-5280',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김성욱', 39, 3, to_date('990725', 'yymmdd'), '010-1497-5280',
         '20193902@koreaict.ac.kr', 57804, '전라남도 광양시 금호동 717', '목련연립아파트 35동 107호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193903, 'password', '유정윤', 39, 1, to_date('000813', 'yymmdd'), '010-1944-7771',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20193903, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유정윤', 39, 1, to_date('000813', 'yymmdd'), '010-1944-7771',
         '20193903@koreaict.ac.kr', 61468, '광주광역시 동구 서석동 470-42 ', '서석빌라 105호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194001, 'password', '노윤규', 40, 3, to_date('000401', 'yymmdd'), '010-3893-1659',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '노윤규', 40, 3, to_date('000401', 'yymmdd'), '010-3893-1659',
         '20194001@koreaict.ac.kr', 54819, '전라북도 전주시 덕진구 송천동2가 175-44', '현대3차아파트 307동 1106호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194002, 'password', '윤형석', 40, 3, to_date('990812', 'yymmdd'), '010-3333-1960',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤형석', 40, 3, to_date('990812', 'yymmdd'), '010-3333-1960',
         '20194002@koreaict.ac.kr', 62254, '광주광역시 광산구 월계동 757-5', '월계동모아아파트 105동 806호', 5);
 
 /* INSERT QUERY NO: 371 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194003, 'password', '이경란', 40, 3, to_date('000910', 'yymmdd'), '010-0224-9104',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194003, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이경란', 40, 3, to_date('000910', 'yymmdd'), '010-0224-9104',
         '20194003@koreaict.ac.kr', 08096, '서울특별시 양천구 신정동 327', '목동신시가지아파트13단지 1101동 601호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194004, 'password', '정지연', 40, 3, to_date('000920', 'yymmdd'), '010-4903-7755',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194004, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정지연', 40, 3, to_date('000920', 'yymmdd'), '010-4903-7755',
         '20194004@koreaict.ac.kr', 55134, '전라북도 전주시 완산구 평화동2가 843-1', '동아현대아파트 105동 1302호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194101, 'password', '이중혁', 41, 3, to_date('010708', 'yymmdd'), '010-5716-1080',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이중혁', 41, 3, to_date('010708', 'yymmdd'), '010-5716-1080',
         '20194101@koreaict.ac.kr', 34929, '대전광역시 중구 대흥동 103-2', '푸르내아파트 107동 207호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194201, 'password', '신윤미', 42, 3, to_date('000520', 'yymmdd'), '010-5676-5194',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신윤미', 42, 3, to_date('000520', 'yymmdd'), '010-5676-5194',
         '20194201@koreaict.ac.kr', 54852, '전라북도 전주시 덕진구 여의동 558-6', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194301, 'password', '정정락', 43, 3, to_date('010121', 'yymmdd'), '010-8354-2793',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정정락', 43, 3, to_date('010121', 'yymmdd'), '010-8354-2793',
         '20194301@koreaict.ac.kr', 16435, '경기도 수원시 팔달구 화서동 649', '화서4단지주공아파트내 125동 105호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194401, 'password', '권준호', 44, 1, to_date('000921', 'yymmdd'), '010-1550-0799',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '권준호', 44, 1, to_date('000921', 'yymmdd'), '010-1550-0799',
         '20194401@koreaict.ac.kr', 08002, '서울특별시 양천구 목동 925?', '목동신시가지아파트7단지 731동 301호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194501, 'password', '김재익', 45, 3, to_date('010611', 'yymmdd'), '010-9992-5020',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김재익', 45, 3, to_date('010611', 'yymmdd'), '010-9992-5020',
         '20194501@koreaict.ac.kr', 54978, '전라북도 전주시 완산구 중화산동2가 406-3', '우성중산타운 103동 604호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194601, 'password', '신상민', 46, 3, to_date('010321', 'yymmdd'), '010-6685-9060',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신상민', 46, 3, to_date('010321', 'yymmdd'), '010-6685-9060',
         '20194601@koreaict.ac.kr', 56319, '전라북도 부안군 부안읍 연곡리 480-27', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194801, 'password', '김정규', 48, 3, to_date('990129', 'yymmdd'), '010-0045-6943',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김정규', 48, 3, to_date('990129', 'yymmdd'), '010-0045-6943',
         '20194801@koreaict.ac.kr', 05092, '서울특별시 광진구 자양동 520-2', '우성2차아파트 308동 111호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194802, 'password', '신윤미', 48, 3, to_date('010423', 'yymmdd'), '010-8654-1676',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신윤미', 48, 3, to_date('010423', 'yymmdd'), '010-8654-1676',
         '20194802@koreaict.ac.kr', 10915, '경기도 파주시 금촌동 984', '새꽃마을주공아파트 302동 204호', 3);
 
 /* INSERT QUERY NO: 381 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194901, 'password', '박용식', 49, 3, to_date('991208', 'yymmdd'), '010-0379-0271',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박용식', 49, 3, to_date('991208', 'yymmdd'), '010-0379-0271',
         '20194901@koreaict.ac.kr', 04788, '서울특별시 성동구 성수동1가 706 ', '쌍용아파트 103동 209동', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194902, 'password', '유용진', 49, 3, to_date('991001', 'yymmdd'), '010-6484-7263',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유용진', 49, 3, to_date('991001', 'yymmdd'), '010-6484-7263',
         '20194902@koreaict.ac.kr', 18386, '경기도 화성시 기산동 466', '화성태안푸르지오아파트 101동 1402호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194903, 'password', '채형주', 49, 1, to_date('011224', 'yymmdd'), '010-0971-8319',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20194903, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '채형주', 49, 1, to_date('011224', 'yymmdd'), '010-0971-8319',
         '20194903@koreaict.ac.kr', 57974, '전라남도 순천시 조례동 1629', '금당대림아파트 102동 701호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195001, 'password', '이윤선', 50, 3, to_date('010814', 'yymmdd'), '010-4048-7498',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이윤선', 50, 3, to_date('010814', 'yymmdd'), '010-4048-7498',
         '20195001@koreaitc.ac.kr', 54162, '전라북도 군산시 산북동 3551', '시영아파트 301동 205호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195002, 'password', '이지나', 50, 3, to_date('000419', 'yymmdd'), '010-8857-1864',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이지나', 50, 3, to_date('000419', 'yymmdd'), '010-8857-1864',
         '20195002@koreaitc.ac.kr', 32939, '충청남도 논산시 강경읍 대흥리 44-9', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195101, 'password', '김현진', 51, 3, to_date('010807', 'yymmdd'), '010-2607-2268',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김현진', 51, 3, to_date('010807', 'yymmdd'), '010-2607-2268',
         '20195101@koreaitc.ac.kr', 04314, '서울특별시 용산구 청파동3가 135-6', '삼성빌2차 902호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195102, 'password', '이승원', 51, 2, to_date('000622', 'yymmdd'), '010-8172-5090',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이승원', 51, 2, to_date('000622', 'yymmdd'), '010-8172-5090',
         '20195102@koreaitc.ac.kr', 10500, '경기도 고양시 덕양구 화정동 986-8', '화정대우마이빌 304호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195201, 'password', '김현지', 52, 3, to_date('001229', 'yymmdd'), '010-2642-3014',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김현지', 52, 3, to_date('001229', 'yymmdd'), '010-2642-3014',
         '20195201@koreaitc.ac.kr', 05504, '서울특별시 송파구 신천동 7', '장미아파트 19-705', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195301, 'password', '김보리', 53, 3, to_date('990102', 'yymmdd'), '010-6271-0632',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김보리', 53, 3, to_date('990102', 'yymmdd'), '010-6271-0632',
         '20195301@koreaitc.ac.kr', 07058, '서울특별시 동작구 신대방동 709 ', '벽산 아파트 102동 504호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195302, 'password', '김준호', 53, 1, to_date('990930', 'yymmdd'), '010-3124-7418',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김준호', 53, 1, to_date('990930', 'yymmdd'), '010-3124-7418',
         '20195302@koreaitc.ac.kr', 14077, '경기도 안양시 동안구 호계동 914-40 ', '현대홈타운 105/402', 3);
 
 /* INSERT QUERY NO: 391 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195303, 'password', '황지수', 53, 3, to_date('011011', 'yymmdd'), '010-7885-3572',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195303, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '황지수', 53, 3, to_date('011011', 'yymmdd'), '010-7885-3572',
         '20195303@koreaitc.ac.kr', 55001, '전라북도 전주시 덕진구 인후동2가 229-36', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195401, 'password', '민보은', 54, 3, to_date('990214', 'yymmdd'), '010-3583-9087',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '민보은', 54, 3, to_date('990214', 'yymmdd'), '010-3583-9087',
         '20195401@koreaitc.ac.kr', 13164, '경기도 성남시 중원구 은행동 1990-1', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195402, 'password', '우정근', 54, 3, to_date('000611', 'yymmdd'), '010-8271-2637',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '우정근', 54, 3, to_date('000611', 'yymmdd'), '010-8271-2637',
         '20195402@koreaitc.ac.kr', 17587, '경기도 안성시 금산동 50-1', '삼부아파트 101-1504', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195403, 'password', '정상우', 54, 2, to_date('010915', 'yymmdd'), '010-1448-6773',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195403, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정상우', 54, 2, to_date('010915', 'yymmdd'), '010-1448-6773',
         '20195403@koreaitc.ac.kr', 14052, '경기도 안양시 동안구 관양동 1589-1', '  한가람아파트 303동1214 호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195404, 'password', '조윤성', 54, 3, to_date('991008', 'yymmdd'), '010-9545-7865',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195404, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조윤성', 54, 3, to_date('991008', 'yymmdd'), '010-9545-7865',
         '20195404@koreaitc.ac.kr', 55085, '전라북도 전주시 완산구 삼천동1가 725-2', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195501, 'password', '감현제', 55, 1, to_date('000918', 'yymmdd'), '010-2201-7655',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '감현제', 55, 1, to_date('000918', 'yymmdd'), '010-2201-7655',
         '20195501@koreaitc.ac.kr', 07580, '서울특별시 강서구 등촌동 691-3', '부영아파트 102-505', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195502, 'password', '박재준', 55, 3, to_date('990727', 'yymmdd'), '010-6350-5849',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박재준', 55, 3, to_date('990727', 'yymmdd'), '010-6350-5849',
         '20195502@koreaitc.ac.kr', 06329, '서울특별시 강남구 개포동 187 ', '주공아파트435-405', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195503, 'password', '유상민', 55, 1, to_date('991125', 'yymmdd'), '010-5407-9879',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195503, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유상민', 55, 1, to_date('991125', 'yymmdd'), '010-5407-9879',
         '20195503@koreaitc.ac.kr', 54904, '전라북도 전주시 덕진구 호성동1가 826 ', '동아아파트 103동1903호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195504, 'password', '이상민', 55, 3, to_date('011108', 'yymmdd'), '010-0603-5426',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195504, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이상민', 55, 3, to_date('011108', 'yymmdd'), '010-0603-5426',
         '20195504@koreaitc.ac.kr', 16339, '경기도 수원시 장안구 정자동 467-8', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195505, 'password', '최형주', 55, 2, to_date('000524', 'yymmdd'), '010-2227-8776',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195505, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최형주', 55, 2, to_date('000524', 'yymmdd'), '010-2227-8776',
         '20195505@koreaitc.ac.kr', 61153, '광주광역시 북구 두암동 63-1', '무등파크 102/603', 3);
 
 /* INSERT QUERY NO: 401 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195506, 'password', '한형준', 55, 2, to_date('011222', 'yymmdd'), '010-4648-6180',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195506, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한형준', 55, 2, to_date('011222', 'yymmdd'), '010-4648-6180',
         '20195506@koreaitc.ac.kr', 07958, '서울특별시 양천구 목동 722-9', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195601, 'password', '고병훈', 56, 2, to_date('991231', 'yymmdd'), '010-0734-0118',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '고병훈', 56, 2, to_date('991231', 'yymmdd'), '010-0734-0118',
         '20195601@koreaitc.ac.kr', 59721, '전라남도 여수시 여서동 496-1 ', '부영7차 709동 406호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195602, 'password', '김보람', 56, 3, to_date('000514', 'yymmdd'), '010-9383-3935',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김보람', 56, 3, to_date('000514', 'yymmdd'), '010-9383-3935',
         '20195602@koreaitc.ac.kr', 32955, '충청남도 논산시 부창동 209-4 ', ' 대림아파트 103동 304호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195603, 'password', '오중명', 56, 3, to_date('991025', 'yymmdd'), '010-3553-6260',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195603, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '오중명', 56, 3, to_date('991025', 'yymmdd'), '010-3553-6260',
         '20195603@koreaitc.ac.kr', 01421, '서울특별시 도봉구 창동 347-2', '주공아파트 313/405', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195604, 'password', '이상수', 56, 3, to_date('001020', 'yymmdd'), '010-8846-7751',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195604, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이상수', 56, 3, to_date('001020', 'yymmdd'), '010-8846-7751',
         '20195604@koreaitc.ac.kr', 59720, '전라남도 여수시 여서동 43-12', '경남아파트 109동 1001호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195605, 'password', '조상윤', 56, 2, to_date('000701', 'yymmdd'), '010-2741-2704',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195605, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조상윤', 56, 2, to_date('000701', 'yymmdd'), '010-2741-2704',
         '20195605@koreaitc.ac.kr', 11938, '경기도 구리시 교문동 808 ', '덕현아파트 104/204', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195701, 'password', '홍상화', 57, 2, to_date('990906', 'yymmdd'), '010-5467-4429',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '홍상화', 57, 2, to_date('990906', 'yymmdd'), '010-5467-4429',
         '20195701@koreaitc.ac.kr', 54892, '전라북도 전주시 덕진구 덕진동2가 695-1', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195801, 'password', '박봉진', 58, 3, to_date('010620', 'yymmdd'), '010-4029-9877',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박봉진', 58, 3, to_date('010620', 'yymmdd'), '010-4029-9877',
         '20195801@koreaitc.ac.kr', 54984, '전라북도 전주시 완산구 중화산동2가 256 ', '우성근영아파트 102/1903', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195802, 'password', '배고은', 58, 3, to_date('000225', 'yymmdd'), '010-7831-8603',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '배고은', 58, 3, to_date('000225', 'yymmdd'), '010-7831-8603',
         '20195802@koreaitc.ac.kr', 03112, '서울특별시 종로구 숭인동 181-21', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195901, 'password', '구병훈', 59, 3, to_date('990508', 'yymmdd'), '010-2205-6352',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '구병훈', 59, 3, to_date('990508', 'yymmdd'), '010-2205-6352',
         '20195901@koreaitc.ac.kr', 06094, '서울특별시 강남구 삼성동 26-36', null, 3);
 
 /* INSERT QUERY NO: 411 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195902, 'password', '박현화', 59, 3, to_date('011128', 'yymmdd'), '010-2849-3501',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박현화', 59, 3, to_date('011128', 'yymmdd'), '010-2849-3501',
         '20195902@koreaitc.ac.kr', 05365, '서울특별시 강동구 둔촌동 447-3	', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195903, 'password', '조상진', 59, 3, to_date('000129', 'yymmdd'), '010-0874-2986',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195903, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조상진', 59, 3, to_date('000129', 'yymmdd'), '010-0874-2986',
         '20195903@koreaitc.ac.kr', 16295, '경기도 수원시 장안구 조원동 881 ', '한일타운아파트 116동 1602호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195904, 'password', '조지선', 59, 3, to_date('000809', 'yymmdd'), '010-2515-6930',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20195904, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조지선', 59, 3, to_date('000809', 'yymmdd'), '010-2515-6930',
         '20195904@koreaitc.ac.kr', 55056, '전라북도 전주시 완산구 효자동1가 415-2', '효자성원맨션 1동 109호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20196001, 'password', '박승욱', 60, 3, to_date('990211', 'yymmdd'), '010-3054-6588',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20196001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박승욱', 60, 3, to_date('990211', 'yymmdd'), '010-3054-6588',
         '20196001@koreaitc.ac.kr', 13622, '경기도 성남시 분당구 구미동 277', '대림APT101-704', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20196101, 'password', '장성진', 61, 3, to_date('990517', 'yymmdd'), '010-2106-5110',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20196101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '장성진', 61, 3, to_date('990517', 'yymmdd'), '010-2106-5110',
         '20196101@koreaitc.ac.kr', 05269, '서울특별시 강동구 명일동 48-14', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20196201, 'password', '이진하', 62, 3, to_date('991220', 'yymmdd'), '010-3110-8463',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20196201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이진하', 62, 3, to_date('991220', 'yymmdd'), '010-3110-8463',
         '20196201@koreaitc.ac.kr', 08352, '서울특별시 구로구 개봉동 403-95	', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200101, 'password', '한아름', 1, 2, to_date('000506', 'yymmdd'), '010-2748-7500',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한아름', 1, 2, to_date('000506', 'yymmdd'), '010-2748-7500',
         '20200101@koreaict.ac.kr', 54913, '전라북도 전주시 덕진구 우아동3가 757-14 ', '우아효성아파트 208동 206호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200201, 'password', '이신열', 2, 1, to_date('020113', 'yymmdd'), '010-3458-5080',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이신열', 2, 1, to_date('020113', 'yymmdd'), '010-3458-5080',
         '20200201@koreaict.ac.kr', 55135, '전라북도 전주시 완산구 평화동2가 259-12', '우성신성타운 102동 706호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200301, 'password', '김윤정', 3, 2, to_date('010505', 'yymmdd'), '010-7810-4273',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김윤정', 3, 2, to_date('010505', 'yymmdd'), '010-7810-4273',
         '20200301@koreaict.ac.kr', 54642, '전라북도 익산시 영등동 714-1', '영등신일APT 104동1011호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200302, 'password', '김혜상', 3, 2, to_date('000303', 'yymmdd'), '010-8758-9931',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김혜상', 3, 2, to_date('000303', 'yymmdd'), '010-8758-9931',
         '20200302@koreaict.ac.kr', 48934, '부산광역시 중구 중앙동4가 76-8', '극동빌딩', 3);
 
 /* INSERT QUERY NO: 421 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200303, 'password', '조의조', 3, 2, to_date('000101', 'yymmdd'), '010-5644-9291',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200303, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조의조', 3, 2, to_date('000101', 'yymmdd'), '010-5644-9291',
         '20200303@koreaict.ac.kr', 21376, '인천광역시 부평구 산곡동 261-8', '경남5차아파트 102동 1507호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200401, 'password', '강형택', 4, 1, to_date('010120', 'yymmdd'), '010-3323-8992',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강형택', 4, 1, to_date('010120', 'yymmdd'), '010-3323-8992',
         '20200401@koreaict.ac.kr', 58004, '전라남도 순천시 연향동 1626-1', '효반리젠시빈1차아파트 106동 302호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200402, 'password', '이홍제', 4, 2, to_date('010113', 'yymmdd'), '010-2165-8109',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이홍제', 4, 2, to_date('010113', 'yymmdd'), '010-2165-8109',
         '20200402@koreaict.ac.kr', 10385, '경기도 고양시 일산서구 주엽동 117', '문촌마을16단지 108동 207호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200403, 'password', '조미정', 4, 2, to_date('020303', 'yymmdd'), '010-0780-1266',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200403, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조미정', 4, 2, to_date('020303', 'yymmdd'), '010-0780-1266',
         '20200403@koreaict.ac.kr', 13600, '경기도 성남시 분당구 수내동 79-1', '그랜드빌딩', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200601, 'password', '곽혜리', 6, 1, to_date('010707', 'yymmdd'), '010-1815-2112',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '곽혜리', 6, 1, to_date('010707', 'yymmdd'), '010-1815-2112',
         '20200601@koreaict.ac.kr', 35314, '대전광역시 서구 내동 2', '맑은아침아파트 809동 903호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200701, 'password', '강지영', 7, 2, to_date('011014', 'yymmdd'), '010-9221-1393',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강지영', 7, 2, to_date('011014', 'yymmdd'), '010-9221-1393',
         '20200701@koreaict.ac.kr', 55018, '전라북도 전주시 덕진구 인후동1가 858-1', '아중대우아파트 104동 603호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200702, 'password', '김경민', 7, 2, to_date('020101', 'yymmdd'), '010-5445-3775',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200702, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김경민', 7, 2, to_date('020101', 'yymmdd'), '010-5445-3775',
         '20200702@koreaict.ac.kr', 01780, '서울특별시 노원구 하계동 270', '우성아파트 120동 204호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200703, 'password', '안진영', 7, 2, to_date('021010', 'yymmdd'), '010-8624-8420',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200703, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '안진영', 7, 2, to_date('021010', 'yymmdd'), '010-8624-8420',
         '20200703@koreaict.ac.kr', 06197, '서울특별시 강남구 대치동 900-41', '명신빌딩', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200801, 'password', '백은철', 8, 1, to_date('010914', 'yymmdd'), '010-3784-8894',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '백은철', 8, 1, to_date('010914', 'yymmdd'), '010-3784-8894',
         '20200801@koreaict.ac.kr', 06925, '서울특별시 동작구 노량진동 327', '신동아리버파크아파트 405동 803호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200901, 'password', '박경애', 9, 2, to_date('000315', 'yymmdd'), '010-4855-1881',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20200901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박경애', 9, 2, to_date('000315', 'yymmdd'), '010-4855-1881',
         '20200901@koreaict.ac.kr', 15539, '경기도 안산시 상록구 본오동 879-15 ', '태영아파트 102동 108호', 3);
 
 /* INSERT QUERY NO: 431 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201001, 'password', '박선영', 10, 2, to_date('020913', 'yymmdd'), '010-2137-7878',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박선영', 10, 2, to_date('020913', 'yymmdd'), '010-2137-7878',
         '20201001@koreaict.ac.kr', 05300, '서울특별시 강동구 길동 53', ' 삼익파크맨션 503동 1205호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201002, 'password', '정의재', 10, 2, to_date('000107', 'yymmdd'), '010-0396-7810',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정의재', 10, 2, to_date('000107', 'yymmdd'), '010-0396-7810',
         '20201002@koreaict.ac.kr', 06354, '서울특별시 강남구 수서동 747', ' 삼성아파트 401호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201201, 'password', '고진형', 12, 2, to_date('011126', 'yymmdd'), '010-1592-0146',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '고진형', 12, 2, to_date('011126', 'yymmdd'), '010-1592-0146',
         '20201201@koreaict.ac.kr', 02023, '서울특별시 중랑구 묵동 20', '신내두산아파트 526동 401호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201202, 'password', '윤우석', 12, 2, to_date('001102', 'yymmdd'), '010-4215-7431',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201202, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤우석', 12, 2, to_date('001102', 'yymmdd'), '010-4215-7431',
         '20201202@koreaict.ac.kr', 59709, '전라남도 여수시 여서동 238', '금호아파트 9동 104호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201203, 'password', '임효선', 12, 2, to_date('020811', 'yymmdd'), '010-9971-7368',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201203, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임효선', 12, 2, to_date('020811', 'yymmdd'), '010-9971-7368',
         '20201203@koreaict.ac.kr', 06785, '서울특별시 서초구 양재동 336-11', '아롱빌라 503호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201204, 'password', '진지현', 12, 2, to_date('020320', 'yymmdd'), '010-3060-0517',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201204, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '진지현', 12, 2, to_date('020320', 'yymmdd'), '010-3060-0517',
         '20201204@koreaict.ac.kr', 55022, '전라북도 전주시 덕진구 우아동2가 887', '롯데아파트 102동 1103호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201205, 'password', '형재연', 12, 2, to_date('000714', 'yymmdd'), '010-4583-8898',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201205, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '형재연', 12, 2, to_date('000714', 'yymmdd'), '010-4583-8898',
         '20201205@koreaict.ac.kr', 54937, '전라북도 전주시 덕진구 진북동 416', '우성아파트 1106동 105호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201301, 'password', '김혜연', 13, 2, to_date('011215', 'yymmdd'), '010-5960-6259',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김혜연', 13, 2, to_date('011215', 'yymmdd'), '010-5960-6259',
         '20201301@koreaict.ac.kr', 46305, '부산광역시 금정구 부곡동 323-8  ', '아젤리아3차 108동 2101호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201302, 'password', '최아랑', 13, 2, to_date('010818', 'yymmdd'), '010-3363-0325',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최아랑', 13, 2, to_date('010818', 'yymmdd'), '010-3363-0325',
         '20201302@koreaict.ac.kr', 54904, '전라북도 전주시 덕진구 호성동1가 826', '동아아파트 104동 1092호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201401, 'password', '최효정', 14, 2, to_date('020715', 'yymmdd'), '010-0228-6549',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최효정', 14, 2, to_date('020715', 'yymmdd'), '010-0228-6549',
         '20201401@koreaict.ac.kr', 57802, '전라남도 광양시 금호동 680', null, 3);
 
 /* INSERT QUERY NO: 441 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201501, 'password', '김혜원', 15, 1, to_date('020723', 'yymmdd'), '010-5034-8312',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김혜원', 15, 1, to_date('020723', 'yymmdd'), '010-5034-8312',
         '20201501@koreaict.ac.kr', 34816, '대전광역시 중구 목동 10-59', '반도빌라 209호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201502, 'password', '오진형', 15, 2, to_date('001126', 'yymmdd'), '010-5007-6528',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '오진형', 15, 2, to_date('001126', 'yymmdd'), '010-5007-6528',
         '20201502@koreaict.ac.kr', 13129, '경기도 성남시 수정구 산성동 2105', '팰리스빌 103호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201503, 'password', '유윤주', 15, 2, to_date('020215', 'yymmdd'), '010-7610-1092',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201503, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유윤주', 15, 2, to_date('020215', 'yymmdd'), '010-7610-1092',
         '20201503@koreaict.ac.kr', 55038, '전라북도 전주시 완산구 다가동3가 127-9', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201504, 'password', '이정호', 15, 2, to_date('010524', 'yymmdd'), '010-4768-7889',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201504, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이정호', 15, 2, to_date('010524', 'yymmdd'), '010-4768-7889',
         '20201504@koreaict.ac.kr', 55784, '전라북도 남원시 금지면 입암리 442-1', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201505, 'password', '최지현', 15, 2, to_date('020118', 'yymmdd'), '010-7557-1615',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201505, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최지현', 15, 2, to_date('020118', 'yymmdd'), '010-7557-1615',
         '20201505@koreaict.ac.kr', 14102, '경기도 안양시 동안구 평촌동 932-4', '꿈마을한신아파트 101동 1106호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201601, 'password', '이경환', 16, 1, to_date('020721', 'yymmdd'), '010-6811-8932',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이경환', 16, 1, to_date('020721', 'yymmdd'), '010-6811-8932',
         '20201601@koreaict.ac.kr', 04039, '서울특별시 마포구 서교동 369-21', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201701, 'password', '김윤장', 17, 2, to_date('021107', 'yymmdd'), '010-1625-1329',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김윤장', 17, 2, to_date('021107', 'yymmdd'), '010-1625-1329',
         '20201701@koreaict.ac.kr', 55020, '전라북도 전주시 덕진구 인후동1가 880-3', '리치빌 501호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201801, 'password', '박선아', 18, 2, to_date('000221', 'yymmdd'), '010-1344-2986',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박선아', 18, 2, to_date('000221', 'yymmdd'), '010-1344-2986',
         '20201801@koreaict.ac.kr', 03324, '서울특별시 은평구 갈현동 515-31', '예림빌5차 101호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201802, 'password', '조효영', 18, 2, to_date('000326', 'yymmdd'), '010-0410-8565',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조효영', 18, 2, to_date('000326', 'yymmdd'), '010-0410-8565',
         '20201802@koreaict.ac.kr', 22730, '인천광역시 서구 심곡동 259-2', '극동늘푸른아파트 104동 907호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201901, 'password', '김석범', 19, 2, to_date('010504', 'yymmdd'), '010-2823-8338',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김석범', 19, 2, to_date('010504', 'yymmdd'), '010-2823-8338',
         '20201901@koreaict.ac.kr', 06360, '서울특별시 강남구 일원동 734 ', '상록수아파트 108동 302호', 3);
 
 /* INSERT QUERY NO: 451 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201902, 'password', '김승현', 19, 2, to_date('020101', 'yymmdd'), '010-5841-0233',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20201902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김승현', 19, 2, to_date('020101', 'yymmdd'), '010-5841-0233',
         '20201902@koreaict.ac.kr', 03335, '서울특별시 은평구 갈현동 496-2', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202001, 'password', '김경륜', 20, 2, to_date('020609', 'yymmdd'), '010-1407-6482',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김경륜', 20, 2, to_date('020609', 'yymmdd'), '010-1407-6482',
         '20202001@koreaict.ac.kr', 07435, '서울특별시 영등포구 신길동 4518', '우성2차아파트 401동 1109호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202002, 'password', '김정현', 20, 2, to_date('010301', 'yymmdd'), '010-0201-9567',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김정현', 20, 2, to_date('010301', 'yymmdd'), '010-0201-9567',
         '20202002@koreaict.ac.kr', 07435, '서울특별시 영등포구 신길동 4518', '우성2차아파트 305동 207호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202003, 'password', '박석희', 20, 2, to_date('000510', 'yymmdd'), '010-1306-5920',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202003, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박석희', 20, 2, to_date('000510', 'yymmdd'), '010-1306-5920',
         '20202003@koreaict.ac.kr', 17921, '경기도 평택시 평택동 128-1', '영선빌라 203호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202101, 'password', '김영준', 21, 2, to_date('010413', 'yymmdd'), '010-3856-3345',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김영준', 21, 2, to_date('010413', 'yymmdd'), '010-3856-3345',
         '20202101@koreaict.ac.kr', 13628, '경기도 성남시 분당구 구미동 66 ', '까치마을신원아파트 305동 204호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202102, 'password', '송호식', 21, 2, to_date('000918', 'yymmdd'), '010-4882-2889',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '송호식', 21, 2, to_date('000918', 'yymmdd'), '010-4882-2889',
         '20202102@koreaict.ac.kr', 44087, '울산광역시 동구 방어동 927-1', '우진비둘기아파트 701동 102호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202103, 'password', '오재진', 21, 2, to_date('021115', 'yymmdd'), '010-4691-3689',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202103, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '오재진', 21, 2, to_date('021115', 'yymmdd'), '010-4691-3689',
         '20202103@koreaict.ac.kr', 13499, '경기도 성남시 분당구 야탑동 334', '장미마을 805동 304호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202201, 'password', '김경민', 22, 2, to_date('011030', 'yymmdd'), '010-4167-9476',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김경민', 22, 2, to_date('011030', 'yymmdd'), '010-4167-9476',
         '20202201@koreaict.ac.kr', 26507, '강원도 원주시 신림면 황둔리 933-12', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202202, 'password', '김정민', 22, 2, to_date('001019', 'yymmdd'), '010-2479-8866',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202202, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김정민', 22, 2, to_date('001019', 'yymmdd'), '010-2479-8866',
         '20202202@koreaict.ac.kr', 06284, '서울특별시 강남구 대치동 316', '은마아파트 109동 306호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202301, 'password', '공지영', 23, 2, to_date('011001', 'yymmdd'), '010-4632-7674',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '공지영', 23, 2, to_date('011001', 'yymmdd'), '010-4632-7674',
         '20202301@koreaict.ac.kr', 55367, '전라북도 완주군 이서면 이문리 721', '부영임대아파트 104동 9032호', 3);
 
 /* INSERT QUERY NO: 461 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202302, 'password', '유진욱', 23, 2, to_date('010108', 'yymmdd'), '010-5186-2635',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유진욱', 23, 2, to_date('010108', 'yymmdd'), '010-5186-2635',
         '20202302@koreaict.ac.kr', 14537, '경기도 부천시 중동 1030', '금강마을 410동 204호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202501, 'password', '오시연', 25, 2, to_date('000109', 'yymmdd'), '010-2565-5665',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '오시연', 25, 2, to_date('000109', 'yymmdd'), '010-2565-5665',
         '20202501@koreaict.ac.kr', 54676, '전라북도 익산시 동산동 610-1 ', '삼성아파트 1동 1403호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202502, 'password', '임지은', 25, 1, to_date('010505', 'yymmdd'), '010-2901-9360',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임지은', 25, 1, to_date('010505', 'yymmdd'), '010-2901-9360',
         '20202502@koreaict.ac.kr', 55735, '전라북도 남원시 월락동 661 ', '양우내안애아파트 107동 301호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202601, 'password', '유광규', 26, 2, to_date('000304', 'yymmdd'), '010-9415-3110',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유광규', 26, 2, to_date('000304', 'yymmdd'), '010-9415-3110',
         '20202601@koreaict.ac.kr', 05516, '서울특별시 송파구 풍납동 507', '동아한가람아파트 103동 1402호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202701, 'password', '김혜영', 27, 2, to_date('010930', 'yymmdd'), '010-0730-2103',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김혜영', 27, 2, to_date('010930', 'yymmdd'), '010-0730-2103',
         '20202701@koreaict.ac.kr', 31115, '충청남도 천안시 동남구 신부동 269-5', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202702, 'password', '윤시형', 27, 1, to_date('011215', 'yymmdd'), '010-1008-4387',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202702, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤시형', 27, 1, to_date('011215', 'yymmdd'), '010-1008-4387',
         '20202702@koreaict.ac.kr', 55049, '전라북도 전주시 완산구 효자동1가 639 ', '거성소라아파트 803호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202703, 'password', '윤윤진', 27, 2, to_date('000604', 'yymmdd'), '010-4302-9357',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202703, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤윤진', 27, 2, to_date('000604', 'yymmdd'), '010-4302-9357',
         '20202703@koreaict.ac.kr', 55085, '전라북도 전주시 완산구 효자동1가 654-2', '쌍용모악파크빌라 502동 1305호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202704, 'password', '이선호', 27, 2, to_date('000918', 'yymmdd'), '010-5612-7174',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202704, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이선호', 27, 2, to_date('000918', 'yymmdd'), '010-5612-7174',
         '20202704@koreaict.ac.kr', 03483, '서울특별시 은평구 응암동 694-1', '응암우성아파트 102동 1305호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202705, 'password', '조윤진', 27, 2, to_date('011125', 'yymmdd'), '010-2313-3280',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202705, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조윤진', 27, 2, to_date('011125', 'yymmdd'), '010-2313-3280',
         '20202705@koreaict.ac.kr', 13518, '경기도 성남시 분당구 야탑동 518', '탑마을 102동 704호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202706, 'password', '조재수', 27, 2, to_date('001019', 'yymmdd'), '010-9890-9587',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202706, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조재수', 27, 2, to_date('001019', 'yymmdd'), '010-9890-9587',
         '20202706@koreaict.ac.kr', 54912, '전라북도 전주시 덕진구 우아동3가 285-8 ', '럭키아파트 6동 1503호', 3);
 
 /* INSERT QUERY NO: 471 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202801, 'password', '김지운', 28, 2, to_date('020221', 'yymmdd'), '010-8787-6667',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김지운', 28, 2, to_date('020221', 'yymmdd'), '010-8787-6667',
         '20202801@koreaict.ac.kr', 55126, '전라북도 전주시 완산구 평화동2가 955', '평화동골드클래스 4동 1402호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202802, 'password', '신시명', 28, 2, to_date('001002', 'yymmdd'), '010-2849-1925',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신시명', 28, 2, to_date('001002', 'yymmdd'), '010-2849-1925',
         '20202802@koreaict.ac.kr', 55362, '전라북도 완주군 구이면 두현리 540-6', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202803, 'password', '허아름', 28, 2, to_date('000511', 'yymmdd'), '010-7916-7529',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202803, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '허아름', 28, 2, to_date('000511', 'yymmdd'), '010-7916-7529',
         '20202803@koreaict.ac.kr', 55014, '전라북도 전주시 덕진구 우아동2가 853-1', '진버들대우아파트 207동 1401호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202901, 'password', '김승진', 29, 2, to_date('020217', 'yymmdd'), '010-7500-6553',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김승진', 29, 2, to_date('020217', 'yymmdd'), '010-7500-6553',
         '20202901@koreaict.ac.kr', 04177, '서울특별시 마포구 마포동 419-1', '벽산빌라 502호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202902, 'password', '주윤진', 29, 2, to_date('001028', 'yymmdd'), '010-3655-9885',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20202902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '주윤진', 29, 2, to_date('001028', 'yymmdd'), '010-3655-9885',
         '20202902@koreaict.ac.kr', 02598, '서울특별시 동대문구 답십리동 1003', '래미안위브아파트 108동 802호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203001, 'password', '심진아', 30, 2, to_date('010115', 'yymmdd'), '010-9229-1909',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '심진아', 30, 2, to_date('010115', 'yymmdd'), '010-9229-1909',
         '20203001@koreaict.ac.kr', 01747, '서울특별시 노원구 하계동 288', '하계2차현대아파트 105동 1204호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203101, 'password', '유윤주', 31, 2, to_date('001019', 'yymmdd'), '010-7052-7411',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유윤주', 31, 2, to_date('001019', 'yymmdd'), '010-7052-7411',
         '20203101@koreaict.ac.kr', 55098, '전라북도 전주시 완산구 동완산동 43-5', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203201, 'password', '민진원', 32, 2, to_date('010128', 'yymmdd'), '010-0210-1701',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '민진원', 32, 2, to_date('010128', 'yymmdd'), '010-0210-1701',
         '20203201@koreaict.ac.kr', 15064, '경기도 시흥시 정왕동 1788-3', '대우아파트 103동 904호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203202, 'password', '신호욱', 32, 2, to_date('020922', 'yymmdd'), '010-4180-3144',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203202, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신호욱', 32, 2, to_date('020922', 'yymmdd'), '010-4180-3144',
         '20203202@koreaict.ac.kr', 21977, '인천광역시 연수구 동춘동 929', '연수2차풍림아파트 115동 402호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203203, 'password', '이호준', 32, 2, to_date('010505', 'yymmdd'), '010-9616-8753',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203203, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이호준', 32, 2, to_date('010505', 'yymmdd'), '010-9616-8753',
         '20203203@koreaict.ac.kr', 21977, '인천광역시 연수구 동춘동 929', '연수2차풍림아파트 117동 804호', 3);
 
 /* INSERT QUERY NO: 481 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203204, 'password', '장효선', 32, 2, to_date('011022', 'yymmdd'), '010-4042-0036',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203204, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '장효선', 32, 2, to_date('011022', 'yymmdd'), '010-4042-0036',
         '20203204@koreaict.ac.kr', 03998, '서울특별시 마포구 성산동 637-3', '삼성하이빌 402호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203301, 'password', '권지완', 33, 2, to_date('000807', 'yymmdd'), '010-8861-9989',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '권지완', 33, 2, to_date('000807', 'yymmdd'), '010-8861-9989',
         '20203301@koreaict.ac.kr', 55134, '전라북도 전주시 완산구 평화동2가 843-1 ', '동아현대아파트 103동 3004호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203302, 'password', '이곤순', 33, 2, to_date('010105', 'yymmdd'), '010-0481-8998',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이곤순', 33, 2, to_date('010105', 'yymmdd'), '010-0481-8998',
         '20203302@koreaict.ac.kr', 05577, '서울특별시 송파구 잠실동 331', '현대아파트 109동 412호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203303, 'password', '정지은', 33, 2, to_date('021230', 'yymmdd'), '010-0056-3794',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203303, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정지은', 33, 2, to_date('021230', 'yymmdd'), '010-0056-3794',
         '20203303@koreaict.ac.kr', 54623, '전라북도 익산시 남중동 28', '민영연립 C동 501호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203401, 'password', '장미희', 34, 2, to_date('000602', 'yymmdd'), '010-3194-0193',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '장미희', 34, 2, to_date('000602', 'yymmdd'), '010-3194-0193',
         '20203401@koreaict.ac.kr', 48402, '부산광역시 남구 문현동 805-4', '동천맨션 104동 405호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203402, 'password', '최이봄', 34, 1, to_date('020916', 'yymmdd'), '010-2664-1092',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최이봄', 34, 1, to_date('020916', 'yymmdd'), '010-2664-1092',
         '20203402@koreaict.ac.kr', 14105, '경기도 안양시 동안구 호계동 1115', '샘마을아파트 302동 110호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203501, 'password', '조자현', 35, 2, to_date('021029', 'yymmdd'), '010-1662-4847',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조자현', 35, 2, to_date('021029', 'yymmdd'), '010-1662-4847',
         '20203501@koreaict.ac.kr', 28523, '충청북도 청주시 상당구 탑동 44', '현대아파트 105동 104호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203601, 'password', '권새롬', 36, 2, to_date('010303', 'yymmdd'), '010-2376-5457',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '권새롬', 36, 2, to_date('010303', 'yymmdd'), '010-2376-5457',
         '20203601@koreaict.ac.kr', 01026, '서울특별시 강북구 수유동 280-46 ', '광진하이츠빌라 302호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203602, 'password', '김용현', 36, 2, to_date('000106', 'yymmdd'), '010-5294-4321',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김용현', 36, 2, to_date('000106', 'yymmdd'), '010-5294-4321',
         '20203602@koreaict.ac.kr', 58650, '전라남도 목포시 용당동 929-11', '근우드림빌 801호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203603, 'password', '김지윤', 36, 2, to_date('010505', 'yymmdd'), '010-8646-4021',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203603, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김지윤', 36, 2, to_date('010505', 'yymmdd'), '010-8646-4021',
         '20203603@koreaict.ac.kr', 54628, '전라북도 익산시 영등동 255', '영등동라인아파트 601동 201호', 5);
 
 /* INSERT QUERY NO: 491 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203604, 'password', '윤시환', 36, 2, to_date('020517', 'yymmdd'), '010-1768-2622',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203604, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '윤시환', 36, 2, to_date('020517', 'yymmdd'), '010-1768-2622',
         '20203604@koreaict.ac.kr', 05516, '서울특별시 송파구 풍납동 506', '동아한가람아파트 105동 508호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203605, 'password', '조효선', 36, 2, to_date('000506', 'yymmdd'), '010-8971-5061',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203605, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조효선', 36, 2, to_date('000506', 'yymmdd'), '010-8971-5061',
         '20203605@koreaict.ac.kr', 02215, '서울특별시 중랑구 면목동 152-33', '면목주택', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203801, 'password', '기혜미', 38, 2, to_date('000101', 'yymmdd'), '010-4650-1618',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '기혜미', 38, 2, to_date('000101', 'yymmdd'), '010-4650-1618',
         '20203801@koreaict.ac.kr', 34057, '대전광역시 유성구 덕진동 58', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203802, 'password', '김석민', 38, 2, to_date('000124', 'yymmdd'), '010-1118-1930',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김석민', 38, 2, to_date('000124', 'yymmdd'), '010-1118-1930',
         '20203802@koreaict.ac.kr', 15208, '경기도 안산시 상록구 양상동 138-2', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203803, 'password', '김지원', 38, 2, to_date('001102', 'yymmdd'), '010-2231-6076',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203803, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김지원', 38, 2, to_date('001102', 'yymmdd'), '010-2231-6076',
         '20203803@koreaict.ac.kr', 55046, '전라북도 전주시 완산구 중화산동1가 162-42', '동신1차아파트 702호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203804, 'password', '양선주', 38, 2, to_date('000703', 'yymmdd'), '010-4017-5310',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203804, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '양선주', 38, 2, to_date('000703', 'yymmdd'), '010-4017-5310',
         '20203804@koreaict.ac.kr', 13987, '경기도 안양시 만안구 박달동 65-11', '벽산빌리지 101동 1801호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203805, 'password', '조재성', 38, 2, to_date('000914', 'yymmdd'), '010-0159-4415',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203805, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조재성', 38, 2, to_date('000914', 'yymmdd'), '010-0159-4415',
         '20203805@koreaict.ac.kr', 55134, '전라북도 전주시 완산구 평화동2가 843-1', '동아현대아파트 701동 509호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203806, 'password', '최경희', 38, 2, to_date('001016', 'yymmdd'), '010-1002-4920',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20203806, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최경희', 38, 2, to_date('001016', 'yymmdd'), '010-1002-4920',
         '20203806@koreaict.ac.kr', 42732, '대구광역시 달서구 월성동 277-3', '월성동서타운 101동 1403호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204001, 'password', '박승화', 40, 2, to_date('010107', 'yymmdd'), '010-7528-9183',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박승화', 40, 2, to_date('010107', 'yymmdd'), '010-7528-9183',
         '20204001@koreaict.ac.kr', 13834, '경기도 과천시 별양동 44-2', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204002, 'password', '정경훈', 40, 2, to_date('010602', 'yymmdd'), '010-9691-7766',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정경훈', 40, 2, to_date('010602', 'yymmdd'), '010-9691-7766',
         '20204002@koreaict.ac.kr', 10338, '경기도 고양시 일산동구 중산동 1666-1 ', '대림프라자', 3);
 
 /* INSERT QUERY NO: 501 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204003, 'password', '최효정', 40, 2, to_date('020719', 'yymmdd'), '010-1000-8029',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204003, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최효정', 40, 2, to_date('020719', 'yymmdd'), '010-1000-8029',
         '20204003@koreaict.ac.kr', 08735, '서울특별시 관악구 봉천동 1706-1', '봉천우성아파트 502동 103호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204004, 'password', '한성철', 40, 2, to_date('011210', 'yymmdd'), '010-7717-3422',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204004, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한성철', 40, 2, to_date('011210', 'yymmdd'), '010-7717-3422',
         '20204004@koreaict.ac.kr', 61461, '광주광역시 동구 학동 270', '현대아파트 102동 106호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204005, 'password', '홍경희', 40, 2, to_date('010329', 'yymmdd'), '010-6248-4013',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204005, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '홍경희', 40, 2, to_date('010329', 'yymmdd'), '010-6248-4013',
         '20204005@koreaict.ac.kr', 12711, '경기도 광주시 퇴촌면 광동리 206 ', '금성빌라 101동 202호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204101, 'password', '권혜림', 41, 2, to_date('010402', 'yymmdd'), '010-9841-2811',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '권혜림', 41, 2, to_date('010402', 'yymmdd'), '010-9841-2811',
         '20204101@koreaict.ac.kr', 27667, '충청북도 음성군 대소면 태생리 423-20', '대소개나리임대아파트 107동 501호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204102, 'password', '박선일', 41, 2, to_date('000623', 'yymmdd'), '010-3928-9980',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박선일', 41, 2, to_date('000623', 'yymmdd'), '010-3928-9980',
         '20204102@koreaict.ac.kr', 11645, '경기도 의정부시 호원동 119-34', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204103, 'password', '이홍대', 41, 2, to_date('021206', 'yymmdd'), '010-6634-0264',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204103, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이홍대', 41, 2, to_date('021206', 'yymmdd'), '010-6634-0264',
         '20204103@koreaict.ac.kr', 36155, '경상북도 영주시 휴천동 412-35 ', '개나리아파트 3동 204호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204104, 'password', '임영진', 41, 2, to_date('000715', 'yymmdd'), '010-3923-0341',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204104, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '임영진', 41, 2, to_date('000715', 'yymmdd'), '010-3923-0341',
         '20204104@koreaict.ac.kr', 07910, '서울특별시 양천구 신월동 151-6', '빛여울아파트 104동 805호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204201, 'password', '전효선', 42, 2, to_date('021030', 'yymmdd'), '010-9438-0882',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '전효선', 42, 2, to_date('021030', 'yymmdd'), '010-9438-0882',
         '20204201@koreaict.ac.kr', 10492, '경기도 고양시 덕양구 행신동 174-17', '금강빌라 가동 101호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204202, 'password', '조미지', 42, 2, to_date('000421', 'yymmdd'), '010-4246-2680',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204202, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조미지', 42, 2, to_date('000421', 'yymmdd'), '010-4246-2680',
         '20204202@koreaict.ac.kr', 54823, '전라북도 전주시 덕진구 송천동1가 141', '현대2차아파트 401동 205호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204203, 'password', '차지현', 42, 2, to_date('020608', 'yymmdd'), '010-6152-4961',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204203, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '차지현', 42, 2, to_date('020608', 'yymmdd'), '010-6152-4961',
         '20204203@koreaict.ac.kr', 15594, '경기도 안산시 상록구 사동 푸르지오6차 610-104', '안산고잔6차푸르지오 3동 108호', 5);
 
 /* INSERT QUERY NO: 511 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204301, 'password', '우호일', 43, 2, to_date('011008', 'yymmdd'), '010-7757-9679',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '우호일', 43, 2, to_date('011008', 'yymmdd'), '010-7757-9679',
         '20204301@koreaict.ac.kr', 16460, '경기도 수원시 팔달구 매산로3가 108-78', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204302, 'password', '이선화', 43, 2, to_date('020511', 'yymmdd'), '010-9445-9025',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이선화', 43, 2, to_date('020511', 'yymmdd'), '010-9445-9025',
         '20204302@koreaict.ac.kr', 08817, '서울특별시 관악구 신림동 산28-9', '신동아아파트 7동 905호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204401, 'password', '김은일', 44, 2, to_date('010406', 'yymmdd'), '010-5539-2454',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김은일', 44, 2, to_date('010406', 'yymmdd'), '010-5539-2454',
         '20204401@koreaict.ac.kr', 16532, '경기도 수원시 영통구 매탄동 176 ', '현대힐스테이트아파트 132동 204호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204402, 'password', '황효종', 44, 2, to_date('021125', 'yymmdd'), '010-1498-6970',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '황효종', 44, 2, to_date('021125', 'yymmdd'), '010-1498-6970',
         '20204402@koreaict.ac.kr', 53315, '경상남도 거제시 능포동 717-5', '석남주택', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204501, 'password', '김정명', 45, 2, to_date('020618', 'yymmdd'), '010-0337-3903',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김정명', 45, 2, to_date('020618', 'yymmdd'), '010-0337-3903',
         '20204501@koreaict.ac.kr', 54978, '전라북도 전주시 완산구 중화산동2가 406-3 ', '우성중산타운 101동 708호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204502, 'password', '김혜민', 45, 2, to_date('020825', 'yymmdd'), '010-5408-4977',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204502, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김혜민', 45, 2, to_date('020825', 'yymmdd'), '010-5408-4977',
         '20204502@koreaict.ac.kr', 34091, '대전광역시 유성구 노은동 535-17', '만년주택 101호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204503, 'password', '정경환', 45, 2, to_date('000502', 'yymmdd'), '010-5095-4457',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204503, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정경환', 45, 2, to_date('000502', 'yymmdd'), '010-5095-4457',
         '20204503@koreaict.ac.kr', 06582, '서울특별시 서초구 반포동 610-46 ', '한신방배빌라 209동 1006호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204601, 'password', '김윤정', 46, 2, to_date('001129', 'yymmdd'), '010-9872-0710',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김윤정', 46, 2, to_date('001129', 'yymmdd'), '010-9872-0710',
         '20204601@koreaict.ac.kr', 56178, '전라북도 정읍시 수성동 961', '부영1차아파트 107동 705호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204602, 'password', '김혜영', 46, 2, to_date('020904', 'yymmdd'), '010-1111-6647',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김혜영', 46, 2, to_date('020904', 'yymmdd'), '010-1111-6647',
         '20204602@koreaict.ac.kr', 06120, '서울특별시 강남구 논현동 202-3', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204603, 'password', '박석호', 46, 2, to_date('020213', 'yymmdd'), '010-7291-2894',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204603, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박석호', 46, 2, to_date('020213', 'yymmdd'), '010-7291-2894',
         '20204603@koreaict.ac.kr', 01747, '서울특별시 노원구 하계동 288 ', '하계2차현대아파트 201동 1107호', 3);
 
 /* INSERT QUERY NO: 521 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204604, 'password', '박재석', 46, 2, to_date('000502', 'yymmdd'), '010-7646-3653',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204604, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박재석', 46, 2, to_date('000502', 'yymmdd'), '010-7646-3653',
         '20204604@koreaict.ac.kr', 56173, '전라북도 정읍시 수성동 1027', '부영2차아파트 206동 1502호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204701, 'password', '공혜경', 47, 2, to_date('000402', 'yymmdd'), '010-5024-8884',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '공혜경', 47, 2, to_date('000402', 'yymmdd'), '010-5024-8884',
         '20204701@koreaict.ac.kr', 35426, '대전광역시 서구 산직동 79-3', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204702, 'password', '유선주', 47, 2, to_date('000310', 'yymmdd'), '010-7535-2948',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204702, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '유선주', 47, 2, to_date('000310', 'yymmdd'), '010-7535-2948',
         '20204702@koreaict.ac.kr', 01706, '서울특별시 노원구 중계동 588-1 ', '양지대림아파트 109동 208호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204703, 'password', '이아라', 47, 2, to_date('000910', 'yymmdd'), '010-7759-5796',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204703, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이아라', 47, 2, to_date('000910', 'yymmdd'), '010-7759-5796',
         '20204703@koreaict.ac.kr', 55926, '전라북도 임실군 임실읍 성가리 37-5', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204801, 'password', '박승환', 48, 2, to_date('021015', 'yymmdd'), '010-3007-9633',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박승환', 48, 2, to_date('021015', 'yymmdd'), '010-3007-9633',
         '20204801@koreaict.ac.kr', 54947, '전라북도 전주시 완산구 서신동 762-2', '성원아파트 102동 1401호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204802, 'password', '태지혜', 48, 2, to_date('021222', 'yymmdd'), '010-1663-0738',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '태지혜', 48, 2, to_date('021222', 'yymmdd'), '010-1663-0738',
         '20204802@koreaict.ac.kr', 10915, '경기도 파주시 금촌동 984', '새꽃마을주공아파트 310동 605호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204901, 'password', '이경호', 49, 2, to_date('020228', 'yymmdd'), '010-8157-9932',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이경호', 49, 2, to_date('020228', 'yymmdd'), '010-8157-9932',
         '20204901@koreaict.ac.kr', 04553, '서울특별시 중구 충무로2가 50-5', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204902, 'password', '정윤진', 49, 2, to_date('021212', 'yymmdd'), '010-9026-3612',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204902, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정윤진', 49, 2, to_date('021212', 'yymmdd'), '010-9026-3612',
         '20204902@koreaict.ac.kr', 14428, '경기도 부천시 원종동 138-12 ', '문화4차유림아파트 나동 502호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204903, 'password', '한효종', 49, 2, to_date('020831', 'yymmdd'), '010-2211-1137',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20204903, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한효종', 49, 2, to_date('020831', 'yymmdd'), '010-2211-1137',
         '20204903@koreaict.ac.kr', 18392, '경기도 화성시 진안동 929', '다람마을엘지태안자이아파트 103동 908호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205001, 'password', '김승찬', 50, 2, to_date('000521', 'yymmdd'), '010-8842-7385',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김승찬', 50, 2, to_date('000521', 'yymmdd'), '010-8842-7385',
         '20205001@koreaitc.ac.kr', 21088, '인천광역시 계양구 작전동 855-2', '한일아파트 605동 401호', 5);
 
 /* INSERT QUERY NO: 531 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205002, 'password', '남지윤', 50, 2, to_date('010115', 'yymmdd'), '010-3282-0977',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '남지윤', 50, 2, to_date('010115', 'yymmdd'), '010-3282-0977',
         '20205002@koreaitc.ac.kr', 55086, '전라북도 전주시 완산구 삼천동1가 286-10 ', '호반리젠시빌아파트 106동 1501호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205101, 'password', '강윤솔', 51, 2, to_date('011225', 'yymmdd'), '010-4550-8115',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강윤솔', 51, 2, to_date('011225', 'yymmdd'), '010-4550-8115',
         '20205101@koreaitc.ac.kr', 54912, '전라북도 전주시 덕진구 우아동3가 285-8', '럭키아파트 7동 704호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205102, 'password', '김혜진', 51, 2, to_date('020311', 'yymmdd'), '010-8604-5897',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김혜진', 51, 2, to_date('020311', 'yymmdd'), '010-8604-5897',
         '20205102@koreaitc.ac.kr', 05668, '서울특별시 송파구 송파동 95-36', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205201, 'password', '권지영', 52, 2, to_date('001130', 'yymmdd'), '010-7581-3096',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '권지영', 52, 2, to_date('001130', 'yymmdd'), '010-7581-3096',
         '20205201@koreaitc.ac.kr', 55084, '전라북도 전주시 완산구 삼천동1가 598-4 ', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205401, 'password', '강승주', 54, 2, to_date('020124', 'yymmdd'), '010-8345-7627',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강승주', 54, 2, to_date('020124', 'yymmdd'), '010-8345-7627',
         '20205401@koreaitc.ac.kr', 08023, '서울특별시 양천구 신정동 1004-3 ', '신정현대아파트 107-1405', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205402, 'password', '김우빈', 54, 2, to_date('010110', 'yymmdd'), '010-1381-7300',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김우빈', 54, 2, to_date('010110', 'yymmdd'), '010-1381-7300',
         '20205402@koreaitc.ac.kr', 59154, '전라남도 완도군 노화읍 고막리 394-1', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205403, 'password', '이화정', 54, 2, to_date('000203', 'yymmdd'), '010-4269-0861',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205403, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이화정', 54, 2, to_date('000203', 'yymmdd'), '010-4269-0861',
         '20205403@koreaitc.ac.kr', 57958, '전라남도 순천시 남정동 335', '남정현대아파트 102동 403호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205404, 'password', '정재석', 54, 2, to_date('000317', 'yymmdd'), '010-6205-1607',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205404, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정재석', 54, 2, to_date('000317', 'yymmdd'), '010-6205-1607',
         '20205404@koreaitc.ac.kr', 55053, '전라북도 전주시 완산구 효자동1가 636', '제일아파트 3-304', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205501, 'password', '한성호', 55, 2, to_date('000518', 'yymmdd'), '010-4890-5439',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한성호', 55, 2, to_date('000518', 'yymmdd'), '010-4890-5439',
         '20205501@koreaitc.ac.kr', 57505, '전라남도 곡성군 옥과면 옥과리 237-3', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205601, 'password', '이경택', 56, 2, to_date('000714', 'yymmdd'), '010-0647-9220',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이경택', 56, 2, to_date('000714', 'yymmdd'), '010-0647-9220',
         '20205601@koreaitc.ac.kr', 16928, '경기도 용인시 수지구 상현동 859', '롯데캐슬 아파트 102-703', 5);
 
 /* INSERT QUERY NO: 541 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205701, 'password', '김지용', 57, 2, to_date('010302', 'yymmdd'), '010-0942-5144',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김지용', 57, 2, to_date('010302', 'yymmdd'), '010-0942-5144',
         '20205701@koreaitc.ac.kr', 54834, '전라북도 전주시 덕진구 송천동1가 468-2 ', '비사벌아파트 102-908', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205702, 'password', '양정민', 57, 2, to_date('010930', 'yymmdd'), '010-6274-5015',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205702, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '양정민', 57, 2, to_date('010930', 'yymmdd'), '010-6274-5015',
         '20205702@koreaitc.ac.kr', 13602, '경기도 성남시 분당구 정자동 193 ', '정든마을 한진아파트 702/602', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205703, 'password', '이경호', 57, 2, to_date('001016', 'yymmdd'), '010-7493-5887',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205703, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이경호', 57, 2, to_date('001016', 'yymmdd'), '010-7493-5887',
         '20205703@koreaitc.ac.kr', 12798, '경기도 광주시 오포읍 매산리 714-4', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205704, 'password', '이진아', 57, 2, to_date('011015', 'yymmdd'), '010-1792-2390',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205704, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이진아', 57, 2, to_date('011015', 'yymmdd'), '010-1792-2390',
         '20205704@koreaitc.ac.kr', 08270, '서울특별시 구로구 오류동 336 ', '동부아파트 103-1001', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205801, 'password', '김석윤', 58, 2, to_date('000113', 'yymmdd'), '010-3053-3582',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김석윤', 58, 2, to_date('000113', 'yymmdd'), '010-3053-3582',
         '20205801@koreaitc.ac.kr', 10418, '경기도 고양시 일산동구 백석동 1140', '백송마을 904-1503', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205802, 'password', '김지혜', 58, 2, to_date('021225', 'yymmdd'), '010-3958-6980',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김지혜', 58, 2, to_date('021225', 'yymmdd'), '010-3958-6980',
         '20205802@koreaitc.ac.kr', 22642, '인천광역시 서구 마전동 1004 ', '현대아파트 103-1502', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205803, 'password', '한이정', 58, 2, to_date('020330', 'yymmdd'), '010-8013-7079',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205803, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한이정', 58, 2, to_date('020330', 'yymmdd'), '010-8013-7079',
         '20205803@koreaitc.ac.kr', 14526, '경기도 부천시 도당동 274-4 ', '청운연립 가동 201호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205901, 'password', '이정범', 59, 2, to_date('010523', 'yymmdd'), '010-2878-0086',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20205901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이정범', 59, 2, to_date('010523', 'yymmdd'), '010-2878-0086',
         '20205901@koreaitc.ac.kr', 21013, '인천광역시 계양구 동양동 575', '주공아파트 110/302', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206001, 'password', '김계한', 60, 2, to_date('000219', 'yymmdd'), '010-8236-3141',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김계한', 60, 2, to_date('000219', 'yymmdd'), '010-8236-3141',
         '20206001@koreaitc.ac.kr', 06990, '서울특별시 동작구 사당동 105', '극동아파트 103-1601', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206002, 'password', '김승표', 60, 2, to_date('000610', 'yymmdd'), '010-0188-9016',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김승표', 60, 2, to_date('000610', 'yymmdd'), '010-0188-9016',
         '20206002@koreaitc.ac.kr', 16904, '경기도 용인시 기흥구 보정동 1298', '신촌마을 포스홈타운 212-2301', 5);
 
 /* INSERT QUERY NO: 551 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206003, 'password', '박승호', 60, 2, to_date('010227', 'yymmdd'), '010-6252-3344',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206003, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박승호', 60, 2, to_date('010227', 'yymmdd'), '010-6252-3344',
         '20206003@koreaitc.ac.kr', 03453, '서울특별시 은평구 응암동 111-42	', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206004, 'password', '이은혜', 60, 2, to_date('000813', 'yymmdd'), '010-1312-4551',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206004, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이은혜', 60, 2, to_date('000813', 'yymmdd'), '010-1312-4551',
         '20206004@koreaitc.ac.kr', 10349, '경기도 고양시 일산서구 일산동 600', '현대A 303-1404', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206005, 'password', '조성민', 60, 2, to_date('020608', 'yymmdd'), '010-2191-4753',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206005, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '조성민', 60, 2, to_date('020608', 'yymmdd'), '010-2191-4753',
         '20206005@koreaitc.ac.kr', 05680, '서울특별시 송파구 석촌동 244-19 ', '훼미리아파트 227-103', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206101, 'password', '박경원', 61, 2, to_date('010822', 'yymmdd'), '010-5723-8262',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박경원', 61, 2, to_date('010822', 'yymmdd'), '010-5723-8262',
         '20206101@koreaitc.ac.kr', 48740, '부산광역시 동구 범일동 830-90 ', ' 한양아파트 1동 208호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206102, 'password', '박은정', 61, 2, to_date('010605', 'yymmdd'), '010-1034-1429',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206102, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박은정', 61, 2, to_date('010605', 'yymmdd'), '010-1034-1429',
         '20206102@koreaitc.ac.kr', 10447, '경기도 고양시 일산동구 백석동 1334-3', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206103, 'password', '박지윤', 61, 2, to_date('010126', 'yymmdd'), '010-8507-3932',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206103, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박지윤', 61, 2, to_date('010126', 'yymmdd'), '010-8507-3932',
         '20206103@koreaitc.ac.kr', 55020, '전라북도 전주시 덕진구 인후동1가 887-2', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206201, 'password', '강상훈', 62, 2, to_date('000202', 'yymmdd'), '010-1803-8071',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206201, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '강상훈', 62, 2, to_date('000202', 'yymmdd'), '010-1803-8071',
         '20206201@koreaitc.ac.kr', 54892, '전라북도 전주시 덕진구 덕진동2가 697', '하가휴먼빌아파트 101동 101호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206202, 'password', '김지원', 62, 2, to_date('010402', 'yymmdd'), '010-5061-1804',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206202, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김지원', 62, 2, to_date('010402', 'yymmdd'), '010-5061-1804',
         '20206202@koreaitc.ac.kr', 54891, '전라북도 전주시 덕진구 덕진동2가 693-4', null, 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206203, 'password', '이지은', 62, 2, to_date('011015', 'yymmdd'), '010-1192-0537',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20206203, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이지은', 62, 2, to_date('011015', 'yymmdd'), '010-1192-0537',
         '20206203@koreaitc.ac.kr', 55706, '전라북도 남원시 보절면 진기리 1149-3', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20210601, 'password', '나세진', 6, 1, to_date('030519', 'yymmdd'), '010-1281-3306',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20210601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '나세진', 6, 1, to_date('030519', 'yymmdd'), '010-1281-3306',
         '20210601@koreaict.ac.kr', 54659, '전라북도 익산시 모현동1가 296-2', '모현4차현대아파트 402동 304호', 3);
 
 /* INSERT QUERY NO: 561 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20210602, 'password', '황진석', 6, 1, to_date('010114', 'yymmdd'), '010-1593-7777',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20210602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '황진석', 6, 1, to_date('010114', 'yymmdd'), '010-1593-7777',
         '20210602@koreaict.ac.kr', 07910, '서울특별시 양천구 신월동 148-4', '신월동리버스타운 10층', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20210701, 'password', '전정호', 7, 1, to_date('010405', 'yymmdd'), '010-6048-9776',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20210701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '전정호', 7, 1, to_date('010405', 'yymmdd'), '010-6048-9776',
         '20210701@koreaict.ac.kr', 28582, '충청북도 청주시 흥덕구 복대동 3366', '금호어울림1단지아파트 107동 703호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20210802, 'password', '최민건', 8, 1, to_date('020707', 'yymmdd'), '010-6944-6797',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20210802, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최민건', 8, 1, to_date('020707', 'yymmdd'), '010-6944-6797',
         '20210802@koreaict.ac.kr', 13270, '경기도 성남시 수정구 신흥동 2464-1', '청구아파트 4212동 103호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20210901, 'password', '한민우', 9, 1, to_date('031118', 'yymmdd'), '010-7863-5873',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20210901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '한민우', 9, 1, to_date('031118', 'yymmdd'), '010-7863-5873',
         '20210901@koreaict.ac.kr', 14583, '경기도 부천시 중동 1171 ', '포도마을뉴서울아파트 106동 1602호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20211401, 'password', '김윤창', 14, 1, to_date('020520', 'yymmdd'), '010-5879-1420',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20211401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김윤창', 14, 1, to_date('020520', 'yymmdd'), '010-5879-1420',
         '20211401@koreaict.ac.kr', 07587, '서울특별시 강서구 등촌동 701', '미주진로아파트 106동 703호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20211402, 'password', '릴희권', 14, 1, to_date('021222', 'yymmdd'), '010-8214-5043',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20211402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '릴희권', 14, 1, to_date('021222', 'yymmdd'), '010-8214-5043',
         '20211402@koreaict.ac.kr', 07570, '서울특별시 강서구 등촌동 643-90', '미광주택', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212001, 'password', '최철현', 20, 1, to_date('020309', 'yymmdd'), '010-6117-7929',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최철현', 20, 1, to_date('020309', 'yymmdd'), '010-6117-7929',
         '20212001@koreaict.ac.kr', 13629, '경기도 성남시 분당구 구미동 80', '까치마을성원빌라 1402호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212301, 'password', '김아연', 23, 1, to_date('020423', 'yymmdd'), '010-4136-0686',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김아연', 23, 1, to_date('020423', 'yymmdd'), '010-4136-0686',
         '20212301@koreaict.ac.kr', 54890, '전라북도 전주시 덕진구 덕진동2가 656-5', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212302, 'password', '박창진', 23, 1, to_date('010702', 'yymmdd'), '010-0275-3081',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212302, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박창진', 23, 1, to_date('010702', 'yymmdd'), '010-0275-3081',
         '20212302@koreaict.ac.kr', 08858, '서울특별시 관악구 신림동 721-2', '건영아파트 나동 201호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212303, 'password', '안창현', 23, 1, to_date('030621', 'yymmdd'), '010-8408-2043',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212303, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '안창현', 23, 1, to_date('030621', 'yymmdd'), '010-8408-2043',
         '20212303@koreaict.ac.kr', 16485, '경기도 수원시 팔달구 인계동 159', '선경3차아파트 302동 1401호', 3);
 
 /* INSERT QUERY NO: 571 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212501, 'password', '김지훈', 25, 1, to_date('030909', 'yymmdd'), '010-0613-5687',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김지훈', 25, 1, to_date('030909', 'yymmdd'), '010-0613-5687',
         '20212501@koreaict.ac.kr', 55735, '전라북도 남원시 월락동 5-13', null, 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212701, 'password', '황예림', 27, 1, to_date('020827', 'yymmdd'), '010-0157-5070',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20212701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '황예림', 27, 1, to_date('020827', 'yymmdd'), '010-0157-5070',
         '20212701@koreaict.ac.kr', 01808, '서울특별시 노원구 하계동 70-25', '현대하이츠 109동 303호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213101, 'password', '염광훈', 31, 1, to_date('020702', 'yymmdd'), '010-2432-6520',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '염광훈', 31, 1, to_date('020702', 'yymmdd'), '010-2432-6520',
         '20213101@koreaict.ac.kr', 10417, '경기도 고양시 일산동구 마두동 734', '백마마을4단지아파트 114동 1002호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213301, 'password', '김광인', 33, 1, to_date('020712', 'yymmdd'), '010-2231-3523',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213301, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김광인', 33, 1, to_date('020712', 'yymmdd'), '010-2231-3523',
         '20213301@koreaict.ac.kr', 05763, '서울특별시 송파구 마천동 319 ', '마천동금호어울림2차아파트 503동 104호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213401, 'password', '김지환', 34, 1, to_date('010913', 'yymmdd'), '010-4974-1114',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김지환', 34, 1, to_date('010913', 'yymmdd'), '010-4974-1114',
         '20213401@koreaict.ac.kr', 03457, '서울특별시 은평구 응암동 581-28', '명동빌라 110동 206호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213402, 'password', '안영철', 34, 1, to_date('030606', 'yymmdd'), '010-8520-7872',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213402, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '안영철', 34, 1, to_date('030606', 'yymmdd'), '010-8520-7872',
         '20213402@koreaict.ac.kr', 07910, '서울특별시 양천구 신월동 148-4', '신월동리버스타운 103동 403호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213501, 'password', '최성빈', 35, 1, to_date('010206', 'yymmdd'), '010-7991-8961',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213501, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최성빈', 35, 1, to_date('010206', 'yymmdd'), '010-7991-8961',
         '20213501@koreaict.ac.kr', 06622, '서울특별시 서초구 서초동 1326-17', '우성5차아파트 501동 104호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213601, 'password', '이창환', 36, 1, to_date('020319', 'yymmdd'), '010-8424-7470',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이창환', 36, 1, to_date('020319', 'yymmdd'), '010-8424-7470',
         '20213601@koreaict.ac.kr', 07641, '서울특별시 강서구 외발산동 221-7', '파인캐슬 102호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213801, 'password', '정영철', 38, 1, to_date('020201', 'yymmdd'), '010-0858-9166',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20213801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정영철', 38, 1, to_date('020201', 'yymmdd'), '010-0858-9166',
         '20213801@koreaict.ac.kr', 13802, '경기도 과천시 중앙동 71', '래미안에코팰리스아파트 104동 205호', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20214001, 'password', '김창미', 40, 1, to_date('021215', 'yymmdd'), '010-1539-0612',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20214001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김창미', 40, 1, to_date('021215', 'yymmdd'), '010-1539-0612',
         '20214001@koreaict.ac.kr', 08563, '서울특별시 금천구 시흥동 5-13', '삼익아파트 105동 2001호', 3);
 
 /* INSERT QUERY NO: 581 */
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20214101, 'password', '최세정', 41, 1, to_date('010225', 'yymmdd'), '010-6951-5321',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20214101, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최세정', 41, 1, to_date('010225', 'yymmdd'), '010-6951-5321',
         '20214101@koreaict.ac.kr', 55122, '전라북도 전주시 완산구 평화동1가 696', '코오롱아파트 2동 120호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20214701, 'password', '안희근', 47, 1, to_date('020618', 'yymmdd'), '010-6433-2181',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20214701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '안희근', 47, 1, to_date('020618', 'yymmdd'), '010-6433-2181',
         '20214701@koreaict.ac.kr', 16548, '경기도 수원시 영통구 매탄동 1285', '주공그린빌 402동 502호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20214801, 'password', '정애리', 48, 1, to_date('030619', 'yymmdd'), '010-0894-0713',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20214801, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정애리', 48, 1, to_date('030619', 'yymmdd'), '010-0894-0713',
         '20214801@koreaict.ac.kr', 56192, '전라북도 정읍시 상동 110 ', '현대1차아파트 103동 802호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20215401, 'password', '김진호', 54, 1, to_date('021013', 'yymmdd'), '010-4148-9364',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20215401, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김진호', 54, 1, to_date('021013', 'yymmdd'), '010-4148-9364',
         '20215401@koreaitc.ac.kr', 14506, '경기도 부천시 상동 500-2 ', '다정한마을 2130-1104', 5);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20215601, 'password', '박구영', 56, 1, to_date('020304', 'yymmdd'), '010-1799-7130',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20215601, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박구영', 56, 1, to_date('020304', 'yymmdd'), '010-1799-7130',
         '20215601@koreaitc.ac.kr', 05649, '서울특별시 송파구 방이동 89 ', '올림픽아파트 101-501호', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20215602, 'password', '정성배', 56, 1, to_date('010116', 'yymmdd'), '010-2176-9081',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20215602, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '정성배', 56, 1, to_date('010116', 'yymmdd'), '010-2176-9081',
         '20215602@koreaitc.ac.kr', 06904, '서울특별시 동작구 흑석동 28', '한강현대아파트 110-1302', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20215701, 'password', '김지홍', 57, 1, to_date('030518', 'yymmdd'), '010-3269-5593',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20215701, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김지홍', 57, 1, to_date('030518', 'yymmdd'), '010-3269-5593',
         '20215701@koreaitc.ac.kr', 10502, '경기도 고양시 덕양구 화정동 951 ', '별빛마을 1012-505', 3);
 INSERT INTO MEMBER (MEMBER_IDX, MEMBER_ID, MEMBER_PWD, NAME, DEPARTMENT_ID, GRADE, BIRTHDAY, PHONE, EMAIL, POSTCODE,
                     ADDRESS1, ADDRESS2, AUTH)
-VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20215901, 'password', '신광현', 59, 1, to_date('020103', 'yymmdd'), '010-5108-1233',
+VALUES (MEMBER_IDX_SEQ.NEXTVAL, 20215901, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '신광현', 59, 1, to_date('020103', 'yymmdd'), '010-5108-1233',
         '20215901@koreaitc.ac.kr', 06216, '서울특별시 강남구 역삼동 754-1 ', '역삼푸르지오 101-301', 3);
 
 /*MEMBER멤버 - 교직원*/
 INSERT INTO member (member_idx, member_id, member_pwd, name, department_id, grade, birthday, phone, email, postcode, address1, address2, auth)
-VALUES (member_idx_seq.nextval, 14392001, 'password', '김홍남', 64, null, to_date('1980-02-14', 'YYYY-MM-DD'), '010-1234-5678', 'hongnam2@univ.ac.kr', 12345, '서울특별시 강남구 테헤란로 123', '101호', 2);
+VALUES (member_idx_seq.nextval, 14392001, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '김홍남', 64, null, to_date('1980-02-14', 'YYYY-MM-DD'), '010-1234-5678', 'hongnam2@univ.ac.kr', 12345, '서울특별시 강남구 테헤란로 123', '101호', 2);
 
 INSERT INTO member (member_idx, member_id, member_pwd, name, department_id, grade, birthday, phone, email, postcode, address1, address2, auth)
-VALUES (member_idx_seq.nextval, 14392002, 'password', '박길순', 65, null, to_date('1978-11-02', 'YYYY-MM-DD'), '010-2345-6789', 'gilgil2@univ.ac.kr', 54321, '서울특별시 송파구 올림픽로 123', '202호', 2);
+VALUES (member_idx_seq.nextval, 14392002, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '박길순', 65, null, to_date('1978-11-02', 'YYYY-MM-DD'), '010-2345-6789', 'gilgil2@univ.ac.kr', 54321, '서울특별시 송파구 올림픽로 123', '202호', 2);
 
 INSERT INTO member (member_idx, member_id, member_pwd, name, department_id, grade, birthday, phone, email, postcode, address1, address2, auth)
-VALUES (member_idx_seq.nextval, 14392003, 'password', '이하영', 64, null, to_date('1985-06-22', 'YYYY-MM-DD'), '010-3456-7890', 'ha2young@univ.ac.kr', 23456, '서울특별시 강동구 천호대로 123', '303호', 2);
+VALUES (member_idx_seq.nextval, 14392003, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '이하영', 64, null, to_date('1985-06-22', 'YYYY-MM-DD'), '010-3456-7890', 'ha2young@univ.ac.kr', 23456, '서울특별시 강동구 천호대로 123', '303호', 2);
 
 INSERT INTO member (member_idx, member_id, member_pwd, name, department_id, grade, birthday, phone, email, postcode, address1, address2, auth)
-VALUES (member_idx_seq.nextval, 14392004, 'password', '최남준', 65, null, to_date('1975-09-18', 'YYYY-MM-DD'), '010-4567-8901', 'namj6@univ.ac.kr', 45678, '서울특별시 구로구 경인로 123', '404호', 2);
+VALUES (member_idx_seq.nextval, 14392004, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '최남준', 65, null, to_date('1975-09-18', 'YYYY-MM-DD'), '010-4567-8901', 'namj6@univ.ac.kr', 45678, '서울특별시 구로구 경인로 123', '404호', 2);
 
 INSERT INTO member (member_idx, member_id, member_pwd, name, department_id, grade, birthday, phone, email, postcode, address1, address2, auth)
-VALUES (member_idx_seq.nextval, 14392005, 'password', '홍설', 64, null, to_date('1990-01-01', 'YYYY-MM-DD'), '010-5678-9012', 'hongssul@univ.ac.kr', 56789, '서울특별시 서초구 강남대로 123', '505호', 2);
+VALUES (member_idx_seq.nextval, 14392005, '$2a$10$is0.6m7sqs5JBqAxHvXnkueOEo0k5C4BQJj2d8hGwxPnIFlnevef.', '홍설', 64, null, to_date('1990-01-01', 'YYYY-MM-DD'), '010-5678-9012', 'hongssul@univ.ac.kr', 56789, '서울특별시 서초구 강남대로 123', '505호', 2);
 
 
 /*LECTURE강의*/
