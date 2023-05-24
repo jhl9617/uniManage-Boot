@@ -33,10 +33,10 @@ public class CancelledLectureController {
 
 
     //휴강게시물 리스트 id로 조회(교수용)
-    @GetMapping("/prof/lecture/cancelled/list")
-    public List<CancelledLectureDto> cancelledLectureMemberIdList(){
-        return  cancelledLectureService.getCancelledLectureByIdList();
-    }
+//    @GetMapping("/prof/lecture/cancelled/list")
+//    public List<CancelledLectureDto> cancelledLectureMemberIdList(@RequestBody CancelledLectureDto cancelledLectureDto){
+//        return  cancelledLectureService.getCancelledLectureByIdList();
+//    }
 
     //휴강게시물 작성(교수용)
     @PostMapping("/prof/lecture/cancelled/write")

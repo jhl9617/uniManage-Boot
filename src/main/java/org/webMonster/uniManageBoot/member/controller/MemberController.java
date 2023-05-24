@@ -69,10 +69,14 @@ public class MemberController {
     }
 
     //교수 개인정보 페이지 수정
-    @PatchMapping("/prof/info")
+    @PostMapping("/prof/info")
     public MemberEntity update(@RequestBody MemberDepartmentDto memberDepartmentDto, HttpSession session){
-        session.setAttribute("loginMember", memberDepartmentDto);
-        return memberService.update(memberDepartmentDto);
-
+        MemberDepartmentDto sessionMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+        sessionMember.setPhone(memberDepartmentDto.getPhone());
+        sessionMember.setPostcode(memberDepartmentDto.getPostcode());
+        sessionMember.setAddress1(memberDepartmentDto.getAddress1());
+        sessionMember.setAddress2(memberDepartmentDto.getAddress2());
+        session.setAttribute("loginMember", sessionMember);
+        return memberService.update(sessionMember);
     }
 }

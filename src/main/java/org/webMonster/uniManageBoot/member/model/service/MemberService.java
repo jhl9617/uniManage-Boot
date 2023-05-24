@@ -13,10 +13,8 @@ import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import org.webMonster.uniManageBoot.member.entity.MemberRepository;
 import org.webMonster.uniManageBoot.member.entity.MemberRepositoryCustom;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
-import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
 
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 @Slf4j
@@ -69,14 +67,18 @@ public class MemberService {
         return Header.OK(dtos, pagination);
     }
 
-
     //교수 개인정보 페이지 수정
-    public MemberEntity update(MemberDepartmentDto memberDepartmentDto) {
-        MemberEntity entity = (MemberEntity) memberRepository;
-        entity.setPhone(memberDepartmentDto.getPhone());
-        entity.setPostcode(memberDepartmentDto.getPostcode());
-        entity.setAddress1(memberDepartmentDto.getAddress1());
-        entity.setAddress2(memberDepartmentDto.getAddress2());
-        return memberRepository.save(entity);
+    public MemberEntity update(MemberDepartmentDto sessionMember) {
+        MemberEntity entity = memberRepository.findById(sessionMember.getMemberId()).orElse(null);
+        if(entity != null){
+            entity.setPhone(sessionMember.getPhone());
+            entity.setPostcode(sessionMember.getPostcode());
+            entity.setAddress1(sessionMember.getAddress1());
+            entity.setAddress2(sessionMember.getAddress2());
+            return  memberRepository.save(entity);
+        }
+        return entity;
     }
 }
+
+

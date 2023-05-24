@@ -62,26 +62,26 @@ public class CancelledLectureService {
 
 
     //휴강게시물 리스트 id로 조회(교수용)
-    public List<CancelledLectureDto> getCancelledLectureByIdList() {
-        List<CancelledLectureEntity> cancelledLectureEntities = cancelledLectureRepository.findAll();
-        List<CancelledLectureDto> dtos = new ArrayList<>();
-
-        for(CancelledLectureEntity entity : cancelledLectureEntities){
-            CancelledLectureDto dto = CancelledLectureDto.builder()
-                    .cancelledLectureIdx(entity.getCancelledLectureIdx())
-                    .lectureId(entity.getLectureId())
-                    .memberId(entity.getMemberId())
-                    .lectureRoomCode(entity.getLectureRoomCode())
-                    .attendanceDay(entity.getAttendanceDay())
-                    .supplyDate(entity.getSupplyDate())
-                    .cancelledFile(entity.getCancelledFile())
-                    .cancelledRename(entity.getCancelledRename())
-                    .cancelledApply(entity.getCancelledApply())
-                    .build();
-            dtos.add(dto);
-        }
-        return dtos;
-    }
+//    public List<CancelledLectureDto> getCancelledLectureByIdList() {
+//        List<CancelledLectureEntity> cancelledLectureEntities = cancelledLectureRepository.findAllById(CancelledLectureDto cancelledLectureDto);
+//        List<CancelledLectureDto> dtos = new ArrayList<>();
+//
+//        for(CancelledLectureEntity entity : cancelledLectureEntities){
+//            CancelledLectureDto dto = CancelledLectureDto.builder()
+//                    .cancelledLectureIdx(entity.getCancelledLectureIdx())
+//                    .lectureId(entity.getLectureId())
+//                    .memberId(entity.getMemberId())
+//                    .lectureRoomCode(entity.getLectureRoomCode())
+//                    .attendanceDay(entity.getAttendanceDay())
+//                    .supplyDate(entity.getSupplyDate())
+//                    .cancelledFile(entity.getCancelledFile())
+//                    .cancelledRename(entity.getCancelledRename())
+//                    .cancelledApply(entity.getCancelledApply())
+//                    .build();
+//            dtos.add(dto);
+//        }
+//        return dtos;
+//    }
 
     //휴강게시물 리스트 id로 조회(교수용)
 //    public Header<List<CancelledLectureDto>> getCancelledLectureByIdList(Pageable pageable, SearchCondition searchCondition) {

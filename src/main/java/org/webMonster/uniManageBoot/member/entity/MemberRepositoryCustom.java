@@ -19,4 +19,5 @@ public interface MemberRepositoryCustom {
 
     //교직원 학생관리 리스트 출력용
     Page<MemberEntity> findAllBySearchConditionsAndAuth(Pageable pageable, SearchCondition searchCondition);
+
 }

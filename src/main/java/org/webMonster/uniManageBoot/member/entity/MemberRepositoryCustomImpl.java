@@ -115,6 +115,7 @@ public class MemberRepositoryCustomImpl extends QuerydslRepositorySupport implem
         return new PageImpl<>(results, pageable, total);
     }
 
+
     //교직원 학생관리 리스트에서 검색용
     public BooleanExpression searchKeywords(String sk, String sv) {
         if("name".equals(sk)) {   //학생명으로 검색
