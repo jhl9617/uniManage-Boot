@@ -47,22 +47,6 @@ public class MemberDto {
         return memberDto;
     }
 
-//    public MemberEntity toEntity() {
-//        MemberEntity memberEntity = new MemberEntity();
-//        memberEntity.setMemberIdx(this.getMemberIdx());
-//        memberEntity.setMemberId(this.getMemberId());
-//        memberEntity.setMemberPwd(this.getMemberPwd());
-//        memberEntity.setName(this.getName());
-//        memberEntity.setDepartmentId(this.getDepartmentId());
-//        memberEntity.setGrade(this.getGrade());
-//        memberEntity.setBirthday(this.getBirthday());
-//        memberEntity.setPhone(this.getPhone());
-//        memberEntity.setEmail(this.getEmail());
-//        memberEntity.setPostcode(this.getPostcode());
-//        memberEntity.setAddress1(this.getAddress1());
-//        memberEntity.setAddress2(this.getAddress2());
-//        memberEntity.setAuth(this.getAuth());
-//        return memberEntity;
-//    }
+
 
 }
