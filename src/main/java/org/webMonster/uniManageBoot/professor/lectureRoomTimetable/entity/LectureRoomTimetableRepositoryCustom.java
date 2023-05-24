@@ -9,6 +9,6 @@ public interface LectureRoomTimetableRepositoryCustom {
 
     BooleanExpression searchKeywords(String sk, String sv);
 
-    Page<LectureRoomTimetableEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition);
+    Page<LectureRoomTimetableEntity> findAllBySearchConditionAndStatus(Pageable pageable, SearchCondition searchCondition);
 
 }
