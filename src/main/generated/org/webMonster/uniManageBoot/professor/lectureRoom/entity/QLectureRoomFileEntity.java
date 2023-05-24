@@ -1,4 +1,4 @@
-package org.webMonster.uniManageBoot.professor.lectureRoomFile.entity;
+package org.webMonster.uniManageBoot.professor.lectureRoom.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -15,7 +15,7 @@ import com.querydsl.core.types.Path;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QLectureRoomFileEntity extends EntityPathBase<LectureRoomFileEntity> {
 
-    private static final long serialVersionUID = -1378929782L;
+    private static final long serialVersionUID = -1819744986L;
 
     public static final QLectureRoomFileEntity lectureRoomFileEntity = new QLectureRoomFileEntity("lectureRoomFileEntity");
 

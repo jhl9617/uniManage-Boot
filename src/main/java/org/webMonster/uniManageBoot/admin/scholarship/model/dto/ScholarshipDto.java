@@ -1,6 +1,7 @@
 package org.webMonster.uniManageBoot.admin.scholarship.model.dto;
 
 import lombok.*;
+import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 
 @Data
 @AllArgsConstructor
@@ -18,4 +19,16 @@ public class ScholarshipDto {
     private long memberId;   //학생번호
 
     private String name;
+
+
+    public static ScholarshipDto fromEntity(ScholarshipEntity scholarshipEntity) {
+        ScholarshipDto scholarshipDto = new ScholarshipDto();
+        scholarshipDto.setSchoId(scholarshipEntity.getSchoId());
+        scholarshipDto.setSchoTerm(scholarshipEntity.getSchoTerm());
+        scholarshipDto.setSchoName(scholarshipEntity.getSchoName());
+        scholarshipDto.setAmount(scholarshipEntity.getAmount());
+        scholarshipDto.setMemberId(scholarshipEntity.getMemberId());
+        return scholarshipDto;
+    }
+
 }

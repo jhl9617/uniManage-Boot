@@ -1,9 +1,6 @@
 package org.webMonster.uniManageBoot.student.evaluation.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -13,9 +10,11 @@ import javax.persistence.*;
 @Builder
 @Table(name = "EVALUATION")  //테이블 자동 생성시키는 어노테이션임
 @Entity
+@Getter
 public class EvaluationEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "EVALUATION_ID_SEQ_GEN")
+    @SequenceGenerator(name = "EVALUATION_ID_SEQ_GEN", sequenceName = "EVALUATION_ID_SEQ", allocationSize = 1)
     @Column(name = "EVALUATION_ID")
     private long evaluationId;   //강의평가 번호
     @Column(name = "MEMBER_ID")

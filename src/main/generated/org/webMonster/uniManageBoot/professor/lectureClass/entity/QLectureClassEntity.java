@@ -31,6 +31,8 @@ public class QLectureClassEntity extends EntityPathBase<LectureClassEntity> {
 
     public final StringPath lectureRoomNum = createString("lectureRoomNum");
 
+    public final ListPath<org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity, org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.QLectureRoomTimetableEntity> lectureRoomTimetables = this.<org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity, org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.QLectureRoomTimetableEntity>createList("lectureRoomTimetables", org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity.class, org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.QLectureRoomTimetableEntity.class, PathInits.DIRECT2);
+
     public final NumberPath<Integer> numberFloor = createNumber("numberFloor", Integer.class);
 
     public QLectureClassEntity(String variable) {

@@ -11,7 +11,6 @@ import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassEntity;
 import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassRepository;
 import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassRepositoryCustom;
-import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassRepositoryCustomImpl;
 import org.webMonster.uniManageBoot.professor.lectureClass.model.dto.LectureClassDto;
 
 import java.util.ArrayList;

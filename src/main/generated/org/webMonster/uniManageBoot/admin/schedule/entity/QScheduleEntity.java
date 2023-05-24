@@ -19,9 +19,7 @@ public class QScheduleEntity extends EntityPathBase<ScheduleEntity> {
 
     public static final QScheduleEntity scheduleEntity = new QScheduleEntity("scheduleEntity");
 
-    public final DatePath<java.sql.Date> endDate = createDate("endDate", java.sql.Date.class);
-
-    public final NumberPath<Integer> readcount = createNumber("readcount", Integer.class);
+    public final DateTimePath<java.time.LocalDateTime> endDate = createDateTime("endDate", java.time.LocalDateTime.class);
 
     public final StringPath scheContent = createString("scheContent");
 
@@ -29,7 +27,7 @@ public class QScheduleEntity extends EntityPathBase<ScheduleEntity> {
 
     public final StringPath scheTitle = createString("scheTitle");
 
-    public final DatePath<java.sql.Date> startDate = createDate("startDate", java.sql.Date.class);
+    public final DateTimePath<java.time.LocalDateTime> startDate = createDateTime("startDate", java.time.LocalDateTime.class);
 
     public QScheduleEntity(String variable) {
         super(ScheduleEntity.class, forVariable(variable));

@@ -17,8 +17,8 @@ public class MemberDepartmentDto {
     private long memberId;  //아이디
     private String memberPwd;  //비밀번호
     private String name;        //이름
-    private int departmentId;  //학과
-    private int grade;        //학년
+    private long departmentId;  //학과
+    private Integer grade;        //학년
     private Date birthday;      //생년월일
     private String phone;       //전화번호
     private String email;       //이메일
@@ -46,7 +46,4 @@ public class MemberDepartmentDto {
         dto.setDepartmentName(memberEntity.getDepartment().getDepartmentName());
         return dto;
     }
-
-
-
 }

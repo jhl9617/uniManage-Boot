@@ -1,9 +1,8 @@
 package org.webMonster.uniManageBoot.student.freeboard.model.dto;
 
 import lombok.*;
+import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
 
-import javax.persistence.Column;
-import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -20,4 +19,12 @@ public class FreeboardDto {
     private long memberId;   //자유게시판 작성자
 
     private String name; // 자유게시판 작성자 이름
+
+    public static FreeboardDto modifyFreeboard(FreeboardEntity entity){
+        FreeboardDto dto = new FreeboardDto();
+        dto.setFreeTitle(dto.getFreeTitle());
+        dto.setFreeContent(dto.getFreeContent());
+
+        return dto;
+    }
 }

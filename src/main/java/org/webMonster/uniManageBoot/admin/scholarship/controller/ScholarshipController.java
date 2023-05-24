@@ -10,6 +10,8 @@ import org.webMonster.uniManageBoot.admin.scholarship.model.dto.ScholarshipDto;
 import org.webMonster.uniManageBoot.admin.scholarship.model.service.ScholarshipService;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
+import org.webMonster.uniManageBoot.member.entity.MemberEntity;
+import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
 
 import java.util.List;
 
@@ -39,9 +41,22 @@ public class ScholarshipController {
 
     //교직원 장학금관리 수정하기
     @PatchMapping("/admin/manage/scholarship")
-    public ScholarshipEntity update(@RequestBody ScholarshipDto scholarshipDto){ return scholarshipService.update(scholarshipDto); }
+    public ScholarshipDto updateProfessor(@RequestBody ScholarshipDto scholarshipDto) {
+        ScholarshipEntity entity = scholarshipService.update(scholarshipDto);
+        return ScholarshipDto.fromEntity(entity);
+    }
 
     //교직원 장학금관리 삭제하기
     @DeleteMapping("/admin/manage/scholarship/{id}")
     public void delete(@PathVariable Long id) { scholarshipService.delete(id); }
+
+    //교직원 학생관리 학생정보상세 장학금 리스트 조회
+    @GetMapping("/admin/manage/student/scholarship/{member_id}")
+    public Header<List<ScholarshipDto>> studentSchoList(
+            @PageableDefault(sort = {"schoId"}) Pageable pageable,
+            SearchCondition searchCondition,
+            @PathVariable("member_id") Long memberId
+    ) {
+        return scholarshipService.getStudentScholarshipList(pageable, searchCondition, memberId);
+    }
 }

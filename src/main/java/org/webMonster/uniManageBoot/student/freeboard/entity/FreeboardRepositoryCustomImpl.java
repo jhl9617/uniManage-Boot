@@ -1,6 +1,5 @@
 package org.webMonster.uniManageBoot.student.freeboard.entity;
 
-import com.querydsl.core.types.Projections;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
@@ -11,7 +10,7 @@ import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
-import org.webMonster.uniManageBoot.student.freeboard.model.dto.FreeboardDto;
+
 
 import static org.webMonster.uniManageBoot.member.entity.QMemberEntity.memberEntity;
 import static org.webMonster.uniManageBoot.student.freeboard.entity.QFreeboardEntity.freeboardEntity;
@@ -64,19 +63,19 @@ public class FreeboardRepositoryCustomImpl extends QuerydslRepositorySupport imp
     }
 
 
-    public List<FreeboardDto> findAllFreeboardWithMember() {
-
-        return queryFactory
-                .select(Projections.bean(
-                        FreeboardDto.class,
-                        freeboardEntity.memberId,
-                        freeboardEntity.freeId,
-                        freeboardEntity.freeTitle,
-                        freeboardEntity.freeContent,
-                        freeboardEntity.createdDate,
-                        memberEntity.name))
-                .from(freeboardEntity)
-                .join(freeboardEntity.member, memberEntity)
-                .fetch();
-    }
+//    public List<FreeboardDto> findAllFreeboardWithMember() {
+//
+//        return queryFactory
+//                .select(Projections.bean(
+//                        FreeboardDto.class,
+//                        freeboardEntity.memberId,
+//                        freeboardEntity.freeId,
+//                        freeboardEntity.freeTitle,
+//                        freeboardEntity.freeContent,
+//                        freeboardEntity.createdDate,
+//                        memberEntity.name))
+//                .from(freeboardEntity)
+//                .join(freeboardEntity.member, memberEntity)
+//                .fetch();
+//    }
 }

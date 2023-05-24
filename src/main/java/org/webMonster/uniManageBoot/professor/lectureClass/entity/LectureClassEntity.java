@@ -4,8 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -13,14 +16,10 @@ import javax.persistence.*;
 @Builder
 @Table(name = "LECTURE_CLASS")
 @Entity
-public class LectureClassEntity {
+public class LectureClassEntity implements java.io.Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "lecture_class_idx_seq_gen")
-    @SequenceGenerator(
-            name = "lecture_class_idx_seq_gen",
-            sequenceName = "LECTURE_CLASS_IDX_SEQ",
-            allocationSize = 1
-    )
+    @SequenceGenerator(name = "lecture_class_idx_seq_gen", sequenceName = "LECTURE_CLASS_IDX_SEQ", allocationSize = 1)
     @Column(name = "LECTURE_CLASS_IDX")
     private long lectureClassIdx;   //강의실 번호
     @Column(name = "LECTURE_ROOM_CODE")
@@ -36,7 +35,11 @@ public class LectureClassEntity {
     @Column(name = "CLASS_CAPACITY")
     private int classCapacity;   //강의실 수용인원
 
-//    @Builder.Default
+    //    @Builder.Default
 //    @OneToMany(mappedBy = "lectureClass")
 //    private List<LectureEntity> lectureEntities = new ArrayList<>();
+// 다른 엔티티와의 관계 설정
+    @Builder.Default
+    @OneToMany(mappedBy = "lectureClass")
+    private List<LectureRoomTimetableEntity> lectureRoomTimetables = new ArrayList<>();
 }

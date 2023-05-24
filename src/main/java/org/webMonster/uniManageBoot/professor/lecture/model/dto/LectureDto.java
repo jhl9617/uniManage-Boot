@@ -40,4 +40,6 @@ public class LectureDto {
 //    private int classCapacity;
 
 
+
+
 }

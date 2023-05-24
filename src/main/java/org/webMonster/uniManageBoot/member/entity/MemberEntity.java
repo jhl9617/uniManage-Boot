@@ -7,6 +7,7 @@ import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
+import org.webMonster.uniManageBoot.student.score.entity.ScoreEntity;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -26,8 +27,13 @@ import java.util.List;
 @Setter
 public class MemberEntity implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "MEMBER_IDX_SEQ")
     @SequenceGenerator(name = "MEMBER_IDX_SEQ", sequenceName = "MEMBER_IDX_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "member_idx_seq_gen")
+    @SequenceGenerator(
+            name = "member_idx_seq_gen",
+            sequenceName = "MEMBER_IDX_SEQ",
+            allocationSize = 1
+    )
     @Column(name = "MEMBER_IDX")
     private long memberIdx;             //시퀀스
     @Column(name = "MEMBER_ID")
@@ -37,7 +43,7 @@ public class MemberEntity implements Serializable {
     @Column(name = "NAME")
     private String name;        //이름
     @Column(name = "DEPARTMENT_ID")
-    private int departmentId;  //학과 번호
+    private long departmentId;  //학과 번호
     @Column(name = "GRADE")
     private Integer grade;        //학년
     @Column(name = "BIRTHDAY")
@@ -79,4 +85,8 @@ public class MemberEntity implements Serializable {
         return authList;
     }
 
+
+    @Builder.Default
+    @OneToMany(mappedBy = "member")
+    private List<ScoreEntity> scoreEntities = new ArrayList<>();
 }

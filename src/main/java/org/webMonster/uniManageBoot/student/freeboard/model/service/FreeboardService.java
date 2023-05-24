@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
@@ -62,30 +63,23 @@ public class FreeboardService {
         return Header.OK(list, pagination);
     }
 
+    // 게시글 목록 가져오기(페이징 x)
+    public List<FreeboardDto> getBoardList(){
+        List<FreeboardDto> list = new ArrayList<>();
+        List<FreeboardEntity> entity = freeboardRepository.findAll();
+        for (FreeboardEntity fentity : entity) {
+            FreeboardDto dto = FreeboardDto.builder()
+                    .freeId(fentity.getFreeId())
+                    .name(fentity.getMember().getName())
+                    .freeTitle(fentity.getFreeTitle())
+                    .freeContent(fentity.getFreeContent())
+                    .createdDate(fentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .build();
+            list.add(dto);
+        }
+        return list;
 
-    /**
-     * 게시글 목록 가져오기
-     */
-
-//    public List<BoardDto> getBoardList() {
-//        List<BoardEntity> boardEntities = boardRepository.findAll();
-//        List<BoardDto> list = new ArrayList<>();
-//
-//        for (BoardEntity entity : boardEntities) {
-//            BoardDto dto = BoardDto.builder()
-//                    .idx(entity.getIdx())
-//                    .author(entity.getAuthor())
-//                    .title(entity.getTitle())
-//                    .contents(entity.getContents())
-//                    .createdAt(entity.getCreatedAt().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
-//                    .build();
-//
-//            list.add(dto);
-//        }
-//
-//        return list;
-//    }
-
+    }
 
     /**
      * 게시글 가져오기
@@ -161,7 +155,7 @@ public class FreeboardService {
         FreeboardRepEntity entity = FreeboardRepEntity.builder()
                 .freeId(id)
                 .freeRepId(freeboardRepDto.getFreeRepId())
-                .memberId(20180102)
+                .memberId(freeboardRepDto.getMemberId())
                 .freeRepContent(freeboardRepDto.getFreeRepContent())
                 .createdDate(LocalDateTime.now())
                 .build();

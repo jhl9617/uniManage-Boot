@@ -32,7 +32,7 @@ public class QMemberEntity extends EntityPathBase<MemberEntity> {
 
     public final org.webMonster.uniManageBoot.student.department.entity.QDepartmentEntity department;
 
-    public final NumberPath<Integer> departmentId = createNumber("departmentId", Integer.class);
+    public final NumberPath<Long> departmentId = createNumber("departmentId", Long.class);
 
     public final StringPath email = createString("email");
 
@@ -55,6 +55,8 @@ public class QMemberEntity extends EntityPathBase<MemberEntity> {
     public final NumberPath<Integer> postcode = createNumber("postcode", Integer.class);
 
     public final ListPath<org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity, org.webMonster.uniManageBoot.admin.scholarship.entity.QScholarshipEntity> scholarshipEntities = this.<org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity, org.webMonster.uniManageBoot.admin.scholarship.entity.QScholarshipEntity>createList("scholarshipEntities", org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity.class, org.webMonster.uniManageBoot.admin.scholarship.entity.QScholarshipEntity.class, PathInits.DIRECT2);
+
+    public final ListPath<org.webMonster.uniManageBoot.student.score.entity.ScoreEntity, org.webMonster.uniManageBoot.student.score.entity.QScoreEntity> scoreEntities = this.<org.webMonster.uniManageBoot.student.score.entity.ScoreEntity, org.webMonster.uniManageBoot.student.score.entity.QScoreEntity>createList("scoreEntities", org.webMonster.uniManageBoot.student.score.entity.ScoreEntity.class, org.webMonster.uniManageBoot.student.score.entity.QScoreEntity.class, PathInits.DIRECT2);
 
     public QMemberEntity(String variable) {
         this(MemberEntity.class, forVariable(variable), INITS);
