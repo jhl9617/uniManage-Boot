@@ -27,7 +27,7 @@ public class LectureRoomTimetableService {
     public Header<List<LectureRoomTimetableDto>> getLectureRoomList(Pageable pageable, SearchCondition searchCondition) {
         List<LectureRoomTimetableDto> dtos = new ArrayList<>();
 
-        Page<LectureRoomTimetableEntity> lectureRoomTimetableEntities = lectureRoomTimetableRepositoryCustom.findAllBySearchCondition(pageable, searchCondition);
+        Page<LectureRoomTimetableEntity> lectureRoomTimetableEntities = lectureRoomTimetableRepositoryCustom.findAllBySearchConditionAndStatus(pageable, searchCondition);
         for (LectureRoomTimetableEntity entity : lectureRoomTimetableEntities) {
             LectureRoomTimetableDto dto = LectureRoomTimetableDto.builder()
                     .lectureRoomTimetableIdx(entity.getLectureRoomTimetableIdx())
