@@ -38,12 +38,11 @@ public class LectureRoomTimetableEntity {
 
     // 다른 엔티티와의 관계 설정
     @ManyToOne
-    @JoinColumn(name = "LECTURE_ROOM_CODE", insertable = false, updatable = false)
+    @JoinColumn(name = "LECTURE_ROOM_CODE", referencedColumnName = "LECTURE_ROOM_CODE", insertable = false, updatable = false)
     private LectureClassEntity lectureClass;
 
     // 다른 엔티티와의 관계 설정
     @ManyToOne
-    @JoinColumn(name = "TIMECODE", insertable = false, updatable = false)
+    @JoinColumn(name = "TIMECODE", referencedColumnName = "TIMECODE", insertable = false, updatable = false)
     private LectureClassTimeEntity lectureClassTime;
-
 }
