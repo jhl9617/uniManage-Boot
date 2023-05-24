@@ -32,4 +32,10 @@ public class ScoreController {
     ) {
         return scoreService.getStudentScoreList(pageable, searchCondition, memberId);
     }
+
+    //학생 학생정보시스템 수강성적조회 리스트 조회
+    @GetMapping("/student/score/{id}")
+    public List<ScoreDto> scoreList(@PathVariable Long id) {
+        return scoreService.getScoreList(id);
+    }
 }
