@@ -30,13 +30,13 @@ public class MemberService {
     private final MemberRepository memberRepository;
     private final MemberRepositoryCustom memberRepositoryCustom;
 
-    public MemberDepartmentDto login(MemberLoginDto memberLoginDto) {
+    public MemberDepartmentDto getProfile(MemberLoginDto memberLoginDto) {
 
         long memberId = memberLoginDto.getMemberId();
-        String memberPwd = memberLoginDto.getMemberPwd();
+
 
         Optional<MemberDepartmentDto> optionalMemberDepartmentDto =
-                memberRepository.findMemberWithDepartment(memberId, memberPwd);
+                memberRepository.findMemberWithDepartment(memberId);
 
         if (!optionalMemberDepartmentDto.isPresent()) {
             throw new RuntimeException("Member not found");

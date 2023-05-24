@@ -13,7 +13,7 @@ import java.util.Optional;
 public interface MemberRepositoryCustom {
     List<MemberDepartmentDto> fetchMemberDepartmentData();
 
-    Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId, String memberPwd);
+    Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId);
 
     List<MemberDepartmentDto> findAllMembersWithDepartment();
 
