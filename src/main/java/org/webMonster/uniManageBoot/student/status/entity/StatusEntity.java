@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -16,7 +17,12 @@ import java.sql.Date;
 @Entity
 public class StatusEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "status_id_seq_gen")
+    @SequenceGenerator(
+            name = "status_id_seq_gen",
+            sequenceName = "STATUS_ID_SEQ",
+            allocationSize = 1
+    )
     @Column(name = "STATUS_ID")
     private long statusId;   //학적변동 번호
     @Column(name = "MEMBER_ID")
@@ -35,4 +41,8 @@ public class StatusEntity {
     private Date applyReturnDate;   //복학접수날짜
     @Column(name = "ALLOWED_LEAVE")
     private char allowedLeave;   //휴,복학 허용여부
+
+    @ManyToOne
+    @JoinColumn(name = "MEMBER_ID", referencedColumnName = "MEMBER_ID", insertable = false, updatable = false)
+    private MemberEntity member;
 }

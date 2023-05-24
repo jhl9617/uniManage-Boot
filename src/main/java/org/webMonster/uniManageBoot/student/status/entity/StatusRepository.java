@@ -1,4 +1,6 @@
 package org.webMonster.uniManageBoot.student.status.entity;
 
-public interface StatusRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface StatusRepository extends JpaRepository<StatusEntity, Long>  {
 }
