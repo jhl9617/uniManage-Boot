@@ -61,7 +61,7 @@ public class ScheduleService {
 
     // 교직원 학사일정 추가
     public ScheduleEntity create(ScheduleDto scheduleDto) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy년MM월dd일", Locale.KOREAN);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.KOREAN);
         LocalDate parsedStartDate = LocalDate.parse(scheduleDto.getStartDate(), formatter);
         LocalDate parsedEndDate = LocalDate.parse(scheduleDto.getEndDate(), formatter);
 
@@ -74,6 +74,7 @@ public class ScheduleService {
                 .build();
         return scheduleRepository.save(entity);
     }
+
 
     //학생정보시스템 메인페이지 학사일정 리스트 4개 조회용
     public List<ScheduleDto> getScheduleList(){

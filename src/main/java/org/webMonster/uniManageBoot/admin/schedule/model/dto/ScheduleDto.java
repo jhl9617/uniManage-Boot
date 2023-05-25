@@ -17,4 +17,5 @@ public class ScheduleDto {
     private String scheContent;
     private String startDate;
     private String endDate;
+
 }

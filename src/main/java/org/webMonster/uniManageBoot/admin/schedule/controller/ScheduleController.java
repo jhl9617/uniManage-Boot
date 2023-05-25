@@ -21,7 +21,7 @@ public class ScheduleController {
     private final ScheduleService scheduleService;
 
     //교직원 학사일정관리 리스트 조회용
-    @GetMapping("/admin/schedule")
+    @GetMapping("admin/schedule")
     public Header<List<ScheduleDto>> scheduleList(
             @PageableDefault(sort = {"sche_id"}) Pageable pageable,
             SearchCondition searchCondition

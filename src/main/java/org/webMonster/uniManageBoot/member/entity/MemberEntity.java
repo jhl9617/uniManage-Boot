@@ -10,6 +10,7 @@ import org.webMonster.uniManageBoot.professor.lectureRoom.model.dto.LectureRoomD
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
 import org.webMonster.uniManageBoot.student.score.entity.ScoreEntity;
+import org.webMonster.uniManageBoot.student.status.entity.StatusEntity;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -63,7 +64,6 @@ public class MemberEntity implements Serializable {
     @Column(name = "AUTH")
     private int auth;           //권한구분:교수 1, 교직원 2,재학생 3, 졸업생 4, 휴학생 5
 
-
     @ManyToOne
     @JoinColumn(name = "DEPARTMENT_ID", insertable = false, updatable = false)
     private DepartmentEntity department;
@@ -87,7 +87,6 @@ public class MemberEntity implements Serializable {
         return authList;
     }
 
-
     @Builder.Default
     @OneToMany(mappedBy = "member")
     private List<ScoreEntity> scoreEntities = new ArrayList<>();
@@ -96,5 +95,7 @@ public class MemberEntity implements Serializable {
     @OneToMany(mappedBy = "member")
     private List<LectureRoomEntity> lectureRoomEntities = new ArrayList<>();
 
-
+    @Builder.Default
+    @OneToMany(mappedBy = "member")
+    private List<StatusEntity> statusEntities = new ArrayList<>();
 }

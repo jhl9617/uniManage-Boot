@@ -59,4 +59,14 @@ public class ScholarshipController {
     ) {
         return scholarshipService.getStudentScholarshipList(pageable, searchCondition, memberId);
     }
+
+    //학생 학생정보시스템 장학내역 리스트 조회
+    @GetMapping("/student/scholarship/{member_id}")
+    public Header<List<ScholarshipDto>> SchoList(
+            @PageableDefault(sort = {"schoId"}) Pageable pageable,
+            SearchCondition searchCondition,
+            @PathVariable("member_id") Long memberId
+    ) {
+        return scholarshipService.getStudentScholarshipList(pageable, searchCondition, memberId);
+    }
 }

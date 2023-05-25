@@ -92,7 +92,7 @@ public class ScholarshipService {
         scholarshipRepository.delete(entity);
     }
 
-    //교직원 학생관리 학생정보상세 장학금 리스트 조회
+    //교직원 학생관리 학생정보상세 장학금 리스트 조회, 학생 학생정보시스템 장학금 리스트 조회
     public Header<List<ScholarshipDto>> getStudentScholarshipList(Pageable pageable, SearchCondition searchCondition, Long memberId) {
         List<ScholarshipDto> dtos = new ArrayList<>();
 

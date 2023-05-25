@@ -25,6 +25,7 @@ public class ScoreDto {
 
     //강의 테이블 조인
     private String lectureTitle;
+    private int credit;
 
 //    public static ScoreDto fromEntity(ScoreEntity scoreEntity) {
 //        ScoreDto scoreDto = new ScoreDto();

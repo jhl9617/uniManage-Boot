@@ -44,4 +44,25 @@ public class ScoreService {
 
         return Header.OK(dtos);
     }
+
+    //학생 학생정보시스템 수강성적조회 리스트 출력용
+    public List<ScoreDto> getScoreList(Long id) {
+        List<ScoreDto> list = new ArrayList<>();
+        List<ScoreEntity> entity = scoreRepository.findByMemberId(id);
+        for (ScoreEntity sentity : entity) {
+            ScoreDto dto = ScoreDto.builder()
+                    .scoreId(sentity.getScoreId())
+                    .memberId(sentity.getMemberId())
+                    .lectureId(sentity.getLectureId())
+                    .midScore(sentity.getMidScore())
+                    .finalScore(sentity.getFinalScore())
+                    .assignScore(sentity.getAssignScore())
+                    .totalScore(sentity.getTotalScore())
+                    .lectureTitle(sentity.getLecture().getLectureTitle())
+                    .credit(sentity.getLecture().getCredit())
+                    .build();
+            list.add(dto);
+        }
+        return list;
+    }
 }
