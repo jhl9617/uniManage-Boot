@@ -87,7 +87,7 @@ public class MemberService {
 
     // 교직원 학생/교수관리 상세보기 조회
     public MemberDepartmentDto getMember(Long id) {
-        MemberEntity entity = (MemberEntity) memberRepository.findByMemberId(id);
+        MemberEntity entity = memberRepository.findByMemberId(id).get(0);
         return MemberDepartmentDto.builder()
                 .memberIdx(entity.getMemberIdx())
                 .memberId(entity.getMemberId())
@@ -147,7 +147,7 @@ public class MemberService {
 
     //교직원 학생/교수관리 삭제
     public void delete(Long id) {
-        MemberEntity entity = (MemberEntity) memberRepository.findByMemberId(id);
+        MemberEntity entity = memberRepository.findByMemberId(id).get(0);
         memberRepository.delete(entity);
     }
 
