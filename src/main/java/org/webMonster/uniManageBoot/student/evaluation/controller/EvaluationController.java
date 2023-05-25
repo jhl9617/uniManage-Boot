@@ -39,6 +39,8 @@ public class EvaluationController {
         return courseRegiService.courseRegiList(id);
     }
 
+
+
     //학생이 강의평가 생성
     @PostMapping("/student/surveycourse")
     public EvaluationEntity create(@RequestBody EvaluationDto evaluationDto) {

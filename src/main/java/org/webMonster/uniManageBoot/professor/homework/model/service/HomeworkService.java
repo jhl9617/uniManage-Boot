@@ -45,7 +45,7 @@ public class HomeworkService {
                     .homeworkName(entity.getHomeworkName())
                     .homeworkContent(entity.getHomeworkContent())
                     .submitted(entity.getSubmitted())
-                    .deadline(entity.getDeadline().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .deadline(entity.getDeadline().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")))
                     .build();
 
             list.add(dto);

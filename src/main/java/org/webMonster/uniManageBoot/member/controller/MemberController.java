@@ -45,6 +45,14 @@ public class MemberController {
         MemberDepartmentDto memberDepartmentDto = memberService.getProfile(memberLoginDto);
         session.setAttribute("loginMember", memberDepartmentDto);
     }
+    
+    // 로그아웃
+    @PostMapping("/logout")
+    public ResponseEntity<String> logout(HttpSession session) {
+            session.invalidate(); // 세션 종료
+            return ResponseEntity.ok("/"); // 로그아웃 후 이동할 경로 반환
+
+    }
 
 
     //세션이 있는지 확인

@@ -37,6 +37,8 @@ public class LectureNoticeController {
     @GetMapping("/eclass/lecture/notice/detail")
     public LectureNoticeDto getLectureNotice(@RequestParam("lecture_notice_id") Long id) {
 
+            lectureNoticeService.increaseReadCount(id);
+
             return lectureNoticeService.getLectureNotice(id);
     }
     //게시글 작성 -- 교수 기능 구현시 메소드 수정해주세요

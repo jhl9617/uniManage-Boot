@@ -24,4 +24,6 @@ public class LectureRoomDto {
     private String createdDate;   //강의자료 작성일
 
     private int readcount;   //조회수
+
+    private String name; // 작성자
 }

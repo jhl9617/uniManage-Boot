@@ -10,4 +10,6 @@ public interface FreeboardRepRepository extends JpaRepository<FreeboardRepEntity
     @Query("SELECT f FROM FreeboardRepEntity f Where f.freeId = :freeId")
     List<FreeboardRepEntity> findByFreeId(@Param("freeId") Long freeId);
 
+
+
 }

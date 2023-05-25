@@ -1,6 +1,7 @@
 package org.webMonster.uniManageBoot.professor.lectureRoom.entity;
 
 import lombok.*;
+import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity;
 
 import javax.persistence.*;
@@ -32,4 +33,11 @@ public class LectureRoomEntity {
     private LocalDateTime createdDate;   //강의자료 작성일
     @Column(name = "READCOUNT")
     private int readcount;   //조회수
+
+// 다른 엔티티와의 관계 설정
+//    @OneToMany(mappedBy = "lectureClass")
+//    private List<LectureRoomTimetableEntity> lectureRoomTimetables;
+    @ManyToOne
+    @JoinColumn(name = "MEMBER_ID", referencedColumnName = "MEMBER_ID", insertable = false, updatable = false)
+    private MemberEntity member;
 }
