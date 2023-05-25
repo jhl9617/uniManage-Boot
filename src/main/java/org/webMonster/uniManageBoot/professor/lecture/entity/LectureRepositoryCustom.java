@@ -19,4 +19,6 @@ public interface LectureRepositoryCustom {
     //교수 개설강의관리 리스트 출력용
     Page<LectureEntity> findBySearchConditionAndStatus(Pageable pageable, SearchCondition searchCondition, Long memberId);
 
+    //교수 승인강의 리스트 출력용
+    Page<LectureEntity> findBySearchConditionsAndStatus(Pageable pageable, SearchCondition searchCondition, Long memberId);
 }
