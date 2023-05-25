@@ -2,8 +2,6 @@ package org.webMonster.uniManageBoot.professor.cancelledLecture.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -27,26 +25,23 @@ public class CancelledLectureController {
     @Autowired
     private CancelledLectureService cancelledLectureService;
 
-    //휴강신청 리스트 전체조회(교직원용)
-//    @GetMapping("/admin/manage/closelecture")
-//    public Header<List<CancelledLectureDto>> cancelledLectureList(
-//            @PageableDefault(sort = {"Cancelled_lecture_idx_seq"})Pageable pageable,
-//            SearchCondition searchCondition, HttpSession session
-//    ){
-//        return cancelledLectureService.getCancelledLectureList(pageable, searchCondition, session);
-//    }
+    //교수전체 휴강신청 리스트 조회(교직원용)
+    @GetMapping("/admin/manage/closelecture")
+    public Header<List<CancelledLectureDto>> adminCancelledLectureList(
+            @PageableDefault(sort = {"cancelledLectureIdx"})Pageable pageable, SearchCondition searchCondition){
+        return cancelledLectureService.getAdminCancelledLectureList(pageable, searchCondition);
+    }
 
 
-    //본인이 작성한 휴강신청 리스트 조회(교수용)
+    //교수 휴강신청 리스트 조회(교수용)
     @GetMapping("/prof/lecture/cancelled/list")
     public Header<List<CancelledLectureDto>> profCancelledLectureList(
             @PageableDefault(sort = {"lectureId"})Pageable pageable, SearchCondition searchCondition, HttpSession session){
-        System.out.println("cancelledLectureList 실행");
         MemberDepartmentDto memberDepartmentDto  = (MemberDepartmentDto) session.getAttribute("loginMember");
         Long memberId = memberDepartmentDto.getMemberId();
-        System.out.println("session : " + session);
-        return cancelledLectureService.getProfCancelledLectureList(pageable, searchCondition, session);
+        return cancelledLectureService.getProfCancelledLectureList(pageable, searchCondition, memberId);
     }
+
 
     //휴강신청 상세보기
     @GetMapping("prof/lecture/cancelled/{id}")
@@ -54,13 +49,15 @@ public class CancelledLectureController {
         return cancelledLectureService.getCancelledLecture(id);
     }
 
+
     //휴강게시글 생성(교수용)
     @PostMapping("/prof/lecture/cancelled/write")
     public CancelledLectureEntity create(@RequestBody CancelledLectureDto cancelledLectureDto, HttpSession session){
         MemberDepartmentDto  memberDepartmentDto  = (MemberDepartmentDto) session.getAttribute("loginMember");
         System.out.println(cancelledLectureDto);
-        return CancelledLectureService.create(cancelledLectureDto);
+        return cancelledLectureService.create(cancelledLectureDto);
     }
+
 
     //휴강게시글 승인여부 수정(교직원용)
     @PatchMapping  ("/admin/manage/closelecture")

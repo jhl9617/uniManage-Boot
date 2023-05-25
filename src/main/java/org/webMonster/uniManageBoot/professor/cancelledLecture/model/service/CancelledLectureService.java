@@ -2,8 +2,6 @@ package org.webMonster.uniManageBoot.professor.cancelledLecture.model.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -13,11 +11,9 @@ import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.professor.cancelledLecture.entity.CancelledLectureEntity;
 import org.webMonster.uniManageBoot.professor.cancelledLecture.entity.CancelledLectureRepository;
 import org.webMonster.uniManageBoot.professor.cancelledLecture.entity.CancelledLectureRepositoryCustom;
-import org.webMonster.uniManageBoot.professor.cancelledLecture.entity.CancelledLectureRepositoryCustomImpl;
 import org.webMonster.uniManageBoot.professor.cancelledLecture.model.dto.CancelledLectureDto;
 import org.webMonster.uniManageBoot.professor.cancelledLecture.model.dto.ApplyDto;
 
-import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,22 +21,47 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service
 public class CancelledLectureService {
-
-    @Autowired
-    private CancelledLectureRepository cancelledLectureRepository;
-
-    @Autowired
-    private CancelledLectureRepositoryCustomImpl cancelledLectureRepositoryCustom;
+    private final CancelledLectureRepository cancelledLectureRepository;
+    private final CancelledLectureRepositoryCustom cancelledLectureRepositoryCustom;
 
 
-
-    //본인이 작성한 휴강신청 리스트 조회(교수용)
-    public Header<List<CancelledLectureDto>> getProfCancelledLectureList(Pageable pageable, SearchCondition searchCondition, HttpSession session) {
+    //교수전체 휴강신청 리스트 조회(교직원용)
+    public Header<List<CancelledLectureDto>> getAdminCancelledLectureList(Pageable pageable, SearchCondition searchCondition) {
         List<CancelledLectureDto> dtos = new ArrayList<>();
-        Page<CancelledLectureEntity> cancelledLectureEntities = CancelledLectureRepositoryCustom.findAllBySearchConditionAndStatus(pageable, searchCondition, session);
+
+        Page<CancelledLectureEntity> cancelledLectureEntities = cancelledLectureRepositoryCustom.findAllBySearchConditionAndStatus(pageable, searchCondition);
+        for(CancelledLectureEntity entity : cancelledLectureEntities){
+            CancelledLectureDto dto = CancelledLectureDto.builder()
+                    .cancelledLectureIdx(entity.getCancelledLectureIdx())
+                    .memberId(entity.getMember().getMemberId())
+                    .lectureId(entity.getLecture().getLectureId())
+                    .lectureRoomCode(entity.getLectureClass().getLectureRoomCode())
+                    .attendanceDay(entity.getAttendanceDay())
+                    .supplyDate(entity.getSupplyDate())
+                    .reason(entity.getReason())
+                    .cancelledFile(entity.getCancelledFile())
+                    .cancelledFileRename(entity.getCancelledFileRename())
+                    .cancelledApply(entity.getCancelledApply())
+                    .build();
+            dtos.add(dto);
+        }
+        Pagination pagination = new Pagination(
+                (int) cancelledLectureEntities.getTotalElements(),
+                pageable.getPageNumber() + 1,
+                pageable.getPageSize(),
+                10
+        );
+        return Header.OK(dtos, pagination);
+    }
+
+
+    //교수 휴강신청 리스트 조회(교수용)
+    public Header<List<CancelledLectureDto>> getProfCancelledLectureList(Pageable pageable, SearchCondition searchCondition, Long memberId) {
+        List<CancelledLectureDto> dtos = new ArrayList<>();
+        Page<CancelledLectureEntity> cancelledLectureEntities = cancelledLectureRepositoryCustom.findAllBySearchConditionAndStatusByMemberId(pageable, searchCondition, memberId);
 
         for (CancelledLectureEntity entity : cancelledLectureEntities) {
-            if (session.getId().equals(entity.getMember().getMemberId())) {
+            if (memberId.equals(entity.getMember().getMemberId())) {
                 CancelledLectureDto dto = CancelledLectureDto.builder()
                         .cancelledLectureIdx(entity.getCancelledLectureIdx())
                         .memberId(entity.getMember().getMemberId())
@@ -69,7 +90,7 @@ public class CancelledLectureService {
 
     //휴강신청 상세보기
     public CancelledLectureDto getCancelledLecture(Long id) {
-        CancelledLectureEntity entity = CancelledLectureRepository.findById(id).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
+        CancelledLectureEntity entity = cancelledLectureRepository.findById(id).orElseThrow(() -> new RuntimeException("휴강내역 신청글을 찾을 수 없습니다."));
         return CancelledLectureDto.builder()
                 .lectureId(entity.getLecture().getLectureId())
                 .memberId(entity.getMember().getMemberId())
@@ -84,9 +105,8 @@ public class CancelledLectureService {
 
 
     //휴강게시글 생성(교수용)
-    public static CancelledLectureEntity create(CancelledLectureDto cancelledLectureDto) {
+    public CancelledLectureEntity create(CancelledLectureDto cancelledLectureDto) {
         CancelledLectureEntity entity = CancelledLectureEntity.builder()
-                .cancelledLectureIdx(cancelledLectureDto.getCancelledLectureIdx())
                 .lectureId(cancelledLectureDto.getLectureId())
                 .memberId(cancelledLectureDto.getMemberId())
                 .lectureRoomCode(cancelledLectureDto.getLectureRoomCode())
@@ -103,122 +123,8 @@ public class CancelledLectureService {
 
     //휴강게시글 승인여부 수정(교직원용)
     public CancelledLectureEntity update(ApplyDto applyDto) {
-        CancelledLectureEntity entity = CancelledLectureRepository.findById(applyDto.getMemberId()).orElseThrow(() -> new RuntimeException("휴강신청 내역을 찾을 수 없습니다."));
+        CancelledLectureEntity entity = cancelledLectureRepository.findById(applyDto.getMemberId()).orElseThrow(() -> new RuntimeException("휴강신청 내역을 찾을 수 없습니다."));
         entity.setCancelledApply(applyDto.getCancelledApply());
         return cancelledLectureRepository.save(entity);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    휴강신청 리스트 전체조회(교직원용)
-//    public Header<List<CancelledLectureDto>> getCancelledLectureList(Pageable pageable, SearchCondition searchCondition, HttpSession session) {
-//        List<CancelledLectureDto> dtos = new ArrayList<>();
-//        Page<CancelledLectureEntity> cancelledLectureEntities = cancelledLectureRepositoryCustom.findAllBySearchCondition(pageable, searchCondition, session);
-//
-//        for (CancelledLectureEntity entity : cancelledLectureEntities) {
-//            CancelledLectureDto dto = CancelledLectureDto.builder()
-//                    .cancelledLectureIdx(entity.getCancelledLectureIdx())
-//                    .lectureId(entity.getLectureId())
-//                    .memberId(entity.getMemberId())
-//                    .attendanceDay(entity.getAttendanceDay())
-//                    .supplyDate(entity.getSupplyDate())
-//                    .reason(entity.getReason())
-//                    .cancelledFile(entity.getCancelledFile())
-//                    .cancelledRename(entity.getCancelledRename())
-//                    .cancelledApply(entity.getCancelledApply())
-//                    .build();
-//            dtos.add(dto);
-//        }
-//
-//      Pagination pagination = new Pagination(
-//              (int) cancelledLectureEntities.getTotalElements(),
-//              pageable.getPageNumber() + 1,
-//              pageable.getPageSize(),
-//              10
-//      );
-//        return Header.OK(dtos, pagination);
-//    }
-//
-//
-//    //본인이 작성한 휴강신청 리스트 조회(교수용)
-//    public Header<List<CancelledLectureDto>> getCancelledLectureList(Pageable pageable, SearchCondition searchCondition, long memberId) {
-//        List<CancelledLectureDto> dtos = new ArrayList<>();
-//
-//        Page<CancelledLectureEntity> cancelledLectureEntities = cancelledLectureRepositoryCustom.findAllBySearchConditionByMemberId(pageable, searchCondition, memberId);
-//        if(cancelledLectureEntities != null)
-//        for(CancelledLectureEntity entity : cancelledLectureEntities){
-//            CancelledLectureDto dto = CancelledLectureDto.builder()
-//                    .cancelledLectureIdx(entity.getCancelledLectureIdx())
-//                    .lectureId(entity.getLecture().getLectureId())
-//                    .memberId(entity.getMember().getMemberId())
-//                    .lectureRoomCode(entity.getLectureClass().getLectureRoomCode())
-//                    .attendanceDay(entity.getAttendanceDay())
-//                    .supplyDate(entity.getSupplyDate())
-//                    .reason(entity.getReason())
-//                    .cancelledFile(entity.getCancelledFile())
-//                    .cancelledFileRename(entity.getCancelledFileRename())
-//                    .cancelledApply(entity.getCancelledApply())
-//                    .build();
-//            dtos.add(dto);
-//        }
-//        Pagination pagination = new Pagination(
-//                (int) cancelledLectureEntities.getTotalElements()
-//                , pageable.getPageNumber() + 1
-//                , pageable.getPageSize()
-//                ,10
-//        );
-//        log.info("dtos:" + dtos);
-//        return Header.OK(dtos, pagination);
-//    }
-//
-//
-//    //휴강게시글 작성
-//    public CancelledLectureEntity create(CancelledLectureDto cancelledLectureDto) {
-//        CancelledLectureEntity entity = CancelledLectureEntity.builder()
-//                .lectureId(cancelledLectureDto.getLectureId())
-//                .memberId(cancelledLectureDto.getMemberId())
-//                .lectureRoomCode(cancelledLectureDto.getLectureRoomCode())
-//                .attendanceDay(cancelledLectureDto.getAttendanceDay())
-//                .supplyDate(cancelledLectureDto.getSupplyDate())
-//                .reason(cancelledLectureDto.getReason())
-//                .cancelledApply(cancelledLectureDto.getCancelledApply())
-//                .build();
-//        return cancelledLectureRepository.save(entity);
-//    }
-//
-//
-//    //휴강게시글(승인여부) 수정
-//    public CancelledLectureEntity update(ApplyDto applyDto) {
-//        CancelledLectureEntity entity = cancelledLectureRepository.findById(applyDto.getCancelledLectureIdx()).orElseThrow(() -> new RuntimeException("휴강에 관련된 게시글을 찾을 수 없습니다."));
-//        entity.setCancelledApply(applyDto.getCancelledApply());
-//        return cancelledLectureRepository.save(entity);
-//    }
 }
