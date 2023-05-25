@@ -3,6 +3,8 @@ package org.webMonster.uniManageBoot.professor.lecture.entity;
 
 import lombok.*;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
+import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassEntity;
+import org.webMonster.uniManageBoot.professor.lectureClassTime.entity.LectureClassTimeEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 import org.webMonster.uniManageBoot.student.score.entity.ScoreEntity;
 
@@ -76,6 +78,5 @@ public class LectureEntity {
 //    @ManyToOne
 //    @JoinColumn(name = "LECTURE_CLASS_IDX", referencedColumnName = "LECTURE_CLASS_IDX", insertable = false, updatable = false)
 //    private LectureClassEntity lectureClass;
-
 
 }
