@@ -122,6 +122,7 @@ public class LectureRepositoryCustomImpl extends QuerydslRepositorySupport imple
         return new PageImpl<>(results, pageable, total);
     }
 
+    //학생 학생정보시스템 수강신청시 강의 검색용
     public BooleanExpression searchKeyword(String sk, String sv) {
         BooleanExpression expression = null;
 

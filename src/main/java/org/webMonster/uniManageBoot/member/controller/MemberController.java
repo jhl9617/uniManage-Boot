@@ -133,7 +133,6 @@ public class MemberController {
         return response;
     }
 
-
     @GetMapping("/prof/info")
     public MemberDepartmentDto professorInfo(HttpSession session) {
         MemberDepartmentDto loginMember = (MemberDepartmentDto) session.getAttribute("loginMember");
@@ -164,5 +163,25 @@ public class MemberController {
         session.invalidate();
     }*/
 
+    //학생 마이페이지 개인정보 조회
+    @GetMapping("/student/mypage")
+    public MemberDepartmentDto studentMypage(HttpSession session) {
+        MemberDepartmentDto loginMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+        return loginMember;
+    }
+
+
+    //학생 마이페이지 개인정보 수정
+    @PostMapping("/student/mypage")
+    public MemberEntity updateStudentMypage(@RequestBody MemberDepartmentDto memberDepartmentDto, HttpSession session) {
+        MemberDepartmentDto sessionMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+        sessionMember.setPhone(memberDepartmentDto.getPhone());
+        sessionMember.setPostcode(memberDepartmentDto.getPostcode());
+        sessionMember.setAddress1(memberDepartmentDto.getAddress1());
+        sessionMember.setAddress2(memberDepartmentDto.getAddress2());
+        session.setAttribute("loginMember", sessionMember);
+        return memberService.update(sessionMember);
+
+    }
 
 }
