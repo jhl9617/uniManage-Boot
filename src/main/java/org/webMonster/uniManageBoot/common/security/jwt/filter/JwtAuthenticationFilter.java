@@ -50,7 +50,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         try {
 
             credentials = new ObjectMapper().readValue(request.getInputStream(), UserCredentials.class);
-            System.out.println("\nattemptAuthentication확인해봐\n" + credentials.getUsername() + "," + credentials.getPassword());
+
 
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -58,7 +58,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
         Authentication authenticationToken = new UsernamePasswordAuthenticationToken(credentials.getUsername(), credentials.getPassword());
         Authentication authentication = authenticationManager.authenticate(authenticationToken);
-        System.out.println("authentication1234 : " + authentication);
+        System.out.println("authentication : " + authentication);
         return authenticationManager.authenticate(authenticationToken);
     }
 

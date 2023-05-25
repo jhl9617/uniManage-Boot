@@ -157,12 +157,12 @@ public class MemberController {
         return ResponseEntity.ok(memberEntity);
     }
 
-    //로그아웃 처리 세션 삭제
+    /*//로그아웃 처리 세션 삭제
     @PostMapping("/logout")
     public void logout(HttpSession session) {
         System.out.println("\n\n세션 삭제 완료\n\n");
         session.invalidate();
-    }
+    }*/
 
 
 }

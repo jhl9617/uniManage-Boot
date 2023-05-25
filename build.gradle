@@ -2,6 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '2.7.10'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+
 }
 
 group = 'com.example'
@@ -27,6 +28,9 @@ dependencies {
 	/*querydsl*/
 	implementation 'com.querydsl:querydsl-core'
 	implementation 'com.querydsl:querydsl-jpa'
+
+
+
 
 	/*chatbot용*/
 	implementation 'com.googlecode.json-simple:json-simple:1.1.1'
@@ -78,6 +82,7 @@ sourceSets {
 tasks.withType(JavaCompile) {
 	options.annotationProcessorGeneratedSourcesDirectory = file(generated)
 }
+
 
 clean.doLast {
 	file(generated).deleteDir()

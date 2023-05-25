@@ -38,7 +38,6 @@ public class NoticeController {
 
     private final MemberRepository memberRepository;
 
-
     @GetMapping("admin/notice/list")
     public Header<List<NoticeDto>> noticeList(
             @PageableDefault(sort = {"notice_id"}) Pageable pageable,
