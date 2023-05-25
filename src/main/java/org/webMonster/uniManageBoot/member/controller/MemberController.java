@@ -123,7 +123,7 @@ public class MemberController {
     @DeleteMapping("/admin/manage/professor/{id}")
     public void deleteProfessor(@PathVariable Long id) { memberService.delete(id); }
 
-    //학생정보시스템 메인페이지에서 공지사항 4개 리스트 조회
+    //학생정보시스템 메인페이지에서 공지사항/학사일정 4개 리스트 조회
     @GetMapping("/student")
     public StudentMainDto getStudentMain(){
         StudentMainDto response = new StudentMainDto();

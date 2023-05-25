@@ -92,6 +92,13 @@ public class LectureController {
 
     }
 
+    //학생 학생정보시스템 수강신청할 강의 목록
+    @GetMapping("/student/sugang")
+    public Header<List<LectureDto>> forSugangList(
+            @PageableDefault(sort = {"lectureId"}) Pageable pageable, SearchCondition searchCondition) {
+        return lectureService.getAppliedLectureList(pageable, searchCondition);
+    }
+
     //교수 강의 신청 리스트
     @GetMapping("prof/create/list")
     public Header<List<LectureDto>> profLectureList(
