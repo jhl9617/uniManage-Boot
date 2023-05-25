@@ -4,13 +4,9 @@ package org.webMonster.uniManageBoot.student.courseRegi.controller;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
 
-import org.webMonster.uniManageBoot.common.Header;
-import org.webMonster.uniManageBoot.common.SearchCondition;
-import org.webMonster.uniManageBoot.professor.lectureNotice.model.dto.LectureNoticeDto;
+import org.webMonster.uniManageBoot.student.courseRegi.model.dto.SearchTerm;
 import org.webMonster.uniManageBoot.student.courseRegi.entity.CourseRegiEntity;
 import org.webMonster.uniManageBoot.student.courseRegi.model.dto.CourseRegiDto;
 import org.webMonster.uniManageBoot.student.courseRegi.model.service.CourseRegiService;
@@ -33,20 +29,20 @@ public class CourseRegiController {
         return courseRegiService.courseRegiList(id);
     }
 
-    @GetMapping("/student/studenttimetable/{id}")
-    public List<CourseRegiDto> timeTableList(@PathVariable Long id) {
 
-        return courseRegiService.courseRegiList(id);
+    // 학생기능 - 학기별 수강중인 목록 검색 조회
+    @GetMapping("/student/studenttimetable")
+    public List<CourseRegiDto> getCourseRegiTimetable(SearchTerm searchTerm) {
+
+        return courseRegiService.getCourseRegiTimetable(searchTerm);
     }
-//    @GetMapping("/student/studenttimetable/{id}")
-//    public List<CourseRegiDto> timeTableList(@PathVariable Long id, @RequestParam("course_regi_term") Long courseRegiTerm) {
-//
-//        return courseRegiService.timeTableList(id, courseRegiTerm);
-//    }
-    @GetMapping("/student/checkcourse/{id}")
-public List<CourseRegiDto> checkCourseList(@PathVariable Long id) {
 
-    return courseRegiService.courseRegiList(id);
+
+    // 학생기능 - 학기별 수강중인 목록 검색 조회
+    @GetMapping("/student/checkcourse")
+    public List<CourseRegiDto> checkCourseList(SearchTerm searchTerm) {
+
+    return courseRegiService.getCourseRegiTimetable(searchTerm);
     }
 
     @PostMapping("/courseregi")

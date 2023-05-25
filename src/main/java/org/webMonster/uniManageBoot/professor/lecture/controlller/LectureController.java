@@ -13,6 +13,7 @@ import org.webMonster.uniManageBoot.professor.homework.model.service.HomeworkSer
 import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 import org.webMonster.uniManageBoot.professor.lecture.model.dto.LectureDto;
 import org.webMonster.uniManageBoot.professor.lecture.model.dto.LectureMainDto;
+import org.webMonster.uniManageBoot.professor.lecture.model.dto.SearchValues;
 import org.webMonster.uniManageBoot.professor.lecture.model.service.LectureService;
 import org.webMonster.uniManageBoot.professor.lectureNotice.model.service.LectureNoticeService;
 import org.webMonster.uniManageBoot.professor.lectureRoom.model.service.LectureRoomService;
@@ -70,7 +71,7 @@ public class LectureController {
     }
 
 
-    //Eclass 선택된 강의 정보를 이용해 조회 - 강의 메인화면
+    //학생 Eclass 선택된 강의 정보를 이용해 조회 - 강의 메인화면
     @GetMapping("/eclass/lecture/{id}")
     public LectureMainDto getLectureMain(@PathVariable Long id) {
         LectureMainDto response = new LectureMainDto();
@@ -82,13 +83,22 @@ public class LectureController {
         return response;
     }
 
-    //    public LectureDto getLecture(@PathVariable Long id){
-//        return lectureService.getLecture(id);
-//    }
-    //Eclass 선택된 강의 정보 조회 - 출력
+
+    //학생 Eclass 선택된 강의 정보 조회 - 출력
     @GetMapping("/eclass/lecture/lectureinfo/{id}")
     public LectureDto getLectureinfo(@PathVariable Long id) {
         return lectureService.getLecture(id);
+
+    }
+
+    //학생 학과별 강의리스트 조회
+    @GetMapping("/student/timelinebydepart")
+    public Header<List<LectureDto>> getLectureinfo(@PageableDefault(sort = {"lectureId"}) Pageable pageable,
+            SearchValues searchValues){
+
+        return lectureService.getStudentLectureList(pageable, searchValues);
+
+
 
     }
 
