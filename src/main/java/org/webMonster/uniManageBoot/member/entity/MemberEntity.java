@@ -7,11 +7,13 @@ import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
+import org.webMonster.uniManageBoot.student.score.entity.ScoreEntity;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Date;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 
@@ -25,7 +27,13 @@ import java.util.List;
 @Setter
 public class MemberEntity implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @SequenceGenerator(name = "MEMBER_IDX_SEQ", sequenceName = "MEMBER_IDX_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "member_idx_seq_gen")
+    @SequenceGenerator(
+            name = "member_idx_seq_gen",
+            sequenceName = "MEMBER_IDX_SEQ",
+            allocationSize = 1
+    )
     @Column(name = "MEMBER_IDX")
     private long memberIdx;             //시퀀스
     @Column(name = "MEMBER_ID")
@@ -35,7 +43,7 @@ public class MemberEntity implements Serializable {
     @Column(name = "NAME")
     private String name;        //이름
     @Column(name = "DEPARTMENT_ID")
-    private int departmentId;  //학과 번호
+    private long departmentId;  //학과 번호
     @Column(name = "GRADE")
     private Integer grade;        //학년
     @Column(name = "BIRTHDAY")
@@ -53,6 +61,7 @@ public class MemberEntity implements Serializable {
     @Column(name = "AUTH")
     private int auth;           //권한구분:교수 1, 교직원 2,재학생 3, 졸업생 4, 휴학생 5
 
+
     @ManyToOne
     @JoinColumn(name = "DEPARTMENT_ID", insertable = false, updatable = false)
     private DepartmentEntity department;
@@ -68,4 +77,16 @@ public class MemberEntity implements Serializable {
     @Builder.Default
     @OneToMany(mappedBy = "member")
     private List<LectureEntity> lectureEntities = new ArrayList<>();
+
+    public List<String> getAuthList() {
+        List<String> authList = new ArrayList<>();
+        // assuming auth is an int representing a single authority
+        authList.add(String.valueOf(this.auth));
+        return authList;
+    }
+
+
+    @Builder.Default
+    @OneToMany(mappedBy = "member")
+    private List<ScoreEntity> scoreEntities = new ArrayList<>();
 }

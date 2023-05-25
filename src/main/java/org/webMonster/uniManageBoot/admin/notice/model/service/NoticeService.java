@@ -20,6 +20,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 import org.webMonster.uniManageBoot.admin.notice.entity.NoticeEntity;
@@ -32,6 +33,8 @@ import org.webMonster.uniManageBoot.admin.notice.model.dto.SmsResponseDto;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
 import org.webMonster.uniManageBoot.common.SearchCondition;
+import org.webMonster.uniManageBoot.professor.homework.entity.HomeworkEntity;
+import org.webMonster.uniManageBoot.professor.homework.model.dto.HomeworkDto;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
@@ -54,22 +57,20 @@ public class NoticeService {
     private final NoticeRepository noticeRepository;
     private final NoticeRepositoryCustom noticeRepositoryCustom;
 
-    @Autowired
-    private JavaMailSender mailSender;
-
-
+//    @Autowired
+//    private JavaMailSender mailSender;
 
     //sms api
-    @Value("${naver-cloud-sms.accessKey}")
+    @Value("xZyI5jAHb2m9zxAO897V")
     private String accessKey;
 
-    @Value("${naver-cloud-sms.secretKey}")
+    @Value("gmkl7dShqdeqRXNUnzt5tM88bjqDflCWsVFqcS62")
     private String secretKey;
 
-    @Value("${naver-cloud-sms.serviceId}")
+    @Value("ncp:sms:kr:308639486747:unimanage")
     private String serviceId;
 
-    @Value("${naver-cloud-sms.senderPhone}")
+    @Value("01062316109")
     private String phone;
     
     public Header<List<NoticeDto>> getNoticeList(Pageable pageable, SearchCondition searchCondition) {
@@ -82,7 +83,7 @@ public class NoticeService {
                     .noticeTitle(entity.getNoticeTitle())
                     .noticeContent(entity.getNoticeContent())
                     .memberId(entity.getMemberId())
-                    .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
                     .build();
             dtos.add(dto);
         }
@@ -106,14 +107,28 @@ public class NoticeService {
                 .noticeTitle(entity.getNoticeTitle())
                 .noticeContent(entity.getNoticeContent())
                 .memberId(entity.getMemberId())
-                .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                .readcount(entity.getReadcount())
+                .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
                 .build();
+    }
+
+    //게시글 조회시 조회수 1씩 증가
+    @Transactional
+    public void increaseReadCount(Long id) {
+        NoticeEntity entity = noticeRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
+
+        entity.setReadcount(entity.getReadcount() + 1); // 조회수 증가
+
+        // 조회수 업데이트 저장
+        noticeRepository.save(entity);
     }
     /**
      * 게시글 등록
      */
     public NoticeEntity create(NoticeDto noticeDto) {
         NoticeEntity entity = NoticeEntity.builder()
+                .noticeId(noticeDto.getNoticeId())
                 .noticeTitle(noticeDto.getNoticeTitle())
                 .noticeContent(noticeDto.getNoticeContent())
                 .memberId(noticeDto.getMemberId())
@@ -138,7 +153,7 @@ public class NoticeService {
         noticeRepository.delete(entity);
     }
 
-    //sms api
+//    sms api
     public String makeSignature(Long time) throws NoSuchAlgorithmException, UnsupportedEncodingException, InvalidKeyException {
         String space = " ";
         String newLine = "\n";
@@ -203,24 +218,42 @@ public class NoticeService {
 
 
     //email 보내기
-    public void sendEmail(String content) {
+//    public void sendEmail(String content) {
+//
+//        String setFrom = "itsyksj@naver.com";
+//        String toMail = "jhl9617@gmail.com";
+//        String title = "cookology에서 보내는 인증이메일 입니다.";
+//
+//        try {
+//            MimeMessage message = mailSender.createMimeMessage();
+//            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
+//            helper.setFrom(setFrom);
+//            helper.setTo(toMail);
+//            helper.setSubject(title);
+//            helper.setText(content, true);
+//            mailSender.send(message);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
-        String setFrom = "itsyksj@naver.com";
-        String toMail = "jhl9617@gmail.com";
-        String title = "cookology에서 보내는 인증이메일 입니다.";
-
-        try {
-            MimeMessage message = mailSender.createMimeMessage();
-            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
-            helper.setFrom(setFrom);
-            helper.setTo(toMail);
-            helper.setSubject(title);
-            helper.setText(content, true);
-            mailSender.send(message);
-        } catch (Exception e) {
-            e.printStackTrace();
+    //학생정보시스템 메인페이지 공지사항 리스트 4개 조회용
+    public List<NoticeDto> getNoticeList(){
+        List<NoticeDto> list = new ArrayList<>();
+        List<NoticeEntity> entity = noticeRepository.findAll();
+        for (NoticeEntity nentity : entity) {
+            NoticeDto dto = NoticeDto.builder()
+                    .noticeId(nentity.getNoticeId())
+                    .noticeTitle(nentity.getNoticeTitle())
+                    .noticeContent(nentity.getNoticeContent())
+                    .memberId(nentity.getMemberId())
+                    .createdDate(nentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
+                    .readcount(nentity.getReadcount())
+                    .build();
+            list.add(dto);
         }
-
-
+        return list;
     }
+
+
 }

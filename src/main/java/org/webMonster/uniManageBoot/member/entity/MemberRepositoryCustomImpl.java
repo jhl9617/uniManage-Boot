@@ -1,7 +1,10 @@
 package org.webMonster.uniManageBoot.member.entity;
 
+import com.querydsl.core.types.Expression;
 import com.querydsl.core.types.Projections;
 import com.querydsl.core.types.dsl.BooleanExpression;
+import com.querydsl.core.types.dsl.Expressions;
+import com.querydsl.core.types.dsl.NumberExpression;
 import com.querydsl.jpa.JPAExpressions;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
@@ -22,6 +25,7 @@ import static org.webMonster.uniManageBoot.student.department.entity.QDepartment
 
 import java.util.List;
 import java.util.Optional;
+
 
 @Repository
 @Primary
@@ -44,7 +48,7 @@ public class MemberRepositoryCustomImpl extends QuerydslRepositorySupport implem
     }
 
     @Override
-    public Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId, String memberPwd) {
+    public Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId) {
         return Optional.ofNullable(
                 queryFactory
                         .select(Projections.bean(
@@ -67,7 +71,7 @@ public class MemberRepositoryCustomImpl extends QuerydslRepositorySupport implem
                                 departmentEntity.departmentName))
                         .from(memberEntity)
                         .join(memberEntity.department, departmentEntity)    //memberEntity.department를 기반으로 조인
-                        .where(memberEntity.memberId.eq(memberId).and(memberEntity.memberPwd.eq(memberPwd)))
+                        .where(memberEntity.memberId.eq(memberId))
                         .fetchOne() //단일결과 가져오기, 2개 이상이면 예외
         );
     }
@@ -104,7 +108,7 @@ public class MemberRepositoryCustomImpl extends QuerydslRepositorySupport implem
                 .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
                 .where(memberEntity.auth.in(3,4,5));
 
-        long total = query.fetchCount();
+        long total = query.stream().count();
 
         List<MemberEntity> results = query
                 .offset(pageable.getOffset())
@@ -115,23 +119,22 @@ public class MemberRepositoryCustomImpl extends QuerydslRepositorySupport implem
         return new PageImpl<>(results, pageable, total);
     }
 
-
-    //교직원 학생관리 리스트에서 검색용
+    //교직원 학생/교수관리 리스트에서 검색용
     public BooleanExpression searchKeywords(String sk, String sv) {
-        if("name".equals(sk)) {   //학생명으로 검색
-            if(StringUtils.hasLength(sv)) {
+        if ("name".equals(sk)) {   // 학생/교수명으로 검색
+            if (StringUtils.hasLength(sv)) {
                 return memberEntity.name.contains(sv);
             }
-        } else if ("member_id".equals(sk)) {   //학생 번호로 검색
-            if(StringUtils.hasLength(sv)) {
+        } else if ("member_id".equals(sk)) {   // 학생/교수 번호로 검색
+            if (StringUtils.hasLength(sv)) {
                 return memberEntity.memberId.stringValue().contains(sv);
             }
-        }  else if ("department_name".equals(sk)) {   //학과명으로 검색
+        } else if ("department_name".equals(sk)) {   // 학과명으로 검색
             if (StringUtils.hasLength(sv)) {
                 // 다른 테이블의 department_name 컬럼을 조인하여 검색
                 QDepartmentEntity departmentEntity = QDepartmentEntity.departmentEntity;
-                return departmentEntity.departmentId.in(
-                        JPAExpressions.select(departmentEntity)
+                return Expressions.asNumber(memberEntity.departmentId).in(
+                        JPAExpressions.select(departmentEntity.departmentId)
                                 .from(departmentEntity)
                                 .where(departmentEntity.departmentName.contains(sv))
                                 .select(departmentEntity.departmentId)
@@ -141,5 +144,23 @@ public class MemberRepositoryCustomImpl extends QuerydslRepositorySupport implem
 
         return null;
     }
+
+    //교직원 교수관리 리스트 출력
+    public Page<MemberEntity> findAllBySearchConditionAndAuth(Pageable pageable, SearchCondition searchCondition) {
+        JPAQuery<MemberEntity> query = queryFactory.selectFrom(memberEntity)
+                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
+                .where(memberEntity.auth.eq(1));
+
+        long total = query.stream().count();
+
+        List<MemberEntity> results = query
+                .offset(pageable.getOffset())
+                .limit(pageable.getPageSize())
+                .orderBy(memberEntity.memberIdx.desc())
+                .fetch();
+
+        return new PageImpl<>(results, pageable, total);
+    }
+
 
 }
