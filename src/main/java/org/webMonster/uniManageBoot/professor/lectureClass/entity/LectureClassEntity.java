@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity;
+import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -42,4 +43,5 @@ public class LectureClassEntity implements java.io.Serializable {
     @Builder.Default
     @OneToMany(mappedBy = "lectureClass")
     private List<LectureRoomTimetableEntity> lectureRoomTimetables = new ArrayList<>();
+
 }

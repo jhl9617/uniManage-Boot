@@ -39,7 +39,4 @@ public class LectureDto {
 //    private String lectureRoomNum;
 //    private int classCapacity;
 
-
-
-
 }

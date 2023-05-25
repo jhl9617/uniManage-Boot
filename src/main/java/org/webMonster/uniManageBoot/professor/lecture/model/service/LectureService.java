@@ -43,7 +43,6 @@ public class LectureService {
                     .roomcode2(entity.getRoomcode2())
                     .roomcode3(entity.getRoomcode3())
                     .timecode1(entity.getTimecode1())
-                    .timecode2(entity.getTimecode1())
                     .timecode2(entity.getTimecode2())
                     .timecode3(entity.getTimecode3())
                     .syllabusTitle(entity.getSyllabusTitle())
@@ -110,7 +109,6 @@ public class LectureService {
                     .roomcode2(entity.getRoomcode2())
                     .roomcode3(entity.getRoomcode3())
                     .timecode1(entity.getTimecode1())
-                    .timecode2(entity.getTimecode1())
                     .timecode2(entity.getTimecode2())
                     .timecode3(entity.getTimecode3())
                     .syllabusTitle(entity.getSyllabusTitle())
@@ -150,14 +148,11 @@ public class LectureService {
                     .roomcode2(entity.getRoomcode2())
                     .roomcode3(entity.getRoomcode3())
                     .timecode1(entity.getTimecode1())
-                    .timecode2(entity.getTimecode1())
                     .timecode2(entity.getTimecode2())
                     .timecode3(entity.getTimecode3())
                     .syllabusTitle(entity.getSyllabusTitle())
                     .syllabusRename(entity.getSyllabusRename())
                     .lectureApplyStatus(entity.getLectureApplyStatus())
-                    .name(entity.getMember().getName())
-                    .departmentName(entity.getDepartment().getDepartmentName())
                     .build();
             dtos.add(dto);
         }
@@ -187,7 +182,6 @@ public class LectureService {
                 .roomcode2(lectureDto.getRoomcode2())
                 .roomcode3(lectureDto.getRoomcode3())
                 .timecode1(lectureDto.getTimecode1())
-                .timecode2(lectureDto.getTimecode1())
                 .timecode2(lectureDto.getTimecode2())
                 .timecode3(lectureDto.getTimecode3())
                 .syllabusTitle(lectureDto.getSyllabusTitle())
