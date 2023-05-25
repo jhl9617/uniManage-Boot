@@ -7,8 +7,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
+import org.webMonster.uniManageBoot.student.score.entity.ScoreEntity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -66,6 +69,10 @@ public class LectureEntity {
     @ManyToOne
     @JoinColumn(name = "DEPARTMENT_ID", referencedColumnName = "DEPARTMENT_ID", insertable = false, updatable = false)
     private DepartmentEntity department;
+
+    @Builder.Default
+    @OneToMany(mappedBy = "lecture")
+    private List<ScoreEntity> scoreEntities = new ArrayList<>();
 
 //    @ManyToOne
 //    @JoinColumn(name = "LECTURE_CLASS_IDX", referencedColumnName = "LECTURE_CLASS_IDX", insertable = false, updatable = false)

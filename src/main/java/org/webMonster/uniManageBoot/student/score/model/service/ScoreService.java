@@ -59,7 +59,6 @@ public class ScoreService {
                     .assignScore(sentity.getAssignScore())
                     .totalScore(sentity.getTotalScore())
                     .lectureTitle(sentity.getLecture().getLectureTitle())
-                    .lectureId(sentity.getLecture().getLectureId())
                     .credit(sentity.getLecture().getCredit())
                     .build();
             list.add(dto);
