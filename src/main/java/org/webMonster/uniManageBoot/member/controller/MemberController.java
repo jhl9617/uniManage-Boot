@@ -8,10 +8,7 @@ import org.webMonster.uniManageBoot.admin.schedule.model.service.ScheduleService
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
-import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
-import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
-import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
-import org.webMonster.uniManageBoot.member.model.dto.StudentMainDto;
+import org.webMonster.uniManageBoot.member.model.dto.*;
 import org.webMonster.uniManageBoot.member.model.service.MemberService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -127,6 +124,16 @@ public class MemberController {
     @GetMapping("/student")
     public StudentMainDto getStudentMain(){
         StudentMainDto response = new StudentMainDto();
+        response.setNoticeDto(noticeService.getNoticeList());
+        response.setScheduleDto(scheduleService.getScheduleList());
+
+        return response;
+    }
+
+    //교수 메인페이지에서 공지사항 4개 리스트 조회
+    @GetMapping("/prof/main")
+    public ProfessorMainDto getProfMain(){
+        ProfessorMainDto response = new ProfessorMainDto();
         response.setNoticeDto(noticeService.getNoticeList());
         response.setScheduleDto(scheduleService.getScheduleList());
 

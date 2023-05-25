@@ -107,8 +107,26 @@ public class LectureRepositoryCustomImpl extends QuerydslRepositorySupport imple
     //교수 강의개설요청관리 리스트 출력
     public Page<LectureEntity> findBySearchConditionAndStatus(Pageable pageable, SearchCondition searchCondition, Long memberId) {
         JPAQuery<LectureEntity> query = queryFactory.selectFrom(lectureEntity)
-                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv())
-                        .and(lectureEntity.memberId.eq(memberId))); // memberId 조건 추가
+                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
+                .where(lectureEntity.memberId.eq(memberId));
+
+        long total = query.fetchCount();
+
+        List<LectureEntity> results = query
+                .offset(pageable.getOffset())
+                .limit(pageable.getPageSize())
+                .orderBy(lectureEntity.lectureId.desc())
+                .fetch();
+
+        return new PageImpl<>(results, pageable, total);
+    }
+
+    //교수 승인강의 리스트 출력
+    public Page<LectureEntity> findBySearchConditionsAndStatus(Pageable pageable, SearchCondition searchCondition, Long memberId) {
+        JPAQuery<LectureEntity> query = queryFactory.selectFrom(lectureEntity)
+                .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
+                .where(lectureEntity.memberId.eq(memberId))
+                .where(lectureEntity.lectureApplyStatus.eq('2'));
 
         long total = query.fetchCount();
 
