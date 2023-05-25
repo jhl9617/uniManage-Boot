@@ -39,25 +39,28 @@ public class CancelledLectureController {
 
     //본인이 작성한 휴강신청 리스트 조회(교수용)
     @GetMapping("/prof/lecture/cancelled/list")
-    public Header<List<CancelledLectureDto>> cancelledLectureList(
-            @PageableDefault(sort = {"Cancelled_lecture_idx_seq"})Pageable pageable, SearchCondition searchCondition, HttpSession session){
+    public Header<List<CancelledLectureDto>> profCancelledLectureList(
+            @PageableDefault(sort = {"lectureId"})Pageable pageable, SearchCondition searchCondition, HttpSession session){
         System.out.println("cancelledLectureList 실행");
-        MemberDepartmentDto sessionMember = (MemberDepartmentDto) session.getAttribute("loginMember");
-
-        Long memberId = sessionMember.getMemberId();
-        System.out.println("memberId : " + memberId);
-
-        return cancelledLectureService.getCancelledLectureList(pageable, searchCondition, memberId);
+        MemberDepartmentDto memberDepartmentDto  = (MemberDepartmentDto) session.getAttribute("loginMember");
+        Long memberId = memberDepartmentDto.getMemberId();
+        System.out.println("session : " + session);
+        return cancelledLectureService.getProfCancelledLectureList(pageable, searchCondition, session);
     }
 
+    //휴강신청 상세보기
+    @GetMapping("prof/lecture/cancelled/{id}")
+    public CancelledLectureDto getProfCancelledLecture(@PageableDefault Long id){
+        return cancelledLectureService.getCancelledLecture(id);
+    }
 
-
-    //휴강게시물 작성(교수용)
+    //휴강게시글 생성(교수용)
     @PostMapping("/prof/lecture/cancelled/write")
-    public CancelledLectureEntity create(@RequestBody CancelledLectureDto cancelledLectureDto){
-        return cancelledLectureService.create(cancelledLectureDto);
+    public CancelledLectureEntity create(@RequestBody CancelledLectureDto cancelledLectureDto, HttpSession session){
+        MemberDepartmentDto  memberDepartmentDto  = (MemberDepartmentDto) session.getAttribute("loginMember");
+        System.out.println(cancelledLectureDto);
+        return CancelledLectureService.create(cancelledLectureDto);
     }
-
 
     //휴강게시글 승인여부 수정(교직원용)
     @PatchMapping  ("/admin/manage/closelecture")
