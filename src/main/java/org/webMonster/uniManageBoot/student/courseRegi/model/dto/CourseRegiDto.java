@@ -18,7 +18,6 @@ public class CourseRegiDto {
 
     private long courseRegiTerm;   //신청학기
 
-
     private String lectureTitle; // 강의명
 
     private String timecode1; // 강의시간코드1
