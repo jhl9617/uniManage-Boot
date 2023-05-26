@@ -144,4 +144,16 @@ public class LectureController {
     public void delete(@PathVariable Long id) {
         lectureService.delete(id);
     }
+
+    //교수 승인 강의 리스트
+    @GetMapping("prof/lecture/list")
+    public Header<List<LectureDto>> profSuccessLectureList(
+            @PageableDefault(sort = {"lectureId"}) Pageable pageable,
+            SearchCondition searchCondition,
+            HttpSession session
+    ) {
+        MemberDepartmentDto memberDepartmentDto = (MemberDepartmentDto) session.getAttribute("loginMember");
+        Long memberId = memberDepartmentDto.getMemberId();
+        return lectureService.profSuccessLectureList(pageable, searchCondition, memberId);
+    }
 }
