@@ -2,11 +2,9 @@ package org.webMonster.uniManageBoot.member.entity;
 
 
 import lombok.*;
-import org.webMonster.uniManageBoot.admin.notice.entity.NoticeEntity;
 import org.webMonster.uniManageBoot.admin.scholarship.entity.ScholarshipEntity;
 import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 import org.webMonster.uniManageBoot.professor.lectureRoom.entity.LectureRoomEntity;
-import org.webMonster.uniManageBoot.professor.lectureRoom.model.dto.LectureRoomDto;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
 import org.webMonster.uniManageBoot.student.score.entity.ScoreEntity;
@@ -16,7 +14,6 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Date;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 

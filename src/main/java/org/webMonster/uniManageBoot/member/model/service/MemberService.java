@@ -217,4 +217,8 @@ public class MemberService {
                 .build();
         return memberRepository.save(memberEntity);
     }
+
+
+
+
 }
