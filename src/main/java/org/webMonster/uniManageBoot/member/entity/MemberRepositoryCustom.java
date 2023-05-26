@@ -13,12 +13,13 @@ import java.util.Optional;
 public interface MemberRepositoryCustom {
     List<MemberDepartmentDto> fetchMemberDepartmentData();
 
-    Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId, String memberPwd);
+    Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId);
 
-//    List<MemberDepartmentDto> findAllMembersWithDepartment();
+    List<MemberDepartmentDto> findAllMembersWithDepartment();
 
     //교직원 학생관리 리스트 출력용
     Page<MemberEntity> findAllBySearchConditionsAndAuth(Pageable pageable, SearchCondition searchCondition);
+
 
     //교직원 교수관리 리스트 출력용
     Page<MemberEntity> findAllBySearchConditionAndAuth(Pageable pageable, SearchCondition searchCondition);

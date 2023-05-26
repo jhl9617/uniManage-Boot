@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Map;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -33,22 +34,28 @@ public class MemberController {
 
     private final ScheduleService scheduleService;
 
-    @PostMapping("/onLogin")
-    public ResponseEntity<String> login(@RequestBody MemberLoginDto memberLoginDto, HttpSession session) {
-        MemberDepartmentDto memberDepartmentDto = memberService.login(memberLoginDto);
+
+    @PostMapping("/getProfile")
+    public void getProfile(@RequestBody Map<String, String> body, HttpSession session) {
+        String memberIdStr = body.get("memberId");
+        long memberId = Long.parseLong(memberIdStr);
+
+        MemberLoginDto memberLoginDto = new MemberLoginDto();
+        memberLoginDto.setMemberId(memberId);
+        MemberDepartmentDto memberDepartmentDto = memberService.getProfile(memberLoginDto);
         session.setAttribute("loginMember", memberDepartmentDto);
-        String path = null;
-        if (memberDepartmentDto.getAuth() == 3 || memberDepartmentDto.getAuth() == 4 || memberDepartmentDto.getAuth() == 5) {   //학생
-            path = "/student";
-        } else if (memberDepartmentDto.getAuth() == 1) {                 //교수
-            path = "/prof/main";
-        } else if (memberDepartmentDto.getAuth() == 2) {                 //교직원
-            path = "/admin";
-        }
-        return ResponseEntity.ok(path);
+    }
+    
+    // 로그아웃
+    @PostMapping("/logout")
+    public ResponseEntity<String> logout(HttpSession session) {
+            session.invalidate(); // 세션 종료
+            return ResponseEntity.ok("/"); // 로그아웃 후 이동할 경로 반환
+
     }
 
-    //세션에 있는지 확인
+
+    //세션이 있는지 확인
     @GetMapping("/sessionCheck")
     public ResponseEntity<MemberDepartmentDto> getSession(HttpSession session) {
         MemberDepartmentDto loginMember = (MemberDepartmentDto) session.getAttribute("loginMember");
@@ -107,7 +114,6 @@ public class MemberController {
 
     //교직원 교수관리 수정하기
     @PatchMapping("/admin/manage/professor")
-//    public MemberEntity updateProfessor(@RequestBody MemberDto memberDto){ return memberService.update(memberDto); }
     public MemberDto updateProfessor(@RequestBody MemberDto memberDto) {
         MemberEntity entity = memberService.update(memberDto);
         return MemberDto.fromEntity(entity);
@@ -126,6 +132,37 @@ public class MemberController {
 
         return response;
     }
+
+
+    @GetMapping("/prof/info")
+    public MemberDepartmentDto professorInfo(HttpSession session) {
+        MemberDepartmentDto loginMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+        return loginMember;
+    }
+
+    //교수 개인정보 페이지 수정
+    @PostMapping("/prof/info")
+    public MemberEntity update(@RequestBody MemberDepartmentDto memberDepartmentDto, HttpSession session){
+        MemberDepartmentDto sessionMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+        sessionMember.setPhone(memberDepartmentDto.getPhone());
+        sessionMember.setPostcode(memberDepartmentDto.getPostcode());
+        sessionMember.setAddress1(memberDepartmentDto.getAddress1());
+        sessionMember.setAddress2(memberDepartmentDto.getAddress2());
+        session.setAttribute("loginMember", sessionMember);
+        return memberService.update(sessionMember);
+    }
+    @PostMapping("/insert")
+    public ResponseEntity<MemberEntity> insert() {
+        MemberEntity memberEntity = memberService.insert();
+        return ResponseEntity.ok(memberEntity);
+    }
+
+    /*//로그아웃 처리 세션 삭제
+    @PostMapping("/logout")
+    public void logout(HttpSession session) {
+        System.out.println("\n\n세션 삭제 완료\n\n");
+        session.invalidate();
+    }*/
 
 
 }

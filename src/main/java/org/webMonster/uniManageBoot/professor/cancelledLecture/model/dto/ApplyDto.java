@@ -10,5 +10,7 @@ import lombok.*;
 @Setter
 @ToString
 public class ApplyDto {
-    private char cancelledApply;  //휴강 승인여부
+    private long cancelledLectureIdx;   //휴강게시글 시퀀스
+    private long memberId;              //아이디(작성자)
+    private char cancelledApply;        //휴강 승인여부
 }

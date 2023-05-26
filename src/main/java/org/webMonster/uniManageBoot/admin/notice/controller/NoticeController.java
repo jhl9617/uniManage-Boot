@@ -38,7 +38,6 @@ public class NoticeController {
 
     private final MemberRepository memberRepository;
 
-
     @GetMapping("admin/notice/list")
     public Header<List<NoticeDto>> noticeList(
             @PageableDefault(sort = {"notice_id"}) Pageable pageable,
@@ -82,9 +81,11 @@ public class NoticeController {
                 .stream()
                 .collect(Collectors.toList());
 
-        //        messageDto.setTo("");
+        //문자 개별 전송용
+//                messageDto.setTo("전화번호 입력");
         return noticeService.sendSms(messageDto);
 
+        //문자 전체 전송용
 //        for(MemberEntity entity : memberEntities){
 //            messageDto.setTo(entity.getPhone());
 //            noticeService.sendSms(messageDto);

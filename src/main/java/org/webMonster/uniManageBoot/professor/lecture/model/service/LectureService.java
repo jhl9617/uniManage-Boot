@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.webMonster.uniManageBoot.admin.notice.entity.NoticeEntity;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
 import org.webMonster.uniManageBoot.common.SearchCondition;
@@ -42,7 +43,6 @@ public class LectureService {
                     .roomcode2(entity.getRoomcode2())
                     .roomcode3(entity.getRoomcode3())
                     .timecode1(entity.getTimecode1())
-                    .timecode2(entity.getTimecode1())
                     .timecode2(entity.getTimecode2())
                     .timecode3(entity.getTimecode3())
                     .syllabusTitle(entity.getSyllabusTitle())
@@ -67,7 +67,7 @@ public class LectureService {
     //교직원  개설 강의 관리 글 상세보기 조회
     public LectureDto getLecture(Long id) {
         LectureEntity entity = lectureRepository.findById(id).orElseThrow(() -> new RuntimeException("해당 글을 찾을 수 없습니다."));
-         return  LectureDto.builder()
+        return LectureDto.builder()
                 .lectureId(entity.getLectureId())
                 .memberId(entity.getMemberId())
                 .classification(entity.getClassification())
@@ -109,7 +109,6 @@ public class LectureService {
                     .roomcode2(entity.getRoomcode2())
                     .roomcode3(entity.getRoomcode3())
                     .timecode1(entity.getTimecode1())
-                    .timecode2(entity.getTimecode1())
                     .timecode2(entity.getTimecode2())
                     .timecode3(entity.getTimecode3())
                     .syllabusTitle(entity.getSyllabusTitle())
@@ -129,5 +128,104 @@ public class LectureService {
         );
 
         return Header.OK(dtos, pagination);
+    }
+
+    public Header<List<LectureDto>> getProfLectureList(Pageable pageable, SearchCondition searchCondition, Long memberId) {
+        List<LectureDto> dtos = new ArrayList<>();
+
+        Page<LectureEntity> appliedLectureEntities = lectureRepositoryCustom.findBySearchConditionAndStatus(pageable, searchCondition, memberId);
+        for (LectureEntity entity : appliedLectureEntities) {
+            LectureDto dto = LectureDto.builder()
+                    .lectureId(entity.getLectureId())
+                    .memberId(entity.getMemberId())
+                    .classification(entity.getClassification())
+                    .semester(entity.getSemester())
+                    .departmentId(entity.getDepartmentId())
+                    .lectureTitle(entity.getLectureTitle())
+                    .numberOfStudent(entity.getNumberOfStudent())
+                    .credit(entity.getCredit())
+                    .roomcode1(entity.getRoomcode1())
+                    .roomcode2(entity.getRoomcode2())
+                    .roomcode3(entity.getRoomcode3())
+                    .timecode1(entity.getTimecode1())
+                    .timecode2(entity.getTimecode2())
+                    .timecode3(entity.getTimecode3())
+                    .syllabusTitle(entity.getSyllabusTitle())
+                    .syllabusRename(entity.getSyllabusRename())
+                    .lectureApplyStatus(entity.getLectureApplyStatus())
+                    .build();
+            dtos.add(dto);
+        }
+
+        Pagination pagination = new Pagination(
+                (int) appliedLectureEntities.getTotalElements(),
+                pageable.getPageNumber() + 1,
+                pageable.getPageSize(),
+                10
+        );
+
+        return Header.OK(dtos, pagination);
+    }
+
+    //교수 강의 신청
+    public LectureEntity create(LectureDto lectureDto) {
+        LectureEntity entity = LectureEntity.builder()
+                .lectureId(lectureDto.getLectureId())
+                .memberId(lectureDto.getMemberId())
+                .classification(lectureDto.getClassification())
+                .semester(lectureDto.getSemester())
+                .departmentId(lectureDto.getDepartmentId())
+                .lectureTitle(lectureDto.getLectureTitle())
+                .numberOfStudent(lectureDto.getNumberOfStudent())
+                .credit(lectureDto.getCredit())
+                .roomcode1(lectureDto.getRoomcode1())
+                .roomcode2(lectureDto.getRoomcode2())
+                .roomcode3(lectureDto.getRoomcode3())
+                .timecode1(lectureDto.getTimecode1())
+                .timecode2(lectureDto.getTimecode2())
+                .timecode3(lectureDto.getTimecode3())
+                .syllabusTitle(lectureDto.getSyllabusTitle())
+                .syllabusRename(lectureDto.getSyllabusRename())
+                .lectureApplyStatus(lectureDto.getLectureApplyStatus())
+                .build();
+        return lectureRepository.save(entity);
+    }
+
+    //교수 신청 강의 수정
+    public LectureEntity update(LectureDto lectureDto) {
+        LectureEntity entity = lectureRepository.findById(lectureDto.getLectureId()).orElseThrow(() -> new RuntimeException("강의를 찾을 수 없습니다."));
+        entity.setLectureTitle(lectureDto.getLectureTitle());
+        entity.setRoomcode1(lectureDto.getRoomcode1());
+        entity.setTimecode1(lectureDto.getTimecode1());
+        entity.setRoomcode2(lectureDto.getRoomcode2());
+        entity.setTimecode2(lectureDto.getTimecode2());
+        entity.setRoomcode3(lectureDto.getRoomcode3());
+        entity.setTimecode3(lectureDto.getTimecode3());
+        entity.setNumberOfStudent(lectureDto.getNumberOfStudent());
+        return lectureRepository.save(entity);
+    }
+
+    //교수 신청 강의 삭제
+    public void delete(Long id) {
+        LectureEntity entity = lectureRepository.findById(id).orElseThrow(() -> new RuntimeException("강의를 찾을 수 없습니다."));
+        lectureRepository.delete(entity);
+    }
+
+    //교수 신청 강의 상세보기
+    public LectureDto getProfLecture(Long id) {
+        LectureEntity entity = lectureRepository.findById(id).orElseThrow(() -> new RuntimeException("강의를 찾을 수 없습니다."));
+        return LectureDto.builder()
+                .lectureId(entity.getLectureId())
+                .lectureTitle(entity.getLectureTitle())
+                .classification(entity.getClassification())
+                .numberOfStudent(entity.getNumberOfStudent())
+                .roomcode1(entity.getRoomcode1())
+                .roomcode2(entity.getRoomcode2())
+                .roomcode3(entity.getRoomcode3())
+                .timecode1(entity.getTimecode1())
+                .timecode2(entity.getTimecode2())
+                .timecode3(entity.getTimecode3())
+                .credit(entity.getCredit())
+                .build();
     }
 }

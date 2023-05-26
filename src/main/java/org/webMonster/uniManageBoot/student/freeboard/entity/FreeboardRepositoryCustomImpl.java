@@ -49,11 +49,11 @@ public class FreeboardRepositoryCustomImpl extends QuerydslRepositorySupport imp
             if(StringUtils.hasLength(sv)) {
                 return freeboardEntity.member.name.contains(sv);
             }
-        } else if ("freeTitle".equals(sk)) {
+        } else if ("free_title".equals(sk)) {
             if(StringUtils.hasLength(sv)) {
                 return freeboardEntity.freeTitle.contains(sv);
             }
-        } else if ("freeContent".equals(sk)) {
+        } else if ("free_content".equals(sk)) {
             if(StringUtils.hasLength(sv)) {
                 return freeboardEntity.freeContent.contains(sv);
             }

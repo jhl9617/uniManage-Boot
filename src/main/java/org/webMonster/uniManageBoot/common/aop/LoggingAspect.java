@@ -15,11 +15,11 @@ public class LoggingAspect {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     // Define a pointcut to match the execution of global functions
-    @Pointcut("execution(* org.webMonster.uniManageBoot..*.*(..))")
-    public void globalFunctions() {}
+    /*@Pointcut("execution(* org.webMonster.uniManageBoot..*.*(..))")
+    public void globalFunctions() {}*/
 
     // Log before the method execution
-    @Before("globalFunctions()")
+    /*@Before("globalFunctions()")
     public void logBefore(JoinPoint joinPoint) {
         log.info("Executing: {} with arguments: {}", joinPoint.getSignature().toShortString(), joinPoint.getArgs());
     }
@@ -28,5 +28,5 @@ public class LoggingAspect {
     @AfterReturning(pointcut = "globalFunctions()", returning = "result")
     public void logAfter(JoinPoint joinPoint, Object result) {
         log.info("Executed: {} with result: {}", joinPoint.getSignature().toShortString(), result);
-    }
+    }*/
 }

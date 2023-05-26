@@ -29,5 +29,7 @@ public class CourseRegiEntity {
     @ManyToOne
     @JoinColumn(name = "LECTURE_ID", referencedColumnName = "LECTURE_ID", insertable = false, updatable = false)
     private LectureEntity lecture;
+
+
 }
 

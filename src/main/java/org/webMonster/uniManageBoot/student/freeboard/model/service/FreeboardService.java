@@ -1,6 +1,5 @@
 package org.webMonster.uniManageBoot.student.freeboard.model.service;
 
-
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -31,7 +30,8 @@ public class FreeboardService {
     @Autowired
     private FreeboardRepRepository freeboardRepRepository;
     @Autowired
-    private FreeboardRepositoryCustomImpl freeboardRepositoryCustom;
+    private FreeboardRepositoryCustom freeboardRepositoryCustom;
+
 
     /**
      * 게시글 목록 가져오기(페이징 처리를 포함)
@@ -49,9 +49,8 @@ public class FreeboardService {
                     .name(entity.getMember().getName())
                     .freeTitle(entity.getFreeTitle())
                     .freeContent(entity.getFreeContent())
-                    .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
+                    .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")))
                     .build();
-
             list.add(dto);
         }
 
@@ -143,9 +142,11 @@ public class FreeboardService {
     }
 
     /**
-     * 게시글 삭제
+     * 게시글 삭제, 작성된 댓글이 있으면 같이 삭제
      */
     public void delete(Long id) {
+        List<FreeboardRepEntity> repEntities = freeboardRepRepository.findByFreeId(id);
+        freeboardRepRepository.deleteAll(repEntities);
         FreeboardEntity entity = freeboardRepository.findById(id).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
         freeboardRepository.delete(entity);
     }

@@ -3,9 +3,14 @@ package org.webMonster.uniManageBoot.professor.lecture.entity;
 
 import lombok.*;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
+import org.webMonster.uniManageBoot.professor.lectureClass.entity.LectureClassEntity;
+import org.webMonster.uniManageBoot.professor.lectureClassTime.entity.LectureClassTimeEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
+import org.webMonster.uniManageBoot.student.score.entity.ScoreEntity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @AllArgsConstructor
@@ -66,9 +71,12 @@ public class LectureEntity {
     @JoinColumn(name = "DEPARTMENT_ID", referencedColumnName = "DEPARTMENT_ID", insertable = false, updatable = false)
     private DepartmentEntity department;
 
+    @Builder.Default
+    @OneToMany(mappedBy = "lecture")
+    private List<ScoreEntity> scoreEntities = new ArrayList<>();
+
 //    @ManyToOne
 //    @JoinColumn(name = "LECTURE_CLASS_IDX", referencedColumnName = "LECTURE_CLASS_IDX", insertable = false, updatable = false)
 //    private LectureClassEntity lectureClass;
-
 
 }

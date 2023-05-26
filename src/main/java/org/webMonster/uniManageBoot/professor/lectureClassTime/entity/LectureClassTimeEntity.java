@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity;
+import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ import java.util.List;
 @Builder
 @Table(name = "LECTURE_CLASS_TIME")
 @Entity
-public class LectureClassTimeEntity {
+public class LectureClassTimeEntity implements java.io.Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "lecture_class_time_idx_seq_gen")
     @SequenceGenerator(
@@ -37,5 +38,6 @@ public class LectureClassTimeEntity {
     @Builder.Default
     @OneToMany(mappedBy = "lectureClassTime")
     private List<LectureRoomTimetableEntity> lectureRoomTimetables = new ArrayList<>();
+
 
 }

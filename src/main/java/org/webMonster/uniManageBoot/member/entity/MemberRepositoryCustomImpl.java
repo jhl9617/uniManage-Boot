@@ -20,6 +20,7 @@ import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.student.department.entity.QDepartmentEntity;
 
 import static org.webMonster.uniManageBoot.member.entity.QMemberEntity.memberEntity;
+import static org.webMonster.uniManageBoot.professor.lecture.entity.QLectureEntity.lectureEntity;
 import static org.webMonster.uniManageBoot.student.department.entity.QDepartmentEntity.departmentEntity;
 
 import java.util.List;
@@ -47,7 +48,7 @@ public class MemberRepositoryCustomImpl extends QuerydslRepositorySupport implem
     }
 
     @Override
-    public Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId, String memberPwd) {
+    public Optional<MemberDepartmentDto> findMemberWithDepartment(long memberId) {
         return Optional.ofNullable(
                 queryFactory
                         .select(Projections.bean(
@@ -70,36 +71,36 @@ public class MemberRepositoryCustomImpl extends QuerydslRepositorySupport implem
                                 departmentEntity.departmentName))
                         .from(memberEntity)
                         .join(memberEntity.department, departmentEntity)    //memberEntity.department를 기반으로 조인
-                        .where(memberEntity.memberId.eq(memberId).and(memberEntity.memberPwd.eq(memberPwd)))
+                        .where(memberEntity.memberId.eq(memberId))
                         .fetchOne() //단일결과 가져오기, 2개 이상이면 예외
         );
     }
 
-//    @Override
-//    public List<MemberDepartmentDto> findAllMembersWithDepartment() {
-//        return queryFactory
-//                .select(Projections.bean(
-//                        MemberDepartmentDto.class,
-//                        memberEntity.memberIdx,
-//                        memberEntity.memberId,
-//                        memberEntity.name,
-//                        memberEntity.memberPwd,
-//                        memberEntity.email,
-//                        memberEntity.phone,
-//                        memberEntity.address1,
-//                        memberEntity.address2,
-//                        memberEntity.departmentId,
-//                        memberEntity.grade,
-//                        memberEntity.birthday,
-//                        memberEntity.postcode,
-//                        memberEntity.auth,
-//                        memberEntity.address1,
-//                        memberEntity.address2,
-//                        departmentEntity.departmentName))
-//                .from(memberEntity)
-//                .join(memberEntity.department, departmentEntity)
-//                .fetch();
-//    }
+    @Override
+    public List<MemberDepartmentDto> findAllMembersWithDepartment() {
+        return queryFactory
+                .select(Projections.bean(
+                        MemberDepartmentDto.class,
+                        memberEntity.memberIdx,
+                        memberEntity.memberId,
+                        memberEntity.name,
+                        memberEntity.memberPwd,
+                        memberEntity.email,
+                        memberEntity.phone,
+                        memberEntity.address1,
+                        memberEntity.address2,
+                        memberEntity.departmentId,
+                        memberEntity.grade,
+                        memberEntity.birthday,
+                        memberEntity.postcode,
+                        memberEntity.auth,
+                        memberEntity.address1,
+                        memberEntity.address2,
+                        departmentEntity.departmentName))
+                .from(memberEntity)
+                .join(memberEntity.department, departmentEntity)
+                .fetch();
+    }
 
     //교직원 학생관리 리스트 출력
     public Page<MemberEntity> findAllBySearchConditionsAndAuth(Pageable pageable, SearchCondition searchCondition) {
