@@ -104,7 +104,7 @@ public class FreeboardService {
         List<FreeboardRepEntity> entity = freeboardRepRepository.findByFreeId(id);
         for (FreeboardRepEntity Repentity : entity) {
             FreeboardRepDto dto = FreeboardRepDto.builder()
-                    .name(Repentity.getFreeboard().getMember().getName())
+                    .name(Repentity.getMember().getName())
                     .freeId(Repentity.getFreeId())
                     .freeRepId(Repentity.getFreeRepId())
                     .memberId(Repentity.getMemberId())

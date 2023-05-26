@@ -7,6 +7,7 @@ import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 import org.webMonster.uniManageBoot.professor.lectureRoom.entity.LectureRoomEntity;
 import org.webMonster.uniManageBoot.student.department.entity.DepartmentEntity;
 import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardEntity;
+import org.webMonster.uniManageBoot.student.freeboard.entity.FreeboardRepEntity;
 import org.webMonster.uniManageBoot.student.score.entity.ScoreEntity;
 import org.webMonster.uniManageBoot.student.status.entity.StatusEntity;
 
@@ -68,6 +69,10 @@ public class MemberEntity implements Serializable {
     @Builder.Default
     @OneToMany(mappedBy = "member")
     private List<FreeboardEntity> freeboardEntities = new ArrayList<>();
+
+    @Builder.Default
+    @OneToMany(mappedBy = "member")
+    private List<FreeboardRepEntity> freeboardRepEntities = new ArrayList<>();
 
     @Builder.Default
     @OneToMany(mappedBy = "member")

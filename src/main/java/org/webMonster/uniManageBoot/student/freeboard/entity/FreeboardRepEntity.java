@@ -34,4 +34,8 @@ public class FreeboardRepEntity {
     @JoinColumn(name = "FREE_ID", referencedColumnName = "FREE_ID", insertable = false, updatable = false)
     private FreeboardEntity freeboard;
 
+    @ManyToOne
+    @JoinColumn(name = "MEMBER_ID", referencedColumnName = "MEMBER_ID", insertable = false, updatable = false)
+    private MemberEntity member;
+
 }

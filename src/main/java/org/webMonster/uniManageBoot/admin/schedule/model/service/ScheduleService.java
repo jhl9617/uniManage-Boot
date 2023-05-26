@@ -81,16 +81,14 @@ public class ScheduleService {
         List<ScheduleDto> list = new ArrayList<>();
         List<ScheduleEntity> entities = scheduleRepository.findAll();
         for (ScheduleEntity entity : entities) {
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy년MM월dd일", Locale.KOREAN);
-            String formattedStartDate = entity.getStartDate().toLocalDate().format(formatter);
-            String formattedEndDate = entity.getEndDate().toLocalDate().format(formatter);
+
 
             ScheduleDto dto = ScheduleDto.builder()
                     .scheId(entity.getScheId())
                     .scheTitle(entity.getScheTitle())
                     .scheContent(entity.getScheContent())
-                    .startDate(formattedStartDate)
-                    .endDate(formattedEndDate)
+                    .startDate(String.valueOf(entity.getStartDate()))
+                    .endDate(String.valueOf(entity.getEndDate()))
                     .build();
             list.add(dto);
         }
