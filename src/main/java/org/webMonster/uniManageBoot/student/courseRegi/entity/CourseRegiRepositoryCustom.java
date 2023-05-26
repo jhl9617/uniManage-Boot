@@ -1,14 +1,14 @@
 package org.webMonster.uniManageBoot.student.courseRegi.entity;
 
 import com.querydsl.core.types.dsl.BooleanExpression;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.webMonster.uniManageBoot.common.SearchRoom;
+import org.webMonster.uniManageBoot.student.courseRegi.model.dto.SearchTerm;
+
+import java.util.List;
 
 
 public interface CourseRegiRepositoryCustom {
 
-    public Page<CourseRegiEntity> findAllBySearchCondition(Pageable pageable, SearchRoom searchRoom);
+    public List<CourseRegiEntity> findAllBySearchTerm(SearchTerm searchTerm);
 
-    public BooleanExpression searchKeywords(String sv1, String sv2);
+    public BooleanExpression searchKeywords(Long sv1, String sv2, String sv3);
 }

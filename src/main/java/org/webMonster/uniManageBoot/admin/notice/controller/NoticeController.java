@@ -112,6 +112,23 @@ public class NoticeController {
         return noticeService.getNotice(id);
     }
 
+    //학생정보시스템 공지사항 리스트 조회용
+    @GetMapping("prof/notice/list")
+    public Header<List<NoticeDto>> ProfNoticeList(
+            @PageableDefault(sort = {"notice_id"}) Pageable pageable,
+            SearchCondition searchCondition
+    ) {
+        return noticeService.getNoticeList(pageable, searchCondition);
+    }
+
+    //학생정보시스템 공지사항 상세보기글 조회용
+    @GetMapping("prof/notice/{id}")
+    public NoticeDto getProfNotice(@PathVariable Long id) {
+        // 조회수 증가
+        noticeService.increaseReadCount(id);
+        //게시글 조회
+        return noticeService.getNotice(id);
+    }
 
 
 }

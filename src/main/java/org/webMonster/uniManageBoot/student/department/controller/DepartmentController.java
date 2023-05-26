@@ -19,8 +19,10 @@ public class DepartmentController {
 
     private final DepartmentService departmentService;
 
+
     @GetMapping("/student/sugang/{id}")
     public List<DepartmentDto> departmentList(@PathVariable Long id) {
         return departmentService.departmentList(id);
     }
+
 }
