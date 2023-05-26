@@ -8,6 +8,7 @@ import org.webMonster.uniManageBoot.admin.schedule.model.service.ScheduleService
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
+import org.webMonster.uniManageBoot.member.entity.MemberRepository;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDto;
 import org.webMonster.uniManageBoot.member.model.dto.MemberLoginDto;
@@ -29,6 +30,8 @@ import java.util.Map;
 public class MemberController {
 
     private final MemberService memberService;
+
+    private final MemberRepository memberRepository;
 
     private final NoticeService noticeService;
 
@@ -172,7 +175,7 @@ public class MemberController {
 
 
     //학생 마이페이지 개인정보 수정
-    @PostMapping("/student/mypage")
+    @PatchMapping("/student/mypage")
     public MemberEntity updateStudentMypage(@RequestBody MemberDepartmentDto memberDepartmentDto, HttpSession session) {
         MemberDepartmentDto sessionMember = (MemberDepartmentDto) session.getAttribute("loginMember");
         sessionMember.setPhone(memberDepartmentDto.getPhone());
@@ -180,8 +183,20 @@ public class MemberController {
         sessionMember.setAddress1(memberDepartmentDto.getAddress1());
         sessionMember.setAddress2(memberDepartmentDto.getAddress2());
         session.setAttribute("loginMember", sessionMember);
-        return memberService.update(sessionMember);
 
+        // 수정된 정보를 MemberEntity로 변환하여 저장
+        MemberEntity entity = memberRepository.findById(sessionMember.getMemberIdx()).orElse(null);
+        if (entity != null) {
+            entity.setPhone(sessionMember.getPhone());
+            entity.setPostcode(sessionMember.getPostcode());
+            entity.setAddress1(sessionMember.getAddress1());
+            entity.setAddress2(sessionMember.getAddress2());
+            return memberRepository.save(entity);
+        }
+        return null;
     }
+
+
+
 
 }
