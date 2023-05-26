@@ -19,14 +19,14 @@ public interface LectureRepositoryCustom {
     //교수 개설강의관리 리스트 출력용
     Page<LectureEntity> findBySearchConditionAndStatus(Pageable pageable, SearchCondition searchCondition, Long memberId);
 
-
     //교수 승인강의 리스트 출력용
     Page<LectureEntity> findBySearchConditionsAndStatus(Pageable pageable, SearchCondition searchCondition, Long memberId);
 
     //학생 학생정보시스템 수강신청 가능한 강의 리스트 출력용
     Page<LectureEntity> findAllBySearchRoomAndStatus(Pageable pageable, SearchCondition searchCondition);
 
-    BooleanExpression searchKeyword(String sk, String sv);
+    //학생 학생정보시스템 수강신청 가능한 강의 검색용
+    BooleanExpression searchKeyword(Long sk, String sv);
     //학생 학과별 강의목록 출력용
     Page<LectureEntity> findBySearchValues(Pageable pageable, SearchValues searchValues);
 
