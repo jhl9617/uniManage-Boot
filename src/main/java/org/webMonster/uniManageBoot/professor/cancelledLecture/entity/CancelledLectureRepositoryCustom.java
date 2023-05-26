@@ -5,18 +5,15 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 
-import java.util.List;
-
-
 public interface CancelledLectureRepositoryCustom {
 
-    //휴강게시글 페이징처리 + 검색기능
-    public Page<CancelledLectureEntity> findAllBySearchCondition(Pageable pageable, SearchCondition searchCondition);
+    //교수전체 휴강신청 리스트 조회(교직원용)
+    Page<CancelledLectureEntity> findAllBySearchConditionAndStatus(Pageable pageable, SearchCondition searchCondition);
 
-    //(키워드)검색기능
-    public BooleanExpression searchKeyWord(String sk, String sv);
+    //교수 휴강신청 리스트 조회(교수용)
+    Page<CancelledLectureEntity> findAllBySearchConditionAndStatusByMemberId(Pageable pageable, SearchCondition searchCondition, Long memberId);
 
-    //휴강게시물 리스트 id로 조회(교수용)
-    List<CancelledLectureEntity> findAllBySearchConditionByMemberId(Pageable pageable, SearchCondition searchCondition);
+    //검색용(교직원)
+    BooleanExpression searchKeywords(String sk, String sv);
 }
 
