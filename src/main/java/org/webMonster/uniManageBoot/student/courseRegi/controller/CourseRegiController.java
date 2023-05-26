@@ -38,20 +38,21 @@ public class CourseRegiController {
 
         return courseRegiService.courseRegiList(id);
     }
-//    @GetMapping("/student/studenttimetable/{id}")
-//    public List<CourseRegiDto> timeTableList(@PathVariable Long id, @RequestParam("course_regi_term") Long courseRegiTerm) {
-//
-//        return courseRegiService.timeTableList(id, courseRegiTerm);
-//    }
+
     @GetMapping("/student/checkcourse/{id}")
 public List<CourseRegiDto> checkCourseList(@PathVariable Long id) {
 
     return courseRegiService.courseRegiList(id);
     }
 
-    @PostMapping("/courseregi")
-    public CourseRegiEntity create(@RequestBody CourseRegiDto courseRegiDto) {
 
+    //학생 학생정보시스템 졸업학점조회
+//    @GetMapping("/student/checkcredit/{id}")
+//    public List<CourseRegiDto> creditForGradLi
+
+    //학생 수강신청용 insert
+    @PostMapping("student/sugang")
+    public CourseRegiEntity create(@RequestBody CourseRegiDto courseRegiDto) {
         return courseRegiService.create(courseRegiDto);
     }
 

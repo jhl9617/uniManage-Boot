@@ -123,7 +123,7 @@ public class MemberController {
     @DeleteMapping("/admin/manage/professor/{id}")
     public void deleteProfessor(@PathVariable Long id) { memberService.delete(id); }
 
-    //학생정보시스템 메인페이지에서 공지사항 4개 리스트 조회
+    //학생정보시스템 메인페이지에서 공지사항/학사일정 4개 리스트 조회
     @GetMapping("/student")
     public StudentMainDto getStudentMain(){
         StudentMainDto response = new StudentMainDto();
@@ -132,7 +132,6 @@ public class MemberController {
 
         return response;
     }
-
 
     @GetMapping("/prof/info")
     public MemberDepartmentDto professorInfo(HttpSession session) {
@@ -164,5 +163,25 @@ public class MemberController {
         session.invalidate();
     }*/
 
+    //학생 마이페이지 개인정보 조회
+    @GetMapping("/student/mypage")
+    public MemberDepartmentDto studentMypage(HttpSession session) {
+        MemberDepartmentDto loginMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+        return loginMember;
+    }
+
+
+    //학생 마이페이지 개인정보 수정
+    @PostMapping("/student/mypage")
+    public MemberEntity updateStudentMypage(@RequestBody MemberDepartmentDto memberDepartmentDto, HttpSession session) {
+        MemberDepartmentDto sessionMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+        sessionMember.setPhone(memberDepartmentDto.getPhone());
+        sessionMember.setPostcode(memberDepartmentDto.getPostcode());
+        sessionMember.setAddress1(memberDepartmentDto.getAddress1());
+        sessionMember.setAddress2(memberDepartmentDto.getAddress2());
+        session.setAttribute("loginMember", sessionMember);
+        return memberService.update(sessionMember);
+
+    }
 
 }

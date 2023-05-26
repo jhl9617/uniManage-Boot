@@ -11,6 +11,7 @@ import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
+import org.webMonster.uniManageBoot.common.SearchRoom;
 import org.webMonster.uniManageBoot.member.entity.QMemberEntity;
 
 import java.util.List;
@@ -99,6 +100,47 @@ public class LectureRepositoryCustomImpl extends QuerydslRepositorySupport imple
                                 .select(memberEntity.memberId)
                 );
             }
+        }
+
+        return null;
+    }
+
+
+    //학생 학생정보시스템 수강신청 가능한 강의 목록 출력
+    public Page<LectureEntity> findAllBySearchRoomAndStatus(Pageable pageable, SearchCondition searchCondition) {
+        JPAQuery<LectureEntity> query = queryFactory.selectFrom(lectureEntity)
+                .where(searchKeyword(searchCondition.getSk(), searchCondition.getSv()));
+
+        long total = query.fetchCount();
+
+        List<LectureEntity> results = query
+                .offset(pageable.getOffset())
+                .limit(pageable.getPageSize())
+                .orderBy(lectureEntity.lectureId.asc())
+                .fetch();
+
+        return new PageImpl<>(results, pageable, total);
+    }
+
+    //학생 학생정보시스템 수강신청시 강의 검색용
+    public BooleanExpression searchKeyword(String sk, String sv) {
+        BooleanExpression expression = null;
+
+        if(StringUtils.hasLength(sk)) {
+            expression = lectureEntity.department.departmentName.contains(sk);
+        }
+
+        if(StringUtils.hasLength(sv)) {
+            BooleanExpression ASExpression = lectureEntity.lectureApplyStatus.eq(sv.charAt(0));
+            expression = (expression != null) ? expression.and(ASExpression) : ASExpression;
+        }
+
+        if(expression != null) {
+            return lectureEntity.lectureId.in(
+                    JPAExpressions.select(lectureEntity.lectureId)
+                            .from(lectureEntity)
+                            .where(expression)
+            );
         }
 
         return null;
