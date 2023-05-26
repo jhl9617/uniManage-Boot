@@ -4,6 +4,7 @@ import com.querydsl.core.types.dsl.BooleanExpression;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.webMonster.uniManageBoot.common.SearchCondition;
+import org.webMonster.uniManageBoot.professor.lecture.model.dto.SearchValues;
 
 public interface LectureRepositoryCustom {
 
@@ -22,4 +23,8 @@ public interface LectureRepositoryCustom {
     Page<LectureEntity> findAllBySearchRoomAndStatus(Pageable pageable, SearchCondition searchCondition);
 
     BooleanExpression searchKeyword(String sk, String sv);
+    //학생 학과별 강의목록 출력용
+    Page<LectureEntity> findBySearchValues(Pageable pageable, SearchValues searchValues);
+
+    BooleanExpression searchValues(String sv1, String sv2, String sv3, Long sv4);
 }

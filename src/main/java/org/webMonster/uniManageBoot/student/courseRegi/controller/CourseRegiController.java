@@ -1,22 +1,17 @@
 package org.webMonster.uniManageBoot.student.courseRegi.controller;
 
-
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
 
-import org.webMonster.uniManageBoot.common.Header;
-import org.webMonster.uniManageBoot.common.SearchCondition;
-import org.webMonster.uniManageBoot.professor.lectureNotice.model.dto.LectureNoticeDto;
+import org.webMonster.uniManageBoot.student.courseRegi.model.dto.SearchTerm;
 import org.webMonster.uniManageBoot.student.courseRegi.entity.CourseRegiEntity;
 import org.webMonster.uniManageBoot.student.courseRegi.model.dto.CourseRegiDto;
 import org.webMonster.uniManageBoot.student.courseRegi.model.service.CourseRegiService;
 
-
 import java.util.List;
+
 @Slf4j
 @RequiredArgsConstructor
 @CrossOrigin
@@ -40,19 +35,28 @@ public class CourseRegiController {
     }
 
     @GetMapping("/student/checkcourse/{id}")
-public List<CourseRegiDto> checkCourseList(@PathVariable Long id) {
+    public List<CourseRegiDto> checkCourseList(@PathVariable Long id) {
 
-    return courseRegiService.courseRegiList(id);
+        return courseRegiService.courseRegiList(id);
     }
 
+    // 학생기능 - 학기별 수강중인 목록 검색 조회
+    @GetMapping("/student/studenttimetable")
+    public List<CourseRegiDto> getCourseRegiTimetable(SearchTerm searchTerm) {
 
-    //학생 학생정보시스템 졸업학점조회
-//    @GetMapping("/student/checkcredit/{id}")
-//    public List<CourseRegiDto> creditForGradLi
+        return courseRegiService.getCourseRegiTimetable(searchTerm);
+    }
 
-    //학생 수강신청용 insert
-    @PostMapping("student/sugang")
+    // 학생기능 - 학기별 수강중인 목록 검색 조회
+    @GetMapping("/student/checkcourse")
+    public List<CourseRegiDto> checkCourseList(SearchTerm searchTerm) {
+
+    return courseRegiService.getCourseRegiTimetable(searchTerm);
+    }
+
+    @PostMapping("/courseregi")
     public CourseRegiEntity create(@RequestBody CourseRegiDto courseRegiDto) {
+
         return courseRegiService.create(courseRegiDto);
     }
 

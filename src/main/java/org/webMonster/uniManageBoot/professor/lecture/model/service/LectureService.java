@@ -13,6 +13,7 @@ import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 import org.webMonster.uniManageBoot.professor.lecture.entity.LectureRepository;
 import org.webMonster.uniManageBoot.professor.lecture.entity.LectureRepositoryCustom;
 import org.webMonster.uniManageBoot.professor.lecture.model.dto.LectureDto;
+import org.webMonster.uniManageBoot.professor.lecture.model.dto.SearchValues;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -166,6 +167,43 @@ public class LectureService {
 
         return Header.OK(dtos, pagination);
     }
+    public Header<List<LectureDto>> getStudentLectureList(Pageable pageable, SearchValues searchValues) {
+        List<LectureDto> dtos = new ArrayList<>();
+
+        Page<LectureEntity> lectureEntities = lectureRepositoryCustom.findBySearchValues(pageable, searchValues);
+        for (LectureEntity entity : lectureEntities) {
+            LectureDto dto = LectureDto.builder()
+                    .name(entity.getMember().getName())
+                    .lectureId(entity.getLectureId())
+                    .memberId(entity.getMemberId())
+                    .classification(entity.getClassification())
+                    .semester(entity.getSemester())
+                    .departmentId(entity.getDepartmentId())
+                    .lectureTitle(entity.getLectureTitle())
+                    .numberOfStudent(entity.getNumberOfStudent())
+                    .credit(entity.getCredit())
+                    .roomcode1(entity.getRoomcode1())
+                    .roomcode2(entity.getRoomcode2())
+                    .roomcode3(entity.getRoomcode3())
+                    .timecode1(entity.getTimecode1())
+                    .timecode2(entity.getTimecode2())
+                    .timecode3(entity.getTimecode3())
+                    .syllabusTitle(entity.getSyllabusTitle())
+                    .syllabusRename(entity.getSyllabusRename())
+                    .lectureApplyStatus(entity.getLectureApplyStatus())
+                    .build();
+            dtos.add(dto);
+        }
+
+        Pagination pagination = new Pagination(
+                (int) lectureEntities.getTotalElements(),
+                pageable.getPageNumber() + 1,
+                pageable.getPageSize(),
+                10
+        );
+
+        return Header.OK(dtos, pagination);
+    }
 
     //교수 강의 신청
     public LectureEntity create(LectureDto lectureDto) {
@@ -228,4 +266,6 @@ public class LectureService {
                 .credit(entity.getCredit())
                 .build();
     }
+
+
 }

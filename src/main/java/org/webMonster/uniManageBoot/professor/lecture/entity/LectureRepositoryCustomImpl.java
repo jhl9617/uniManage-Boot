@@ -13,12 +13,14 @@ import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.common.SearchRoom;
 import org.webMonster.uniManageBoot.member.entity.QMemberEntity;
+import org.webMonster.uniManageBoot.professor.lecture.model.dto.SearchValues;
 
 import java.util.List;
 
 import static org.webMonster.uniManageBoot.professor.lecture.entity.QLectureEntity.lectureEntity;
 import static org.webMonster.uniManageBoot.professor.lectureClass.entity.QLectureClassEntity.lectureClassEntity;
 import static org.webMonster.uniManageBoot.professor.lectureClassTime.entity.QLectureClassTimeEntity.lectureClassTimeEntity;
+import static org.webMonster.uniManageBoot.student.courseRegi.entity.QCourseRegiEntity.courseRegiEntity;
 
 @Repository
 public class LectureRepositoryCustomImpl extends QuerydslRepositorySupport implements LectureRepositoryCustom {
@@ -162,4 +164,43 @@ public class LectureRepositoryCustomImpl extends QuerydslRepositorySupport imple
 
         return new PageImpl<>(results, pageable, total);
     }
+
+    @Override
+    public Page<LectureEntity> findBySearchValues(Pageable pageable, SearchValues searchValues) {
+        JPAQuery<LectureEntity> query = queryFactory.selectFrom(lectureEntity)
+                .where(searchValues(searchValues.getSv1(), searchValues.getSv2(), searchValues.getSv3(), searchValues.getSv4()));
+
+
+        long total = query.fetchCount();
+
+        List<LectureEntity> results = query
+                .offset(pageable.getOffset())
+                .limit(pageable.getPageSize())
+                .orderBy(lectureEntity.lectureId.desc())
+                .fetch();
+
+        return new PageImpl<>(results, pageable, total);
+    }
+
+    @Override
+    public BooleanExpression searchValues(String sv1, String sv2, String sv3, Long sv4) {
+        BooleanExpression expression = null;
+
+        if (sv3 != null) {
+            expression = lectureEntity.classification.eq(sv3.charAt(0));
+        }
+
+        if (sv4 != null) {
+            BooleanExpression departmentExpression = lectureEntity.departmentId.eq(sv4);
+            expression = expression.and(departmentExpression);
+        }
+
+        if (sv1 != null && sv2 != null) {
+            String sv = sv1 + sv2;
+            BooleanExpression semesterExpression = lectureEntity.semester.eq(Long.parseLong(sv));
+            expression = expression.and(semesterExpression);
+        }
+        return expression;
+    }
+
 }

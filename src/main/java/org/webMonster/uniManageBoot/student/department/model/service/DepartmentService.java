@@ -32,4 +32,18 @@ public class DepartmentService {
         }
         return list;
     }
+
+    public List<DepartmentDto> allDepartmentList() {
+        List<DepartmentDto> list = new ArrayList<>();
+        List<DepartmentEntity> entity = departmentRepository.findAll();
+        for(DepartmentEntity dentity : entity) {
+            DepartmentDto dto = DepartmentDto.builder()
+                    .departmentId(dentity.getDepartmentId())
+                    .departmentName(dentity.getDepartmentName())
+                    .category(dentity.getCategory())
+                    .build();
+            list.add(dto);
+        }
+        return list;
+    }
 }
