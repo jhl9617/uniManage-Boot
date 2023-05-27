@@ -5354,6 +5354,10 @@ INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
 VALUES (scho_id_seq.nextval, 201801, '창의력 장학금', 750000, 20140201);
 INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
 VALUES (scho_id_seq.nextval, 202102, '봉사활동 장학금', 400000, 20140201);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 201702, 'IT분야 장학금', 600000, 20204401);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202001, '스포츠 장학금', 350000, 20204401);
 
 
 /*강의실 사용여부 데이터*/
@@ -7081,82 +7085,89 @@ INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave,
 VALUES (status_id_seq.NEXTVAL, 20123901, '2022-06-01', '2022-08-31', '취업 준비로 인한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20123901, '2023-03-01', '2023-03-31', '개인 사정으로 인한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20123901, '2022-03-01', '2023-03-31', '개인 사정으로 인한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20142401, '2023-04-01', '2023-06-30', '학업 부진으로 인한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20142401, '2022-04-01', '2023-06-30', '학업 부진으로 인한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20144502, '2023-05-15', '2023-08-31', '가족 사정으로 인한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20144502, '2022-05-15', '2023-08-31', '가족 사정으로 인한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20145701, '2023-09-01', '2024-01-31', '병력으로 인한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20145701, '2022-09-01', '2023-01-31', '병력으로 인한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20150102, '2023-10-01', '2023-11-30', '사회봉사 활동으로 인한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20150102, '2022-10-01', '2023-11-30', '사회봉사 활동으로 인한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20140801, '2023-12-01', '2024-02-29', '학업 개선을 위한 자습기간', '1');
+VALUES (status_id_seq.NEXTVAL, 20140801, '2022-12-01', '2023-02-29', '학업 개선을 위한 자습기간', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20135201, '2024-01-15', '2024-04-30', '학비 납부를 위한 취업활동', '1');
+VALUES (status_id_seq.NEXTVAL, 20135201, '2022-01-15', '2023-04-30', '학비 납부를 위한 취업활동', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20142401, '2024-03-01', '2024-06-30', '자녀 양육을 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20142401, '2022-03-01', '2023-06-30', '자녀 양육을 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20144502, '2024-05-01', '2024-07-31', '병리 검사 및 치료를 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20144502, '2022-05-01', '2023-07-31', '병리 검사 및 치료를 위한 휴학', '1');
 
 INSERT INTO status  (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20145701, '2024-06-15', '2024-09-30', '연구 참여를 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20145701, '2022-06-15', '2023-09-30', '연구 참여를 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20144701, '2024-08-01', '2024-10-31', '경제적 어려움으로 인한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20144701, '2022-08-01', '2023-10-31', '경제적 어려움으로 인한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20152401, '2024-09-15', '2025-01-31', '국외 유학을 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20152401, '2022-09-15', '2023-01-31', '국외 유학을 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20152503, '2024-11-01', '2025-03-31', '취업 준비를 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20152503, '2022-11-01', '2023-03-31', '취업 준비를 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20153101, '2025-01-01', '2025-04-30', '창업을 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20153101, '2022-01-01', '2023-04-30', '창업을 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20160101, '2025-02-15', '2025-05-31', '외국어 습득을 위한 유학', '1');
+VALUES (status_id_seq.NEXTVAL, 20160101, '2022-02-15', '2023-05-31', '외국어 습득을 위한 유학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20171802, '2025-04-01', '2025-07-31', '인턴십 참여를 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20171802, '2022-04-01', '2023-07-31', '인턴십 참여를 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20180401, '2025-05-15', '2025-08-31', '교환학생 프로그램 참여를 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20180401, '2022-05-15', '2023-08-31', '교환학생 프로그램 참여를 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20181101, '2025-07-01', '2025-09-30', '연애 및 결혼을 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20181101, '2022-07-01', '2023-09-30', '연애 및 결혼을 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20204401, '2025-08-15', '2026-01-31', '문화체험 및 자원봉사를 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20204401, '2022-08-15', '2023-01-31', '문화체험 및 자원봉사를 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20181101, '2025-10-01', '2026-02-28', '스포츠 경기 출전을 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20181101, '2022-10-01', '2023-02-28', '스포츠 경기 출전을 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20151101, '2025-11-15', '2026-03-31', '자원봉사 활동을 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20151101, '2022-11-15', '2023-03-31', '자원봉사 활동을 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20151301, '2026-01-01', '2026-04-30', '전공 관련 인턴십 참여를 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20151301, '2022-01-01', '2023-04-30', '전공 관련 인턴십 참여를 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20151401, '2026-02-15', '2026-05-31', '해외 연수를 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20151401, '2022-02-15', '2023-05-31', '해외 연수를 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20151601, '2026-04-01', '2026-07-31', '학업 개선을 위한 자습기간', '1');
+VALUES (status_id_seq.NEXTVAL, 20151601, '2022-04-01', '2023-07-31', '학업 개선을 위한 자습기간', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20151602, '2026-05-15', '2026-08-31', '건강 관리를 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20151602, '2022-05-15', '2023-08-31', '건강 관리를 위한 휴학', '1');
 
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
-VALUES (status_id_seq.NEXTVAL, 20151603, '2026-07-01', '2026-09-30', '여행 및 문화체험을 위한 휴학', '1');
+VALUES (status_id_seq.NEXTVAL, 20151603, '2022-07-01', '2023-09-30', '여행 및 문화체험을 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20204401, '2020-01-01', '2021-02-28', '학업 부진으로 인한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20204401, '2022-03-15', '2022-05-31', '가족 사정으로 인한 휴학', '1');
+
 
 
 /*SCORE-점수*/
@@ -7204,6 +7215,12 @@ VALUES (SCORE_ID_SEQ.NEXTVAL, 20142201, 214, 37, 39, 19, 95);
 
 INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
 VALUES (SCORE_ID_SEQ.NEXTVAL, 20142201, 215, 30, 34, 15, 79);
+
+INSERT INTO SCORE(SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20204401, 58, 30, 35, 18, 83);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20204401, 59, 36, 38, 19, 93);
 
 
 COMMIT;
