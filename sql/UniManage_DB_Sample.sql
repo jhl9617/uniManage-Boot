@@ -10,6 +10,9 @@
 강의실
 전체 공지사항
 장학금
+강의실 사용여부
+휴학 신청
+점수
 */
 
 
@@ -5160,94 +5163,94 @@ VALUES(LECTURE_CLASS_TIME_IDX_SEQ.NEXTVAL,'FRI09', '1700', '금');
 
 /*NOTICE공지사항*/
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (1, '학사일정 안내', '5월 10일부터 기말시험이 시작됩니다.', 14392001, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학사일정 안내', '5월 10일부터 기말시험이 시작됩니다.', 14392001, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (2, '코로나19 대응', '학교 내 모든 시설물은 마스크를 착용하셔야 이용 가능합니다.', 14392001, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '코로나19 대응', '학교 내 모든 시설물은 마스크를 착용하셔야 이용 가능합니다.', 14392001, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (3, '장학금 신청 안내', '학생들은 5월 20일까지 장학금 신청을 할 수 있습니다.', 14392001, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '장학금 신청 안내', '학생들은 5월 20일까지 장학금 신청을 할 수 있습니다.', 14392001, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (4, '학교 축제 일정 변경', '학교 축제 일정이 5월 30일로 변경되었습니다.', 14392001, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학교 축제 일정 변경', '학교 축제 일정이 5월 30일로 변경되었습니다.', 14392001, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (5, '기숙사 내부 청소 안내', '5월 15일(토) 10:00-12:00까지 기숙사 내부 청소가 있습니다. 기숙사 생활을 하시는 분들은 참고 부탁드립니다.', 14392001, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '기숙사 내부 청소 안내', '5월 15일(토) 10:00-12:00까지 기숙사 내부 청소가 있습니다. 기숙사 생활을 하시는 분들은 참고 부탁드립니다.', 14392001, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (6, '2023학년도 신입생 모집 안내', '2023학년도 신입생 모집이 시작되었습니다. 지원서 접수는 6월 30일까지입니다.', 14392001, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '2023학년도 신입생 모집 안내', '2023학년도 신입생 모집이 시작되었습니다. 지원서 접수는 6월 30일까지입니다.', 14392001, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (7, '학과 공지사항', '컴퓨터공학과 학생들은 5월 8일(토) 14:00-18:00까지 소프트웨어 프로젝트 발표회가 있습니다.', 14392001, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학과 공지사항', '컴퓨터공학과 학생들은 5월 8일(토) 14:00-18:00까지 소프트웨어 프로젝트 발표회가 있습니다.', 14392001, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (8, '동아리 활동 안내', '4차 산업혁명 동아리 회원들은 5월 12일(수) 16:00-18:00까지 모임이 있습니다.', 14392002, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '동아리 활동 안내', '4차 산업혁명 동아리 회원들은 5월 12일(수) 16:00-18:00까지 모임이 있습니다.', 14392002, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (9, '학생회 선거 결과 발표', '5월 2일(일)에 실시된 학생회 선거의 결과가 발표되었습니다.', 14392002, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학생회 선거 결과 발표', '5월 2일(일)에 실시된 학생회 선거의 결과가 발표되었습니다.', 14392002, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (10, '기숙사 외박 신청 안내', '기숙사 생활을 하는 학생들은 5월 10일(월) 18:00까지 외박 신청을 할 수 있습니다.', 14392002, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '기숙사 외박 신청 안내', '기숙사 생활을 하는 학생들은 5월 10일(월) 18:00까지 외박 신청을 할 수 있습니다.', 14392002, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (11, '취업 박람회 안내', '5월 20일(목) 10:00-16:00까지 취업 박람회가 있습니다. 참석하시는 분들은 이력서와 포트폴리오를 준비해주세요.', 14392002, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '취업 박람회 안내', '5월 20일(목) 10:00-16:00까지 취업 박람회가 있습니다. 참석하시는 분들은 이력서와 포트폴리오를 준비해주세요.', 14392002, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (12, '학사경고 안내', '기말시험 전 학사경고를 받은 학생들은 5월 8일까지 상담을 받으셔야 합니다.', 14392002, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학사경고 안내', '기말시험 전 학사경고를 받은 학생들은 5월 8일까지 상담을 받으셔야 합니다.', 14392002, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (13, '과제 제출 안내', '5월 15일까지 모든 과제를 제출하셔야 합니다. 미제출 시 감점 또는 불합격 처리됩니다.', 14392002, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '과제 제출 안내', '5월 15일까지 모든 과제를 제출하셔야 합니다. 미제출 시 감점 또는 불합격 처리됩니다.', 14392002, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (14, '학생회장 인터뷰 안내', '5월 10일(월)부터 학생회장 인터뷰를 실시합니다. 학생회장 선거에 참여하신 분들은 참고하시기 바랍니다.', 14392002, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학생회장 인터뷰 안내', '5월 10일(월)부터 학생회장 인터뷰를 실시합니다. 학생회장 선거에 참여하신 분들은 참고하시기 바랍니다.', 14392002, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (15, '수강신청 기간 안내', '2023년 1학기 수강신청 기간은 6월 7일(화)부터 6월 11일(금)까지입니다.', 14392002, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '수강신청 기간 안내', '2023년 1학기 수강신청 기간은 6월 7일(화)부터 6월 11일(금)까지입니다.', 14392002, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (16, '동아리 발표회 안내', '영화동아리 회원들은 5월 12일(수) 19:00-21:00까지 발표회가 있습니다. 참석하시는 분들은 준비를 완료해주세요.', 14392002, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '동아리 발표회 안내', '영화동아리 회원들은 5월 12일(수) 19:00-21:00까지 발표회가 있습니다. 참석하시는 분들은 준비를 완료해주세요.', 14392002, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (17, '학생들을 위한 취업 상담 안내', '취업에 대한 상담이 필요한 학생들은 5월 10일(월)부터 5월 14일(금)까지 취업 상담을 받으실 수 있습니다.', 14392002, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학생들을 위한 취업 상담 안내', '취업에 대한 상담이 필요한 학생들은 5월 10일(월)부터 5월 14일(금)까지 취업 상담을 받으실 수 있습니다.', 14392002, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
 VALUES (18, '토익시험 일정 안내', '5월 22일(토)에 토익시험이 있습니다. 시험 참여를 원하시는 분들은 5월 15일까지 신청해주세요.', 14392003, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (19, '취업 박람회 개최', '5월 15일부터 17일까지 취업 박람회가 개최됩니다. 많은 참여 부탁드립니다.', 14392003, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '취업 박람회 개최', '5월 15일부터 17일까지 취업 박람회가 개최됩니다. 많은 참여 부탁드립니다.', 14392003, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (20, '학생회장 선거 결과 발표', '학생회장으로 A학생이 당선되었습니다. 축하합니다.', 14392003, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학생회장 선거 결과 발표', '학생회장으로 A학생이 당선되었습니다. 축하합니다.', 14392003, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (21, '학사일정 변경', '5월 20일부터 기말고사 일정이 변경되었습니다.', 14392003, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학사일정 변경', '5월 20일부터 기말고사 일정이 변경되었습니다.', 14392003, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (22, '교육프로그램 안내', '교육부에서 진행하는 교육프로그램에 학생들의 참여를 요청합니다.', 14392003, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '교육프로그램 안내', '교육부에서 진행하는 교육프로그램에 학생들의 참여를 요청합니다.', 14392003, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (23, '취업지원센터 운영시간 변경', '취업지원센터의 운영시간이 평일 9시부터 5시로 변경되었습니다.', 14392003, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '취업지원센터 운영시간 변경', '취업지원센터의 운영시간이 평일 9시부터 5시로 변경되었습니다.', 14392003, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (24, '학생회 선거 안내', '학생회 선거가 6월 1일에 진행됩니다. 많은 참여 부탁드립니다.', 14392003, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학생회 선거 안내', '학생회 선거가 6월 1일에 진행됩니다. 많은 참여 부탁드립니다.', 14392003, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (25, '취업설명회 안내', '6월 5일에 취업설명회가 있습니다. 관심 있는 학생들은 참여해주세요.', 14392003, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '취업설명회 안내', '6월 5일에 취업설명회가 있습니다. 관심 있는 학생들은 참여해주세요.', 14392003, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (26, '학교 안전점검 결과 발표', '학교 내 모든 시설물의 안전점검 결과가 발표되었습니다. 확인해주세요.', 14392003, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학교 안전점검 결과 발표', '학교 내 모든 시설물의 안전점검 결과가 발표되었습니다. 확인해주세요.', 14392003, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (27, '입학설명회 일정 안내', '6월 10일부터 입학설명회 일정이 시작됩니다. 학생들의 많은 관심 부탁드립니다.', 14392003, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '입학설명회 일정 안내', '6월 10일부터 입학설명회 일정이 시작됩니다. 학생들의 많은 관심 부탁드립니다.', 14392003, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (28, '학교 시설물 사용 안내', '학생들은 학교 내 시설물을 사용할 때 반드시 예약을 하셔야 합니다.', 14392003, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학교 시설물 사용 안내', '학생들은 학교 내 시설물을 사용할 때 반드시 예약을 하셔야 합니다.', 14392003, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (29, '학생식당 메뉴 변경 안내', '학생식당에서 메뉴가 일부 변경되었습니다. 확인하시어 이용 부탁드립니다.', 14392004, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '학생식당 메뉴 변경 안내', '학생식당에서 메뉴가 일부 변경되었습니다. 확인하시어 이용 부탁드립니다.', 14392004, SYSDATE, 0);
 
 INSERT INTO notice (notice_id, notice_title, notice_content, member_id, created_date, readcount)
-VALUES (30, '도서관 도서 대출 안내', '도서관에서 대출한 도서는 반납일에 미 반납 시 연체료가 부과됩니다.', 14392005, SYSDATE, 0);
+VALUES (NOTICE_ID_SEQ.NEXTVAL, '도서관 도서 대출 안내', '도서관에서 대출한 도서는 반납일에 미 반납 시 연체료가 부과됩니다.', 14392005, SYSDATE, 0);
 
 /*LECTURE_CLASS강의실*/
 INSERT INTO LECTURE_CLASS (lecture_class_idx, lecture_room_code, building_code, building_name, number_floor, lecture_room_num, class_capacity)
@@ -5345,6 +5348,12 @@ INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
 VALUES (scho_id_seq.nextval, 202301, '사회공헌 장학금', 400000, 20204401);
 INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
 VALUES (scho_id_seq.nextval, 201902, '환경보호 장학금', 550000, 20181101);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202301, '우수학생 장학금', 500000, 20140201);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 201801, '창의력 장학금', 750000, 20140201);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202102, '봉사활동 장학금', 400000, 20140201);
 
 
 /*강의실 사용여부 데이터*/
@@ -7058,7 +7067,143 @@ VALUES (LECTURE_ROOM_TIMETABLE_IDX_SEQ.NEXTVAL, 'FRI08', 'C104');
 INSERT INTO LECTURE_ROOM_TIMETABLE (LECTURE_ROOM_TIMETABLE_IDX, TIMECODE, LECTURE_ROOM_CODE)
 VALUES (LECTURE_ROOM_TIMETABLE_IDX_SEQ.NEXTVAL, 'FRI09', 'C104');
 
+/*휴학 신청*/
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20123901, '2022-01-01', '2022-02-28', '학업 부진으로 인한 휴학', '1');
 
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20123901, '2022-03-15', '2022-05-31', '가족 사정으로 인한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20123901, '2022-09-01', '2023-02-28', '군입대로 인한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20123901, '2022-06-01', '2022-08-31', '취업 준비로 인한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20123901, '2023-03-01', '2023-03-31', '개인 사정으로 인한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20142401, '2023-04-01', '2023-06-30', '학업 부진으로 인한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20144502, '2023-05-15', '2023-08-31', '가족 사정으로 인한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20145701, '2023-09-01', '2024-01-31', '병력으로 인한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20150102, '2023-10-01', '2023-11-30', '사회봉사 활동으로 인한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20140801, '2023-12-01', '2024-02-29', '학업 개선을 위한 자습기간', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20135201, '2024-01-15', '2024-04-30', '학비 납부를 위한 취업활동', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20142401, '2024-03-01', '2024-06-30', '자녀 양육을 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20144502, '2024-05-01', '2024-07-31', '병리 검사 및 치료를 위한 휴학', '1');
+
+INSERT INTO status  (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20145701, '2024-06-15', '2024-09-30', '연구 참여를 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20144701, '2024-08-01', '2024-10-31', '경제적 어려움으로 인한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20152401, '2024-09-15', '2025-01-31', '국외 유학을 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20152503, '2024-11-01', '2025-03-31', '취업 준비를 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20153101, '2025-01-01', '2025-04-30', '창업을 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20160101, '2025-02-15', '2025-05-31', '외국어 습득을 위한 유학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20171802, '2025-04-01', '2025-07-31', '인턴십 참여를 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20180401, '2025-05-15', '2025-08-31', '교환학생 프로그램 참여를 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20181101, '2025-07-01', '2025-09-30', '연애 및 결혼을 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20204401, '2025-08-15', '2026-01-31', '문화체험 및 자원봉사를 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20181101, '2025-10-01', '2026-02-28', '스포츠 경기 출전을 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20151101, '2025-11-15', '2026-03-31', '자원봉사 활동을 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20151301, '2026-01-01', '2026-04-30', '전공 관련 인턴십 참여를 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20151401, '2026-02-15', '2026-05-31', '해외 연수를 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20151601, '2026-04-01', '2026-07-31', '학업 개선을 위한 자습기간', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20151602, '2026-05-15', '2026-08-31', '건강 관리를 위한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20151603, '2026-07-01', '2026-09-30', '여행 및 문화체험을 위한 휴학', '1');
+
+
+/*SCORE-점수*/
+INSERT INTO SCORE(SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20140201, 58, 30, 35, 18, 83);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20140201, 59, 36, 38, 19, 93);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20140201, 65, 28, 34, 16, 78);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20140201, 67, 32, 36, 17, 85);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20140501, 70, 39, 40, 20, 99);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20140501, 74, 35, 39, 19, 93);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20141501, 78, 31, 33, 15, 79);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20141501, 88, 34, 37, 18, 89);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20141501, 93, 29, 35, 16, 80);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20141501, 96, 37, 40, 20, 97);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20142201, 178, 33, 37, 17, 87);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20142201, 212, 35, 38, 19, 92);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20142201, 213, 31, 35, 16, 82);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20142201, 214, 37, 39, 19, 95);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20142201, 215, 30, 34, 15, 79);
 
 
 COMMIT;
