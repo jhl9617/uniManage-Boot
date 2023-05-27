@@ -83,7 +83,7 @@ public class NoticeService {
                     .noticeTitle(entity.getNoticeTitle())
                     .noticeContent(entity.getNoticeContent())
                     .memberId(entity.getMemberId())
-                    .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
+                    .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
                     .build();
             dtos.add(dto);
         }
@@ -108,7 +108,7 @@ public class NoticeService {
                 .noticeContent(entity.getNoticeContent())
                 .memberId(entity.getMemberId())
                 .readcount(entity.getReadcount())
-                .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
+                .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
                 .build();
     }
 
@@ -247,7 +247,7 @@ public class NoticeService {
                     .noticeTitle(nentity.getNoticeTitle())
                     .noticeContent(nentity.getNoticeContent())
                     .memberId(nentity.getMemberId())
-                    .createdDate(nentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
+                    .createdDate(nentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
                     .readcount(nentity.getReadcount())
                     .build();
             list.add(dto);

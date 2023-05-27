@@ -35,7 +35,7 @@ public class ScheduleService {
 
         Page<ScheduleEntity> ScheduleEntities = scheduleRepositoryCustom.findAllBySearchCondition(pageable, searchCondition);
         for (ScheduleEntity entity : ScheduleEntities) {
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy년 MM월 dd일", Locale.KOREAN);
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.KOREAN);
             String formattedStartDate = entity.getStartDate().toLocalDate().format(formatter);
             String formattedEndDate = entity.getEndDate().toLocalDate().format(formatter);
 
@@ -81,7 +81,7 @@ public class ScheduleService {
         List<ScheduleDto> list = new ArrayList<>();
         List<ScheduleEntity> entities = scheduleRepository.findAll();
         for (ScheduleEntity entity : entities) {
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy년MM월dd일", Locale.KOREAN);
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.KOREAN);
             String formattedStartDate = entity.getStartDate().toLocalDate().format(formatter);
             String formattedEndDate = entity.getEndDate().toLocalDate().format(formatter);
 
