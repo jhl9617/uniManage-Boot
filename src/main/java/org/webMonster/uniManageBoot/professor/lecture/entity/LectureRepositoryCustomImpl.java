@@ -111,7 +111,7 @@ public class LectureRepositoryCustomImpl extends QuerydslRepositorySupport imple
     //학생 학생정보시스템 수강신청 가능한 강의 목록 출력
     public Page<LectureEntity> findAllBySearchRoomAndStatus(Pageable pageable, SearchCondition searchCondition) {
         JPAQuery<LectureEntity> query = queryFactory.selectFrom(lectureEntity)
-                .where(searchKeyword(searchCondition.getSk(), searchCondition.getSv()));
+                .where(searchKeyword(Long.valueOf(searchCondition.getSk()), searchCondition.getSv()));
 
         long total = query.fetchCount();
 
@@ -125,19 +125,19 @@ public class LectureRepositoryCustomImpl extends QuerydslRepositorySupport imple
     }
 
     //학생 학생정보시스템 수강신청시 강의 검색용
-    public BooleanExpression searchKeyword(String sk, String sv) {
+    public BooleanExpression searchKeyword(Long sk, String sv) {
         BooleanExpression expression = null;
 
-        if(StringUtils.hasLength(sk)) {
-            expression = lectureEntity.department.departmentName.contains(sk);
+        if (sk != null) {
+            expression = lectureEntity.department.departmentId.eq(sk);
         }
 
-        if(StringUtils.hasLength(sv)) {
-            BooleanExpression ASExpression = lectureEntity.lectureApplyStatus.eq(sv.charAt(0));
+        if (sv != null) {
+            BooleanExpression ASExpression = lectureEntity.classification.eq(sv.charAt(0));
             expression = (expression != null) ? expression.and(ASExpression) : ASExpression;
         }
 
-        if(expression != null) {
+        if (expression != null) {
             return lectureEntity.lectureId.in(
                     JPAExpressions.select(lectureEntity.lectureId)
                             .from(lectureEntity)
@@ -147,6 +147,7 @@ public class LectureRepositoryCustomImpl extends QuerydslRepositorySupport imple
 
         return null;
     }
+
 
     //교수 강의개설요청관리 리스트 출력
     public Page<LectureEntity> findBySearchConditionAndStatus(Pageable pageable, SearchCondition searchCondition, Long memberId) {

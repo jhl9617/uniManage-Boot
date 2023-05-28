@@ -54,7 +54,7 @@ public class CourseRegiController {
     return courseRegiService.getCourseRegiTimetable(searchTerm);
     }
 
-    @PostMapping("/courseregi")
+    @PostMapping("/student/sugang")
     public CourseRegiEntity create(@RequestBody CourseRegiDto courseRegiDto) {
 
         return courseRegiService.create(courseRegiDto);

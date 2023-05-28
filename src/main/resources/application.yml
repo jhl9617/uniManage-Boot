@@ -41,10 +41,10 @@ spring:
 
 # sms api
 naver-cloud-sms:
-  accessKey: Md988bz0Sy92tk210YtZ
-  secretKey: 8mrkRnI0ygWoP5kr4Zu6KvmugY8NKOWZUJ3o2LqF
-  serviceId: ncp:sms:kr:259303388885:unimanage
-  senderPhone: 01032475955
+  accessKey: xZyI5jAHb2m9zxAO897V
+  secretKey: gmkl7dShqdeqRXNUnzt5tM88bjqDflCWsVFqcS62
+  serviceId: ncp:sms:kr:308639486747:unimanage
+  senderPhone: 01062316109
 
 
 org:

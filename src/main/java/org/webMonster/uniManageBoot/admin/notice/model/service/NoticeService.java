@@ -61,16 +61,16 @@ public class NoticeService {
 //    private JavaMailSender mailSender;
 
     //sms api
-    @Value("xZyI5jAHb2m9zxAO897V")
+    @Value("${naver-cloud-sms.accessKey}")
     private String accessKey;
 
-    @Value("gmkl7dShqdeqRXNUnzt5tM88bjqDflCWsVFqcS62")
+    @Value("${naver-cloud-sms.secretKey}")
     private String secretKey;
 
-    @Value("ncp:sms:kr:308639486747:unimanage")
+    @Value("${naver-cloud-sms.serviceId}")
     private String serviceId;
 
-    @Value("01062316109")
+    @Value("${naver-cloud-sms.senderPhone}")
     private String phone;
     
     public Header<List<NoticeDto>> getNoticeList(Pageable pageable, SearchCondition searchCondition) {
@@ -83,7 +83,7 @@ public class NoticeService {
                     .noticeTitle(entity.getNoticeTitle())
                     .noticeContent(entity.getNoticeContent())
                     .memberId(entity.getMemberId())
-                    .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
+                    .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
                     .build();
             dtos.add(dto);
         }
@@ -108,7 +108,7 @@ public class NoticeService {
                 .noticeContent(entity.getNoticeContent())
                 .memberId(entity.getMemberId())
                 .readcount(entity.getReadcount())
-                .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
+                .createdDate(entity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
                 .build();
     }
 
@@ -247,7 +247,7 @@ public class NoticeService {
                     .noticeTitle(nentity.getNoticeTitle())
                     .noticeContent(nentity.getNoticeContent())
                     .memberId(nentity.getMemberId())
-                    .createdDate(nentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy년MM월dd일 hh:mm:ss")))
+                    .createdDate(nentity.getCreatedDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")))
                     .readcount(nentity.getReadcount())
                     .build();
             list.add(dto);

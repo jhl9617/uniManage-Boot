@@ -188,6 +188,7 @@ public class MemberController {
     public MemberEntity updateStudentMypage(@RequestBody MemberDepartmentDto memberDepartmentDto, HttpSession session) {
         MemberDepartmentDto sessionMember = (MemberDepartmentDto) session.getAttribute("loginMember");
         sessionMember.setPhone(memberDepartmentDto.getPhone());
+        sessionMember.setEmail(memberDepartmentDto.getEmail());
         sessionMember.setPostcode(memberDepartmentDto.getPostcode());
         sessionMember.setAddress1(memberDepartmentDto.getAddress1());
         sessionMember.setAddress2(memberDepartmentDto.getAddress2());
@@ -197,6 +198,7 @@ public class MemberController {
         MemberEntity entity = memberRepository.findById(sessionMember.getMemberIdx()).orElse(null);
         if (entity != null) {
             entity.setPhone(sessionMember.getPhone());
+            entity.setEmail(sessionMember.getEmail());
             entity.setPostcode(sessionMember.getPostcode());
             entity.setAddress1(sessionMember.getAddress1());
             entity.setAddress2(sessionMember.getAddress2());
@@ -204,6 +206,38 @@ public class MemberController {
         }
         return null;
     }
+
+    //교직원 마이페이지 개인정보 조회
+    @GetMapping("/admin/mypage")
+    public MemberDepartmentDto adminMypage(HttpSession session) {
+        MemberDepartmentDto loginMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+        return loginMember;
+    }
+
+    //교직원 마이페이지 개인정보 수정
+    @PatchMapping("/admin/mypage")
+    public MemberEntity updateAdminMypage(@RequestBody MemberDepartmentDto memberDepartmentDto, HttpSession session) {
+        MemberDepartmentDto sessionMember = (MemberDepartmentDto) session.getAttribute("loginMember");
+        sessionMember.setPhone(memberDepartmentDto.getPhone());
+        sessionMember.setEmail(memberDepartmentDto.getEmail());
+        sessionMember.setPostcode(memberDepartmentDto.getPostcode());
+        sessionMember.setAddress1(memberDepartmentDto.getAddress1());
+        sessionMember.setAddress2(memberDepartmentDto.getAddress2());
+        session.setAttribute("loginMember", sessionMember);
+
+        // 수정된 정보를 MemberEntity로 변환하여 저장
+        MemberEntity entity = memberRepository.findById(sessionMember.getMemberIdx()).orElse(null);
+        if (entity != null) {
+            entity.setPhone(sessionMember.getPhone());
+            entity.setEmail(sessionMember.getEmail());
+            entity.setPostcode(sessionMember.getPostcode());
+            entity.setAddress1(sessionMember.getAddress1());
+            entity.setAddress2(sessionMember.getAddress2());
+            return memberRepository.save(entity);
+        }
+        return null;
+    }
+
 
 
 

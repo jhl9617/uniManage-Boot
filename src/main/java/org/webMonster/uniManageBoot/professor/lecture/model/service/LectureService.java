@@ -318,4 +318,43 @@ public class LectureService {
         return Header.OK(dtos, pagination);
     }
 
+    //학생 수강신청할 수 있는 강의 목록 출력용
+    public Header<List<LectureDto>> getLectureListForSugang(Pageable pageable, SearchCondition searchCondition) {
+        List<LectureDto> dtos = new ArrayList<>();
+
+        Page<LectureEntity> lectureEntities = lectureRepositoryCustom.findAllBySearchRoomAndStatus(pageable, searchCondition);
+        for (LectureEntity entity : lectureEntities) {
+            LectureDto dto = LectureDto.builder()
+                    .lectureId(entity.getLectureId())
+                    .memberId(entity.getMemberId())
+                    .classification(entity.getClassification())
+                    .semester(entity.getSemester())
+                    .departmentId(entity.getDepartmentId())
+                    .lectureTitle(entity.getLectureTitle())
+                    .numberOfStudent(entity.getNumberOfStudent())
+                    .credit(entity.getCredit())
+                    .roomcode1(entity.getRoomcode1())
+                    .roomcode2(entity.getRoomcode2())
+                    .roomcode3(entity.getRoomcode3())
+                    .timecode1(entity.getTimecode1())
+                    .timecode2(entity.getTimecode2())
+                    .timecode3(entity.getTimecode3())
+                    .syllabusTitle(entity.getSyllabusTitle())
+                    .syllabusRename(entity.getSyllabusRename())
+                    .lectureApplyStatus(entity.getLectureApplyStatus())
+                    .name(entity.getMember().getName())
+                    .departmentName(entity.getDepartment().getDepartmentName())
+                    .build();
+            dtos.add(dto);
+        }
+
+        Pagination pagination = new Pagination(
+                (int) lectureEntities.getTotalElements(),
+                pageable.getPageNumber() + 1,
+                pageable.getPageSize(),
+                10
+        );
+
+        return Header.OK(dtos, pagination);
+    }
 }

@@ -24,7 +24,6 @@ import java.util.List;
 @Service
 public class CourseRegiService {
 
-
     @Autowired
     private CourseRegiRepository courseRegiRepository;
 
@@ -83,20 +82,19 @@ public class CourseRegiService {
 
     }
 
-
+    //학생 수강신청용 insert
     public CourseRegiEntity create(CourseRegiDto courseRegiDto) {
+        log.info(String.valueOf(courseRegiDto.getLectureId()));
+        log.info(String.valueOf(courseRegiDto.getMemberId()));
+
         CourseRegiEntity entity = CourseRegiEntity.builder()
                 .courseRegiId(courseRegiDto.getCourseRegiId())
+                .courseRegiTerm(courseRegiDto.getCourseRegiTerm())
                 .memberId(courseRegiDto.getMemberId())
                 .lectureId(courseRegiDto.getLectureId())
-                .courseRegiTerm(courseRegiDto.getCourseRegiTerm())
                 .build();
         return courseRegiRepository.save(entity);
     }
-
-
-//    public List<CourseRegiDto> timeTableList(Long id, Long courseRegiTerm) {
-//    }
 }
 
 

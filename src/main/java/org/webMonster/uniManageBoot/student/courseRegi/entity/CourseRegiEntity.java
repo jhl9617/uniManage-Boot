@@ -16,7 +16,12 @@ import javax.persistence.*;
 @Entity
 public class CourseRegiEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "course_regi_seq_gen")
+    @SequenceGenerator(
+            name = "course_regi_seq_gen",
+            sequenceName = "COURSE_REGI_ID_SEQ",
+            allocationSize=1
+    )
     @Column(name = "COURSE_REGI_ID")
     private long courseRegiId;   //수강신청 번호
     @Column(name = "MEMBER_ID")
@@ -25,6 +30,7 @@ public class CourseRegiEntity {
     private long lectureId;   //강의 아이디
     @Column(name = "COURSE_REGI_TERM")
     private long courseRegiTerm;   //신청학기
+
 
     @ManyToOne
     @JoinColumn(name = "LECTURE_ID", referencedColumnName = "LECTURE_ID", insertable = false, updatable = false)

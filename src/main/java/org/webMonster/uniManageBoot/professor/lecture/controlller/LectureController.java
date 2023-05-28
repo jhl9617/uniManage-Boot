@@ -95,7 +95,7 @@ public class LectureController {
     @GetMapping("/student/sugang")
     public Header<List<LectureDto>> forSugangList(
             @PageableDefault(sort = {"lectureId"}) Pageable pageable, SearchCondition searchCondition) {
-        return lectureService.getAppliedLectureList(pageable, searchCondition);
+        return lectureService.getLectureListForSugang(pageable, searchCondition);
     }
 
     //학생 학과별 강의리스트 조회

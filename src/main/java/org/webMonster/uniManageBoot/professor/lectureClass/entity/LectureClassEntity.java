@@ -1,9 +1,6 @@
 package org.webMonster.uniManageBoot.professor.lectureClass.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.webMonster.uniManageBoot.professor.lectureRoomTimetable.entity.LectureRoomTimetableEntity;
 import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
 
@@ -11,12 +8,14 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Table(name = "LECTURE_CLASS")
 @Entity
+@Setter
+@Getter
 public class LectureClassEntity implements java.io.Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "lecture_class_idx_seq_gen")
