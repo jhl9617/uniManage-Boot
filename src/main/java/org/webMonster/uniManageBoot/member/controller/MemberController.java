@@ -9,6 +9,7 @@ import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.member.entity.MemberEntity;
 
+import org.webMonster.uniManageBoot.member.entity.MemberRepository;
 import org.webMonster.uniManageBoot.member.model.dto.*;
 
 import org.webMonster.uniManageBoot.member.model.service.MemberService;

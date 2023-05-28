@@ -8,11 +8,13 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
+import org.springframework.util.StringUtils;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 
 import java.util.List;
 
 import static org.webMonster.uniManageBoot.professor.lectureNotice.entity.QLectureNoticeEntity.lectureNoticeEntity;
+import static org.webMonster.uniManageBoot.professor.lectureRoom.entity.QLectureRoomEntity.lectureRoomEntity;
 
 @Repository
 public class LectureNoticeRepositoryCustomImpl extends QuerydslRepositorySupport implements LectureNoticeRepositoryCustom {
@@ -44,6 +46,15 @@ public class LectureNoticeRepositoryCustomImpl extends QuerydslRepositorySupport
 
     @Override
     public BooleanExpression searchKeywords(String sk, String sv) {
+        if ("lectureNoticeTitle".equals(sk)) {
+            if(StringUtils.hasLength(sv)) {
+                return lectureNoticeEntity.lectureNoticeTitle.contains(sv);
+            }
+        } else if ("lectureNoticeContent".equals(sk)) {
+            if(StringUtils.hasLength(sv)) {
+                return lectureNoticeEntity.lectureNoticeContent.contains(sv);
+            }
+        }
         return null;
     }
 }
