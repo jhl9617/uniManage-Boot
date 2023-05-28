@@ -17,7 +17,9 @@ import org.webMonster.uniManageBoot.professor.lecture.model.dto.SearchValues;
 
 import java.util.List;
 
+import static org.webMonster.uniManageBoot.member.entity.QMemberEntity.memberEntity;
 import static org.webMonster.uniManageBoot.professor.lecture.entity.QLectureEntity.lectureEntity;
+import static org.webMonster.uniManageBoot.professor.lectureClass.entity.QLectureClassEntity.lectureClassEntity;
 import static org.webMonster.uniManageBoot.professor.lectureClass.entity.QLectureClassEntity.lectureClassEntity;
 import static org.webMonster.uniManageBoot.professor.lectureClassTime.entity.QLectureClassTimeEntity.lectureClassTimeEntity;
 import static org.webMonster.uniManageBoot.student.courseRegi.entity.QCourseRegiEntity.courseRegiEntity;

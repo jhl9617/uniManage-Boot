@@ -2,8 +2,6 @@ package org.webMonster.uniManageBoot.professor.cancelledLecture.model.dto;
 
 import lombok.*;
 
-import java.sql.Date;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,7 +15,7 @@ public class CancelledLectureDto {
     private long memberId;              //아이디(작성자)
     private String lectureRoomCode;     //바뀐 강의실 코드
     private int attendanceDay;          //수업회차
-    private Date supplyDate;            //보강일시
+    private String supplyDate;            //보강일시
     private String reason;              //보강사유
     private String cancelledFile;       //제출된 파일명
     private String cancelledFileRename; //변경된 제출서류 파일명

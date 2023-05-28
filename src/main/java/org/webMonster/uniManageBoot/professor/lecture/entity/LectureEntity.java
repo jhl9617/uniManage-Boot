@@ -29,15 +29,15 @@ public class LectureEntity {
             allocationSize = 1
     )
     @Column(name = "LECTURE_ID")
-    private long lectureId;  //강의번호
+    private Long lectureId;  //강의번호
     @Column(name = "MEMBER_ID")
-    private long memberId;  //아이디
+    private Long memberId;  //아이디
     @Column(name = "CLASSIFICATION")
     private char classification;   //구분
     @Column(name = "SEMESTER")
-    private long semester;   //학기
+    private Long semester;   //학기
     @Column(name = "DEPARTMENT_ID")
-    private long departmentId;    //학과 번호
+    private Long departmentId;    //학과 번호
     @Column(name = "LECTURE_TITLE")
     private String lectureTitle;   //강의명
     @Column(name = "NUMBER_OF_STUDENT")

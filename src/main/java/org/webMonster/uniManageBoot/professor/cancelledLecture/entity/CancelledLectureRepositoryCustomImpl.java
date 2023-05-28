@@ -47,12 +47,15 @@ public class CancelledLectureRepositoryCustomImpl extends QuerydslRepositorySupp
         JPAQuery<CancelledLectureEntity> query = queryFactory.selectFrom(cancelledLectureEntity)
                 .where(searchKeywords(searchCondition.getSk(), searchCondition.getSv()))
                 .where(cancelledLectureEntity.memberId.eq(memberId));
+
         long total = query.fetchCount();
+//
         List<CancelledLectureEntity> results = query
                 .offset(pageable.getOffset())
                 .limit(pageable.getPageSize())
-                .orderBy(cancelledLectureEntity.lectureId.desc())
+                .orderBy(cancelledLectureEntity.cancelledLectureIdx.desc())
                 .fetch();
+        //
         return new PageImpl<>(results, pageable, total);
     }
 
