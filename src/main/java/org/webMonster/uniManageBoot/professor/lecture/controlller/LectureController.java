@@ -11,6 +11,7 @@ import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.professor.homework.model.service.HomeworkService;
 import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
+import org.webMonster.uniManageBoot.professor.lecture.entity.LectureRepository;
 import org.webMonster.uniManageBoot.professor.lecture.model.dto.LectureDto;
 import org.webMonster.uniManageBoot.professor.lecture.model.dto.LectureMainDto;
 import org.webMonster.uniManageBoot.professor.lecture.model.dto.SearchValues;
@@ -21,6 +22,7 @@ import org.webMonster.uniManageBoot.student.freeboard.model.service.FreeboardSer
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -37,6 +39,8 @@ public class LectureController {
     private final LectureRoomService lectureRoomService;
     @Autowired
     private final HomeworkService homeworkService;
+
+    private final LectureRepository lectureRepository;
 
 
     //교직원 개설 강의 관리 리스트 조회
@@ -63,6 +67,24 @@ public class LectureController {
     ) {
         return lectureService.getAppliedLectureList(pageable, searchCondition);
     }
+
+    //교직원 강의개설요청 허용하기
+    @PutMapping("/admin/manage/appliedlecture/update")
+    public void updateLectureApplyStatus(
+            @RequestParam("lectureId") Long lectureId, @RequestParam("lectureApplyStatus") Character lectureApplyStatus) {
+            Optional<LectureEntity> optionalLectureEntity = lectureRepository.findById(lectureId);
+            if (optionalLectureEntity.isPresent()) {
+                LectureEntity lectureEntity = optionalLectureEntity.get();
+                lectureEntity.setLectureApplyStatus(lectureApplyStatus);
+                lectureRepository.save(lectureEntity);
+            }
+    }
+
+
+
+
+
+
 
     //교직원 강의개설요청 관리 상세보기글 조회
     @GetMapping("/admin/manage/appliedlecture/{id}")

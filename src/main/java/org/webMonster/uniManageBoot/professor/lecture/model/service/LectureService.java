@@ -17,6 +17,7 @@ import org.webMonster.uniManageBoot.professor.lecture.model.dto.SearchValues;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -130,6 +131,18 @@ public class LectureService {
 
         return Header.OK(dtos, pagination);
     }
+
+    //교직원 강의개설요청 허용하기
+    public void updateLectureApplyStatus(long lectureId, char status) {
+        Optional<LectureEntity> optionalLectureEntity = lectureRepository.findById(lectureId);
+        if (optionalLectureEntity.isPresent()) {
+            LectureEntity lectureEntity = optionalLectureEntity.get();
+            lectureEntity.setLectureApplyStatus(status);
+            lectureRepository.save(lectureEntity);
+        }
+    }
+
+
 
     public Header<List<LectureDto>> getProfLectureList(Pageable pageable, SearchCondition searchCondition, Long memberId) {
         List<LectureDto> dtos = new ArrayList<>();
