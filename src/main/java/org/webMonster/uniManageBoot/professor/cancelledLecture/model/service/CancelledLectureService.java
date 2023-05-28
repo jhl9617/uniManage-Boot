@@ -14,6 +14,8 @@ import org.webMonster.uniManageBoot.professor.cancelledLecture.entity.CancelledL
 import org.webMonster.uniManageBoot.professor.cancelledLecture.model.dto.CancelledLectureDto;
 import org.webMonster.uniManageBoot.professor.cancelledLecture.model.dto.ApplyDto;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +39,7 @@ public class CancelledLectureService {
                     .lectureId(entity.getLecture().getLectureId())
                     .lectureRoomCode(entity.getLectureClass().getLectureRoomCode())
                     .attendanceDay(entity.getAttendanceDay())
-                    .supplyDate(entity.getSupplyDate())
+                    .supplyDate(entity.getSupplyDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")))
                     .reason(entity.getReason())
                     .cancelledFile(entity.getCancelledFile())
                     .cancelledFileRename(entity.getCancelledFileRename())
@@ -59,7 +61,8 @@ public class CancelledLectureService {
     public Header<List<CancelledLectureDto>> getProfCancelledLectureList(Pageable pageable, SearchCondition searchCondition, Long memberId) {
         List<CancelledLectureDto> dtos = new ArrayList<>();
         Page<CancelledLectureEntity> cancelledLectureEntities = cancelledLectureRepositoryCustom.findAllBySearchConditionAndStatusByMemberId(pageable, searchCondition, memberId);
-
+        System.out.println("왜 안 나올까요...ㅠ");
+        
         for (CancelledLectureEntity entity : cancelledLectureEntities) {
             if (memberId.equals(entity.getMember().getMemberId())) {
                 CancelledLectureDto dto = CancelledLectureDto.builder()
@@ -68,13 +71,14 @@ public class CancelledLectureService {
                         .lectureId(entity.getLecture().getLectureId())
                         .lectureRoomCode(entity.getLectureClass().getLectureRoomCode())
                         .attendanceDay(entity.getAttendanceDay())
-                        .supplyDate(entity.getSupplyDate())
+                        .supplyDate(entity.getSupplyDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")))
                         .reason(entity.getReason())
                         .cancelledFile(entity.getCancelledFile())
                         .cancelledFileRename(entity.getCancelledFileRename())
                         .cancelledApply(entity.getCancelledApply())
                         .build();
                 dtos.add(dto);
+                System.out.println("서비스1" + cancelledLectureEntities);
             }
             Pagination pagination = new Pagination(
                     (int) cancelledLectureEntities.getTotalElements(),
@@ -82,6 +86,7 @@ public class CancelledLectureService {
                     pageable.getPageSize(),
                     10
             );
+            System.out.println("서비스2" + cancelledLectureEntities);
             return Header.OK(dtos, pagination);
         }
         return null;
@@ -96,7 +101,7 @@ public class CancelledLectureService {
                 .memberId(entity.getMember().getMemberId())
                 .lectureRoomCode(entity.getLectureClass().getLectureRoomCode())
                 .attendanceDay(entity.getAttendanceDay())
-                .supplyDate(entity.getSupplyDate())
+                .supplyDate(entity.getSupplyDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")))
                 .reason(entity.getReason())
                 .cancelledFile(entity.getCancelledFile())
                 .cancelledFileRename(entity.getCancelledFileRename())
@@ -106,18 +111,18 @@ public class CancelledLectureService {
 
     //휴강게시글 생성(교수용)
     public CancelledLectureEntity create(CancelledLectureDto cancelledLectureDto) {
-        CancelledLectureEntity entity = CancelledLectureEntity.builder()
+        CancelledLectureEntity dto = CancelledLectureEntity.builder()
                 .lectureId(cancelledLectureDto.getLectureId())
                 .memberId(cancelledLectureDto.getMemberId())
                 .lectureRoomCode(cancelledLectureDto.getLectureRoomCode())
                 .attendanceDay(cancelledLectureDto.getAttendanceDay())
-                .supplyDate(cancelledLectureDto.getSupplyDate())
+                .supplyDate(LocalDateTime.parse(cancelledLectureDto.getSupplyDate()))
                 .reason(cancelledLectureDto.getReason())
                 .cancelledFile(cancelledLectureDto.getCancelledFile())
                 .cancelledFileRename(cancelledLectureDto.getCancelledFileRename())
                 .cancelledApply(cancelledLectureDto.getCancelledApply())
                 .build();
-        return cancelledLectureRepository.save(entity);
+        return cancelledLectureRepository.save(dto);
     }
 
 

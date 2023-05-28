@@ -36,9 +36,10 @@ public class CancelledLectureController {
     //교수 휴강신청 리스트 조회(교수용)
     @GetMapping("/prof/lecture/cancelled/list")
     public Header<List<CancelledLectureDto>> profCancelledLectureList(
-            @PageableDefault(sort = {"lectureId"})Pageable pageable, SearchCondition searchCondition, HttpSession session){
+            @PageableDefault(sort = {"cancelledLectureIdx"})Pageable pageable, SearchCondition searchCondition, HttpSession session){
         MemberDepartmentDto memberDepartmentDto  = (MemberDepartmentDto) session.getAttribute("loginMember");
         Long memberId = memberDepartmentDto.getMemberId();
+        System.out.println("컨트롤러" + memberDepartmentDto);
         return cancelledLectureService.getProfCancelledLectureList(pageable, searchCondition, memberId);
     }
 
@@ -54,6 +55,7 @@ public class CancelledLectureController {
     @PostMapping("/prof/lecture/cancelled/write")
     public CancelledLectureEntity create(@RequestBody CancelledLectureDto cancelledLectureDto, HttpSession session){
         MemberDepartmentDto  memberDepartmentDto  = (MemberDepartmentDto) session.getAttribute("loginMember");
+        Long memberId = memberDepartmentDto.getMemberId();
         System.out.println(cancelledLectureDto);
         return cancelledLectureService.create(cancelledLectureDto);
     }

@@ -15,7 +15,9 @@ import org.webMonster.uniManageBoot.member.entity.QMemberEntity;
 
 import java.util.List;
 
+import static org.webMonster.uniManageBoot.member.entity.QMemberEntity.memberEntity;
 import static org.webMonster.uniManageBoot.professor.lecture.entity.QLectureEntity.lectureEntity;
+import static org.webMonster.uniManageBoot.professor.lectureClass.entity.QLectureClassEntity.lectureClassEntity;
 
 @Repository
 public class LectureRepositoryCustomImpl extends QuerydslRepositorySupport implements LectureRepositoryCustom {
