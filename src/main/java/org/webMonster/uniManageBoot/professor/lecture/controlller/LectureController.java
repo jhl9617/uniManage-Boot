@@ -156,4 +156,15 @@ public class LectureController {
         Long memberId = memberDepartmentDto.getMemberId();
         return lectureService.profSuccessLectureList(pageable, searchCondition, memberId);
     }
+
+    //교수 - 강의 메인화면
+    @GetMapping("/prof/lecture/{id}")
+    public LectureMainDto getProfLectureMain(@PathVariable Long id) {
+        LectureMainDto response = new LectureMainDto();
+        response.setLectureDto(lectureService.getLecture(id));
+        response.setLectureNoticeDto(lectureNoticeService.getLectureNoticeList(id));
+        response.setLectureRoomDto(lectureRoomService.getSourceList(id));
+        response.setHomeworkDto(homeworkService.getHomeworkList(id));
+        return response;
+    }
 }

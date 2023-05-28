@@ -16,7 +16,12 @@ import java.time.LocalDateTime;
 @Entity
 public class LectureNoticeEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "lecture_notice_id_seq_gen")
+    @SequenceGenerator(
+            name = "lecture_notice_id_seq_gen",
+            sequenceName = "LECTURE_NOTICE_ID_SEQ",
+            allocationSize = 1
+    )
     @Column(name = "LECTURE_NOTICE_ID")
     private long lectureNoticeId;   //강의공지 글번호
     @Column(name = "LECTURE_ID")
