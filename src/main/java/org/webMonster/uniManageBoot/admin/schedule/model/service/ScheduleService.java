@@ -97,4 +97,24 @@ public class ScheduleService {
         return list;
     }
 
+    //교직원 학사일정 수정
+    public ScheduleEntity update(ScheduleDto scheduleDto) {
+        ScheduleEntity entity = scheduleRepository.findById(scheduleDto.getScheId()).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
+        entity.setScheTitle(scheduleDto.getScheTitle());
+
+        // 문자열을 java.sql.Date로 변환하여 setStartDate에 전달
+        if (scheduleDto.getStartDate() != null) {
+            java.sql.Date startDate = java.sql.Date.valueOf(scheduleDto.getStartDate());
+            entity.setStartDate(startDate);
+        }
+
+        // 문자열을 java.sql.Date로 변환하여 setEndDate에 전달
+        if (scheduleDto.getEndDate() != null) {
+            java.sql.Date endDate = java.sql.Date.valueOf(scheduleDto.getEndDate());
+            entity.setEndDate(endDate);
+        }
+
+        return scheduleRepository.save(entity);
+    }
+
 }
