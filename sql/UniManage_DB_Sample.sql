@@ -5358,6 +5358,11 @@ INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
 VALUES (scho_id_seq.nextval, 201702, 'IT분야 장학금', 600000, 20204401);
 INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
 VALUES (scho_id_seq.nextval, 202001, '스포츠 장학금', 350000, 20204401);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 202301, '우수학생 장학금', 500000, 20213501);
+INSERT INTO scholarship (scho_id, scho_term, scho_name, amount, member_id)
+VALUES (scho_id_seq.nextval, 201801, '창의력 장학금', 750000, 20213501);
+
 
 
 /*강의실 사용여부 데이터*/
@@ -7266,6 +7271,11 @@ VALUES (status_id_seq.NEXTVAL, 20204401, '2020-01-01', '2021-02-28', '학업 부진�
 INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
 VALUES (status_id_seq.NEXTVAL, 20204401, '2022-03-15', '2022-05-31', '가족 사정으로 인한 휴학', '1');
 
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20213501, '2020-01-01', '2021-02-28', '학업 부진으로 인한 휴학', '1');
+
+INSERT INTO status (status_id, member_id, start_date, end_date, reason_of_leave, allowed_leave)
+VALUES (status_id_seq.NEXTVAL, 20213501, '2022-03-15', '2022-05-31', '가족 사정으로 인한 휴학', '1');
 
 
 /*SCORE-점수*/
@@ -7319,6 +7329,12 @@ VALUES (SCORE_ID_SEQ.NEXTVAL, 20204401, 58, 30, 35, 18, 83);
 
 INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
 VALUES (SCORE_ID_SEQ.NEXTVAL, 20204401, 59, 36, 38, 19, 93);
+
+INSERT INTO SCORE(SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20213501, 58, 30, 35, 18, 83);
+
+INSERT INTO SCORE (SCORE_ID, MEMBER_ID, LECTURE_ID, MID_SCORE, FINAL_SCORE, ASSIGN_SCORE, TOTAL_SCORE)
+VALUES (SCORE_ID_SEQ.NEXTVAL, 20213501, 59, 36, 38, 19, 93);
 
 
 COMMIT;

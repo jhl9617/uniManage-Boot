@@ -28,6 +28,7 @@ public class LectureDto {
     private String syllabusRename;
     private char lectureApplyStatus;
 
+
     //교수 이름
     private String name;
 
