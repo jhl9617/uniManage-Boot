@@ -46,40 +46,60 @@ public class LectureRoomController {
         return response;
 
     }
-    //게시글 작성 -- 교수 기능 구현시 메소드 수정해주세요
-    @PostMapping("/eclass/lecture/source")
+
+    // 페이지 단위로 목록 조회
+    @GetMapping("/prof/lecture/reference/list")
+    public Header<List<LectureRoomDto>> profReferenceList(
+            @PageableDefault(sort = {"lecture_room_id"}) Pageable pageable,
+            SearchCondition searchCondition,
+            @RequestParam("lecture_id") Long id
+    ) {
+        return lectureRoomService.getSourceList(pageable, searchCondition, id);
+    }
+
+    //게시글 선택 조회, 게시글 번호에 해당하는 파일까지 같이 조회
+    @GetMapping("/prof/lecture/reference/detail")
+    public LectureRoomWithFileDto getProfLectureRoomWithFile(@RequestParam("lecture_room_id") Long id) {
+        LectureRoomWithFileDto response = new LectureRoomWithFileDto();
+        response.setLectureRoom(lectureRoomService.getSource(id));
+        response.setLectureRoomFile(lectureRoomService.getFile(id));
+        return response;
+
+    }
+
+    //게시글 작성
+    @PostMapping("/prof/lecture/reference")
     public LectureRoomEntity create(@RequestBody LectureRoomDto lectureRoomDto) {
 
         return lectureRoomService.create(lectureRoomDto);
     }
 
-    // 게시글 수정 -- 교수 기능 구현시 메소드 수정해주세요
-    @PatchMapping("/eclass/lecture/source")
+    // 게시글 수정
+    @PatchMapping("/prof/lecture/reference")
     public LectureRoomEntity update(@RequestBody LectureRoomDto lectureRoomDto) {
 
         return lectureRoomService.update(lectureRoomDto);
     }
 
     //파일 업로드 저장 -- 교수 기능 구현시 메소드 수정해주세요
-    @PostMapping("/eclass/lecture/source/{id}")
+    @PostMapping("/prof/lecture/reference/{id}")
     public LectureRoomFileEntity createFile(@PathVariable Long id, @RequestBody LectureRoomFileDto lectureRoomFileDto) {
 
         return lectureRoomService.createFile(lectureRoomFileDto, id);
     }
 
     // 첨부파일 수정 -- 교수 기능 구현시 메소드 수정해주세요
-    @PatchMapping("/eclass/lecture/source/{id}")
+    @PatchMapping("/prof/lecture/reference/{id}")
     public LectureRoomFileEntity updateFile(@RequestBody LectureRoomFileDto lectureRoomFileDto, @PathVariable Long id) {
 
         return lectureRoomService.updateFile(lectureRoomFileDto);
     }
+
     // 게시글, 첨부파일 삭제 -- 교수 기능 구현시 메소드 수정해주세요
-    @DeleteMapping("/eclass/lecture/source/{id}")
+    @DeleteMapping("/prof/lecture/reference/{id}")
     public void delete(@PathVariable Long id) {
         lectureRoomService.delete(id);
         lectureRoomService.deleteFile(id);
-
-
     }
 
 }
