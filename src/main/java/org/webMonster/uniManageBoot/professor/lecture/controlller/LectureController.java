@@ -5,12 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
 import org.webMonster.uniManageBoot.member.model.dto.MemberDepartmentDto;
 import org.webMonster.uniManageBoot.professor.homework.model.service.HomeworkService;
 import org.webMonster.uniManageBoot.professor.lecture.entity.LectureEntity;
+import org.webMonster.uniManageBoot.professor.lecture.entity.LectureRepository;
 import org.webMonster.uniManageBoot.professor.lecture.model.dto.LectureDto;
 import org.webMonster.uniManageBoot.professor.lecture.model.dto.LectureMainDto;
 import org.webMonster.uniManageBoot.professor.lecture.model.dto.SearchValues;
@@ -18,9 +20,12 @@ import org.webMonster.uniManageBoot.professor.lecture.model.service.LectureServi
 import org.webMonster.uniManageBoot.professor.lectureNotice.model.service.LectureNoticeService;
 import org.webMonster.uniManageBoot.professor.lectureRoom.model.service.LectureRoomService;
 import org.webMonster.uniManageBoot.student.freeboard.model.service.FreeboardService;
+import org.webMonster.uniManageBoot.professor.lecture.model.dto.LectureApplyStatusDto;
+
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -37,6 +42,8 @@ public class LectureController {
     private final LectureRoomService lectureRoomService;
     @Autowired
     private final HomeworkService homeworkService;
+
+    private final LectureRepository lectureRepository;
 
 
     //교직원 개설 강의 관리 리스트 조회
@@ -63,6 +70,21 @@ public class LectureController {
     ) {
         return lectureService.getAppliedLectureList(pageable, searchCondition);
     }
+
+    //교직원 강의개설요청 허용하기
+    @PutMapping("/admin/manage/appliedlecture/{lectureId}")
+    public ResponseEntity<String> updateLectureStatus(
+            @PathVariable Long lectureId,
+            @RequestBody LectureApplyStatusDto request
+    ) {
+        lectureService.updateLectureStatus(lectureId, request.getLectureApplyStatus());
+        return ResponseEntity.ok("강의 상태가 업데이트되었습니다.");
+    }
+
+
+
+
+
 
     //교직원 강의개설요청 관리 상세보기글 조회
     @GetMapping("/admin/manage/appliedlecture/{id}")
@@ -155,5 +177,16 @@ public class LectureController {
         MemberDepartmentDto memberDepartmentDto = (MemberDepartmentDto) session.getAttribute("loginMember");
         Long memberId = memberDepartmentDto.getMemberId();
         return lectureService.profSuccessLectureList(pageable, searchCondition, memberId);
+    }
+
+    //교수 - 강의 메인화면
+    @GetMapping("/prof/lecture/{id}")
+    public LectureMainDto getProfLectureMain(@PathVariable Long id) {
+        LectureMainDto response = new LectureMainDto();
+        response.setLectureDto(lectureService.getLecture(id));
+        response.setLectureNoticeDto(lectureNoticeService.getLectureNoticeList(id));
+        response.setLectureRoomDto(lectureRoomService.getSourceList(id));
+        response.setHomeworkDto(homeworkService.getHomeworkList(id));
+        return response;
     }
 }

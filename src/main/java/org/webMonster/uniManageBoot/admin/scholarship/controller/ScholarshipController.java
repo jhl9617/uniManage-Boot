@@ -41,7 +41,7 @@ public class ScholarshipController {
 
     //교직원 장학금관리 수정하기
     @PatchMapping("/admin/manage/scholarship")
-    public ScholarshipDto updateProfessor(@RequestBody ScholarshipDto scholarshipDto) {
+    public ScholarshipDto update(@RequestBody ScholarshipDto scholarshipDto) {
         ScholarshipEntity entity = scholarshipService.update(scholarshipDto);
         return ScholarshipDto.fromEntity(entity);
     }

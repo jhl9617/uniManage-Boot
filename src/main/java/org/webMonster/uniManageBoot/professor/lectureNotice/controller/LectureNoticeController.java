@@ -41,21 +41,41 @@ public class LectureNoticeController {
 
             return lectureNoticeService.getLectureNotice(id);
     }
-    //게시글 작성 -- 교수 기능 구현시 메소드 수정해주세요
-    @PostMapping("/eclass/lecture/notice")
+
+    // 교수 강의 공지 리스트
+    @GetMapping("/prof/lecture/notice/list")
+    public Header<List<LectureNoticeDto>> profLectureNoticeList(
+            @PageableDefault(sort = {"lecture_notice_id"}) Pageable pageable,
+            SearchCondition searchCondition,
+            @RequestParam("lecture_id") Long id
+    ) {
+        return lectureNoticeService.getLectureNoticeList(pageable, searchCondition, id);
+    }
+
+    // 교수 강의 공지 선택 조회
+    @GetMapping("/prof/lecture/notice/detail")
+    public LectureNoticeDto getProfLectureNotice(@RequestParam("lecture_notice_id") Long id) {
+
+        lectureNoticeService.increaseReadCount(id);
+
+        return lectureNoticeService.getLectureNotice(id);
+    }
+
+    // 교수 강의 공지 작성
+    @PostMapping("/prof/lecture/notice")
     public LectureNoticeEntity create(@RequestBody LectureNoticeDto lectureNoticeDto) {
 
         return lectureNoticeService.create(lectureNoticeDto);
     }
 
-    // 게시글 수정 -- 교수 기능 구현시 메소드 수정해주세요
-    @PatchMapping("/eclass/lecture/notice")
+    // 교수 강의 공지 수정
+    @PatchMapping("/prof/lecture/notice")
     public LectureNoticeEntity update(@RequestBody LectureNoticeDto lectureNoticeDto) {
 
         return lectureNoticeService.update(lectureNoticeDto);
     }
-    // 게시글 삭제 -- 교수 기능 구현시 메소드 수정해주세요
-    @DeleteMapping("/eclass/lecture/notice/{id}")
+    // 게시글 삭제
+    @DeleteMapping("/prof/lecture/notice/{id}")
     public void delete(@PathVariable Long id) {
        lectureNoticeService.delete(id);
     }

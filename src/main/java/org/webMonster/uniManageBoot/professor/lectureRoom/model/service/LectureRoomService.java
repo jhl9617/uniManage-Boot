@@ -33,7 +33,7 @@ public class LectureRoomService {
 
     @Autowired
     private LectureRoomRepositoryCustom lectureRoomRepositoryCustom;
-    
+
     // 강의자료 목록 조회
     public Header<List<LectureRoomDto>> getSourceList(Pageable pageable, SearchCondition searchCondition, Long id) {
 
@@ -84,7 +84,7 @@ public class LectureRoomService {
         }
         return list;
     }
-    
+
     // 강의 자료 선택 조회
     public LectureRoomDto getSource(Long id) {
         LectureRoomEntity entity = lectureRoomRepository.findById(id).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
@@ -104,13 +104,13 @@ public class LectureRoomService {
     // 선택된 강의자료의 첨부파일 경로 조회
     public LectureRoomFileDto getFile(Long id) {
 
-       LectureRoomFileEntity entity = lectureRoomFileRepository.findByLectureRoomId(id);
+        LectureRoomFileEntity entity = lectureRoomFileRepository.findByLectureRoomId(id);
 
-            return LectureRoomFileDto.builder()
-                    .lectureRoomId(entity.getLectureRoomId())
-                    .fileName(entity.getFileName())
-                    .fileRename(entity.getFileRename())
-                    .build();
+        return LectureRoomFileDto.builder()
+                .lectureRoomId(entity.getLectureRoomId())
+                .fileName(entity.getFileName())
+                .fileRename(entity.getFileRename())
+                .build();
 
 
 
@@ -131,7 +131,7 @@ public class LectureRoomService {
         return lectureRoomRepository.save(entity);
     }
 
-    
+
 
 
 
@@ -171,7 +171,7 @@ public class LectureRoomService {
         entity.setFileRename(lectureRoomFileDto.getFileRename());
         return lectureRoomFileRepository.save(entity);
     }
-    
+
     // 첨부파일 삭제
     public void deleteFile(Long id) {
         LectureRoomFileEntity fileEntity = lectureRoomFileRepository.findByLectureRoomId(id);

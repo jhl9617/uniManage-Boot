@@ -13,7 +13,6 @@ import org.webMonster.uniManageBoot.professor.homework.entity.*;
 import org.webMonster.uniManageBoot.professor.homework.model.dto.HomeworkDto;
 import org.webMonster.uniManageBoot.professor.homework.model.dto.HomeworkFileDto;
 
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -62,7 +61,7 @@ public class HomeworkService {
     }
 
     //과제 리스트 조회(페이징 x )
-    public List<HomeworkDto> getHomeworkList(Long id){
+    public List<HomeworkDto> getHomeworkList(Long id) {
         List<HomeworkDto> list = new ArrayList<>();
         List<HomeworkEntity> entity = homeworkRepository.findByLectureId(id);
         for (HomeworkEntity hentity : entity) {
@@ -149,7 +148,7 @@ public class HomeworkService {
     //과제 첨부파일 수정
     public HomeworkFileEntity updateFile(HomeworkFileDto homeworkfileDto, Long id) {
         HomeworkFileEntity entity = homeworkFileRepository.findbyHomeworkId(id);
-entity.setFileName(homeworkfileDto.getFileName());
+        entity.setFileName(homeworkfileDto.getFileName());
         entity.setFileRename(homeworkfileDto.getFileRename());
         return homeworkFileRepository.save(entity);
     }

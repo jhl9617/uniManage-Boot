@@ -18,7 +18,12 @@ import java.util.List;
 @Setter
 public class LectureRoomEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "lecture_room_id_seq_gen")
+    @SequenceGenerator(
+            name = "lecture_room_id_seq_gen",
+            sequenceName = "LECTURE_ROOM_ID_SEQ",
+            allocationSize = 1
+    )
     @Column(name = "LECTURE_ROOM_ID")
     private long lectureRoomId;   //강의자료실 글번호
     @Column(name = "LECTURE_ID")

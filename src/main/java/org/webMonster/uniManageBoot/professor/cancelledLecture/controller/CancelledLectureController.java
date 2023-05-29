@@ -39,7 +39,7 @@ public class CancelledLectureController {
             @PageableDefault(sort = {"cancelledLectureIdx"})Pageable pageable, SearchCondition searchCondition, HttpSession session){
         MemberDepartmentDto memberDepartmentDto  = (MemberDepartmentDto) session.getAttribute("loginMember");
         Long memberId = memberDepartmentDto.getMemberId();
-        System.out.println("컨트롤러" + memberDepartmentDto);
+
         return cancelledLectureService.getProfCancelledLectureList(pageable, searchCondition, memberId);
     }
 
