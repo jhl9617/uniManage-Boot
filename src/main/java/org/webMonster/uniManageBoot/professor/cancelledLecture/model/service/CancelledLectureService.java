@@ -61,7 +61,6 @@ public class CancelledLectureService {
     public Header<List<CancelledLectureDto>> getProfCancelledLectureList(Pageable pageable, SearchCondition searchCondition, Long memberId) {
         List<CancelledLectureDto> dtos = new ArrayList<>();
         Page<CancelledLectureEntity> cancelledLectureEntities = cancelledLectureRepositoryCustom.findAllBySearchConditionAndStatusByMemberId(pageable, searchCondition, memberId);
-        System.out.println("왜 안 나올까요...ㅠ");
         
         for (CancelledLectureEntity entity : cancelledLectureEntities) {
             if (memberId.equals(entity.getMember().getMemberId())) {
@@ -78,7 +77,7 @@ public class CancelledLectureService {
                         .cancelledApply(entity.getCancelledApply())
                         .build();
                 dtos.add(dto);
-                System.out.println("서비스1" + cancelledLectureEntities);
+
             }
             Pagination pagination = new Pagination(
                     (int) cancelledLectureEntities.getTotalElements(),
@@ -86,7 +85,7 @@ public class CancelledLectureService {
                     pageable.getPageSize(),
                     10
             );
-            System.out.println("서비스2" + cancelledLectureEntities);
+
             return Header.OK(dtos, pagination);
         }
         return null;
