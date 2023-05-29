@@ -2,9 +2,12 @@ package org.webMonster.uniManageBoot.professor.lecture.model.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 import org.webMonster.uniManageBoot.admin.notice.entity.NoticeEntity;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.Pagination;
@@ -133,13 +136,12 @@ public class LectureService {
     }
 
     //교직원 강의개설요청 허용하기
-    public void updateLectureApplyStatus(long lectureId, char status) {
-        Optional<LectureEntity> optionalLectureEntity = lectureRepository.findById(lectureId);
-        if (optionalLectureEntity.isPresent()) {
-            LectureEntity lectureEntity = optionalLectureEntity.get();
-            lectureEntity.setLectureApplyStatus(status);
-            lectureRepository.save(lectureEntity);
-        }
+    public void updateLectureStatus(Long lectureId, char lectureApplyStatus) {
+        LectureEntity lectureEntity = lectureRepository.findById(lectureId)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "강의를 찾을 수 없습니다."));
+
+        lectureEntity.setLectureApplyStatus(lectureApplyStatus);
+        lectureRepository.save(lectureEntity);
     }
 
 

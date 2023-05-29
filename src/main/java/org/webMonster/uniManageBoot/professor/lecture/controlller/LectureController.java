@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.webMonster.uniManageBoot.common.Header;
 import org.webMonster.uniManageBoot.common.SearchCondition;
@@ -19,6 +20,8 @@ import org.webMonster.uniManageBoot.professor.lecture.model.service.LectureServi
 import org.webMonster.uniManageBoot.professor.lectureNotice.model.service.LectureNoticeService;
 import org.webMonster.uniManageBoot.professor.lectureRoom.model.service.LectureRoomService;
 import org.webMonster.uniManageBoot.student.freeboard.model.service.FreeboardService;
+import org.webMonster.uniManageBoot.professor.lecture.model.dto.LectureApplyStatusDto;
+
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
@@ -69,17 +72,14 @@ public class LectureController {
     }
 
     //교직원 강의개설요청 허용하기
-    @PutMapping("/admin/manage/appliedlecture/update")
-    public void updateLectureApplyStatus(
-            @RequestParam("lectureId") Long lectureId, @RequestParam("lectureApplyStatus") Character lectureApplyStatus) {
-            Optional<LectureEntity> optionalLectureEntity = lectureRepository.findById(lectureId);
-            if (optionalLectureEntity.isPresent()) {
-                LectureEntity lectureEntity = optionalLectureEntity.get();
-                lectureEntity.setLectureApplyStatus(lectureApplyStatus);
-                lectureRepository.save(lectureEntity);
-            }
+    @PutMapping("/admin/manage/appliedlecture/{lectureId}")
+    public ResponseEntity<String> updateLectureStatus(
+            @PathVariable Long lectureId,
+            @RequestBody LectureApplyStatusDto request
+    ) {
+        lectureService.updateLectureStatus(lectureId, request.getLectureApplyStatus());
+        return ResponseEntity.ok("강의 상태가 업데이트되었습니다.");
     }
-
 
 
 
