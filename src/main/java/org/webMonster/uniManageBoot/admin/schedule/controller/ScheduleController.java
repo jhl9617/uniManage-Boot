@@ -41,4 +41,10 @@ public class ScheduleController {
         ScheduleEntity entity = scheduleService.update(scheduleDto);
         return ScheduleDto.fromEntity(entity);
     }
+
+    //교직원 학사일정 삭제
+    @DeleteMapping("admin/schedule/{id}")
+    public void delete(@PathVariable Long id) {
+        scheduleService.delete(id);
+    }
 }

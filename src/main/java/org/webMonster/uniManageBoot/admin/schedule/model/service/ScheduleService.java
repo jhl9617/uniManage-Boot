@@ -117,4 +117,8 @@ public class ScheduleService {
         return scheduleRepository.save(entity);
     }
 
+    public void delete(Long id) {
+        ScheduleEntity entity = scheduleRepository.findById(id).orElseThrow(() -> new RuntimeException("게시글을 찾을 수 없습니다."));
+        scheduleRepository.delete(entity);
+    }
 }
